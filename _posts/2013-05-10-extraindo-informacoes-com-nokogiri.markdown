@@ -128,3 +128,10 @@ Disallow: /tmp/
 # Bônus
 
 A _gem_ [google_movies](https://github.com/lucasallan/google_movies) é um exemplo de wrapper que retorna as informações sobre cinemas e filmes através do próprio Google Movies. Ela serve como uma referência bem completa e ao mesmo tempo simples de entender o processo.
+
+
+#### Links
+
+- [Site Pessoal](http://www.thiagoborg.es)
+- [Twitter](http://twitter.com/tgabrielborges)
+- [Github](https://github.com/thiagogabriel)

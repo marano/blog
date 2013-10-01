@@ -68,7 +68,7 @@ Você faz alguma coisa diferente? Pode melhorar algo? Deixe seu comentário.
 
 #### Links
 
-- [Site Pessoal](http://www.thiagogabriel.com)
+- [Site Pessoal](http://www.thiagoborg.es)
 - [Twitter](http://twitter.com/tgabrielborges)
 - [Github](https://github.com/thiagogabriel)
 
