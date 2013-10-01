@@ -23,7 +23,7 @@ O Startup DEV sempre foi um serviço da HE:labs, no qual desenvolvíamos uma pri
 
 No final de 2 anos, nós entregamos mais de 60 projetos. Sim, mais de **60 projetos de software entregues on-line com clientes felizes**. Isso é um marco que nenhuma outra empresa no Brasil atingiu até hoje. É inédito.
 
-Não é difícil concluir que nesse processo nós aprendemos muito. Aprendemos a melhorar em: vender, alinhar a expectativa do cliente, programar, fazer design, dar acabamento aos sistemas, cobrar, fechar contratos, dentre outras inúmeras pequenas coisas que fazem toda a diferença para o projeto ser bem sucedido.
+Não é difícil concluir que nesse processo nós aprendemos muito. Aprendemos a vender melhor, a alinhar a expectativa do cliente melhor, a programar melhor, a fazer design melhor, a acabar melhor os sistemas, a cobrar melhor, a fechar melhor o contrato entre outras inúmeras pequenas coisas que fazem toda a diferença para o projeto ser bem sucedido.
 
 Após dominar esse serviço, começamos a pensar em que poderíamos fazer para aproveitar esse conhecimento adquirido e ganhar dinheiro de outras formas.
 
