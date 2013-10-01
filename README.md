@@ -3,13 +3,16 @@
 1) Clone o repositório
 git@github.com:Helabs/blog.git
 
-2) Cria uma branch com o titulo do seu post:
+2) Vá para o branch gh-pages:
+git checkout gh-pages
+
+3) Cria uma branch com o titulo do seu post:
 git checkout -b post/titulo-do-seu-post
 
-3) Crie o seu post:
+4) Crie o seu post:
 rake new_post["Titulo do seu post"] ou se você estiver usando zsh rake "new_post[Titulo do seu post]"
 
-4) Edite o seu post em _posts/ com o formato abaixo
+5) Edite o seu post em _posts/ com o formato abaixo
 
 ```
 ---
@@ -26,15 +29,15 @@ categories:
 Conteúdo do post
 ```
 
-5) Veja se ficou bom executando: foreman start
+6) Veja se ficou bom executando: foreman start
 
-6) Acesse no browser: http://localhost:4000/blog/
+7) Acesse no browser: http://localhost:4000/blog/
 
-7) Commit as mudanças: git commit -am 'post: Titulo do seu post'
+8) Commit as mudanças: git commit -am 'post: Titulo do seu post'
 
-8) Push na branch: git push origin post/titulo-do-seu-post
+9) Push na branch: git push origin post/titulo-do-seu-post
 
-9) Mande um pull request
+10) Mande um pull request
 
 ## Observações da nova versão
 
@@ -42,7 +45,9 @@ Conteúdo do post
 
 Usem a tag "{% highlight ruby linenos %}" e fechem com {% endhighlight %}
 
-As imagens ficam em "/blog/images/"
+### Imagens
+
+As imagens ficam em "/blog/images/post/YYYY-MM-DD/"
 
 ## License
 (The MIT License)
