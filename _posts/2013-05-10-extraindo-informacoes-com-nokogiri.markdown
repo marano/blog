@@ -3,7 +3,7 @@ published: true
 author: Thiago Borges
 layout: post
 title: "Extraindo informações com Nokogiri"
-date: 2013-10-02 11:00
+date: 2013-05-15 11:00
 comments: true
 categories:
   - Thiago Borges
