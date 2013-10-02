@@ -39,6 +39,8 @@ Conteúdo do post
 
 10) Mande um pull request
 
+11) **Merge no branch gh-pages e está publicado.**
+
 ## Observações da nova versão
 
 ### Code Highlighting
