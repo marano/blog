@@ -3,7 +3,7 @@ published: true
 author: Thiago Borges
 layout: post
 title: "Extraindo informações com Nokogiri"
-date: 2013-05-15 11:00
+date: 2013-10-02 11:00
 comments: true
 categories:
   - Thiago Borges
@@ -15,7 +15,7 @@ categories:
 
 
 Uma área de grande importância na computação é a extração de dados em sistemas web.
-Nesse post irei abordar o uso da _gem_ **Nokogiri** para coletar essas informações, processo também conhecido por _Web Scraping_. Foi através desse trabalho que o Google iniciou seu império e ainda, muitos outros cases de sucesso utilizam esta técnica para oferecer serviços.
+Nesse post, irei abordar o uso da _gem_ **Nokogiri** para coletar essas informações, processo também conhecido por _Web Scraping_. Foi através desse trabalho que o Google iniciou seu império. E ainda, muitos outros cases de sucesso utilizam esta técnica para oferecer serviços.
 
 <!--more-->
 
@@ -45,7 +45,7 @@ O código abaixo será usado pra exemplificar os seletores:
 
 ### XPath
 O seletor XPath se baseia na árvore DOM para encontrar os nós. DOM é a estrutura que representa a organização dos elementos HTML e XML.
-O caminho do XPath é fácil de ser encontrado e substituído, mas você pode ter problemas caso o HTML não esteja correto.
+O caminho do XPath é fácil de ser encontrado e substituído, mas você pode ter problemas, caso o HTML não esteja correto.
 
 A seleção dos nomes dos cinemas acima é feita da seguinte forma:
 
@@ -61,8 +61,8 @@ end
 
 Este exemplo deve exibir "Kinoplex Shopping Tijuca" e "Iguatemi".
 
-Caso esteja utilizando o Google Chrome, o [XPath Helper](https://chrome.google.com/webstore/detail/xpath-helper/hgimnogjllphhhkhlmebbmlgjoejdpjl?utm_source=chrome-ntp-icon) pode ser utilizado para auxiliar na procura e teste de XPath.
-Com o [Firebug](https://getfirebug.com) é possível copiar tanto o XPath quanto o CSS.
+Caso esteja usando o Google Chrome, o [XPath Helper](https://chrome.google.com/webstore/detail/xpath-helper/hgimnogjllphhhkhlmebbmlgjoejdpjl?utm_source=chrome-ntp-icon) pode ser utilizado para auxiliar na procura e teste de XPath.
+Com o [Firebug](https://getfirebug.com), é possível copiar tanto o XPath quanto o CSS.
 
 ### CSS
 O seletor CSS do **Nokogiri** é o mesmo utilizado no jQuery. São verificadas, principalmente, as classes, IDs e elementos do documento.
@@ -82,7 +82,7 @@ end
 
 # Exemplo
 
-Pra colocar em prática o que foi visto até aqui, fiz esse exemplo para listar os integrantes da HE:Labs e suas respectivas posições na empresa:
+Para colocar em prática o que foi visto até aqui, fiz esse exemplo para listar os integrantes da HE:Labs e suas respectivas posições na empresa:
 
 {% highlight ruby linenos %}
 require 'open-uri'
@@ -116,7 +116,7 @@ node.previous_sibling #=> irmão anterior. (Volta um elemento no mesmo nível)
 # Legalidade
 Não é permitido publicar conteúdo na íntegra sem permissão. Se houver permissão, a fonte deve ser citada. Em 2005, o Google News foi processado por publicar conteúdo da [AFP](http://www.afp.com/) sem permissão. Para realizar análise de informações, a questão de direitos autorais pode ser parcialmente ignorada. Exemplo disso é o PageRank do Google que analisa o conteúdo das páginas, avalia sua relevância, mas não os reproduz.
 
-Deve-se, também, respeitar as instruções do robots.txt. Nele, o scraper não pode acessar nada dentro do caminho /tmp/. :
+Deve-se também respeitar as instruções do robots.txt. Nele, o scraper não pode acessar nada dentro do caminho /tmp/. :
 {% highlight ruby linenos %}
 User-agent: *
 Disallow: /tmp/
@@ -127,7 +127,7 @@ Disallow: /tmp/
 
 # Bônus
 
-A _gem_ [google_movies](https://github.com/lucasallan/google_movies) é um exemplo de wrapper que retorna as informações sobre cinemas e filmes através do próprio Google Movies. Ela serve como uma referência bem completa e ao mesmo tempo simples de entender o processo.
+A _gem_ [google_movies](https://github.com/lucasallan/google_movies) é um exemplo de wrapper que retorna as informações sobre cinemas e filmes através do próprio Google Movies. Ela serve como uma referência bem completa e ao mesmo tempo, simples de entender o processo.
 
 
 #### Links
