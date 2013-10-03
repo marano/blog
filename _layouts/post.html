@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div id="static-background" class="static-background-small">
-  
+
   <div id="static-image"></div>
 
 </div>
@@ -11,7 +11,7 @@ layout: default
 <!-- #posts -->
 <section id="post-content">
   <div class="container">
-    
+
     <header class="full-post-header">
       {% if page.author %}
         {% assign author = page.author %}
@@ -33,7 +33,7 @@ layout: default
     <div id="post-text">
       {{ content }}
     </div>
-    
+
     {% if page.tags.size > 0 %}
       <div class="tags">
       {% for tag in page.tags %}
@@ -51,7 +51,7 @@ layout: default
     {% if site.disqus_short_name and page.comments == true %}
       <div id="disqus_thread" aria-live="polite">
         <h6>Comentários</h6>
-        {% include post/disqus_thread.html %}
+        {% include disqus_thread.html %}
       </div>
     {% endif %}
   </div>
