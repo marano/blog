@@ -1,0 +1,53 @@
+---
+layout: default
+title: Tags
+permalink: "/tags/index.html"
+---
+
+<div id="static-background" class="static-background-small">
+  <div id="static-image">
+  </div>
+
+  <header id="page-header">
+    <h2 class="page-title">
+      Tags
+    </h2>
+  </header>
+</div>
+
+<section id="tags-list">
+  <div class="container">
+    {% for category in site.categories %}
+      {% assign category_name = category[0] %}
+      {% assign posts = category[1] %}
+
+       <h1 class="tag-anchor" id="{{category_name}}"><a href="/blog/tags/#{{category_name}}" title="{{category_name}}">{{category_name}}</a></h1>
+
+      {% for post in posts %}
+        <article class="tag-post">
+          <div class="container">
+            <div class='post-date'>{{ post.date | date: "%d/%m/%Y" }}</div>
+            <h2 class="post-title">
+              <a href="/blog{{ post.url }}" title="{{post.title}}">
+                {% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}
+              </a>
+            </h2>
+            {% if post.author %}
+              {% assign author = post.author %}
+            {% elsif page.author %}
+              {% assign author = page.author %}
+            {% else %}
+              {% assign author = site.author %}
+            {% endif %}
+            {% if author %}
+              <div class="author-info">
+                por <span class="author-name">{{ author }}</span>
+              </div>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+
+    {% endfor %}
+  </div>
+</section>
