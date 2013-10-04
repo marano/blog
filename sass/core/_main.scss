@@ -18,8 +18,8 @@ em, strong, a, img {
   border: 0;
 }
 
-header, footer, aside,
-nav, article, section { display:block; }
+header,footer, aside,
+nav, article, section { display: block; }
 
 html { font-size: 62.5%; }
 
@@ -81,6 +81,7 @@ Patterns
   margin: auto;
 }
 
+
 /* ====================
 Font Icon
 ==================== */
@@ -92,6 +93,7 @@ Font Icon
 }
 
 [class^="icon_"]:before, [class*=" icon_"]:before {
+
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -111,8 +113,8 @@ Font Icon
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
 
-
 }
+
 .icon_rss:before { content: '\e803'; }
 .icon_twitter:before { content: '\e802'; }
 .icon_facebook:before { content: '\e801'; }
