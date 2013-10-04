@@ -50,6 +50,10 @@
       margin-left: 10px;
       margin-top: 20px;
 
+      &:first-child{
+        margin-left: 0;
+      }
+
       @media only screen and (max-width: 686px) {
         font-size: 20px;
       }
