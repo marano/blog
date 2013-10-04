@@ -31,7 +31,8 @@ Media Queries for Smartphones
     }
   }
 
-  #static-background, #static-background.static-background-small {
+  #static-background,
+  #static-background.static-background-small {
     padding: 0;
     height: auto;
     #static-image { display: none; }
