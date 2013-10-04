@@ -70,7 +70,12 @@
     height: 36px;
     line-height: 36px;
     padding:0 10px 0 10px;
-    &:hover { border-color: #ccc; }
+    &:hover {
+      border-color: #ccc;
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 
 }
