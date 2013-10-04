@@ -25,51 +25,30 @@ Media Queries for Smartphones
 
   #main-header {
     border-bottom: 1px solid #ccc;
-
-    #google-search {
-      display: none;
-    }
-
+    #google-search { display: none; }
     .header-title {
-      a {
-        width: 130px;
-      }
+      a { width: 130px; }
     }
   }
 
   #static-background, #static-background.static-background-small {
     padding: 0;
     height: auto;
-
-    #static-image {
-      display: none;
-    }
+    #static-image { display: none; }
   }
-
   .post:first-child {
     margin-top: 0;
     z-index: 10;
     background: none;
   }
-
   #footer-social-links {
-    a {
-      font-size: 20px;
-    }
+    a { font-size: 20px; }
     .copyright{
-      img{
-          display: none;
-      }
+      img { display: none; }
     }
   }
-
   #pagination {
-    .prev-page {
-      left: 5%;
-    }
-    .next-page {
-      right: 5%;
-    }
+    .prev-page { left: 5%; }
+    .next-page { right: 5%; }
   }
-
 }
