@@ -34,10 +34,10 @@ layout: default
       {{ content }}
     </div>
 
-    {% if page.tags.size > 0 %}
+    {% if page.categories.size > 0 %}
       <div class="tags">
-      {% for tag in page.tags %}
-        <a href="#{{tag}}">{{tag}}</a>
+      {% for category in page.categories %}
+        <a href="/blog/tags/#{{category}}">{{category}}</a>
       {% endfor %}
       </div>
     {% endif %}
