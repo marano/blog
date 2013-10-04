@@ -18,8 +18,8 @@ em, strong, a, img {
   border: 0;
 }
 
-header,footer, aside,
-nav, article, section { display: block; }
+header, footer, aside,
+nav, article, section { display:block; }
 
 html { font-size: 62.5%; }
 
@@ -39,7 +39,7 @@ label { cursor:pointer; }
 img { border:none; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Georgia', sans-serif !important;
 }
 
 a { color: $HEred; }
@@ -93,26 +93,21 @@ Font Icon
 }
 
 [class^="icon_"]:before, [class*=" icon_"]:before {
-
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
-
   display: inline-block;
   text-decoration: none;
   width: 1em;
   margin-right: .2em;
   text-align: center;
-
   font-variant: normal;
   text-transform: none;
   line-height: 1em;
   margin-left: .2em;
-
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
-
 }
 
 .icon_rss:before { content: '\e803'; }
