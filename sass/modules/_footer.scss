@@ -38,8 +38,6 @@
     }
 }
 
-
-
 #footer-social-links {
   float: left;
 
@@ -53,10 +51,6 @@
       &:first-child{
         margin-left: 0;
       }
-
-      @media only screen and (max-width: 686px) {
-        font-size: 20px;
-      }
     }
 }
 
@@ -69,12 +63,6 @@
     a{
       margin: 10px 0 0 0;
       float: left;
-
-      @media only screen and (max-width: 686px) {
-        img{
-          display: none;
-        }
-      }
     }
 
     p{

@@ -52,4 +52,15 @@ Media Queries for Smartphones
     background: none;
   }
 
+  #footer-social-links {
+    a{
+      font-size: 20px;
+    }
+    .copyright{
+      img{
+          display: none;
+      }
+    }
+  }
+
 }
