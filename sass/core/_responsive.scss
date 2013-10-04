@@ -53,13 +53,22 @@ Media Queries for Smartphones
   }
 
   #footer-social-links {
-    a{
+    a {
       font-size: 20px;
     }
     .copyright{
       img{
           display: none;
       }
+    }
+  }
+
+  #pagination {
+    .prev-page {
+      left: 5%;
+    }
+    .next-page {
+      right: 5%;
     }
   }
 
