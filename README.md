@@ -2,7 +2,7 @@
 
 1) Clone o repositório [git@github.com:Helabs/blog.git](https://github.com/Helabs/blog) e tenha certeza de que está no branch `gh-pages`.
 
-2) Crie uma branch com o titulo do seu post.
+2) Crie uma branch com o título do seu post.
 
 ```
 $ git checkout -b post/titulo-do-seu-post
@@ -47,16 +47,30 @@ $ git push origin post/titulo-do-seu-post
 
 7) Mande um pull request pela interface web do Github.
 
-## Observações da nova versão
+## Publicando um post
+
+TODO.
+
+## Observações
 
 ### Code Highlighting
 
-Usem a tag "{% highlight ruby linenos %}" e fechem com {% endhighlight %}
+Usar a seguinte sintaxe:
+
+```
+{% highlight ruby linenos %}
+class Say
+  def hello
+    say "Hello!"
+  end
+end
+{% endhighlight %}
+```
 
 ### Imagens
 
-As imagens ficam em "/blog/images/post/YYYY-MM-DD/"
+Salve suas imagens em `/images/posts/YYYY-MM-DD/`, lembrando que em termos de url vai ficar `/blog/images/posts/YYYY-MM-DD/`.
 
-## License
+## Licença
 
 [Blog da HE:labs](http://helabs.com.br/blog/) e seu conteúdo está licenciado sob uma [licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 3.0 Não Adaptada](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.pt_BR).
