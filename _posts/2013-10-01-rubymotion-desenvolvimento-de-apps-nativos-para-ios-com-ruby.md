@@ -69,7 +69,7 @@ E um alerta é exibido. :)
 
 ![image](/blog/images/posts/2013-10-01/02.png)
 
-Agora para o mesmo exemplo usando o BubbleWrap, adicione a gem "bubble-wrap" no gem file e execute o "bundle install".
+Agora, para o mesmo exemplo usando o BubbleWrap, adicione a gem "bubble-wrap" no gem file e execute o "bundle install".
 
 {% highlight ruby linenos %}
 gem 'bubble-wrap'
