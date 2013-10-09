@@ -38,39 +38,32 @@
     }
 }
 
-#footer-social-links {
-  float: left;
+  #footer-social-links {
+    float: left;
 
+      a{
+        float: left;
+        font-size: 25px;
+        font-weight: normal;
+        margin-left: 10px;
+        margin-top: 20px;
+
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+  }
+
+  .copyright {
+    color: #fff;
+    float: right;
+    font-size: 11px;
+    margin-top: 30px;
     a{
-      float: left;
-      font-size: 25px;
-      font-weight: normal;
-      margin-left: 10px;
-      margin-top: 20px;
-
-      &:first-child{
-        margin-left: 0;
+      img{
+        float: left;
+        margin-right: 5px;
       }
     }
-}
-
-.copyright {
-  color: #fff;
-  float: right;
-  font-size: 11px;
-  margin-top: 10px;
-
-    a{
-      margin: 10px 0 0 0;
-      float: left;
-    }
-
-    p{
-      margin: 15px 0 0 15px;
-      padding: 0;
-      float: right;
-    }
-
   }
 }
-
