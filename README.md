@@ -8,7 +8,7 @@
 $ git checkout -b post/titulo-do-seu-post
 ```
 
-3) Crie um arquivo em `\_posts/titulo-do-seu-post.markdown` com o seguinte formato.
+3) Crie um arquivo em `_posts/titulo-do-seu-post.markdown` com o seguinte formato.
 
 ```
 ---
