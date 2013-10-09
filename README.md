@@ -1,18 +1,14 @@
 ## Criando seu post
 
-1) Clone o repositório
-git@github.com:Helabs/blog.git
+1) Clone o repositório [git@github.com:Helabs/blog.git](https://github.com/Helabs/blog) e tenha certeza de que está no branch `gh-pages`.
 
-2) Vá para o branch gh-pages:
-git checkout gh-pages
+2) Crie uma branch com o titulo do seu post:
 
-3) Cria uma branch com o titulo do seu post:
-git checkout -b post/titulo-do-seu-post
+```
+$ git checkout -b post/titulo-do-seu-post
+```
 
-4) Crie o seu post:
-rake new_post["Titulo do seu post"] ou se você estiver usando zsh rake "new_post[Titulo do seu post]"
-
-5) Edite o seu post em _posts/ com o formato abaixo
+4) Crie um arquivo em \_posts/titulo-do-seu-post.markdown com o formato:
 
 ```
 ---
@@ -23,23 +19,33 @@ title: "Título"
 date: AAAA-MM-DD HH:MM
 comments: true
 categories:
-  - Tags
-  - Tags
+  - Tag1
+  - Tag2
 ---
+
 Conteúdo do post
 ```
 
-6) Veja se ficou bom executando: foreman start
+5) Veja se ficou bom executando o projeto e acessando pelo browser o endereço [http://localhost:4000/blog/](http://localhost:4000/blog/)
 
-7) Acesse no browser: http://localhost:4000/blog/
+```
+$ foreman start
+```
 
-8) Commit as mudanças: git commit -am 'post: Titulo do seu post'
+6) Commit as mudanças
 
-9) Push na branch: git push origin post/titulo-do-seu-post
+```
+$ git add .
+$ git commit -am 'post: Titulo do seu post'
+```
 
-10) Mande um pull request
+7) Push na branch
 
-11) **Merge no branch gh-pages e está publicado.**
+```
+$ git push origin post/titulo-do-seu-post
+```
+
+8) Mande um pull request pela interface web do Github.
 
 ## Observações da nova versão
 
