@@ -95,7 +95,7 @@ $ App.alert "Hello World II"
 
 ![image](/blog/images/posts/2013-10-01/03.png)
 
-Fácil, não? Achei bem maneiro fazer isso sem precisar compilar de novo, tudo super interativo.
+Fácil, não? Achei bem maneiro alterar o app sem precisar compilar de novo, tudo super interativo.
 
 Estou trabalhando em um projeto pessoal com Rubymotion e nos próximos dias pretendo contar mais sobre a experiência e mostrar alguns exemplos.
 
