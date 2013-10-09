@@ -22,7 +22,7 @@ Pouco antes de optar por focar em apps nativos, pesquisei sobre alternativas, co
 
 Hoje eu não tenho mais uma opinião tão radical. Até fiz experimentos com Phonegap depois de assistir um Café com Dev com o Diego Dukão ([veja o post sobre](http://helabs.com.br/blog/2013/07/12/retrospectiva-cafe-com-dev-28-de-junho/)). Webapps são notoriamente menos performáticos, mas também são bem mais baratos porque são mais fáceis de se fazer e consomem menos tempo. Então, penso que há casos em que podem ser uma alternativa válida.
 
-Há alguns meses, ouvi falar do RubyMotion e mês passado, na Rubyconf, conheci o [Laurent Sansonetti][0] - ex funcionário da Apple e criador do framework. Fiquei surpreso com o poder da ferramenta. Ela não só torna possível desenvolver apps nativos para iOS com Ruby, como também fornece uma série de facilidades para o desenvolvedor, como por exemplo o BubbleWrap - coleção de helpers e wrappers que abstraem o Cocoa Touch e AppKit com a proposta de deixar as coisas mais "ruby-like". Em teoria, pelo menos, parece unir o melhor dos dois mundos. A performance do app nativo com a produtividade do Ruby. Yay!
+Há alguns meses, ouvi falar do RubyMotion e mês passado, na Rubyconf, conheci o [Laurent Sansonetti][0] - ex funcionário da Apple e criador do framework. Fiquei surpreso com o poder da ferramenta. Ela não só torna possível desenvolver apps nativos para iOS com Ruby, como também fornece uma série de facilidades para o desenvolvedor, como por exemplo o BubbleWrap - coleção de helpers e wrappers que abstraem o Cocoa Touch e AppKit com a proposta de deixar as coisas mais "ruby-like". Em teoria, pelo menos, parece unir o melhor dos dois mundos: a performance do app nativo com a produtividade do Ruby. Yay!
 
 Comprei a licença (199 dólares) e comecei a fazer experimentos. Tem valido a pena.
 
@@ -95,7 +95,7 @@ $ App.alert "Hello World II"
 
 ![image](/blog/images/posts/2013-10-01/03.png)
 
-Fácil, não? Achei bem maneiro alterar o app sem precisar compilar de novo, tudo super interativo.
+Fácil, não? Achei bem maneiro alterar o app no terminal interativo sem precisar compilar de novo.
 
 Estou trabalhando em um projeto pessoal com Rubymotion e nos próximos dias pretendo contar mais sobre a experiência e mostrar alguns exemplos.
 
