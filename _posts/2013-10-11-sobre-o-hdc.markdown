@@ -46,3 +46,10 @@ O designer Alexandre benitah (*foto*), mais conhecido como Beni, comentou sobre 
 ![image](/blog/images/posts/klaus02.jpg)
 
 E fechando o evento, Klaus Wuestefeld (*foto*) palestrou sobre a autoridade da internet e o fim do Google e Facebook.
+
+Além das palestras e toda a interação entre os presentes, tivemos um Coffe Break excelente!
+
+Em breve, os vídeos das palestras estarão disponíveis!
+
+Quem não foi, perdeu! :P 
+
