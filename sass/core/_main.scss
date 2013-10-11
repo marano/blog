@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+/* fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
 /* Variables */
 
 $HEred: #b80606;
@@ -39,14 +42,17 @@ label { cursor:pointer; }
 img { border:none; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, sans-serif !important;
-  font-weight: normal;
+  font-weight: 600 !important;
 }
 
-a { color: $HEred; }
+a {
+  color: $HEred;
+  text-decoration: none;
 
-a:hover, a:hover img {
-  opacity: .7;
+  &:hover, &:hover img {
+    text-decoration: underline;
+    opacity: .7;
+  }
 }
 
 em {
