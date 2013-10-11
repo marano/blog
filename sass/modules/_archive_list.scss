@@ -25,18 +25,24 @@
   background: #fff;
   padding: 10px 0;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+
+  .container {
+    overflow: hidden;
+  }
 
   .post-date {
     float: left;
     font-size: 15px;
     color: #777;
     margin-left: 10px;
+    font-weight: bold;
   }
 
   .post-title {
     float: left;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     margin-left: 10px;
   }
@@ -46,6 +52,7 @@
     font-size: 13px;
     color: #555;
     margin-right: 10px;
+    margin-bottom: 0;
   }
 }
 
