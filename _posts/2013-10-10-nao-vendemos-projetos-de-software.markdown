@@ -10,7 +10,7 @@ categories:
   - sylvestre mergulhao
   - estimativas
   - processos
-  
+
 ---
 
 Historicamente os projetos de software falham em diversos aspectos, como: estouro no prazo, no orçamento, deficiência de qualidade, entre outros... A questão é tão antiga que o termo **"crise do software"** [(software crisis)](http://en.wikipedia.org/wiki/Software_crisis) foi cunhado no final dos anos 60 por [Edsger Dijkstra](http://en.wikipedia.org/wiki/Edsger_Dijkstra) exatamente para referenciar esses acontecimentos, que infelizmente são mais comuns hoje do que eram na época. Isso quer dizer que a situação de hoje pode ser considerada pior do que na época. O motivo é simples: mais projetos de software estão sendo executados hoje do que nos anos 60 e 70, com formas e técnicas que já são sabidas e que não funcionam há mais de 40 anos.
@@ -31,7 +31,7 @@ Qualquer projeto de software basicamente se resume a um projeto de [pesquisa e d
 
 ## O que a HE:labs vende?
 
-O que nós vendemos é pura e simples alocação de pessoas. Pessoas altamente capacitadas trabalhando num ambiente que permite a **máxima produtividade sustentável** e com um processo maturado de desenvolvimento oriundo da escola do [eXtreme Programming](http://en.wikipedia.org/wiki/Extreme_programming).
+O que nós vendemos é pura e simples alocação de pessoas. Pessoas altamente capacitadas trabalhando num ambiente que permite a **máxima produtividade sustentável** e com um processo maturado de desenvolvimento oriundo da escola do [eXtreme Programming](http://desenvolvimentoagil.com.br/xp/).
 
 Ou seja: não vendemos software. Se o cliente quiser nos contratar para jogar ping pong está valendo. Mas normalmente somos contratados para aplicar a nossa metodologia e conhecimento nos projetos de software de nossos clientes.
 
@@ -39,13 +39,13 @@ Ou seja: não vendemos software. Se o cliente quiser nos contratar para jogar pi
 
 O cliente sempre tem um budget (sabe quanto vai custar, ou melhor, quanto ele está disposto a gastar) e tem uma ideia na cabeça de quanto tempo pode levar. A questão é alinhada conosco para definirmos qual a melhor configuração de equipe, dado o budget que existe e o prazo que ele tem na cabeça. O nosso valor é fixo de pessoa por mês, sem importar qual o projeto e qual o tamanho do cliente.
 
-Em projetos web, que são os que trabalhamos na HE:labs, um tempo mínimo para haver maturação das funcionalidades e feedback de usuários reais é de 3 meses. Esse é também o tempo máximo que damos para qualquer cliente para optar em colocar o projeto no ar. O time ideal para começar é com 3 pessoas, sendo 2 programadores e 1 designer.
+Em projetos web, que são os que trabalhamos na HE:labs, um tempo mínimo para haver maturação das funcionalidades e feedback de usuários reais é de 3 meses. Esse é também o tempo máximo que damos para qualquer cliente para que ele opte por colocar o projeto no ar. O time ideal para começar é com 3 pessoas, sendo 2 programadores e 1 designer.
 
 Nosso contrato é mensal, ou seja, o cliente nos paga pela equipe alocada em cada "aniversário" do projeto e tem a livre opção de continuar ou não conosco. Como também, pode requerer aumentar a equipe a qualquer momento ou reduzí-la, dentro das datas de aniversário de entrada de cada pessoa no projeto. A equipe é alocada de forma exclusiva, não sendo compartilhada com outros clientes.
 
 O projeto é desenvolvido de forma iterativa e incremental, de acordo com nossos [processos](http://helabs.com.br/magica/). A cada iteração de uma semana, o cliente tem uma nova versão do software funcionando.
 
-Nosso interesse é entregar o melhor para o cliente, lembrando que o seu interesse em continuar a trabalhar conosco depende dos resultados das entregas de nosso time.
+Nosso interesse é entregar o melhor para o cliente, dado que o seu interesse em continuar a trabalhar conosco depende dos resultados das entregas de nosso time.
 
 ## Qual é o pepino?
 
