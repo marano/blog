@@ -31,17 +31,17 @@ Mauro George e Flavia Fortes (*foto*) falaram um pouco como a HE:labs funciona e
 
 Emilio Cini Simoni (*foto*) falou sobre o surgimento dos bankers e sua formação, análise de fraudes e comunicação.
 
-![image](/blog/images/posts/lula01.jpg)
+![image](/blog/images/posts/Lula01.jpg)
 
 Na parte da tarde, Lula Rocha (*foto*), professor da Puc Rio, palestrou sobre o tema **"Metapix - Soluções e desafios  na construção de um site de cursos e tutoriais online"**.
 
 ![image](/blog/images/posts/pedro02.jpg)
 
-Pedro Franceschi (*foto*) de apenas 20 anos, apresentou sua palestra, onde argumentou sobre o aprendizado de VIM. 
+Pedro Franceschi (*foto*), de apenas 20 anos, apresentou sua palestra, onde argumentou sobre o aprendizado de VIM. 
 
 ![image](/blog/images/posts/beni01.jpg)
 
-O designer Alexandre benitah (*foto*), mais conhecido como Beni, comentou sobre a importância de saber quais os problemas os usuários enfrentam ao utilizar o seu produto. 
+O designer Alexandre Benitah (*foto*), mais conhecido como Beni, comentou sobre a importância de saber quais os problemas os usuários enfrentam ao utilizar o seu produto. 
 
 ![image](/blog/images/posts/klaus02.jpg)
 
