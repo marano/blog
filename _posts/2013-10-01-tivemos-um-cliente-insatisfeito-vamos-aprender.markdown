@@ -10,6 +10,7 @@ categories:
   - clientes
   - aprendizado
   - falha
+  
 ---
 
 Nesse final de semana rolou um post no Facebook sobre desenvolvimento MVP em que uma pessoa indica o Startup DEV e um de nossos clientes responde que o nosso serviço "foi uma decepção". Decepcionar um cliente é a última coisa que queremos fazer e por isso vamos conversar sobre o assunto.
@@ -18,7 +19,7 @@ Nesse final de semana rolou um post no Facebook sobre desenvolvimento MVP em que
 
 O post em questão está no grupo do Startup Brasil do Facebook, ele chegou até a mim por meio dessa imagem abaixo. Leia a conversa até o final antes de prosseguir.
 
-![image](/blog/images/posts/discussao-facebook.png)
+![image](/blog/images/posts/2013-10-01/discussao-facebook.png)
 
 Quem quiser visualizar o post, acesse: [https://www.facebook.com/groups/supbra/?hc_location=stream](https://www.facebook.com/groups/supbra/?hc_location=stream)
 

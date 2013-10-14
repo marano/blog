@@ -15,7 +15,7 @@ Nessa semana, a HE:labs deu as boas vindas a mais um integrante: Rafael Chefe!
 
 <!--more-->
 
-![image](/blog/images/posts/chefe-atual.jpg)
+![image](/blog/images/posts/2013-10-08/chefe-atual.jpg)
 
 Rafael trabalha com desenvolvimento desde 2003 e com web desde 2007. É formado pela Universidade Tecnológica Federal do Paraná (UTFPR), em Tecnologia de Sistemas Para Internet. Avassala em SQL e banco de dados, PHP e Ruby.
 
