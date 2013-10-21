@@ -1,0 +1,109 @@
+---
+published: true
+layout: post
+author: Mauro George
+title: Rails Rumble 2013
+date: 2013-10-21 11:11
+comments: true
+categories:
+  - mauro george
+  - rails rumble
+  - hackathon
+---
+
+Para quem não sabe no último fim de semana(19 e 20 de outubro), rolou o [Rails Rumble 2013](http://railsrumble.com/) que de acordo com o site deles é:
+
+> The Rails Rumble is a distributed programming competition where teams of one to four people, from all over the world, have 48 hours to build an innovative web application, with Ruby on Rails or another Rack-based Ruby web framework. After the 48 hours are up, a panel of expert judges will pick the top ten winners.
+
+<!--more-->
+
+Ou seja times de até 4 pessoas, do mundo todo, tem 48 horas para fazer uma web app com Rails ou algum Rack-based Ruby web framework. Para depois ser julgado, onde é definido o top 10. Se quiser saber mais da uma olhada [aqui](http://blog.railsrumble.com/about/).
+
+## Tá mais por que isto é legal?
+
+Sério mesmo? Então vamos lá.
+
+### Diversão
+
+Juntar os amigos para 2 dias de hacking, não pode dar errado. No time que participei ouvimos rock, funk, musica de desenho, eletrônico. Assistimos videos do youtube. Nos divertimos o fim de semana todo enquanto faziamos o nosso app.
+
+### Desafios
+
+Eu sou muito ruim em infra estrutura, mas avassalo em OOP e Design Patterns por exemplo ;p
+
+No rails rumble deste ano tinhamos uma máquina no Linode e tivemos que colocar a app para rodar lá. Por sorte tem coisas que ajudam como os [StackScripts](https://www.linode.com/stackscripts/), usamos este [aqui](https://www.linode.com/stackscripts/view/?StackScriptID=7607) e resolveu o problema. Mas apenas depois de muita porrada para ter isto rodando.
+
+### Aprendizado
+
+Dos desafios realizados vem o aprendizado. Este ano depois da porrada que tomei do linode, adquiri algum conhecimento em infra que pode me ajudar em próximas situações como esta.
+
+## Dicas
+
+Então se amarrou é que participar de algo assim? Então vamos para as dicas.
+
+### Decida como vai ser o andamento do projeto
+
+Depois de já ter uma ideia de projeto, defina o andamento do mesmo. Por exemplo: vamos ficar o fim de semana todo, incluindo madrugadas? Vamos trabalhar apenas durante o dia?
+
+No nosso caso, ficamos até quando o sono chegava, depois dormiamos pouco e voltavamos. Fizemos isto mais pela diversão, em um Startup DEV trabalhamos em um ritmo sustentavel.
+
+Dois dos times da HE:labs fizeram remoto o projeto. Nesse caso alinharam as agendas para decidirem como iriam proceder.
+
+### Planning
+
+Planeje o minimo para os dias de desenvolvimento. Desenhe as tela de sua app, quebre as histórias, em seguida as tarefas. Utilize alguma ferramenta para isto, no nosso caso usamos o [trello](http://trello.com).
+
+### Durante
+
+Sempre converse com os participantes do time em caso de dúvida. Divirta-se durante todo o processo seja ouvindo música, zoando os amigos, codando etc.
+
+Abaixo uma foto do nosso dashboard, contém um feed do twitter com busca de coisas sobre o Rails Rumble, uma parte para playlist do youtube e um timer que mostra quanto tempo falta para a competição acabar.
+
+![image](/blog/images/posts/2013-10-21/dashboard.jpg)
+
+
+### Qualidade
+
+Mantenha a qualidade do código. Não é por que temos pouco tempo que não terá qualidade o projeto.
+Isto quer dizer testes automatizados, 100% de cobertura, integração continua etc.
+
+Abaixo um `rake stats` que tirei durante o desenvolvimento, se não me engano sábado a noite.
+
+{% highlight bash %}
+
++----------------------+-------+-------+---------+---------+-----+-------+
+| Name                 | Lines |   LOC | Classes | Methods | M/C | LOC/M |
++----------------------+-------+-------+---------+---------+-----+-------+
+| Controllers          |    48 |    37 |       3 |       7 |   2 |     3 |
+| Helpers              |     2 |     2 |       0 |       0 |   0 |     0 |
+| Models               |    65 |    53 |       3 |       2 |   0 |    24 |
+| Mailers              |     0 |     0 |       0 |       0 |   0 |     0 |
+| Javascripts          |    17 |     0 |       0 |       0 |   0 |     0 |
+| Libraries            |     0 |     0 |       0 |       0 |   0 |     0 |
+| Acceptance specs     |     9 |     7 |       0 |       0 |   0 |     0 |
+| Controller specs     |   188 |   146 |       0 |       0 |   0 |     0 |
+| Model specs          |   147 |   121 |       0 |       0 |   0 |     0 |
+| Routing specs        |    72 |    54 |       0 |       0 |   0 |     0 |
++----------------------+-------+-------+---------+---------+-----+-------+
+| Total                |   548 |   420 |       6 |       9 |   1 |    44 |
++----------------------+-------+-------+---------+---------+-----+-------+
+  Code LOC: 92     Test LOC: 328     Code to Test Ratio: 1:3.6
+{% endhighlight  %}
+
+## Times da HE:labs
+
+Nós da HE:labs estivemos presentes em 3 times:
+
+- [Time Avassaladores](http://railsrumble.com/entries/382-drinks4-us) projeto [drinks4.us](http://avassaladores.r13.railsrumble.com/)
+
+- [Time Hammer Team](http://railsrumble.com/entries/108-simplereview) projeto [SimpleReview](http://simplereview.us/)
+
+- [Time Rails Ninjas](http://railsrumble.com/entries/349-garage) projeto [Garage](http://garage.r13.railsrumble.com/)
+
+Se gostou de algum favorita aí ;p
+
+## Conclusão
+
+Participe de algo assim seja do Rails Rumble, do  [Node knockout](http://nodeknockout.com/), [Startup DEV Rumble](http://imprensa.helabs.com.br/tagged/Startup-DEV-Rumble) não importa qual.
+
+Se não quiser esperar até o próximo evento. Chame mais 2 a 3 amigos e vá desenvolver uma app no próximo fim de semana! E poste o resultado aqui no blog.
