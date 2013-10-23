@@ -5,13 +5,13 @@ title: Curso Rails for Zombies 2 presencial e promoção
 date: 2012-11-23 14:24
 comments: true
 categories:
-  - codeschool
-  - workshop
-  - rails-for-zombies
-  - rodrigo pinto
+  - Workshop
+  - Rails
+  - Rodrigo Pinto
+  
 ---
 
-Recentemente a [HE:labs][1] fechou parceria com a [CodeSchool][2] para trazer para o Brasil cursos online disponíveis na plataforma [CodeSchool][2] no formato  **presencial**. O primeiro workshop lançado é o [Rails for Zombies 2][rfz] e as inscrições já estão abertas.
+Recentemente, a [HE:labs][1] fechou parceria com a [CodeSchool][2] para trazer para o Brasil cursos online disponíveis na plataforma [CodeSchool][2] no formato  **presencial**. O primeiro workshop lançado é o [Rails for Zombies 2][rfz] e as inscrições já estão abertas.
 <!--more-->
 
 Os cursos presenciais são formatados para que aluno possa tirar suas dúvidas diretamente com os instrutores, receber dicas e interagir com outras pessoas. De **bônus** iremos fazer uma pequena aplicação ao final do curso.

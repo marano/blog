@@ -5,10 +5,11 @@ title: "Tech Talks - Rodrigo Pinto: Explorando as views Rails"
 date: 2012-11-16 14:24
 comments: true
 categories:
-  - tech talks
-  - rails
-  - rodrigo pinto
-  - pedro marins
+  - Cafe com DEV
+  - Rails
+  - Rodrigo Pinto
+  - Pedro Marins
+  
 ---
 
 Hoje recomeçamos as Tech Talks internas aqui na HE:Labs! Depois de algum tempo sem acontercer, as Tech Talks voltaram com tudo, com o [Rodrigo Pinto][3] avassalando explorando as views do Rails. E para animar a galera a Tech Talk foi regada a pizza e refrigerante.
