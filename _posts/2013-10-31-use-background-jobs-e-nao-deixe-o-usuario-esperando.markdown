@@ -52,12 +52,13 @@ Primeiro, criamos uma classe ConfirmationEmailJob. Podemos colocá-la na pasta a
 {% highlight ruby linenos %}
 class ConfirmationEmailJob
   def perform(user_id)
-    SomeMailer.confirmation(user).deliver if load_user(user_id)
+    return if !load_user(user_id)
+    SomeMailer.confirmation(@user).deliver
   end
 
   private
     def load_user
-      @user = User.find(user_id)
+      @user = User.find_by(id: user_id)
     end
 end
 {% endhighlight %}
