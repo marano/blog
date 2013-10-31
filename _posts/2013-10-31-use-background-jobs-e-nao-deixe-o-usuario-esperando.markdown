@@ -9,7 +9,7 @@ categories:
   - matheus bras
   - background job
   - rails
-  
+
 ---
 
 Muitas aplicações Rails precisam enviar emails e muitas deixam o usuário esperando até que o mesmo seja enviado e não usam background jobs para fazer esse trabalho. Vamos tentar melhorar isso.
@@ -52,9 +52,13 @@ Primeiro, criamos uma classe ConfirmationEmailJob. Podemos colocá-la na pasta a
 {% highlight ruby linenos %}
 class ConfirmationEmailJob
   def perform(user_id)
-    user = User.find(user_id)
-    SomeMailer.confirmation(user).deliver
+    SomeMailer.confirmation(user).deliver if load_user(user_id)
   end
+
+  private
+    def load_user
+      @user = User.find(user_id)
+    end
 end
 {% endhighlight %}
 
