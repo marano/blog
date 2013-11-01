@@ -9,7 +9,7 @@ categories:
   - Novidades
    
 ---
-![image](/blog/images/posts/2012-12-18/visitaotavioleite.jpg)
+![image](/blog/images/posts/2012-12-05/visitaotavioleite.jpg)
 
 A HE:labs recebeu no dia 23/11, em sua sede carioca, a visita do Deputado Otavio Leite. O Deputado está se aproximando da comunidade de startups e empresas juniores para tentar ajudar as empresas em seus desafios, e veio nos visitar para conhecer nosso ambiente e nosso trabalho.
 
