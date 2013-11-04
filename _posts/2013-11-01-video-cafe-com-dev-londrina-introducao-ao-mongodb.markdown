@@ -13,6 +13,8 @@ categories:
 
 O Café com Dev é um evento realizado pela HE:labs, onde nosso time pode convidar alguma pessoa para palestrar sobre algum assunto relacionado à tecnologia, ambiente de trabalho ou qualquer coisa que faça parte do nosso dia a dia como empresa de desenvolvimento de software.
 
+<!--more-->
+
 Em Londrina, nós realizamos um evento por mês. Geralmente, na última sexta-feira do mês.
 
 No dia 24/10, convidamos o desenvolvedor Michel Banagouro para dar uma introdução sobre mongoDB.
