@@ -26,7 +26,7 @@ categories:
 Conteúdo do post
 ```
 
-4) Veja se ficou bom executando o projeto e acessando pelo browser o endereço [http://localhost:4000/blog/](http://localhost:4000/blog/).
+4) Veja se ficou bom executando o projeto e acessando pelo browser o endereço [http://localhost:4000/blog/](http://localhost:4000/blog/) (Precisa de "/" no final do endereço).
 
 ```
 $ foreman start
