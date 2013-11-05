@@ -1,19 +1,22 @@
 #main-header {
+  width: 100%;
   background: #fff;
-  padding: 10px 0 10px 0;
+  padding: 15px 0 8px 0;
   border-top: 5px solid #b72124;
-  overflow: hidden;
+  position: relative;
+  float: left;
 }
 
 .header-title {
+  width: 140px;
   float: left;
   a img {
-    width: 180px;
+    width: 140px;
   }
 }
 
 #google-search {
   width: 300px;
-  float: right;
-  margin-top: 10px;
+  position: absolute;
+  right: 0; top: -7px;
 }
