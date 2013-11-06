@@ -47,7 +47,7 @@ end
 Temos o estado inicial que é **:new**. Sempre que um novo objeto for criado, o primeiro estado deve ser **:new**.
 Existem 3 eventos possíveis nesse caso: **:allow**, **:disable** e **:restart**.
 
-Primeiro evento (**:allow**): se o status for **:new** ou **:disabled**, a transição para **:allowed** é válida quando executado o comando abaixo:
+No primeiro evento (**:allow**), se o status for **:new** ou **:disabled**, a transição para **:allowed** é válida quando executado o comando abaixo:
 
 {% highlight ruby linenos %}
   @permission.allow
@@ -59,7 +59,7 @@ Executando o evento **:disable**: só será válido se o status estiver **:new**
   @permission.disable
 {% endhighlight %}
 
-Terceiro evento (**:restart**): se o status for **:disabled** ou **:allowed**, a transição para **:new** é válida quando executado o comando abaixo:
+E no Terceiro evento (**:restart**), se o status for **:disabled** ou **:allowed**, a transição para **:new** é válida quando executado o comando abaixo:
 
 {% highlight ruby linenos %}
   @permission.restart
