@@ -1,32 +1,32 @@
 ---
-published: false
+published: true
 author: Rodrigo Reginato
 layout: post
 title: "State Machine"
-date: 2013-11-04 23:00
+date: 2013-11-05 23:00
 comments: true
 categories:
-  - helabs
   - Rodrigo Reginato
   - State Machine
   - rails
   - ruby
+  
 ---
 
-Nesse post vou mostrar algumas funcionalidades da gem [state_machine](https://github.com/pluginaweek/state_machine) para gerenciar e simplificar o comportamento de uma classe.
+Nesse post mostrarei algumas funcionalidades da gem [state_machine](https://github.com/pluginaweek/state_machine) para gerenciar e simplificar o comportamento de uma classe.
 
 <!--more-->
 
-O estado do objeto normalmente é mantido através de vários estados booleanos, isso pode se tornar complicado de manter quando a complexidade da classe aumenta.
-Com o [state_machine](https://github.com/pluginaweek/state_machine) fica bem visível para qualquer desenvolvedor que olhe o código as transições dos estados que são possíveis.
+O estado do objeto normalmente é mantido através de vários estados booleanos, isso pode-se tornar complicado de manter quando a complexidade da classe aumenta.
+Com o [state_machine](https://github.com/pluginaweek/state_machine), fica bem visível para qualquer desenvolvedor que olhe o código e observe as transições dos estados que são possíveis.
 
-Primeiro vou fazer uma validação de inclusão desses estados.
+Primeiro, farei uma validação de inclusão desses estados:
  
 {% highlight ruby linenos %}
 validates :status, :inclusion => { :in => %w(new allowed disabled) }
 {% endhighlight %}
 
-Agora vamos ao código do state_machine:
+Agora, vamos ao código do state_machine:
 
 {% highlight ruby linenos %}
 class Permission < ActiveRecord::Base
@@ -44,21 +44,22 @@ class Permission < ActiveRecord::Base
 end
 {% endhighlight %}
 
-Temos o estado inicial que é :new, sempre que um novo objeto for criado o primeiro estado deve ser :new.
-Existem 3 eventos possíveis nesse caso :allow, :disable and :restart.
-Primeiro evento :allow, se o status for :new ou :disabled a transição para :allowed é válida quando executado o comando abaixo.
+Temos o estado inicial que é **:new**. Sempre que um novo objeto for criado, o primeiro estado deve ser **:new**.
+Existem 3 eventos possíveis nesse caso: **:allow**, **:disable** e **:restart**.
+
+Primeiro evento (**:allow**): se o status for **:new** ou **:disabled**, a transição para **:allowed** é válida quando executado o comando abaixo:
 
 {% highlight ruby linenos %}
   @permission.allow
 {% endhighlight %}
 
-Executando o evento :disable, so será válido se o status estiver :new ou :disabled.
+Executando o evento **:disable**: só será válido se o status estiver **:new** ou **:disabled**.
 
 {% highlight ruby linenos %}
   @permission.disable
 {% endhighlight %}
 
-Terceiro evento :restart, se o status for :disabled, ou :allowed a transição para :new é válida quando executado o comando abaixo.
+Terceiro evento (**:restart**): se o status for **:disabled** ou **:allowed**, a transição para **:new** é válida quando executado o comando abaixo:
 
 {% highlight ruby linenos %}
   @permission.restart
@@ -72,9 +73,9 @@ Uma função muito utilizada é o after_transaction.
   end
 {% endhighlight %}
 
-Nesse exemplo após a transição do status de :new para :allowed é enviado um email para o usuário informando que a permissão foi concedida.
+Nesse exemplo, após a transição do status de **:new** para **:allowed**, é enviado um email para o usuário informando que a permissão foi concedida.
 
-E como não podia faltar um exemplo de teste para as transições.
+E como não poderia faltar, um exemplo de teste para as transições:
 
 {% highlight ruby linenos %}
   describe 'status state machine' do
@@ -96,6 +97,6 @@ E como não podia faltar um exemplo de teste para as transições.
 {% endhighlight %}
 
 Apenas um exemplo básico.
-Para o evento restart é basicamente o mesmo código.
+Para o evento **restart**, é basicamente o mesmo código.
 
 Um abraço.
