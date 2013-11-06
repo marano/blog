@@ -30,10 +30,6 @@
     z-index: 10;
   }
 
-  h1, h2, h3, h4, h5 {
-    margin-bottom: 10px;
-  }
-
   li {
     margin-bottom: 8px;
   }
@@ -47,9 +43,16 @@
     padding: 20px;
     border: 1px #CCC solid;
   }
+  
+  h2 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: $HEred;
+  }
 
   h3 {
-    font-size: 21px;
+    margin-bottom: 5px;
+    font-size: 19px;
     color: #000;
   }
 
