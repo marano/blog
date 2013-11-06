@@ -53,7 +53,7 @@ No primeiro evento (**:allow**), se o status for **:new** ou **:disabled**, a tr
   @permission.allow
 {% endhighlight %}
 
-Executando o evento **:disable**: só será válido se o status estiver **:new** ou **:disabled**.
+Executando o evento **:disable**: só será válido se o status estiver **:new** ou **:allowed**.
 
 {% highlight ruby linenos %}
   @permission.disable
