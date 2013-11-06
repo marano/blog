@@ -33,27 +33,27 @@ Com esses recursos, fica muito mais fácil criar factories
 
 Para ilustrar seu funcionamento, vamos imaginar que você tem os seguintes models:
 
-```ruby
+{% highlight ruby linenos %}
 class Post < ActiveRecord::Base
   belongs_to :author
 
   validates :title, :content, presence: true
   validates :title, uniqueness: true
 end
-```
+{% endhighlight %}
 
-```ruby
+{% highlight ruby linenos %}
 class Author < ActiveRecord::Base
   has_many :posts
 
   validates :name, :email, :city, presence: true
   validates :name, :email, uniqueness: true
 end
-```
+{% endhighlight %}
 
 E teríamos, inicialmente, as seguintes factories:
 
-```ruby
+{% highlight ruby linenos %}
 FactoryGirl.define do
   factory :post do
     title 'Título do post'
@@ -61,9 +61,9 @@ FactoryGirl.define do
     author
   end
 end
-```
+{% endhighlight %}
 
-```ruby
+{% highlight ruby linenos %}
 FactoryGirl.define do
   factory :author do
     name 'Fulano da Silva'
@@ -71,7 +71,7 @@ FactoryGirl.define do
     city 'Rio de Janeiro'
   end
 end
-```
+{% endhighlight %}
 
 Não há nada de errado com essas factories. O problema surge quando precisamos criar, por exemplo, uma lista de posts com `FactoryGirl.create_list(:post, 3)` e iremos receber diversos erros das validações de `uniqueness` dos dois models.
 
@@ -81,7 +81,7 @@ Para isso, poderíamos usar [sequences](https://github.com/thoughtbot/factory_gi
 
 Podemos modificar nossas factories para usar dados gerados pelo Faker:
 
-```ruby
+{% highlight ruby linenos %}
 FactoryGirl.define do
   factory :post do
     title { Faker::Lorem.sentence(8) }
@@ -89,9 +89,9 @@ FactoryGirl.define do
     author
   end
 end
-```
+{% endhighlight %}
 
-```ruby
+{% highlight ruby linenos %}
 FactoryGirl.define do
   factory :author do
     name { Faker::Name.name }
@@ -99,7 +99,7 @@ FactoryGirl.define do
     city { Faker::Address.city }
   end
 end
-```
+{% endhighlight %}
 
 E assim teremos posts com títulos e conteúdos diferentes (ok, Lorem Ipsum não é
 a melhor coisa do mundo), mas também teremos autores com nomes como "Davion Fay" e emails como "haylee_hayes@reynoldssanford.info".
@@ -114,9 +114,9 @@ Os dados gerados pelo Faker são, por padrão, nomes, endereços e cidades em in
 O que pode deixar o seu sistema não tão real assim... Para resolver esse problema
 é só definir qual idioma o Faker irá usar no seu `spec_helper.rb`:
 
-```ruby
+{% highlight ruby linenos %}
 Faker::Config.locale = :"pt-br"
-```
+{% endhighlight %}
 
 Com isso, os dados gerados serão como "Alessandro Silva", "Rio de Janeiro" e etc.
 
