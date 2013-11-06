@@ -3,7 +3,8 @@
   @extend .post-header;
 
   .post-title {
-    font-size: 44px !important;
+    font-size: 44px;
+    line-height: 50px;
     margin-bottom: 20px;
     display: block;
     text-decoration: none;
