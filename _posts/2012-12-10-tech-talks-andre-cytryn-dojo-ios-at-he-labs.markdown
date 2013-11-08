@@ -10,6 +10,7 @@ categories:
   - dojo
   - andre cytryn
   - mauro george
+  
 ---
 
 Mais uma sexta feira, mais um evento na HE:labs.
@@ -60,9 +61,9 @@ Ps: Galera que compareceu mande o nome e twitter para colocarmos aqui.
 
 O [código fonte do Dojo pode ser encontrado aqui][3], e temos algumas fotos dos momentos aqui.
 
-![image](/blog/images/posts/dojo-ios-1.jpg)
-![image](/blog/images/posts/dojo-ios-2.jpg)
-![image](/blog/images/posts/dojo-ios-3.jpg)
+![image](/blog/images/posts/2012-12-10/dojo-ios-1.jpg)
+![image](/blog/images/posts/2012-12-10/dojo-ios-2.jpg)
+![image](/blog/images/posts/2012-12-10/dojo-ios-3.jpg)
 
 É isso aí pessoal não se esqueçam de acompanhar a [nossa mailing][4] e o [twitter][5] para ficarem informados de próximos dojos, talks e qualquer coisa que possamos inventar um dia desses!
 
