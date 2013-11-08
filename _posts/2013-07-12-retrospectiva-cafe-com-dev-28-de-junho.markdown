@@ -7,8 +7,6 @@ comments: true
 categories:
   - cafe com dev
   - crystal
-  - rio
-  - he:rio
   - dukao
 
 ---
@@ -17,7 +15,7 @@ Na sexta-feira, dia 28/06, a HE:Rio organizou mais um Café com DEV no espaço C
 
 <!--more-->
 
-![image](/blog/images/presentes.JPG)
+![image](/blog/images/posts/2013-07-12/presentes.JPG)
 
 O pessoal presente e os que acompanharam online pelo eventials interagiram durante toda a apresentação. Ao final, rolou um papo descontraído entre todos.
 
