@@ -7,6 +7,7 @@ comments: true
 categories:
   - cafe com dev
   - rodrigo vidal
+  - crystal
 
 ---
 
@@ -14,7 +15,7 @@ Na última sexta, dia 5 de abril, aconteceu o nosso quarto Café com DEV com par
 
 <!--more-->
 
-![Rodrigo Vidal](/blog/images/posts/rodrigo-vidal.jpg)
+![Rodrigo Vidal](/blog/images/posts/2013-04-09/rodrigo-vidal.jpg)
 
 Rodrigo, engenheiro e desenvolvedor, citou a história da composição, linguagens e objetivos da Função juntamente com a computabilidade. E ainda, explicou matematicamente como as Funções se aplicam e seus efeitos.
 
