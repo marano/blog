@@ -6,8 +6,8 @@ date: 2013-01-29 10:30
 comments: true
 categories:
   - eventos
-  - kolaborativa
   - andre cytryn
+  
 ---
 
 Neste último sábado dia 26 de janeiro, fui ao [Kolaborativa][ko], um evento que tem como intenção criar uma comunidade ativa de Profissionais da Web. A ideia é que seja um evento mensal que reúna desde o programador ao profissional de mídias sociais em meio de palestras, mesas de discussão, networking, etc.
@@ -15,7 +15,7 @@ Neste último sábado dia 26 de janeiro, fui ao [Kolaborativa][ko], um evento qu
 
 Este primeiro evento teve como tema o segmento que mais cresce em termos de tecnologia, o segmento mobile. Aceitei o convite do Vinícius Machado para participar da mesa de discussão do mercado Mobile, representando a HE:Labs, junto com a [Barbara Wolff][bw] da [Mineo.co](https://mineo.co)/[Engage.is](http://engage.is) e [João Felipe Jotaefe][jf] - Community Manager da BlackBerry.
 
-![image](/blog/images/posts/kolaborativa.jpg)
+![image](/blog/images/posts/2013-01-29/kolaborativa.jpg)
 
 Foi uma experiência muito legal poder discutir desde os vigentes sistemas operacionais móveis até o que esperamos que surja como novas tecnologias. A participação do público foi essencial pra saber quais são as maiores preocupações tanto de usuários quanto de desenvolvedores mobile.
 
