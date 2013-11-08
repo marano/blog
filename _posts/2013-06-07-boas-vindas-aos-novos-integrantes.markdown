@@ -8,7 +8,7 @@ categories:
   - time
   - flavia fortes
   - dirceu
-  - novatos
+  - novos membros
 
 
 
