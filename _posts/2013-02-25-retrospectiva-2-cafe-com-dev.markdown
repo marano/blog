@@ -7,8 +7,6 @@ comments: true
 categories:
   - pedro marins
   - cafe com dev
-  - tdd
-  - ios
   - sylvestre mergulhao
 
 ---
@@ -16,7 +14,7 @@ categories:
 Na última sexta-feira, dia 22 de fevereiro, aconteceu a segunda edição do Café com DEV. O evento reuniu interessados em debater o tema "design, usabilidade e acabamento de software".
 <!--more-->
 
-![image](/blog/images/posts/2-cafe-com-dev.jpg)
+![image](/blog/images/posts/2013-02-25/2-cafe-com-dev.jpg)
 
 Novamente estávamos com a casa cheia e o papo foi extremamente rico e dinâmico, regado a café, Red Bull e Heineken. Tivemos inclusive convidados de São Paulo presentes no evento.
 
