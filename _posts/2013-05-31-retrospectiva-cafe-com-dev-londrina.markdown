@@ -18,11 +18,11 @@ No dia 24/05, também rolou Café com DEV para o pessoal de Londrina! O encontro
 
 <!--more-->
 
-![image](/blog/images/cafelondrina.jpg)
+![image](/blog/images/posts/2013-05-31/cafelondrina.jpg)
 
 O evento bombou, tendo mais de 20 participantes! Dentre eles, pessoas de outras cidades próximas a Londrina compareceram! "O pessoal ficou atento do primeiro ao último minuto e fizeram muitas perguntas sobre como são os processos da HE; como aplicar metodologias ágeis nos seus ambientes e etc." - Eduardo sobre o _feedback_ da palestra.
 
-![image](/blog/images/cafeeduardo.jpg)
+![image](/blog/images/posts/2013-05-31/cafeeduardo.jpg)
 
 A palestra não foi transmitida ao vivo, mas os slides apresentados podem ser conferidos [neste link](http://www.slideshare.net/eduardofiorezi/conheca-um-time-de-desenvolvimento-agil-em-seu-dna).
 
