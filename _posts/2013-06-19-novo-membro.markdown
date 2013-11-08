@@ -5,9 +5,8 @@ title: "Novo membro: Thiago Gonzalez"
 date: 2013-06-19 11:00
 comments: true
 categories:
-  - time
   - thiago gonzalez
-  - novatos
+  - novo membro
 
 
 
