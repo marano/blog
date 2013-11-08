@@ -17,7 +17,7 @@ Na sexta-feira, dia 10/05, [Mauro George](https://twitter.com/maurogeorge) apres
 
 <!--more-->
 
-![image](/blog/images/mario.jpg)
+![image](/blog/images/posts/2013-05-17/mario.jpg)
 
 Durante a apresentação, Mauro contou sobre migração de outras linguagens para Rails, as suas confusões para com os novatos e **AR** que quebra **SRP**. Além de mostrar alguns anti-patterns e soluções para eles.
 
@@ -31,5 +31,5 @@ Slides da apresentação abaixo:
 
 Se interessou? Perdeu a palestra? Então [clique aqui](https://www.eventials.com/pt-br/helabs/model-of-the-colossus/) e confira como foi!
 
-![image](/blog/images/galeramauro.jpg)
+![image](/blog/images/posts/2013-05-17/galeramauro.jpg)
 
