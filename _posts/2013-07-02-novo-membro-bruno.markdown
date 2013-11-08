@@ -7,7 +7,7 @@ comments: true
 categories:
   - time
   - bruno
-  - novatos
+  - novo membro
 
 
 
@@ -17,7 +17,7 @@ No início da semana, demos boas vindas a mais um integrante do time: Bruno Fern
 
 <!--more-->
 
-![image](/blog/images/bruno.jpg)
+![image](/blog/images/2013-07-02/bruno.jpg)
 
 Bruno é designer e reside no Tocantins (mais um! :D). Trabalha em projetos de identidade visual há, aproximadamente, 9 anos e brinca no mundo web como Front-end. E ainda, curte desenvolver projeto mobile (design responsivo).
 
