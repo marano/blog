@@ -7,15 +7,15 @@ comments: true
 categories:
   - pedro marins
   - cafe com dev
-  - produtividade
   - rodrigo pinto
   - mauro george
+  
 ---
 
 Aconteceu na sexta-feira dia 01/02 o primeiro Café com DEV da HE:labs! O objetivo do encontro é reunir interessados e debater sobre um tema específico. Nesta primeira edição o tema do encontro foi produtividade e os aplicativos que nos ajudam a aumentá-la. Batemos um papo sobre o que usamos e como usamos essas ferramentas para aumentar nossa produtividade.
 <!--more-->
 
-![image](/blog/images/posts/cafe-com-dev-1.jpg)
+![image](/blog/images/posts/2013-02-05/cafe-com-dev-1.jpg)
 
 [Eu][pm] por exemplo, falei sobre como uso o [Evernote][evernote], o [Pocket][pocket] e o [Wunderlist][wunderlist] para organizar minha vida.
 
@@ -37,7 +37,7 @@ O primeiro encontro foi sensacional, e na retrospectiva o único ponto de destaq
 
 Para ficar por dentro de quando será o próximo Café com DEV se inscreva na nossa [mailing][mailing].
 
-![image](/blog/images/posts/cafe-com-dev-2.jpg)
+![image](/blog/images/posts/2013-02-05/cafe-com-dev-2.jpg)
 
 [evernote]: http://evernote.com/
 [pocket]: http://getpocket.com/
