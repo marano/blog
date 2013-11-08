@@ -18,7 +18,7 @@ Nesta segunda, 24/06, iniciamos a semana com mais um integrante no time! Francis
 
 <!--more-->
 
-![image](/blog/images/francisco.jpg)
+![image](/blog/images/posts/2013-06-25/francisco.jpg)
 
 Francisco avassala em ruby, objective-c (iOS) e Android. Cursou Sistemas de Informação e já trabalhou com site responsivo em rails e com app móvel.
 
