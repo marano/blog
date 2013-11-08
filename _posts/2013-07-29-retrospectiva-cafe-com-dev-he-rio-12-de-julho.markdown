@@ -16,11 +16,11 @@ Na sexta-feira, dia 12/07, a HE:Rio organizou mais um Café com DEV no espaço C
 
 <!--more-->
 
-![image](/blog/images/DSCN3736.JPG)
+![image](/blog/images/posts/2013-07-29/DSCN3736.JPG)
 
 Durante a palestra, Álvaro, também conhecido como Turicas, nos mostrou diversos exemplos de como rodar um comando e fazer com que lâmpadas de led (ou qualquer outro dispositivo) obedecessem a este comando.
 
-![image](/blog/images/DSCN3738.JPG)
+![image](/blog/images/posts/2013-07-29/DSCN3738.JPG)
 
 A palestra foi bem interessante! Até para leigos, como eu, descobrir como a "mágica" funciona foi super interessante!
 
