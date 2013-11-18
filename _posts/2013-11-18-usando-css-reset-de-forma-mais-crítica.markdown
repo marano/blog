@@ -3,7 +3,7 @@ published: true
 author: Mikael Carrara
 layout: post
 title: "Usando CSS Reset De Forma Mais Crítica"
-date: 2013-09-11 15:00
+date: 2013-11-18 10:00
 comments: true
 categories:
   - design
