@@ -36,12 +36,6 @@ Escrevendo este post, senti vontade de criar um novo baseado na minha versão pe
 
 Quando for desenvolver sua próxima interface Web, tente seguir o conceito do **normalize.css** sendo mais crítico e tomando cuidado ao mexer com estilos padrões do navegador, isso pode afetar o funcionamento correto dos componentes básicos do seu projeto. Evite redundâncias e configurações que podem fazer você perder o controle no futuro.
 
-## Outros posts da série
-
-[Design Responsivo Parte I: Arquivos CSS e Breakpoints](http://helabs.com.br/blog/2013/02/27/design-responsivo-parte-i-arquivos-css-e-breakpoints)
-
-[Design Responsivo Parte II: Listagens e Galerias](http://helabs.com.br/blog/2013/05/24/design-responsivo-parte-ii-listagens-e-galerias/)
-
 ## Links
 
 - [Site Pessoal](http://www.mikaelcarrara.com)
