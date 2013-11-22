@@ -7,7 +7,7 @@ date: 2012-08-31 08:00
 comments: true
 categories:
   - Novidades
-  - Startup Farm
+  - eventos
      
 ---
 ![image](/blog/images/posts/2012-08-31/startupfarm.jpg)
