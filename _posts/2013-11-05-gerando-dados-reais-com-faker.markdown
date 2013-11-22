@@ -8,7 +8,6 @@ comments: true
 categories:
   - thiago belem
   - faker
-  - factory girl
 
 ---
 
