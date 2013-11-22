@@ -7,7 +7,7 @@ date: 2012-09-11 08:00
 comments: true
 categories:
   - Novidades
-  - Rio Info
+  - eventos
      
 ---
 ![image](/blog/images/posts/2012-09-11/rioinfo2012.jpg)
