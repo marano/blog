@@ -5,10 +5,9 @@ title: "Estouro de memória ao fazer loops com MongoDB"
 date: 2013-01-17 11:00
 comments: true
 categories:
-  - cayo medeiros
-  - mongoid
+  - yogodoshi
   - mongodb
-  - mongomapper
+
 ---
 Esse post não será útil para 99% dos desenvolvedores mas tenho certeza de que será um salvador de vidas pro 1% que está passando pelo mesmo perrengue que passei.
 

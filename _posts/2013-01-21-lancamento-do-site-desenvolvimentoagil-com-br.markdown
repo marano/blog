@@ -7,7 +7,6 @@ comments: true
 categories:
   - desenvolvimento agil
   - xp
-  - scrum
   - extreme programming
   - vinicius teles
 
