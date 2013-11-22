@@ -4,7 +4,7 @@ layout: post
 title: "Café da manhã com uma pitada de Startup DEV"
 date: 2013-01-14 12:43
 comments: true
-categories: startupdev video
+categories: startupdev 
 ---
 
 Em uma viagem que eu e Mergulhão fizemos com uns amigos em setembro de 2012,

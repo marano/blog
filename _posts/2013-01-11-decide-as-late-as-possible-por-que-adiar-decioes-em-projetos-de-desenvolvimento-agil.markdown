@@ -6,11 +6,10 @@ date: 2013-01-11 10:47
 comments: true
 categories:
   - andre cytryn
-  - lean
   - lean startup
   - agile
-  - decide as late as possible
   - desenvolvimento agil
+  
 ---
 
 O conceito de "Decide as late as possible" faz parte de um dos princípios ["Lean"][1] e consiste em prorrogar decisões até o momento em que elas são realmente necessárias.
