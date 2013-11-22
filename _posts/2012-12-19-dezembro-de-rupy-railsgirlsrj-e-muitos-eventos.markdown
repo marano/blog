@@ -7,12 +7,10 @@ comments: true
 categories:
   - rodrigo pinto
   - sylvestre mergulhao
-  - codeschool
   - workshop
-  - rails-for-zombies
-  - rupy
-  - railsgirls
+  - rails
   - eventos
+  
 ---
 
 Dezembro está sendo um mês movimentado para a turma da [HE:Labs][he]. O mês começou com a ida ao [RUPY][rupy], evento focado em linguagems dinâmicas como Ruby, Python e JavaScript, que aconteceu em São José dos Campos e reuniu desenvolvedores de todo o Brasil.

@@ -5,11 +5,9 @@ title: "Abandone o seu mockup e abrace o seu markup"
 date: 2013-01-07 17:43
 comments: true
 categories:
-  - aluizio azevedo
   - design
-  - frontend
-  - mockup
-  - markup
+  - front-end
+  
 ---
 Uma das decisões que tomei há alguns meses atrás foi deixar um pouco de lado o Photoshop, e começar a aprimorar as minhas habilidades no design de interfaces usando HTML, CSS e JS.
 

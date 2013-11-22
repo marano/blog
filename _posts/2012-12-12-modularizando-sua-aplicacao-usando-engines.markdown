@@ -4,7 +4,9 @@ layout: post
 title: "Modularizando sua aplicação usando Engines"
 date: 2012-12-12 12:12
 comments: true
-categories: engines lunks
+categories: - engines
+ - lunks
+ 
 ---
 
 Este é o primeiro post da série [Engines][engine_tag] aqui no blog da
