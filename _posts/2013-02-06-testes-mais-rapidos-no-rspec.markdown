@@ -7,7 +7,6 @@ comments: true
 categories:
   - rails
   - rspec
-  - tests
   - ruby
   - rafael lima
 ---

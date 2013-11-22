@@ -7,9 +7,8 @@ comments: true
 categories:
   - rafael fiuza
   - machine learning
-  - id3
-  - classificadores
   - rails
+  
 ---
 
 

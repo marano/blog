@@ -7,8 +7,6 @@ comments: true
 categories:
   - pedro marins
   - performance
-  - http compression
-  - gzip
 
 ---
 

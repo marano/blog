@@ -5,11 +5,10 @@ title: "Scoped route com a gem friendly_id"
 date: 2013-02-26 11:00
 comments: true
 categories:
-  - rodrigo reginato marques
+  - rodrigo reginato
   - rails
   - friendly_id
-  - clubedomenu
-  - routes
+ 
 ---
 
 Quando participei do desenvolvimento do projeto [clubedomenu.com](http://clubedomenu.com), um sistema voltado para delivery de comida, foi feito pensando exclusivamente para a cidade de Londrina.
