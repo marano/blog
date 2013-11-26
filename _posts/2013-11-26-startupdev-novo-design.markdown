@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 author: Aluísio Azevedo
 layout: post
 title: "Redesign do Startupdev"
