@@ -30,18 +30,13 @@ O logotipo criado no começo do Startupdev representava bem o que era o serviço
 Nós optamos por manter o padrão de cores já associadas a marca do Startupdev. A tipografia permaneceria no mesmo estilo do anterior, mas menos decorativa e mais sóbria para não ter um conflito visual muito grande com outros elementos, como os serviços que iriam ser contemplados no marketplace e suas próprias marcas.
 
 
-![image](/blog/images/pesquisa-logo-startupdev.png)
-
+![image](/blog/images/posts/2013-11-26/pesquisa-logo-startupdev.png)
 
 Após alguns testes com diferentes tipos e a escolha da família tipográfica Tendria Pro, nós começamos a trabalhar na esturtura da tipografia para que ela ganhase uma aparência única.
 
-
-![image](/blog/images/video-tweaks-logo.mov)
-
-
 Após alguns dias de pesquisa e muito trabalho vetorial no Illustrator, esse é o resultado final do novo logotipo.
 
-![image](/blog/images/logo-novo-startupdev.png)
+![image](/blog/images/posts/2013-11-26/logo-novo-startupdev.png)
 
 
 
@@ -50,30 +45,24 @@ Após alguns dias de pesquisa e muito trabalho vetorial no Illustrator, esse é 
 Depois de conversarmos e alinharmos as nossas ideias com relação ao conteúdo e funcionamento do site, nós começamos a "layoutar" algumas telas. Primeiramente, começamos com uma sessão de design studio, com o time fazendo skecthes colaboratiovs no quadro branco. Após alguns refinamentos da ideia central, partimos para o Photoshop e começamos a trabalhar em alguns mockups.
 
 
-![image](/blog/images/testes-layouts-startupdev.png)
+![image](/blog/images/posts/2013-11-26/testes-layouts-startupdev.png)
 
 
 Resolvemos usar um layout único que seria diferenciado apenas pela paleta de cores e conteúdo de cada serviço.
 Para cada seviço teríamos também um ícone que representasse o produto final.
 
-![image](/blog/images/testes-cores-startupdev.png)
-![image](/blog/images/testes-icones-startupdev.png)
-
-
 Depois de algumas discussões e novas ideias, nós fizemos mais uma iteração no design dos mockups e a partir daí, começamos a trabalhar na implementação do site. Usamos o Jekyll para a criação dos sites e os ótimos recursos que ele oferece, nos permitiu criar diferentes páginas para cada serviço e atualizar o conteúdo de maneira muito rápida.
 
-![image](/blog/images/frontend-jekyll-startupdev.png)
-
-![image](/blog/images/novos-layouts-startupdev.png)
+![image](/blog/images/posts/2013-11-26/novos-layouts-startupdev.png)
 
 
 O resultado deste trabalho pode ser visto nos links abaixo. Confere lá, quem sabe você não contrata um serviço do Startupdev para a sua ideia de startup sair do papel?
 
-[Startupdev MVP](http://startupdev.com.br/pt/servicos-para-startups/mvp/)
-[Startupdev App Design](http://startupdev.com.br/pt/servicos-para-startups/mobile-app-design/)
-[Startupdev Vídeo](http://startupdev.com.br/pt/servicos-para-startups/videos-animados/)
-[Startupdev Pitch](http://startupdev.com.br/pt/servicos-para-startups/treinamento-para-pitch/)
-[Startupdev Comunicação](http://startupdev.com.br/pt/servicos-para-startups/assessoria-comunicacao/)
+* [Startupdev MVP](http://startupdev.com.br/pt/servicos-para-startups/mvp/)
+* [Startupdev App Design](http://startupdev.com.br/pt/servicos-para-startups/mobile-app-design/)
+* [Startupdev Vídeo](http://startupdev.com.br/pt/servicos-para-startups/videos-animados/)
+* [Startupdev Pitch](http://startupdev.com.br/pt/servicos-para-startups/treinamento-para-pitch/)
+* [Startupdev Comunicação](http://startupdev.com.br/pt/servicos-para-startups/assessoria-comunicacao/)
 
 
 
