@@ -6,7 +6,6 @@ date: 2013-02-04 14:00
 comments: true
 categories:
   - rafael fiuza
-  - machine learning
   - rails
   
 ---
