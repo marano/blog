@@ -6,7 +6,7 @@ date: 2013-02-01 12:30
 comments: true
 categories:
   - pedro marins
-  - performance
+  - app
 
 ---
 

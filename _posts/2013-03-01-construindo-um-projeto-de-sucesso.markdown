@@ -7,8 +7,8 @@ comments: true
 categories:
   - xp
   - agile
-  - caso de sucesso
   - rodrigo pinto
+  
 ---
 
 Esse não será um post técnico sobre uma nova gem ou alguma técnica de programação. Neste post vou compartilhar o processo/metodologia que utilizamos para guiar nossos projetos.
