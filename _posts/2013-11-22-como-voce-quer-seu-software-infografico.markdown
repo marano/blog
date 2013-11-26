@@ -9,7 +9,7 @@ categories:
   
 ---
 
-![image](/blog/images/posts/2013-11-22/infografico.jpg)
+![image](/blog/images/posts/2013-11-22/infografico1.jpg)
 
 <!--more-->
 
