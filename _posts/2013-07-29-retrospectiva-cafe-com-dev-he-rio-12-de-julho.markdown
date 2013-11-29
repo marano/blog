@@ -6,7 +6,6 @@ date: 2013-07-29 14:00
 comments: true
 categories:
   - cafe com dev
-  - rio
   - he:rio
   - alvaro justen
 

@@ -10,7 +10,6 @@ categories:
   - javascript
   - Ruby
   - opal
-  - opalrb
 
 ---
 
