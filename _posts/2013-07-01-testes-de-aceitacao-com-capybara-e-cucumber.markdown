@@ -10,7 +10,7 @@ categories:
   - cucumber
   - capybara
   - testes de aceitação
-  - cucumber-rails
+
 
 ---
 

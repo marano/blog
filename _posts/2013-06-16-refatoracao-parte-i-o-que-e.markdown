@@ -7,7 +7,6 @@ comments: true
 categories:
   - desenvolvimento agil
   - refactoring
-  - refatoracao
   - eduardo fiorezi
   
 ---
