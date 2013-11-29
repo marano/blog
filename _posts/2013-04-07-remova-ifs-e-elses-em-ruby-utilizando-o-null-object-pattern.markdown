@@ -8,7 +8,7 @@ categories:
   - mauro george
   - ruby
   - OOP
-  - Pattern
+  - Patterns
 
 ---
 

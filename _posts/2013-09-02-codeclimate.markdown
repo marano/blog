@@ -9,7 +9,6 @@ categories:
  - rodrigo reginato
  - codeclimate
  - refactoring
- - refatorar
 
 ---
 

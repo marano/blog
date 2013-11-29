@@ -7,7 +7,7 @@ date: 2013-10-11 18:30
 comments: true
 categories:
   - HDC
-  - evento
+  - eventos
   
 ---
 

@@ -6,7 +6,7 @@ date: 2013-07-15 15:03
 comments: true
 categories:
   - design
-  - agile development
+  - agile
   - ux
   - simplicidade
   - mikael carrara

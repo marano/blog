@@ -7,8 +7,8 @@ categories:
   - front-end
   - thiago gonzalez
   - back-end
-  - designer
-  - equipe
+  - design
+  - time
 comments: true
 
 ---

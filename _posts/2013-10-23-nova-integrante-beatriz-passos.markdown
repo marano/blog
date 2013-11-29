@@ -2,13 +2,13 @@
 published: true
 author: Crystal Affonso
 layout: post
-title: "Nova integrante: Beatriz Passos"
+title: "Novo membro: Beatriz Passos"
 date: 2013-10-25 18:00
 comments: true
 categories:
-  - Novo integrante
+  - Novo membro
   - Beatriz Passos
-  - Crystal Affonso
+  - crystal
   
 ---
 
