@@ -5,10 +5,11 @@ title: "SEBRAE Startup Rio"
 date: 2013-04-04 07:45
 comments: true
 categories:
-  - startups
+  - startup
   - sebrae
   - start-up brasil
   - rafael lima
+  
 ---
 
 As Startups brasileiras vêm crescendo cada vez mais e o Rio de Janeiro concentra boa parte dos principais negócios do ramo como investidores e aceleradoradas, entre outros. Cinco das nove aceleradoras contempladas para o Programa Start-Up Brasil do Governo Federal estão localizadas no Rio.

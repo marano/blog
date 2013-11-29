@@ -8,7 +8,6 @@ comments: true
 categories:
   - helabs
   - rafael chefe
-  - rafael santos
   
 ---
 

@@ -7,7 +7,7 @@ comments: true
 categories:
   - startupdev
   - business
-  - startups
+  - startup
   
 ---
 
