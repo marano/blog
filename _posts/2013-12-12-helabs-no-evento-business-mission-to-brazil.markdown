@@ -1,7 +1,7 @@
 ---
 author: Crystal Affonso
 layout: post
-title: "HE:labs no evento "Business Mission to Brazil""
+title: "HE:labs no evento Business Mission to Brazil"
 date: 2013-12-12 15:16
 comments: true
 categories:
