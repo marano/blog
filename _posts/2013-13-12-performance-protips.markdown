@@ -23,7 +23,7 @@ So, inspired by this situation I resolve that I would write the first english po
 <!--more-->
 
 
-Hi, guys!
+Hi, everyone!
 
 This is my first post in english. A few weeks ago we received Ali to work with us as you can see [here](http://helabs.com.br/blog/2013/11/13/novos-membros-analu-e-ali/). Ali is from Azerbaijan and we only communicate in english. Now that we have him, we are trying our best to talk and write in english most of the time. And it's being an awesome experience. <3
 
@@ -50,7 +50,7 @@ To put the rollbar add-on on your Heroku app:
   $ heroku addons:add newrelic --app yourapp
 {% endhighlight %}
 
-The first thing I thought when the performance issue happened was that I would have to simulate the timeout on the staging environment. But to accomplish that I would have to clone the production database. I was using postgres on Heroku. That is what I have done and I will show this Heroku protip for you guys.
+The first thing I thought when the performance issue happened was that I would have to simulate the timeout on the staging environment. But to accomplish that I would have to clone the production database. I was using postgres on Heroku. That is what I have done and I will show this Heroku protip for you.
 
 You are going to need the pg:backup add-on on both of your apps:
 
