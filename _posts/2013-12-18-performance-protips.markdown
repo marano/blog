@@ -19,9 +19,9 @@ categories:
 
 Hi, everyone!
 
-This is my first post in english. A few weeks ago we received Ali to work with us as you can see [here](http://helabs.com.br/blog/2013/11/13/novos-membros-analu-e-ali/). Ali is from Azerbaijan and we only communicate in english. Now that we have him, we are trying our best to talk and write in english most of the time. And it's being an awesome experience. <3
+This is my first post in English. A few weeks ago we received Ali to work with us as you can see [here](http://helabs.com.br/blog/2013/11/13/novos-membros-analu-e-ali/). Ali is from Azerbaijan and we only communicate in English. Now that we have him, we are trying our best to talk and write in English most of the time. And it's being an awesome experience. <3
 
-So, inspired by this situation I resolve that I would write the first english post on HE:labs blog. Let's see how it goes.
+So, inspired by this situation I resolve that I would write the first English post on HE:labs blog. Let's see how it goes.
 
 
 <!--more-->
@@ -41,7 +41,7 @@ To put the rollbar add-on on your Heroku app:
 
 I also started to use [New Relic](http://newrelic.com/) to monitor app performance. It's another amazing tool that we recommend. If you don't know New Relic yet, it's a monitoring service which will watch your application health and availability and provide information about the root cause of app performance issues. In my case I was able to see which exactly were the queries that were taking so long to respond. They have these awesome graphics that show you which action or view needs some optimization.
 
-To put the rollbar add-on on your Heroku app:
+To put the newrelic add-on on your Heroku app:
 
 {% highlight ruby linenos %}
   $ heroku addons:add newrelic --app yourapp
@@ -88,6 +88,6 @@ And restored locally:
 After all that, we had to do some refactoring. [Mauro](https://twitter.com/maurogeorge) did a lot of changes using Ruby Memoization and solving N+1 queries.
 I can talk about that in the next post. What do you guys think? Let me know!
 
-I hope this can help you in some manner and I expect to improve my english and come back writing soon enough.
+I hope this can help you in some manner and I expect to improve my English and come back writing soon enough.
 
 Hugs!
