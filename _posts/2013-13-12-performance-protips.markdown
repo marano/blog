@@ -33,7 +33,7 @@ I implemented on one of our projects here at HE:labs a sequence of complex calcu
 
 As a programmer who is still learning how to code and how to deal with this kind of performance issues, I immediately saw an opportunity to grow. I asked help for more experienced programmers and now I'm gonna relate to you what I learned.
 
-I discover an amazing tool called [Rollbar](https://rollbar.com/) which catches errors and gives enough information about it. This helps you to discover what has happened and fix the problem. They email you whenever an exception occurs. This way, you discover an error and fix it before your client calls you to warn you that some of his users complained. You anticipate that. Nice, uh?
+I discovered an amazing tool called [Rollbar](https://rollbar.com/) which catches errors and gives enough information about it. This helps you to discover what has happened and fix the problem. They email you whenever an exception occurs. This way, you discover an error and fix it before your client calls you to warn you that some of his users complained. You anticipate that. Nice, uh?
 After this lesson, I put Rollbar in all of my projects. And I truly can't see myself working in any project that doesn't have this kind of analyser 24-hour. Here at HE:labs we also use [Airbrake](https://airbrake.io/) and we recommend it.
 
 To put the rollbar add-on on your Heroku app:
@@ -42,7 +42,7 @@ To put the rollbar add-on on your Heroku app:
   $ heroku addons:add rollbar --app yourapp
 {% endhighlight %}
 
-I also started to use [New Relic](http://newrelic.com/) to monitorize the app performance. It's another amazing tool that we recommend. If you don't know New Relic yet it's a monitoring service, they will watch your application health and availability and provide information about the root cause of the app performance issues. In my case I was able to see which exactly were the queries that were taking so long to reponse. They have this awesome graphics that show you which action or view needs some optimisation.
+I also started to use [New Relic](http://newrelic.com/) to monitor app performance. It's another amazing tool that we recommend. If you don't know New Relic yet, it's a monitoring service which will watch your application health and availability and provide information about the root cause of app performance issues. In my case I was able to see which exactly were the queries that were taking so long to respond. They have these awesome graphics that show you which action or view needs some optimization.
 
 To put the rollbar add-on on your Heroku app:
 
