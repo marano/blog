@@ -25,7 +25,7 @@ It is normal to have them few times in a month. But having them very often has i
 
 TDD urges us to take small steps in solving problems. Maximum of 1-2 hour tasks. Taking break between every tasks, clearing mind, drinking some water will boost the productivity.
 
-Working hours in a row without resting, drinking Red Bull will keep you working, but the creativity will do down..
+Working hours in a row without resting, drinking Red Bull will keep you working, but the creativity will go down..
 
 I had several times found myself fixing my own code which was written in last sleepless night.
 
