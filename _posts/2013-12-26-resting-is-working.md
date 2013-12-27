@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 author: Ali Ismayilov
 layout: post
 title: "Resting is part of working"
