@@ -2,7 +2,7 @@ require 'stringex'
 
 module Jekyll
   module SlugifyFilter
-    def slugify(input)
+    def to_url(input)
       input.to_url.split[0..1].join(" ")
     end
   end
