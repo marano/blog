@@ -24,7 +24,7 @@ title: HE:labs
         {% endif %}
         {% if author %}
           <div class="author-info">
-            Postado por <span><a href="//helabs.com.br/nosso-time/{{ author | to_url }}">{{ author }}</a></span> em <span>{{ post.date | date: "%d/%m/%Y" }}</span>
+            Postado por <span>{{ author }}</span> em <span>{{ post.date | date: "%d/%m/%Y" }}</span>
           </div>
         {% endif %}
         <h1 class="post-title">
