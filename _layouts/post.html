@@ -21,7 +21,7 @@ layout: default
 
       {% if author %}
         <div class="author-info">
-          Postado por <span>{{ author }}</span> em <span>{{ page.date | date: "%d/%m/%Y" }}</span>
+          Postado por <span><a class="author-link">{{ author }}</a></span> em <span>{{ page.date | date: "%d/%m/%Y" }}</span>
         </div>
       {% endif %}
 

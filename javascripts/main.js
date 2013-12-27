@@ -39,4 +39,11 @@ $(function(){
     container.html(to_render.join(''));
   }
 
+  // urlify author names
+  $('.author-link').each(function (i) {
+    slug = URLify($(this).text());
+    url = 'http://helabs.com.br/nosso-time/' + slug + '/';
+    $(this).attr('href', url);
+  });
+
 });
