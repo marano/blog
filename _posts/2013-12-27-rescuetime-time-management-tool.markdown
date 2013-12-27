@@ -3,7 +3,7 @@ published: false
 author: Dirceu Pauka Jr.
 layout: post
 title: "RescueTime: time management tool"
-date: 2013-12-27 9:00
+date: 2013-12-30 9:00
 comments: true
 categories:
   - productivity
@@ -19,7 +19,7 @@ In my first post on HE:Labs team blog I want to present an great time management
 
 This data is private and only you have access to it. I've been using RescueTime after the tip of an employer but neither he or other employers saw my activity log.
 
-With your activity information the application segments between productive or distracting time, calculates an productivity score and present rich reports about it:
+With your activity information the application segments between productive or distracting time, calculates a productivity score and present rich reports about it:
 ![image](/blog/images/posts/2013-12-27/rescuetime.gif)
 
 It is also possible to adjust settings of what is more productive or distracting to your occupation. After that extreme data analysis it may be easier to choose to stay offline on Facebook tomorrow.
