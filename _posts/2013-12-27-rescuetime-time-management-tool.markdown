@@ -1,9 +1,9 @@
 ---
-published: false
+published: true
 author: Dirceu Pauka Jr.
 layout: post
 title: "RescueTime: time management tool"
-date: 2013-12-30 9:00
+date: 2013-12-30 09:00
 comments: true
 categories:
   - productivity
