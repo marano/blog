@@ -42,7 +42,7 @@ $(function(){
   // urlify author names
   $('.author-link').each(function (i) {
     var
-      slug = URLify($(this).text()),
+      slug = URLify($(this).text().split(" ").slice(0, 2).join(" ")),
       url = 'http://helabs.com.br/nosso-time/' + slug + '/'
     ;
     $(this).attr('href', url);
