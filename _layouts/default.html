@@ -26,16 +26,18 @@
     <link href="http://helabs.com.br/favicon.png" rel="icon">
 
     <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="/blog/javascripts/html5shiv.js"></script>
+    <![endif]-->
     <link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
     <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
 
     {% include google_analytics.html %}
 
   </head>
-  
+
   <body>
-    
+
     {% include header.html %}
 
     {{ content }}
@@ -43,5 +45,5 @@
     {% include footer.html %}
 
   </body>
-  
+
 </html>
