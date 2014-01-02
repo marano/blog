@@ -11,7 +11,7 @@ categories:
 
 
 ---
-In my first post on HE:Labs team blog I want to present an great time management tool: [RescueTime](https://www.rescuetime.com).
+In my first post on HE:Labs team blog I want to present a great time management tool: [RescueTime](https://www.rescuetime.com).
 
 [RescueTime](https://www.rescuetime.com) automatically keeps track of which window is “in focus” when you are on your computer, and logs what activity you are doing and for how long you are doing it.
 
