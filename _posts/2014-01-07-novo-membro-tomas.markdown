@@ -27,3 +27,5 @@ Tomás faz parte dos integrantes do time que ficam remotos pelo Brasil. Ele é d
 Já teve uma banda formada com amigos e hoje mantém um [blog](http://tomasmuller.com.br/). Além de claro, escrever, correr e degustar cervejas artesanais e vinhos.
 
 Siga Tomás nas redes sociais: [Twitter](https://twitter.com/tomasmuller), [Github](https://github.com/tomasmuller) e [blog](http://tomasmuller.com.br/).
+
+Seja muito bem vindo! :D
