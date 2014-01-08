@@ -15,6 +15,8 @@ categories:
 
 Supondo que você receba um livro de palavras cruzadas de nível médio. Você deve preencher 90% do livro e pode escolher 10% para não preencher. Quanto tempo você acha que leva para você fazer? Um dia talvez? E se você tiver uma multa de R$ 1 milhão de reais caso não termine os 90%? Você manteria a estimativa de concluir 90% de um livro de palavras cruzadas em um dia? Ou você iria rever a estimativa para duas semanas? E isso é um círculo vicioso, pois quanto mais rígida forem as retaliações por atraso, mais cheia de gordura estará a estimativa e mais ineficiência estará no processo.
 
+<!--more-->
+
 Ainda é assim que o mercado de software trabalha no geral. Com prazos sempre apertados para o montante de coisas que precisa ser feito e multas altíssimas para o não cumprimento desses prazos... um círculo vicioso que tende ao colapso.
 
 Gerenciar tudo através de estimativas e prazos definidos previamente é fator motor de ineficiências nos projetos e fazem a produtividade cair constantemente.
