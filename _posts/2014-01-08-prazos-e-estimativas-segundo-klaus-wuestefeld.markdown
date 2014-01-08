@@ -3,7 +3,7 @@ published: true
 author: Sylvestre Mergulhão
 layout: post
 title: "Prazos e estimativas segundo Klaus Wuestefeld"
-date: 2013-11-06 15:00
+date: 2014-01-08 14:00
 comments: true
 categories:
   - agile
