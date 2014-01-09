@@ -3,13 +3,13 @@ published: true
 author: Israel Ribeiro
 layout: post
 title: "The foundations of good code"
-date: 2013-12-27 14:00
+date: 2014-01-09 14:00
 comments: true
 categories:
-  - Israel Ribeiro
-  - code
+  - israel ribeiro
   - agile
   - english
+  
 ---
 
 There's a lot of discussions about what exactly is good code.
@@ -20,7 +20,7 @@ Working code.
 
 <!--more-->
 
-![Just do it. (Nike)](/blog/images/posts/2013-12-27/just_do_it.jpg "Just do it. (Nike)")
+![Just do it. (Nike)](/blog/images/posts/2014-01-09/just_do_it.jpg "Just do it. (Nike)")
 
 One problem that concerns all of us when we're coding, being us juniors or samurai-viking-ninjas, is if what we're writting "is good". It is a good thing to think, but we have to keep a clear focus on what it must be done first before all else:
 
