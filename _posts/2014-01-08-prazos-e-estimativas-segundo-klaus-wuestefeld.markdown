@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 author: Sylvestre Mergulhão
 layout: post
 title: "Prazos e estimativas segundo Klaus Wuestefeld"
