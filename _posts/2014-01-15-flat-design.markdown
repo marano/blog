@@ -19,7 +19,7 @@ categories:
 O Flat Design é uma evolução das interfaces digitais, onde o estilo realista é  substituído por um estilo mais abstrato, totalmente escasso de sombras, relevos, texturas ou gradientes.
 
 Focado na usabilidade e centrado nos usuários (UX), o design plano baseia-se na redução de elementos desnecessários, apelando para um visual mais intuitivo e fácil de utilizar. 
-Deste modo, através dessa técnica, fica muito mais fácil alcançar o sucesso de um site:  reduzir as distrações e deixar o conteúdo mais evidente, o que é muito importante nos dias atuais.
+Através dessa técnica, fica muito mais fácil alcançar o sucesso de um site. Basta reduzir as distrações e deixar o conteúdo mais evidente, o que é muito importante nos dias atuais.
 
 
 Essas são algumas das caracteristicas do **FLAT DESIGN**:
