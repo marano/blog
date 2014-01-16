@@ -60,7 +60,7 @@ Then, the following classes should do the job:
 
 {% endhighlight %}
 
-This should keep the footer at the bottom as you add more content to the page, or if don't have enough content to force the footer down.
+This should keep the footer at the bottom as you add more content to the page or if don't have enough content to force the footer down.
 
 
 <h1>Avoiding problems width paddings and widths</h1>
