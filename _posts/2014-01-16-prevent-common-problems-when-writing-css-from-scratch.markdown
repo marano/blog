@@ -119,6 +119,6 @@ This is the result of using the box-sizing property:
 </div>
 <img src="/blog/images/posts/2014-01-16/02.png" style="display: inline ! important; margin-top: 1em;">
 
-So remember: Using box-sizing to all elements on the CSS and position absolute to the footer can save you from a lot of headache :) 
+So remember: Using box-sizing to all elements on the CSS and position absolute to the footer can save you from a lot of headache. :) 
 
 
