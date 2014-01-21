@@ -1,14 +1,16 @@
 ---
-published: false
+published: true
 author: Krystal Campioni
 layout: post
 title: "Prevent common problems when writing CSS from scratch"
-date: 2014-01-16 17:16
+date: 2014-01-21 17:16
 comments: true
 categories:
-  - Front-end
-  - CSS
+  - front-end
+  - css
   - krystal campioni
+  - design
+  
 ---
 
 Many times when I started writing the classes of a brand new site, i had two problems that bothered me very much: keeping the footer always at the bottom of the page - even if the page has few content - and using padding values in divs without influencing the overall width of the div.
