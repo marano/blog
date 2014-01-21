@@ -8,6 +8,7 @@ comments: true
 categories:
   - Front-end
   - CSS
+  - krystal campioni
 ---
 
 Many times when I started writing the classes of a brand new site, i had two problems that bothered me very much: keeping the footer always at the bottom of the page - even if the page has few content - and using padding values in divs without influencing the overall width of the div.
