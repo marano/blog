@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 author: Krystal Campioni
 layout: post
 title: "Prevent common problems when writing CSS from scratch"
