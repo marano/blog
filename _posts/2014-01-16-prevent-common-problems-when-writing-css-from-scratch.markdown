@@ -18,7 +18,7 @@ Then I decided to always put the same basic classes on the css file, no matter w
 
 <h1>Solving the footer position issue</h1>
 
-<img src="/blog/images/posts/2014-01-16/a1.png" style="display: inline ! important; margin-top: 1em;">
+<img src="/blog/images/posts/2014-01-16/a1.png" style="display: inline ! important; margin-top: 1em; background: none repeat scroll 0% 0% transparent; border: medium none; width: auto; max-width: 90%;">
 <p>
 First of all, your HAML structure should be like this:
 </p>
@@ -115,5 +115,7 @@ If we use the CSS box-sizing property, though, we can fix this problem by keepin
 This is the result of using the box-sizing property:
 </div>
 <img src="/blog/images/posts/2014-01-16/02.png" style="display: inline ! important; margin-top: 1em;">
+
+So remember: Using box-sizing to all elements on the CSS and position absolute to the footer can save you from a lot of headache :) 
 
 
