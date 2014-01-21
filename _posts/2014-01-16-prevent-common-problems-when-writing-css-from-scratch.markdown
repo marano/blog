@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 author: Krystal Campioni
 layout: post
 title: "Prevent common problems when writing CSS from scratch"
@@ -17,6 +17,8 @@ Then I decided to always put the same basic classes on the css file, no matter w
 <!--more-->
 
 <h1>Solving the footer position issue</h1>
+
+<img src="/blog/images/posts/2014-01-16/a1.png" style="display: inline ! important; margin-top: 1em;">
 <p>
 First of all, your HAML structure should be like this:
 </p>
@@ -92,12 +94,11 @@ and this would be the CSS:
       width: 100px;
   }
  {% endhighlight %}   
-<div style="float:left;width:100%">
+<div style="float:left;width:99%">
 Regularly, CSS would add the padding value to the with of the box div, causing the last one to fall down, because the sum of the elements width would be 420px that is larger than the 360px of the box-container.
 ( Each div would add 100px of width with 10px of margin-left and 10px of margin-right width 10px width 10px of padding-left and 10px of padding-right. 140px of overall width x 3 divs)
 </div>
-
-![image](/blog/images/posts/2014-01-16/01.png)
+<img src="/blog/images/posts/2014-01-16/01.png" style="display: inline ! important; margin-top: 1em;">
 
 <div style="float:left;width:100%">
 If we use the CSS box-sizing property, though, we can fix this problem by keeping the padding value inside the div and mantaining the correct width. I usually apply the universal selector to all elements and pseudo-elements on the site:
@@ -113,5 +114,6 @@ If we use the CSS box-sizing property, though, we can fix this problem by keepin
 {% endhighlight %}
 This is the result of using the box-sizing property:
 </div>
-![image](/blog/images/posts/2014-01-16/02.png)
+<img src="/blog/images/posts/2014-01-16/02.png" style="display: inline ! important; margin-top: 1em;">
+
 
