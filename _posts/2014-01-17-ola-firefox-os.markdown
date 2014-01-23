@@ -12,7 +12,7 @@ categories:
   
 ---
 
-Já faz um tempo que eu curto desenvolvimento de apps para smartphones. Eu já falei antes [sobre Rubymotion][0] para iOS e agora vou falar sobre a pequena experiência com Firefox OS há pouco tempo. Conheci esse OS na Campus Party 2013 e curti bastante o conceito: uma plataforma que nativamente tem apps em HTML/JS/CSS.
+Já faz um tempo que eu curto desenvolvimento de apps para smartphones. Falei anteriormente [sobre Rubymotion][0] para iOS e agora vou falar sobre a minha pequena experiência com Firefox OS há pouco tempo. Conheci esse OS na Campus Party 2013 e curti bastante o conceito: uma plataforma que nativamente tem apps em HTML/JS/CSS.
 
 Foi uma experiência interessante e é sobre isso que eu vou falar nesse post.
 
