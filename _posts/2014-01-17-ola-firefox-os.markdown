@@ -1,33 +1,33 @@
 ---
-published: false
+published: true
 author: Francisco Martins
 layout: post
 title: "Olá, Firefox OS"
-date_pt_BR: 17 Jan 2014
+date: 2014-01-23 17:00
 comments: true
 categories:
-  - Francisco Martins
+  - francisco martins
   - Firefox OS
   - Mobile
   
 ---
 
-Já faz um tempo que eu curto desenvolvimento de apps para smartphones. Eu já falei antes [sobre Rubymotion][0], pra iOS, agora vou falar sobre a pequena experiência que tive com Firefox OS há pouco tempo. Eu conheci esse OS na Campus Party 2013 e curti bastante o conceito: uma plataforma que nativamente tem apps em HTML/JS/CSS.
+Já faz um tempo que eu curto desenvolvimento de apps para smartphones. Eu já falei antes [sobre Rubymotion][0] para iOS e agora vou falar sobre a pequena experiência com Firefox OS há pouco tempo. Conheci esse OS na Campus Party 2013 e curti bastante o conceito: uma plataforma que nativamente tem apps em HTML/JS/CSS.
 
 Foi uma experiência interessante e é sobre isso que eu vou falar nesse post.
 
 <!--more-->
 
-Hoje o Firefox OS ainda não tem muita aceitação e dificilmente conquistará uma parcela significativa no mercado de smartphones por que não vai ser fácil competir com Apple, Google e Microsoft, mas apesar disso, eu tinha vontade de me aventurar nessa plataforma.
+Hoje, o Firefox OS ainda não tem muita aceitação e dificilmente conquistará uma parcela significativa no mercado de smartphones. Isto deve-se por não ser fácil competir com a Apple, Google e Microsoft, mas apesar disso, eu tinha vontade de me aventurar nessa plataforma.
 
-Nosso cliente na HE:Labs pediu que transformassemos seu site num aplicativo para essa plataforma. Eu, de prontidão, tomei a frente e peguei a tarefa pra mim.
+Nosso cliente na HE:labs pediu que transformássemos seu site num aplicativo para essa plataforma. Eu, de prontidão, tomei a frente e peguei a tarefa para mim.
 
-A primeira coisa que você precisa entender é que existem 2 tipos de aplicativos que você pode fazer: Packaged e hosted.
+A primeira coisa que você precisa entender é: existem 2 tipos de aplicativos que podemos fazer (**Packaged** e **hosted**).
 
-Minha tarefa era transformar o site em um app instalável para FFOS, então, é um hosted. Se você for usar arquivos locais e fazer requisições com ajax é um app Packaged.
+Minha tarefa era transformar o site em um app instalável para FFOS. Então, é um **hosted**. Se você for usar arquivos locais e fazer requisições com ajax, é um app **Packaged**.
 
-É bem simples: seu site precisa fornecer um arquivo de manifesto com a extensão .webapp e o Content-Type da resposta deve ser "application/x-web-app-manifest+json".
-Por exemplo: http://meusite.com/manifest.webapp retorna uma resposta com um json nesse formato:
+É bem simples: seu site precisa fornecer um arquivo de manifesto com a extensão *.webapp* e o *Content-Type* da resposta deve ser "application/x-web-app-manifest+json".
+Por exemplo: *http://meusite.com/manifest.webapp* retorna uma resposta com um json no formato abaixo:
 
 
 {% highlight json linenos %}
@@ -48,7 +48,7 @@ Por exemplo: http://meusite.com/manifest.webapp retorna uma resposta com um json
   }
 {% endhighlight %}
 
-Em desenvolvimento é possível testar isso usando o curl e o simulador do FFOS.
+Em desenvolvimento, é possível testar isso usando o **curl** e o simulador do FFOS.
 
 {% highlight bash linenos %}
 $ curl -I http://localhost:3000/manifest.webapp
@@ -57,13 +57,11 @@ $ curl -I http://localhost:3000/manifest.webapp
  ...
 {% endhighlight %}
 
-Para validar seu manifesto você pode usar o [validador da Mozilla][1]. A documentação completa você encontra [aqui][2].
+Para validar seu manifesto, você pode usar o [validador da Mozilla][1]. A documentação completa você encontra [aqui][2].
 
-Se você tiver um site com visual mobile first ou responsivo, é super fácil.
+Se você tiver um site com visual mobile *first* ou *responsivo*, é super fácil. E ainda, se preferir um app **Packaged**, o manifest vai ser um arquivo local junto com o html, css e js.
 
-Se você preferir um app Packaged, o manifest vai ser um arquivo local junto com o html, css e js.
-
-Para testar no simulador do FFOS, você deve instalar o simulador como um plugin do Firefox, disponível [aqui][3].
+Para testar no simulador do FFOS, você deverá instalar o simulador como um plugin do Firefox, disponível [aqui][3].
 
 
 
