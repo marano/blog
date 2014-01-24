@@ -9,6 +9,20 @@ Media Queries for Tablets
   }
 }
 
+/*
+Max Width, 800px
+Media Queries for Tablets
+*/
+
+@media (max-width:800px) {
+  #post-content .container, #post-content #page-header{
+    width:600px;
+  }
+  .container {
+    width: 600px;
+  }
+}
+
 
 /*
 Max Width, 686px
