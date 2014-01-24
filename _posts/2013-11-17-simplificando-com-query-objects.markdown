@@ -24,7 +24,7 @@ Uma das ótimas dicas que o Bryan Helmkamp deu no post chamado ["7 Patterns to R
 
 Eu estava com um model que estava se tornando um problema quando veio um amigo (@mauro) e me mostrou essa forma de extração com um passo a mais.
 
-Imagine um model chamado Pokemon que estava se tornando complexo e os scopes não estavam ajudando.
+Imagine um model chamado Pokemon (apesar de esse nome levantar uma serie de suposições), e que esse model estava se tornando complexo e os scopes não estavam ajudando.
 
 {% highlight ruby linenos %}
 class Pokemon < ActiveRecord::Base
