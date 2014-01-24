@@ -22,7 +22,7 @@ Em geral, quando temos uma query, é comum torná-la um scope, mesmo que ela só
 
 Uma das ótimas dicas que o Bryan Helmkamp deu no post chamado ["7 Patterns to Refactor Fat ActiveRecord Models"](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/) é extrair as queries para suas próprias query objects. No entanto, sentia falta de poder usar as "scopes" em cadeia, ja que essa tecnica só permite juntar duas queries atravez de composição.
 
-Eu estava com um model que estava se tornando um problema quando veio um amigo (@mauro) e me mostrou essa forma de extração com um passo a mais.
+Eu estava com um model que estava se tornando um problema quando veio um amigo [@maurogeorge](https://twitter.com/maurogeorge) e me mostrou essa forma de extração com um passo a mais.
 
 Imagine um model chamado Pokemon (apesar de esse nome levantar uma serie de suposições), e que esse model estava se tornando complexo e os scopes não estavam ajudando.
 
