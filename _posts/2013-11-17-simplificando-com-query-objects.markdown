@@ -17,7 +17,7 @@ Scopes do ActiveRecord é uma dessas funcionalidades. O problema é quando o que
 
 <!--more-->
 
-É muito comum atualmente termos models cheios de logica. A expressão "Fat model, skinny controller" nunca foi tão seguida. E o scope tem a sua parcela de culpa nessa tendencia no rails.
+É muito comum atualmente termos models cheios de logica. A expressão "Fat model, skinny controller" nunca foi tão seguida. E o scope tem a sua parcela de culpa nessa tendência no rails.
 Em geral, quando temos uma query, é comum torná-la um scope, mesmo que ela só seja chamada em um lugar.
 
 Uma das ótimas dicas que o Bryan Helmkamp deu no post chamado ["7 Patterns to Refactor Fat ActiveRecord Models"](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/) é extrair as queries para suas próprias query objects. No entanto, sentia falta de poder usar as "scopes" em cadeia, ja que essa tecnica só permite juntar duas queries atravez de composição.

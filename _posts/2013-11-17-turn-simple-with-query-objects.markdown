@@ -12,7 +12,7 @@ categories:
   
 ---
 
-One of the major reasons for RubyOnRails have this range it has today is the amount of features that have become essential to diminish, improve or become fun the development process.
+One of the greatest reasons for RubyOnRails have this range it has today is the amount of features that have become essential to diminish, improve or become fun the development process.
 Scopes is one of those features. The problem is when what is to be the solution becomes the problem.
 
 <!--more-->
