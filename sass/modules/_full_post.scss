@@ -9,6 +9,14 @@
     display: block;
     text-decoration: none;
     color: #000;
+    @media only screen and (max-width: 686px) {
+      font-size: 36px;
+      line-height: 40px;
+    }
+    @media only screen and (max-width: 400px) {
+      font-size: 28px;
+      line-height: 35px;
+    }
   }
 
 }
@@ -34,7 +42,7 @@
   li {
     margin-bottom: 8px;
   }
-  
+
   h2 {
     margin-bottom: 10px;
     font-size: 25px;
