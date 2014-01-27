@@ -29,6 +29,9 @@ Media Queries for Tablets
   }
   #posts-list{
     .post {
+      img {
+        width:70%;
+      }
       &:first-child {
         .container {
           width: auto;
