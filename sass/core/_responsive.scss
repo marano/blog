@@ -39,6 +39,13 @@ Media Queries for Tablets
       }
     }
   }
+  .post{
+    .post-excerpt {
+      p img{
+        width: 60%;
+      }
+    }
+  }
 }
 
 
