@@ -16,16 +16,16 @@ Media Queries for Tablets
 
 @media only screen and (max-width: 800px) {
   #post-content .container, #post-content #page-header{
-    width:600px;
+    width:auto;
   }
   .container{
-    width: 600px;
+    width: auto;
   }
   #posts-list{
     .post {
       &:first-child {
         .container {
-          width: 600px;
+          width: auto;
         }
       }
     }
