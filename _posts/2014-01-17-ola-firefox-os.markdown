@@ -9,6 +9,7 @@ categories:
   - francisco martins
   - Firefox OS
   - Mobile
+post-styles: hints
   
 ---
 
