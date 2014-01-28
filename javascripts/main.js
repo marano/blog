@@ -1,6 +1,4 @@
 $(function(){
-  $('#posts-list .post:nth-child(2n+1)').css('background', '#fff');
-
   var container = $("#tags-list > .container");
 
   // reorder tag list
