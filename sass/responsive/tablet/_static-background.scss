@@ -1,3 +1,7 @@
 #static-background {
   display: none;
+  &.static-background-small {
+    display: block;
+    height: auto;
+  }
 }
