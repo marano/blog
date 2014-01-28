@@ -1,0 +1,17 @@
+@media only screen and (max-device-width: 1024px){
+  @import "responsive/tablet/layout";
+  @import "responsive/tablet/main-header";
+  @import "responsive/tablet/main-footer";
+  @import "responsive/tablet/pagination";
+  @import "responsive/tablet/posts";
+  @import "responsive/tablet/static-background";
+}
+
+@media only screen and (max-width: 959px){
+  @import "responsive/tablet/layout";
+  @import "responsive/tablet/main-header";
+  @import "responsive/tablet/main-footer";
+  @import "responsive/tablet/pagination";
+  @import "responsive/tablet/posts";
+  @import "responsive/tablet/static-background";
+}
