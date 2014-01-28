@@ -1,0 +1,42 @@
+#topbar {
+  border-top: 5px solid #b72124;
+  font-size: 12px;
+  padding: 5px 0 5px 0;
+  text-align: left;
+  background: #f8f8f8;
+  a {
+    color: #ccc;
+    &:hover {
+      text-decoration: none;
+      color: #333;
+    }
+  }
+}
+
+#main-header {
+  width: 100%;
+  background: #fff;
+  padding: 10px 0 5px 0;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+
+  .header-title {
+    width: 140px;
+    float: left;
+
+    img {
+      width: 140px;
+    }
+  }
+
+  #google-search {
+    float: right;
+    width: 300px;
+    min-height: 64px;
+
+    input.gsc-search-button{
+      width: auto;
+      height: auto;
+    }
+  }
+}
