@@ -1,0 +1,12 @@
+.tags {
+  margin: 30px 0 30px 0;
+
+  a {
+    @extend %buttons;
+    padding: 5px 7px;
+    background: $main-color;
+    text-decoration: none;
+    color: #fff;
+    font-size: em(12px);
+  }
+}
