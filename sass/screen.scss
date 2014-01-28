@@ -1,13 +1,31 @@
-@import "core/main";
+@charset "utf-8";
+// Vender
+@import "vendor/syntax";
+
+@import "settings";
+
+// Helpers
+@import "helpers/clearfix";
+@import "helpers/em";
+@import "helpers/buttons";
+@import "helpers/post";
+
+// Core
+@import "core/reset";
+@import "core/fonts";
+@import "core/base";
+@import "core/layout";
 
 // Modules
-@import "modules/header";
-@import "modules/footer";
-@import "modules/static_background";
-@import "modules/post";
+@import "modules/main-header";
+@import "modules/main-footer";
+@import "modules/static-background";
+@import "modules/tags";
+@import "modules/posts";
+@import "modules/full-post";
 @import "modules/pagination";
-@import "modules/full_post";
-@import "modules/syntax";
-@import "modules/archive_list";
+@import "modules/archive-list";
 
-@import "core/responsive";
+// Responsive
+@import "tablet";
+@import "mobile";

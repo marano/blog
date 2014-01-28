@@ -18,19 +18,25 @@
   background: #fff;
   padding: 10px 0 5px 0;
   position: relative;
-  float: left;
-}
+  border-bottom: 1px solid #ccc;
 
-.header-title {
-  width: 140px;
-  float: left;
-  img {
+  .header-title {
     width: 140px;
-  }
-}
+    float: left;
 
-#google-search {
-  width: 300px;
-  position: absolute;
-  right: 0; top: -8px;
+    img {
+      width: 140px;
+    }
+  }
+
+  #google-search {
+    float: right;
+    width: 300px;
+    min-height: 64px;
+
+    input.gsc-search-button{
+      width: auto;
+      height: auto;
+    }
+  }
 }

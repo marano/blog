@@ -1,0 +1,40 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: $s-red;
+  font-family: inherit;
+  font-family: $main-font;
+  font-size: $font-size;
+  vertical-align: baseline;
+}
+
+html{
+  width: 100%;
+  body{
+    color: $s-red;
+    font-family: inherit;
+    font-family: $main-font;
+    font-size: $font-size;
+    width: 100%;
+  }
+}
+
+a {
+  color: $main-color;
+  text-decoration: none;
+
+  &:hover, &:hover img {
+    text-decoration: underline;
+    opacity: .7;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600 !important;
+}
+
+p { margin:0 0 20px 0; }
