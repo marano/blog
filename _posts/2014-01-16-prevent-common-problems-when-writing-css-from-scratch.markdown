@@ -61,7 +61,7 @@ Then, the following classes should do the job:
         height:60px;            /* Height of the footer */
     }
     
-    </style>
+</style>
 
 {% endhighlight %}
 
