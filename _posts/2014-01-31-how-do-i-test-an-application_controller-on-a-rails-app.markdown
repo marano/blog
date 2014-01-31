@@ -2,7 +2,7 @@
 published: true
 author: Mauro George
 layout: post
-title: "How do I test a application_controller on a rails app"
+title: "How do I test an application_controller on a rails app"
 date: 2014-01-31 15:16
 comments: true
 categories:
