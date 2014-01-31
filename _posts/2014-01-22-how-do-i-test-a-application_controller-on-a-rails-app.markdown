@@ -3,22 +3,25 @@ published: true
 author: Mauro George
 layout: post
 title: "How do I test a application_controller on a rails app"
-date: 2014-01-22 11:16
+date: 2014-01-31 15:16
 comments: true
 categories:
   - mauro george
   - rails
   - application_controller
   - test
+  
+ post-styles: hints 
+  
 ---
 
-Do you any time in your life of rails developer need to test a application controller? How you do that? Lets take a look at the do's and dont's.
+Have you ever in your life as a rails developer needed to test an application controller? How did you do that? Let's take a look at the dos and dontdos.
 
 <!--more-->
 
 ## A simple application_controller on a rails app
 
-I will use the [strawberrycake](https://github.com/FlaviaFortes/strawberrycake) of Flavia, as a example. It is a simple app that uses a login via facebook. Lets take a look at the [`application_controller.rb`](https://github.com/FlaviaFortes/strawberrycake/blob/67933d2ac94a2c0347852d6a21e3d00b3d7d7a86/app/controllers/application_controller.rb).
+I will use the [strawberrycake](https://github.com/FlaviaFortes/strawberrycake) of Flavia, as an example. It is a simple app that uses a login via facebook. Lets take a look at the [`application_controller.rb`](https://github.com/FlaviaFortes/strawberrycake/blob/67933d2ac94a2c0347852d6a21e3d00b3d7d7a86/app/controllers/application_controller.rb).
 
 {% highlight ruby linenos %}
 class ApplicationController < ActionController::Base
@@ -45,7 +48,7 @@ class ApplicationController < ActionController::Base
 end
 {% endhighlight %}
 
-We have 3 private methods, that we will use on our controllers like a [`posts_controller`](https://github.com/FlaviaFortes/strawberrycake/blob/67933d2ac94a2c0347852d6a21e3d00b3d7d7a86/app/controllers/posts_controller.rb). Lets take a look at the specs.
+We have 3 private methods, that we will use in our controllers like a [`posts_controller`](https://github.com/FlaviaFortes/strawberrycake/blob/67933d2ac94a2c0347852d6a21e3d00b3d7d7a86/app/controllers/posts_controller.rb). Lets take a look at the specs.
 
 {% highlight ruby linenos %}
 require 'spec_helper'
@@ -75,15 +78,15 @@ describe ApplicationController do
 end
 {% endhighlight %}
 
-I showed only a few lines, but to our example it is ok. We need to focus on how the test are made, they are using `controller.send` to access a private method. It is a good practice to not test private methods, a private method is an implementation detail that should be hidden to the users of the class. If our private method is with big responsability and doing a lot of stuffs, so it is better extract this private methods to its own class. Lets refactor this specs!
+I showed only a few lines, but for our example it is ok. We need to focus on how the tests are made. They are using `controller.send` to access a private method. It is a good practice to not test private methods. A private method is an implementation detail that should be hidden to the users of the class. If our private method has big responsibility and doing a lot of stuffs, it is better to extract this private methods to its own class. Let's refactor these specs!
 
 ## Meet the anonymous controller
 
-The RSpec Rails have the [anonymous controller](https://www.relishapp.com/rspec/rspec-rails/docs/controller-specs/anonymous-controller) it is a nice way to test the application_controller. Lets do this
+The RSpec Rails have the [anonymous controller](https://www.relishapp.com/rspec/rspec-rails/docs/controller-specs/anonymous-controller) it is a nice way to test the application_controller. Let's use it.
 
 ### The current_user
 
-The objective of the `current_user` method it is to return the current user if it is present or `nil` if we dont have a current user. Lets change the specs to use the anonymous controller.
+The objective of the `current_user` method it is to return the current user if it is present, or to return `nil` if we don't have a current user. Let's change the specs to use the anonymous controller.
 
 {% highlight ruby linenos %}
 describe ApplicationController do
@@ -141,14 +144,14 @@ describe ApplicationController do
 end
 {% endhighlight %}
 
-First we create a controller using the block `controller`, with this we can create a anonymous controller that it is like a regular controller inherited from `ApplicationController`. In this controller we create a single action that assigns `@current_user` with the value of `current_user`.
+First we create a controller using the block `controller`, with this we can create an anonymous controller that behaves like a regular controller inherited from `ApplicationController`. In this controller we create a single action that assigns `@current_user` with the value of `current_user`.
 
-Now we cant test this `index` action as we test all regular actions, on a rails app, no need to `send` we only test the value of `@current_user`.
+Now we can test `index` action the way we test all regular actions. We don't need the `send` method. We just need to test the value of `@current_user` only.
 
 
 ### The user\_signed\_in?
 
-The same way we create a `index` action, we can create a `new` action. The anonymous controller have all the resource routes, so you got a `ActionController::RoutingError` if you try a custom route on this controller.
+The same way we create an `index` action, we can create a `new` action. The anonymous controller have all the resource routes. If you try a custom route on this controller you get an `ActionController::RoutingError`.
 
 {% highlight ruby linenos %}
 describe ApplicationController do
@@ -200,11 +203,11 @@ describe ApplicationController do
 end
 {% endhighlight %}
 
-To test the `user_signed_in?` we create a `show` action. This action show a text based on the state of user, it its logged or not. This way we can simply test the response, as a regular controller.
+To test the `user_signed_in?` we create a `show` action. This action shows a text based state of user, if it's logged in or not. This way we can simply test the response, as a regular controller.
 
-### The last one the authenticate!
+### The last one is the authenticate!
 
-To the last one, we create a `new` action on our controller. If you have any doubt that the controller block it is even a controller, we add a `before_filter` on this `new` action.
+To finish, we create an action `new` on our controller. If you still have a doubt if the controller block is a controller, you should add a `before_filter` in the `new` action.
 
 {% highlight ruby linenos %}
 describe ApplicationController do
@@ -251,10 +254,10 @@ describe ApplicationController do
 end
 {% endhighlight %}
 
-We use the actual shared example of authentication and make a simple test that the action answer with success when the user is logged.
+We use the actual shared example of authentication and make a simple test that the action answers with success when user is logged in.
 
 ## Conclusion
 
-Using the anonymous controller we can make ours tests on the application controller without the need to use `send`, this way we keep our specs testing the behavior and not implementation details.
+Using anonymous controller we can make our tests on the application controller without the need to use `send`. This way we can keep our specs testing the behavior and not the implementation details.
 
 Keep hacking!
