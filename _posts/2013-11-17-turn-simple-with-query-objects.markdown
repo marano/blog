@@ -17,12 +17,12 @@ Scopes is one of those features. The problem is when what is to be the solution 
 
 <!--more-->
 
-It is very common full of logic models. The term "Fat model, skinny controller" has never been so true. And the scope has its share of blame in this trend on rails. 
-It's very common to make a scope to every query. Even if it is only called in one place.
+It is very common to have a model full of logic. The term "Fat model, skinny controller" has never been so true. And the scope has its share of blame in this trend on rails. 
+Make every query a scope is also common. Even if it is only called in one place.
 
 One of the greatest tips that Bryan Helmkamp gave in the post called ["7 Patterns to refactor ActiveRecord Fat Models"](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose- fat-activerecord-models /) is to extract the queries to their own query objects. However, I missed being able to use the "scopes" chain, since this technique only allows joining two queries using composition.
 
-I got a model that was becoming huge. A [friend](https://twitter.com/maurogeorge) came and showed me this extraction method with a step further.
+I had a model that was becoming huge. [Mauro George](https://twitter.com/maurogeorge) showed me this extraction method with a step further.
 
 Imagine a model called Pokemon (although that name raise a series of assumptions). And imagine that this model was becoming complex and the scopes were not helping.
 
@@ -47,8 +47,8 @@ And I needed to do a chain scope like:
 Pokemon.with_skill("lightning").with_weakness("water").is_available(DateTime.now)
 {% endhighlight %}
 
-There's a little unknown feature that allow to extend any ActiveRecord::Relation object with their scopes. With that is possible to extract the query objects and scopes to keep the call chain:
-
+There's a little unknown feature that allow to extend any ActiveRecord::Relation object with their scopes. Using that it's possible to extract the query objects and scopes in order to keep the call chain:
+  
 {% highlight ruby linenos %}
 class PokemonQuery
   def initialize(relation = Pokemon.all)
@@ -116,3 +116,4 @@ end
 PokemonQuery.new.like_pikachu
 {% endhighlight %}
 
+That is all folks!
