@@ -1,5 +1,9 @@
 ## Criando seu post
 
+Execute ```rake new_post['Titulo do Post']```. Esse comando irá criar um branch e o arquivo do seu post.
+
+Ou siga esses passos:
+
 1) Clone o repositório [git@github.com:Helabs/blog.git](https://github.com/Helabs/blog) e tenha certeza de que está no branch `gh-pages`.
 
 2) Crie uma branch com o título do seu post.
