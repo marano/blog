@@ -62,7 +62,7 @@ $ git pull --rebase
 2) Pull the post to a branch to do reviews and/or modifications:
 
 ```
-$ git checkout -b <nome_do_branch> origin/<nome_do_branch>
+$ git checkout -b <name-of-the-branch> origin/<name-of-the-branch>
 ```
  
 3) After review/modification, checkout the gh-pages branch:
@@ -74,7 +74,7 @@ $ git checkout gh-pages
 4) Merge post's branch into gh-pages:
  
 ```
-$ git merge <nome_do_branch>
+$ git merge <name-of-the-branch>
 ```
  
 5) If everything is ok, update the remote repo to publish it:
