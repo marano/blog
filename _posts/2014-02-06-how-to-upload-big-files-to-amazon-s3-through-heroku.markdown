@@ -9,8 +9,9 @@ categories:
   - ali ismayilov
   - rails
   - heroku
-  - amazon s3
+  - s3
   - s3_direct_upload
+  - english
   
 post-styles: hints 
   
