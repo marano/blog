@@ -21,7 +21,7 @@ On the last [MVP](http://startupdev.com.br/pt/servicos-para-startups/mvp/) we ha
 
 <!--more-->
 
-The project [Cliqx](http://www.cliqx.com.br/) was using [paperclip](https://github.com/thoughtbot/paperclip) to manage photo uploads and [aws-sdk](https://github.com/aws/aws-sdk-ruby) to store them on S3. If user would uplaod a file, it would go to Heroku webserver, stored in ```/tmp/cache``` and then would be pushed to Amazon S3. The problem with uploading to Heroku is that it has explicit 30 seconds of maximum timeout. If you didn't finish uploading your file in 30 seconds, you are screwed.
+The project [Cliqx](http://www.cliqx.com.br/) was using [paperclip](https://github.com/thoughtbot/paperclip) to manage photo uploads and [aws-sdk](https://github.com/aws/aws-sdk-ruby) to store them on S3. If user would upload a file, it would go to Heroku webserver, stored in ```/tmp/cache``` and then would be pushed to Amazon S3. The problem with uploading to Heroku is that it has explicit 30 seconds of maximum timeout. If you didn't finish uploading your file in 30 seconds, you are screwed.
 
 The solution is to upload a file directly to S3 and attach it to the model. Happily, there's a gem for that:
 
