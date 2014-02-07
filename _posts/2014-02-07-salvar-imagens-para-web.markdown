@@ -3,7 +3,7 @@ published: false
 author: Dirceu Pauka Jr
 layout: post
 title: "Salvar imagens para web"
-date: 2014-02-04 09:00
+date: 2014-02-07 14:00
 comments: true
 categories:
   - design
