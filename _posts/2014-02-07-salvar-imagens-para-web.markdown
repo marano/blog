@@ -36,7 +36,7 @@ Essas opções são interessantes para exibir algo rápidamente para seus usuár
 
 ## Desenhe pensando em produzir arquivos menores
 
-Como o PNG 8-bit e GIF podem produzir arquivos menores, tente manter isso em mente ao desenhar ou usar ilustrações nas suas páginas. Quanto menos cores menor o tamanho arquivo.
+Como o PNG 8-bit e GIF podem produzir arquivos menores, matenha isso em mente ao desenhar ou usar ilustrações nas suas páginas. Quanto menos cores menor o tamanho arquivo.
 
 ## Redimensione a imagem
 
