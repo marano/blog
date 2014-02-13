@@ -1,6 +1,6 @@
 ---
 published: true
-author: Dirceu Pauka Jr.
+author: Dirceu Pauka
 layout: post
 title: "RescueTime: time management tool"
 date: 2013-12-30 09:00
