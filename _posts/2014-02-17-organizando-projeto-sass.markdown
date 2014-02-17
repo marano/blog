@@ -96,7 +96,7 @@ No arquivo **general**, importo todos os arquivos na seguinte ordem:
 {% endhighlight %}
 
 # E no Rails?
-Faço o *[require](http://guides.rubyonrails.org/asset_pipeline.html)* do arquivo **general** no **application.css**. Só lembrando: no Rails a extensão muda para "**.css.sass**" ou "**.css.scss**".
+Faço o *[require](http://guides.rubyonrails.org/asset_pipeline.html)* do arquivo **general** no **application.css**. 
 
 {% highlight css linenos %}
 /* ...
