@@ -14,9 +14,9 @@ categories:
 ---
 Muitos desenvolvedores front-end já usam o **Sass** em seus projetos, mas poucos mantêm uma organização mínima dos seus arquivos. No Sass, há vários recursos [úteis](http://sass-lang.com/documentation/file.SASS_REFERENCE.html), como o [*@import*](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#import) para incluir os estilos individualmente em um arquivo principal.
 
-<!-- more -->
-
 Vou apresentar algumas dicas que utilizo no meu workflow.
+
+<!--more-->
 
 # Estrutura básica
 É uma boa prática separar seus arquivos por pastas que sejam fáceis de identificar. Eu gosto da estrutura dos meus projetos assim:
