@@ -18,7 +18,7 @@ Temos recebido uma quantidade cada vez maior de pessoas interessadas em criar no
 
 <!--more-->
 
-Em muitos casos, além de ser a primeira aventura no mundo digital, é também a primeira no mundo do empresariado. Essa mistura de novas experiências pode levar a decisões pouco otimizadas, quando tratamos de ambientes de [extrema incerteza][extreme uncertainty]. Uma parte desses aspirantes não aprendeu que um novo negócio digital é um experimento arriscado, que é necessário validar uma série de premissas, que muitas coisas vão dar errado, que suas ideias não são as melhores do mundo, que não é fácil conseguir 1% de qualquer mercado e que apenas raras exceções são os casos dos softwares que foram do zero a milhões de usuários em poucos meses.
+Em muitos casos, além de ser a primeira aventura no mundo digital, é também a primeira no mundo empresarial. Essa mistura de novas experiências pode levar à decisões pouco otimizadas, quando tratamos de ambientes de [extrema incerteza][extreme uncertainty]. Uma parte desses aspirantes não aprendeu que um novo negócio digital é um experimento arriscado, que é necessário validar uma série de premissas, que muitas coisas vão dar errado, que suas ideias não são as melhores do mundo, que não é fácil conseguir 1% de qualquer mercado e que apenas raras exceções são os casos dos softwares que foram do zero a milhões de usuários em poucos meses.
 
 Por conta desse cenário, recebemos diariamente e-mails com uma lista de funções desejadas ou com dezenas de mockups de telas seguida da pergunta: "Quando consegue nos enviar esse orçamento?". Essa foi a última resposta que eu enviei a um desses e-mails. O nome foi alterado por privacidade.
 
