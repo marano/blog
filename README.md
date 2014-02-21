@@ -1,65 +1,93 @@
-## Criando seu post
+## Creating your post
 
-Execute ```rake new_post['Titulo do Post']```. Esse comando irá criar um branch e o arquivo do seu post.
+Run ```rake new_post['Title of the post']```. This command will create a file and the branch for your post.
 
-Ou siga esses passos:
+Or you can follow these steps:
 
-1) Clone o repositório [git@github.com:Helabs/blog.git](https://github.com/Helabs/blog) e tenha certeza de que está no branch `gh-pages`.
+1) Clone the repository [git@github.com:Helabs/blog.git](https://github.com/Helabs/blog) and make sure the branch is `gh-pages`.
 
-2) Crie uma branch com o título do seu post.
+2) Create a branch with the title of your post.
 
 ```
-$ git checkout -b post/titulo-do-seu-post
+$ git checkout -b post/title-of-your-post
 ```
 
-3) Crie um arquivo em `_posts/titulo-do-seu-post.markdown` com o seguinte formato.
+3) Create a file with name format `_posts/YYYY-MM-DD-title-of-your-post.markdown`.
 
 ```
 ---
 published: false
-author: Seu Nome
+author: Your Name
 layout: post
-title: "Título"
-date: AAAA-MM-DD HH:MM
+title: "Title"
+date: YYYY-MM-DD HH:MM
 comments: true
 categories:
   - Tag1
   - Tag2
 ---
 
-Conteúdo do post
+Post content
 ```
 
-4) Veja se ficou bom executando o projeto e acessando pelo browser o endereço [http://localhost:4000/blog/](http://localhost:4000/blog/) (Precisa de "/" no final do endereço).
+4) Make sure that the project runs and you can open it on your browser [http://localhost:4000/blog/](http://localhost:4000/blog/) (Don't forget to put trailing '/').
 
 ```
 $ foreman start
 ```
 
-5) Commit as mudanças.
+5) Commit changes.
 
 ```
 $ git add .
-$ git commit -am 'post: Titulo do seu post'
+$ git commit -am 'post: Title of your post'
 ```
 
-6) Push na branch.
+6) Push the branch.
 
 ```
-$ git push origin post/titulo-do-seu-post
+$ git push origin post/title-of-your-post
 ```
 
-7) Mande um pull request pela interface web do Github.
+7) Send a pull request by GitHub web interface.
 
-## Publicando um post
+## Publishing a post
 
-TODO.
+1) Make sure your gh-pages branch is updated:
 
-## Observações
+```
+$ git pull --rebase
+```
+ 
+2) Pull the post to a branch to do reviews and/or modifications:
+
+```
+$ git checkout -b <name-of-the-branch> origin/<name-of-the-branch>
+```
+ 
+3) After review/modification, checkout the gh-pages branch:
+ 
+```
+$ git checkout gh-pages
+```
+ 
+4) Merge post's branch into gh-pages:
+ 
+```
+$ git merge <name-of-the-branch>
+```
+ 
+5) If everything is ok, update the remote repo to publish it:
+ 
+```
+$ git push
+```
+
+## Notes
 
 ### Code Highlighting
 
-Usar a seguinte sintaxe:
+Use the following syntax:
 
 ```
 {% highlight ruby linenos %}
@@ -71,10 +99,10 @@ end
 {% endhighlight %}
 ```
 
-### Imagens
+### Images
 
-Salve suas imagens em `/images/posts/YYYY-MM-DD/`, lembrando que em termos de url vai ficar `/blog/images/posts/YYYY-MM-DD/`.
+Save your images in `/images/posts/YYYY-MM-DD/`. Your image URL will look like this: `/blog/images/posts/YYYY-MM-DD/`.
 
-## Licença
+## LICENSE
 
-[Blog da HE:labs](http://helabs.com.br/blog/) e seu conteúdo está licenciado sob uma [licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 3.0 Não Adaptada](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.pt_BR).
+[Blog of HE:labs](http://helabs.com.br/blog/) and its content is licensed under an [Attribution-NonCommercial-ShareAlike 3.0 Unported license](http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).
