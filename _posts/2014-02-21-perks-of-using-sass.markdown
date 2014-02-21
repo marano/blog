@@ -19,19 +19,55 @@ An interesting way to set up color pallets for the web is using SASS variables:
 <!--more-->
 {% highlight ruby linenos %}
 
-$main-color: #d0eefc;
-$darker-color: darken( $main-color, 10% ) ;
-$lighter-color: lighten( $main-color, 10% );
+$main-color: #970000;
+$darker-color: darken( $main-color, 20% ) ;
+$lighter-color: lighten( $main-color, 20% );
+$lightest-color: lighten( $main-color, 60% );
 {% endhighlight %}
+
 This means we only have to set up one value for the main color used on the layout, and the darker and lighter tones are defined by percentage.
 
-<h1>Using the color pallet on the elements</h1> 
+<h1>Defining a color scheme</h1> 
 
-<img src="/blog/images/posts/2014-02-21/example1.png" style="display: inline ! important; margin-top: 1em;">
+On the example bellow, the main color used, was a #970000 red. 
+
+<img src="/blog/images/posts/2014-02-21/example1.png">
+
+Using the variables we wrote, i added color to some elements:
+
+{% highlight ruby linenos %}
+
+header{
+  background: $main-color;
+}
+
+h1{
+    color:$darker-color;
+  }
+
+img{
+  border-left: 12px ridge $lighter-color;
+}
+
+ul{
+  background:$lightest-color;
+}
+
+footer{
+  background: $darker-color;
+  color:$lightest-color;
+}
+
+
+{% endhighlight %}
+
 
 <h1>Changing the color scheme using one single value</h1> 
 
-<img src="/blog/images/posts/2014-02-21/example2.png" style="display: inline ! important; margin-top: 1em;">
+Notice that we've only written one color value to determine all the colors we've used on the layout. That means that if we change the main-color value, for example to a #10528a blue, we get this result:
+
+
+<img src="/blog/images/posts/2014-02-21/example2.png">
 
 
 
