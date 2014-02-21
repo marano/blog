@@ -1,9 +1,9 @@
 ---
 published: true
-author: Ali Ismayilov 
+author: Ali Ismayilov
 layout: post
 title: "How to upload big files to Amazon S3 while using Heroku"
-date: 2014-02-06 15:16
+date: 2014-02-21 15:16
 comments: true
 categories:
   - ali ismayilov
@@ -12,9 +12,9 @@ categories:
   - s3
   - s3_direct_upload
   - english
-  
-post-styles: hints 
-  
+
+post-styles: hints
+
 ---
 
 On the last [MVP](http://startupdev.com.br/pt/servicos-para-startups/mvp/) we had an issue with storing big photos. We solved it with filepicker.io. But filepicker.io is kinda [expensive](https://www.inkfilepicker.com/pricing/) and not always the client can be happy with that.
