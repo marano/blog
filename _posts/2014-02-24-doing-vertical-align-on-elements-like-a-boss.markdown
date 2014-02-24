@@ -51,4 +51,4 @@ Now just apply to the element like this:
 
 The best notice: it's crossbrowser even in Internet Explorer 9!
 
-What do you think of this method to centralize elements vertically? Did you already know that? Comment here :)
+What do you think about this method of centralizing elements vertically? Did you already know that? Comment here :)
