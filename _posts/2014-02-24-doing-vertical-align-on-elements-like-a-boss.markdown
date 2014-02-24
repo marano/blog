@@ -13,7 +13,7 @@ categories:
   - english
 ---
 
-How often have you had to align text or element vertically to another? Which method do you usually use? See a "like a boss" solution for it :)
+How often have you had to align text or element vertically into another? Which method do you usually use? See a "like a boss" solution for it :)
 
 <!--more-->
 
@@ -49,4 +49,6 @@ Now just apply to the element like this:
 .wrap p { @include vertical-align }
 {% endhighlight %}
 
-What do you think of this method to centralize its elements vertically? Do you already knew that? Comment here :)
+The best notice: it's crossbrowser even in Internet Explorer 9!
+
+What do you think of this method to centralize elements vertically? Did you already know that? Comment here :)
