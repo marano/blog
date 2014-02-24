@@ -13,8 +13,13 @@ description: 'HE:labs é uma empresa pioneira em desenvolvimento de sistemas web
   {% for post in paginator.posts %}
 
   <article class="post">
-    <div class="container">
+    <div class="flex-box">
       <header class="post-header">
+        <h1 class="post-title">
+          <a href="/blog{{ post.url }}" title="{{post.title}}">
+            {% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}
+          </a>
+        </h1>
         {% if post.author %}
           {% assign author = post.author %}
         {% elsif page.author %}
@@ -24,28 +29,24 @@ description: 'HE:labs é uma empresa pioneira em desenvolvimento de sistemas web
         {% endif %}
         {% if author %}
           <div class="author-info">
-            Postado por <span><a class="author-link">{{ author }}</a></span> em <span>{{ post.date | date: "%d/%m/%Y" }}</span>
+            <p>
+              Postado por <span><a class="author-link">{{ author }}</a></span> em <span>{{ post.date | date: "%d/%m/%Y" }}</span>
+            </p>
           </div>
         {% endif %}
-        <h1 class="post-title">
-          <a href="/blog{{ post.url }}" title="{{post.title}}">
-            {% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}
-          </a>
-        </h1>
       </header>
 
       <div class="post-excerpt">
-        {{ post.excerpt }}
+        {% if post == site.posts.first %}
+          {{ post.excerpt | truncate: 320 }}
+        {% else %}
+          {{ post.excerpt | truncate: 150  }}
+        {% endif %}
       </div>
 
       <ul>
         <li class="view-more">
-          <a href="/blog{{ post.url }}" title="Ler post inteiro">Ler mais</a>
-        </li>
-        <li>
-          {% if post.comments != false %}
-            <a href="/blog{{ post.url }}#disqus_thread" title="Comentários">Comentários</a>
-          {% endif %}
+          <a href="/blog{{ post.url }}" title="Ler post inteiro">Ler mais...</a>
         </li>
       </ul>
 
@@ -53,17 +54,5 @@ description: 'HE:labs é uma empresa pioneira em desenvolvimento de sistemas web
   </article>
 
   {% endfor %}
-
-  <div id="pagination">
-    <div class="container">
-      {% if paginator.next_page %}
-        <a class="prev-page" href="/blog{{paginator.next_page_path}}" title="Página Anterior">&larr; Mais Antigo</a>
-      {% endif %}
-      <a href="/blog/archives" title="Histórico do Blog">Histórico do Blog</a>
-      {% if paginator.previous_page %}
-      <a class="next-page" href="/blog{{paginator.previous_page_path}}" title="Próxima página">Mais Novo &rarr;</a>
-      {% endif %}
-    </div>
-  </div>
 
 </section> <!-- /posts-list -->

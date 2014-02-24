@@ -5,13 +5,13 @@
 
   #static-image {
     position: relative;
-    background: url("../images/header-default-bg.jpg") center center no-repeat fixed;
+    background: url("../images/static-bg.png") top center no-repeat fixed;
     background-size: cover;
     webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     z-index: 3;
-    height: 340px;
+    height: 320px;
     width: 100%;
     &:after {
       content: " ";

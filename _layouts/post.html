@@ -19,15 +19,14 @@ layout: default
         {% assign author = site.author %}
       {% endif %}
 
+      <h1 class="post-title">
+        {{ page.title | titlecase }}
+      </h1>
       {% if author %}
         <div class="author-info">
           Postado por <span><a class="author-link">{{ author }}</a></span> em <span>{{ page.date | date: "%d/%m/%Y" }}</span>
         </div>
       {% endif %}
-
-      <h1 class="post-title">
-        {{ page.title | titlecase }}
-      </h1>
     </header>
 
     <div id="post-text">

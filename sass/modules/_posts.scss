@@ -1,10 +1,9 @@
 #posts-list{
-  background-color: #f6f6f6;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
   .post{
-    padding: 20px 0;
-    border-bottom:1px solid #eee;
     position: relative;
-    background-color: #fff;
 
     .post-header {
       @extend %post-header;
@@ -13,26 +12,53 @@
     &:first-child {
       background: none !important;
       border-bottom: none;
-      margin-top: -250px;
       z-index: 10;
+      text-align: left;
+      width: 960px;
+      margin: 0 auto;
+      margin-top: -250px;
+      .flex-box{
+        margin:0;
+        padding:0;
+        width:50%;
+        height:auto;
+        float: none;
+      }
 
-      .container {
-        background: #fff;
-        -webkit-box-shadow: 0px 3px 2px rgba(50, 50, 50, 0.25);
-        -moz-box-shadow: 0px 3px 2px rgba(50,50,50,0.25);
-        box-shadow: 0px 3px 2px rgba(50, 50, 50, 0.25);
-        padding: 40px 25px 25px 25px;
+      p{
+        margin:0;
+        padding:0;
       }
 
       .post-title {
-        font-size: em(44px);
-        line-height: 50px;
-        a { text-decoration: none; }
+        position: absolute;
+        width:50%;
+        top:-30px;
+        font-size: em(24px);
+        line-height: 30px;
+        background-color: #990000;
+        padding: 10px; 
+        display: initial;
+        a{ 
+          text-decoration: none;
+          color: #fff;
+          }
       }
-    }
+      .author-info p, .post-excerpt p, .view-more{
+        margin: 0px;
+        padding: 10px 20px 0 15px;
+     
+      }
+      .post-excerpt p, .view-more{
+        line-height: 24px;
+        font-size: 16px;
+      }
 
-    &:nth-child(even){
-      background-color: #f6f6f6;
+
+      .author-info p{
+        font-size: 12px;
+        line-height: 14px;
+      }
     }
 
     ul {
@@ -47,11 +73,8 @@
 
         &.view-more {
           a {
-            @extend %buttons;
-            height: 36px;
             line-height: 33px;
             background: #fff;
-            border:1px solid #eee;
             &:hover {
               border-color: #ccc;
               opacity: 1;
@@ -60,10 +83,18 @@
         }
       }
     }
+    .flex-box{ 
+      width: 30%;
+      background-color: #fff;
+      margin: 40px 10px 0 0;
+      padding: 20px;
+      float:left;
+      display: inline-block;
+    }
 
     .post-excerpt {
       font-size: em(17px);
-      line-height: 30px !important;
+      line-height: 24px;
 
       p img {
         display: none;
