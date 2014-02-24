@@ -1,7 +1,7 @@
 #posts-list{
   max-width: 960px;
   margin: 0 auto;
-  position: relative;
+  padding-top:60px;
   .post{
     position: relative;
 
@@ -16,13 +16,15 @@
       text-align: left;
       width: 960px;
       margin: 0 auto;
-      margin-top: -250px;
+      margin-top: -300px;
       .flex-box{
         margin:0;
         padding:0;
         width:50%;
         height:auto;
         float: none;
+        padding-top:10px;
+        margin-bottom: 50px;
       }
 
       p{
@@ -84,9 +86,10 @@
       }
     }
     .flex-box{ 
-      width: 30%;
+      width: 32%;
+      height: 340px;
       background-color: #fff;
-      margin: 40px 10px 0 0;
+      margin: 20px 12px 0 0;
       padding: 20px;
       float:left;
       display: inline-block;
