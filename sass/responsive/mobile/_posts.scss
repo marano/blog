@@ -1,16 +1,5 @@
 #posts-list{
   .post{
-    &:first-child {
-      margin-top: -20px;
-      .container {
-        padding: 20px 10px 25px;
-      }
-      & .post-title, .post-header .post-title {
-        font-size: em(28px);
-        line-height: normal;
-        margin-bottom: 10px;
-      }
-    }
   }
 }
 
