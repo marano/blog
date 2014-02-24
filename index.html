@@ -40,7 +40,7 @@ description: 'HE:labs é uma empresa pioneira em desenvolvimento de sistemas web
         {% if post == site.posts.first %}
           {{ post.excerpt | truncate: 320 }}
         {% else %}
-          {{ post.excerpt | truncate: 150  }}
+          {{ post.excerpt | truncatewords: 30  }}
         {% endif %}
       </div>
 
