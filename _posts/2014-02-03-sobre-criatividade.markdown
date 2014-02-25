@@ -1,6 +1,6 @@
 ---
 published: false
-author: Beatriz Passos
+author: Beatriz Correia
 layout: post
 title: "Sobre criatividade e bloqueio"
 date: 2014-02-03 10:00
