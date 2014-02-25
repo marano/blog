@@ -51,6 +51,11 @@
     border-bottom: 1px solid #f6f6f6;
     font-size: em(17px);
     line-height: 29px !important;
+
+    ul {
+      list-style: disc inside;
+      margin-bottom: 20px;
+    }
   }
 
   blockquote {
