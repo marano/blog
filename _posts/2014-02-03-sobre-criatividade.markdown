@@ -1,14 +1,15 @@
 ---
-published: false
+published: true
 author: Beatriz Correia
 layout: post
 title: "Sobre criatividade e bloqueio"
-date: 2014-02-03 10:00
+date: 2014-02-24 10:00
 comments: true
 categories:
   - beatriz correia
   - criatividade
   - bloqueio
+  - design
 
 ---
 
