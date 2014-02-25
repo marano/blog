@@ -40,15 +40,20 @@ description: 'HE:labs é uma empresa pioneira em desenvolvimento de sistemas web
         {% if post == site.posts.first %}
           {{ post.excerpt | truncate: 320 }}
         {% else %}
-          {{ post.excerpt | truncatewords: 30  }}
+          {{ post.excerpt | truncate: 150 }}
         {% endif %}
       </div>
-
+      <div class="tags2">
+        {% for category in post.categories %}
+          <a href="/blog/tags/#{{category}}">{{category}}</a>
+        {% endfor %}
+      </div>
       <ul>
         <li class="view-more">
           <a href="/blog{{ post.url }}" title="Ler post inteiro">Ler mais...</a>
         </li>
       </ul>
+
 
     </div>
   </article>
