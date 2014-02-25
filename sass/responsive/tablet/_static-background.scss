@@ -1,7 +1,11 @@
 #static-background {
-  display: none;
+	
+	#static-image{
+		height: 100px;
+	}
+
   &.static-background-small {
-    display: block;
-    height: auto;
+    height: 100px;
   }
 }
+
