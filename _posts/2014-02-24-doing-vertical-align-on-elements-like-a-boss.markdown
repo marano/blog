@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 author: Thiago Gonzalez
 layout: post
 title: "Doing vertical align on elements like a boss"
@@ -10,6 +10,7 @@ categories:
   - html
   - css
   - sass
+  - mixin
   - english
 ---
 
