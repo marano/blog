@@ -52,7 +52,7 @@ Não faz muito tempo, em um evento de tecnologia, assisti a uma palestra sobre p
 
 <b>E essa é a minha solução à longo prazo.</b>
 
-Esse é meu primeiro post pro blog da HE:labs, espero que tenha sido útil para você de alguma forma. Se você conhece outras tecnicas para contornar o bloqueio, sinta-se à vontade para dividir conosco através dos comentários.
+Esse é meu primeiro post pro blog da HE:labs, espero que tenha sido útil para você de alguma forma. Se você conhece outras técnicas para contornar o bloqueio, sinta-se à vontade para dividir conosco através dos comentários.
 
 
 
