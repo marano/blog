@@ -38,9 +38,9 @@ description: 'HE:labs é uma empresa pioneira em desenvolvimento de sistemas web
 
       <div class="post-excerpt">
         {% if post == site.posts.first %}
-          {{ post.excerpt | truncate: 320 }}
+          {{ post.excerpt | strip_html | truncate: 320 }}
         {% else %}
-          {{ post.excerpt | truncate: 150 }}
+          {{ post.excerpt | strip_html | truncate: 150 }}
         {% endif %}
       </div>
       <div class="tags2">

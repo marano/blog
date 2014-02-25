@@ -9,6 +9,7 @@ categories:
   - Novo membro
   - fabio rehm
   - crystal
+  
 post_style: new-member
 
 ---
