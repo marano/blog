@@ -7,7 +7,7 @@ date: 2013-10-25 18:00
 comments: true
 categories:
   - Novo membro
-  - Beatriz Passos
+  - beatriz correia
   - crystal
   
 ---
