@@ -15,7 +15,7 @@
       text-align: left;
       width: 960px;
       margin: 0 auto;
-      margin-top: -290px;
+      margin-top: -320px;
       .tags2{
         display:none;
       }
@@ -23,9 +23,8 @@
         margin:0;
         padding:0;
         width:50%;
-        height:210px;
+        height:240px;
         float: none;
-        padding-top:10px;
         margin-bottom: 50px;
         background-color: #fff;
       }
@@ -36,23 +35,23 @@
       }
 
       .post-title {
-        position: relative;
-        width:50%;
-        top:-50px;
+        float:left;
+        width:100%;
+        top:-40px;
         font-size: em(24px);
-        line-height: 38px;
+        line-height: 30px;
         padding: 5px;
         background-color: #990000; 
         display: initial;
-        overflow: hidden;
+        margin:0 0 10px 0;
         a{ 
           text-decoration: none;
           color: #fff;
           }
       }
-      .author-info p, .post-excerpt p, .view-more{
+      .author-info p, .post-excerpt, .view-more{
         position: relative;
-        top: -35px;
+        top: 0px;
         margin: 0px;
         padding: 0 20px 0 15px;
      
