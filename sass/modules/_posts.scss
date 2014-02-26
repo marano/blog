@@ -43,11 +43,11 @@
         line-height: 30px;
         padding: 10px;
         background-color: #990000; 
-        display: initial;
         margin:0 0 10px 0;
         a{ 
           text-decoration: none;
           color: #fff;
+          display:block
           }
       }
       .author-info p, .post-excerpt, .view-more{
@@ -81,8 +81,12 @@
 
         &.view-more {
           a {
+            @extend %buttons;
+            height: 36px;
             line-height: 33px;
             background: #fff;
+            border:1px solid #eee;
+            display:block
             &:hover {
               border-color: #ccc;
               opacity: 1;
@@ -102,6 +106,10 @@
 
       .tags2{
         padding:0;
+
+      }
+      .post-title a{
+        display:block;
       }
     }
 
@@ -119,6 +127,7 @@
         display: none;
       }
     }
+
   }
 }
 
