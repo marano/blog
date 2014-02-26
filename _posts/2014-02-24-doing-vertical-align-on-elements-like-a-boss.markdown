@@ -1,9 +1,9 @@
 ---
-published: false
+published: true
 author: Thiago Gonzalez
 layout: post
 title: "Doing vertical align on elements like a boss"
-date: 2014-02-24 16:42
+date: 2014-02-25 16:42
 comments: true
 categories:
   - thiago gonzalez
@@ -12,6 +12,7 @@ categories:
   - sass
   - mixin
   - english
+  
 ---
 
 How often have you had to align text or element vertically into another? Which method do you usually use? See a "like a boss" solution for it :)
