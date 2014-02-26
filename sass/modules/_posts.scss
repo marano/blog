@@ -5,10 +5,15 @@
   display:table;
   .post{
     position: relative;
-
     .post-header {
       @extend %post-header;
     }
+
+
+
+    /* FIRST POST */
+
+
 
     &:first-child {
       border-bottom: none;
@@ -29,12 +34,10 @@
         margin-bottom: 50px;
         background-color: #fff;
       }
-
       p{
         margin:0;
         padding:0;
       }
-
       .post-title {
         float:left;
         width:100%;
@@ -55,19 +58,22 @@
         top: 0px;
         margin: 0px;
         padding: 0 20px 0 15px;
-     
       }
       .post-excerpt p, .view-more{
         line-height: 24px;
         font-size: 16px;
       }
-
-
       .author-info p{
         font-size: 12px;
         line-height: 14px;
       }
     }
+
+
+
+    /* Final de first post */
+
+
 
     ul {
       margin: 8px 0 0 0;

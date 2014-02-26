@@ -1,6 +1,13 @@
 #posts-list{
   width: 100%;
   .post{
+
+
+
+    /* first post */ 
+
+
+
     &:first-child{
       width: 100%;
       text-align: center;
@@ -34,6 +41,11 @@
         }
       }
     }
+
+
+    /* final */
+
+
     width: 100%;
     text-align: center;
     .flex-box{
