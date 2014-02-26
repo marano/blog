@@ -3,7 +3,7 @@ author: Time HE:labs
 pygments: true
 permalink: /:year/:month/:day/:title/
 markdown: rdiscount
-paginate: 10
+paginate: 19
 paginate_path: "/page/:num"
 disqus_url: "http://helabs.com.br/blog"
 disqus_short_name: helabsblog
