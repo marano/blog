@@ -1,39 +1,79 @@
 #posts-list{
-  background-color: #f6f6f6;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top:60px;
+  display:table;
   .post{
-    padding: 20px 0;
-    border-bottom:1px solid #eee;
     position: relative;
-    background-color: #fff;
-
     .post-header {
       @extend %post-header;
     }
 
+
+
+    /* FIRST POST */
+
+
+
     &:first-child {
-      background: none !important;
       border-bottom: none;
-      margin-top: -250px;
       z-index: 10;
-
-      .container {
-        background: #fff;
-        -webkit-box-shadow: 0px 3px 2px rgba(50, 50, 50, 0.25);
-        -moz-box-shadow: 0px 3px 2px rgba(50,50,50,0.25);
-        box-shadow: 0px 3px 2px rgba(50, 50, 50, 0.25);
-        padding: 40px 25px 25px 25px;
+      text-align: left;
+      width: 960px;
+      margin: 0 auto;
+      margin-top: -320px;
+      .tags2{
+        display:none;
       }
-
+      .flex-box{
+        margin:0;
+        padding:0 0 10px 0;
+        width:50%;
+        height: auto;
+        float: none;
+        margin-bottom: 50px;
+        background-color: #fff;
+      }
+      p{
+        margin:0;
+        padding:0;
+      }
       .post-title {
-        font-size: em(44px);
-        line-height: 50px;
-        a { text-decoration: none; }
+        float:left;
+        width:100%;
+        top:-40px;
+        font-size: em(24px);
+        line-height: 30px;
+        padding: 10px;
+        background-color: #990000; 
+        margin:0 0 10px 0;
+        a{ 
+          text-decoration: none;
+          color: #fff;
+          display:block
+          }
+      }
+      .author-info p, .post-excerpt, .view-more{
+        position: relative;
+        top: 0px;
+        margin: 0px;
+        padding: 0 20px 0 15px;
+      }
+      .post-excerpt p, .view-more{
+        line-height: 24px;
+        font-size: 16px;
+      }
+      .author-info p{
+        font-size: 12px;
+        line-height: 14px;
       }
     }
 
-    &:nth-child(even){
-      background-color: #f6f6f6;
-    }
+
+
+    /* Final de first post */
+
+
 
     ul {
       margin: 8px 0 0 0;
@@ -52,6 +92,7 @@
             line-height: 33px;
             background: #fff;
             border:1px solid #eee;
+            display:block
             &:hover {
               border-color: #ccc;
               opacity: 1;
@@ -60,15 +101,39 @@
         }
       }
     }
+    .flex-box{ 
+      width: 30%;
+      height: 340px;
+      margin: 10px 40px 0 0;
+      float:left;
+      display: inline-block;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+
+      .tags2{
+        padding:0;
+
+      }
+      .post-title a{
+        display:block;
+      }
+    }
+
+    &:nth-child(3n+1){
+      .flex-box{
+        margin-right: 0;
+      }
+    }
 
     .post-excerpt {
       font-size: em(17px);
-      line-height: 30px !important;
+      line-height: 24px;
 
       p img {
         display: none;
       }
     }
+
   }
 }
 
