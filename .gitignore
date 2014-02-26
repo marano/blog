@@ -1,5 +1,11 @@
-_site
-.sass-cache
+.DS_Store
+_site/
+_backup/
+server/
+serve/
+/start
 .gems
-.bundle
-/.bundle
+spec/_posts/*
+.sass-cache/
+.bundle/
+node_modules/
