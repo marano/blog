@@ -16,6 +16,7 @@ github_show_profile_link: true
 github_skip_forks: true
 
 baseurl:     /blog
+full_url: "http://helabs.com.br/blog"
 
 # Twitter
 twitter_user: helabs
