@@ -20,7 +20,7 @@ Trabalhar na HE:labs nos faz melhorar em muitos aspectos. E um desses aspectos �
 <!--more-->
 Como já é conhecido, na HE não temos gerente nem alguem que faz a ponte com o cliente. Cada um do time é responsável por conversar, entender as necessidades e anseios, sugerir caminhos a seguir para chegar de forma mais simples ao objetivo do cliente e trazer confiança.
 
-Após diversos projetos e clientes, acabamos com tempo criando mecanismos melhor alcançar esses pontos.
+Após diversos projetos e clientes, acabamos com tempo criando mecanismos para melhor alcançar esses pontos.
 
 Abaixo segue algumas dicas do que pratico e tenho obtido bons resultados.
 
