@@ -1,14 +1,16 @@
 ---
-published: true
+published: falses
 author: Rafael Fiuza
 layout: post
-title: "Small little tiny tips"
+title: "Pequenas dicas para um ótimo relacionamento"
 date: 2014-03-06 16:42
 comments: true
 categories:
   - Rafael Fiuza
-  - tips
   - non tech
+  - dicas
+  - atendimento
+  - workflow
   
 ---
 
