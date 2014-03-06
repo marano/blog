@@ -14,7 +14,9 @@ categories:
   
 ---
 
-Trabalhar na HE:labs nos faz melhorar em muitos aspectos. E um desses aspectos é o "Relacionamento com o cliente"
+Dessa vez não irei escrever sobre nada tecnologico nem sobre um workflow que aumenta a produtividade mas sim sobre um aspecto que faz muita diferença quando o objetivo é entregar valor e segurança para o cliente.
+
+Trabalhar na HE:labs nos faz melhorar em muitos aspectos. E um desses aspectos é o "Relacionamento com o cliente".
 <!--more-->
 Como já é conhecido, na HE não temos gerente nem alguem que faz a ponte com o cliente. Cada um do time é responsável por conversar, entender as necessidades e anseios, sugerir caminhos a seguir para chegar de forma mais simples ao objetivo do cliente e trazer confiança.
 
