@@ -18,17 +18,17 @@ Mitos de design que você deve considerar na sua próxima Landing Page
 
 
 
-A landing page de um projeto é uma das primeiras coisas que o usuário entra em contato ao se relacionar com um produto digital, por issso o cuidado com essa parte do sotware é essencial na hora de pensar em conversões, leads, e novos usuários. Neste post eu vou falar sobre alguns mitos, que muitas vezes são aplicados na criação de landing pages, mas que podem estar atrapalhando o sucesso do seu produto.
+A landing page de um projeto é uma das primeiras coisas que o usuário entra em contato ao se relacionar com um produto digital. Por isso o cuidado com essa parte do sotware é essencial na hora de pensar em conversões, leads e novos usuários. Neste post, falarei sobre alguns mitos que muitas vezes são aplicados na criação de landing pages, mas que podem estar atrapalhando o sucesso do seu produto.
 
 <!--more-->
 
 
 
-### As pessoas lêem
+### As pessoas leem
 
-A maior parte dos usuários que passam pelo seu site, não para para ler o conteúdo, a não ser que isso seja de extremo interesse para eles naquele momento.
+A maior parte dos usuários que passam pelo seu site, apenas dão uma olhada geral, não olhando realmente o conteúdo. A não ser que algum conteúdo seja de extremo interesse para ele naquele momento.
 
-Quando navegamos pela internet, nós vamos escaneando o conteúdo rapidamente, e automaticamente fazendo um filtro do que deve ser olhado com mais atenção e o que não é interessante, para assim pararmos com mais calma em um determinado tópico e nos aprofundarmos mais um pouco.
+Quando navegamos pela internet, nós vamos escaneando o conteúdo de maneira rápida e automaticamente fazendo um filtro do que deve ser olhado com mais atenção e o que não é interessante. Para assim, pararmos com mais calma em um determinado tópico e nos aprofundarmos mais um pouco.
 
 Sendo assim, na hora de pensar no conteúdo de uma landing page por exemplo, tente evitar grandes blocos de textos e instruções desnecessárias. Estruture o design da página para que o usuário possa escanear superficialmente o conteúdo apresentado de maneira clara e objetiva e pense em maneiras de destacar os pontos chaves.
 
@@ -36,7 +36,7 @@ Sendo assim, na hora de pensar no conteúdo de uma landing page por exemplo, ten
 
 
 
-### Usuários não usam a barrra de rolagem
+### Usuários não usam a barra de rolagem
 
 Um grande mito é achar que o usuário não vai rolar a página e por conta disso querer colocar todo o conteúdo ["above the fold"](http://en.wikipedia.org/wiki/Above_the_fold).
 
@@ -51,9 +51,9 @@ Obviamente o conteúdo que se apresenta no topo tem mais visualizações e preci
 ### Espaço em branco é desperdício
 
 
-Muitas vezes é dificil convencer alguém que quer preencher todo os espaços possíveis de uma página, acreditando que isso é uma maneira de aproveirar melhor as areas disponíveis. Mas utilizar o espaço em branco, ou espaço negativo, é na verdade, uma das técnincas mais preciosas do design gráfico. Não criar estas áres de respiro no layout pode prejudicar o seu projeto.
+Muitas vezes é difícil convencer alguém que quer preencher todo os espaços possíveis de uma página, acreditando que isso é uma maneira de aproveirar melhor as áreas disponíveis. Mas utilizar o espaço em branco ou espaço negativo é, na verdade, uma das técnincas mais preciosas do design gráfico. Não criar estas áres de respiro no layout pode prejudicar o seu projeto.
 
-Mais espaços em branco, criando áreas vazias em volta de textos por exemplo, ajuda a tornar a leitura mais confortável para o usuário. O conteúdo apresentado também passa mais credibilidade e se torna mais elegante quando temos uma melhor distribuíção.
+Mais espaços em branco, criando áreas vazias em volta de textos por exemplo, ajuda a tornar a leitura mais confortável para o usuário. O conteúdo apresentado também passa mais credibilidade e se torna mais elegante quando temos uma melhor distribuição.
 
 >The empty space on a page can be every bit as important as the space occupied by imagery,
 >because even empty space serves a purpose and supports the visual integrity of a layout,
@@ -66,30 +66,19 @@ Mais espaços em branco, criando áreas vazias em volta de textos por exemplo, a
 ### Call-to-action em cores vibrantes convertem mais
 
 
-As cores tem um papel muito relevante quando se pensa em comunicar algo, transmitem sentimentos diferentes, e ajudam a dar ênfase em algo ou neutralizar, são relacionadas ao posicionamento deu uma marca também, etc.
+As cores têm um papel muito relevante quando se pensa em comunicar algo. Transmitem sentimentos diferentes e ajudam a dar ênfase em algo ou neutralizar. E ainda, são relacionadas ao posicionamento deu uma marca também, etc.
 
-Dentro de todos estes aspectos, devese levar em consideração muitas coias para que o design tenha um equilíbrio e possa transmitir o que você pretende dentro daquele contexto para aquele target , criando assim uma boa experiência pra quem esta tendo contato com o material projetado.
+Dentro de todos estes aspectos, deve-se levar em consideração muitas coisas para que o design tenha um equilíbrio e possa transmitir o que você pretende dentro daquele contexto para aquele target. Criando assim, uma boa experiência pra quem está em contato com o material projetado.
 
-Achar que simplesmente colocar um cor quente em um botão call-to-ction, e que isso vai aumentar suas conversões, porque você viu este experimento no site da 37signals ou algo assim, não é legal.
+Achar que simplesmente colocar uma cor quente em um botão call-to-action e que isso vai aumentar suas conversões porque você viu este experimento no site da 37signals ou algo assim, não é legal.
 
-É preciso pensar em harmonia, equilíbrio, branding, propósito, contratse, tudo isso tem qeu estar equilibrado em uma paleta de cores para que você traga confiança ao seu usuário. Em alguns casos, pode ser que um botão vermelho radiante funcione para um certo tipo de publico em um determinado contexto, em outros casos pode ser que não. O fato de ter cores destoando muito pode causar um desconforto no usuário, e  fazer com que ele não se sinta confortável em clicar no call-to-action para ir para uma próxima etapa.
-
+É preciso pensar em harmonia, equilíbrio, branding, propósito e contraste. Tudo isso tem que estar equilibrado em uma paleta de cores para que você traga confiança ao seu usuário. Em alguns casos, pode ser que um botão vermelho radiante funcione para um certo tipo de público em um determinado contexto. Em outros, pode ser que não. O fato de ter cores destoando muito pode causar um desconforto no usuário e fazer com que ele não se sinta confortável em clicar no call-to-action para ir para uma próxima etapa.
 
 
 
 
 ###
 
-Existem várias soluções e formulas diferentes, sobre landing pages, sendo compartilhadas a todo momento na internet. Porém tudo isso deve ser analisado e aplicado dentro da realidade do seu projeto, que possui características e circunstancias únicas.
+Existem várias soluções e fórmulas diferentes sobre landing pages sendo compartilhadas a todo momento na internet. Porém, tudo isso deve ser analisado e aplicado dentro da realidade do seu projeto que possui características e circunstâncias únicas.
 
 Para se criar uma landing page de sucesso, é importante trabalhar de maneira incremental, usando métricas, analises e pesquisas para entender melhor qual o perfil do seu público e fazer mudanças relevantes dentro deste contexto.
-
-
-
-
-
-
-
-
-
-
