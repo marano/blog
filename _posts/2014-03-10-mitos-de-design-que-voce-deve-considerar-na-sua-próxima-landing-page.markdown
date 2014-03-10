@@ -15,10 +15,6 @@ categories:
 ---
 
 
-Mitos de design que você deve considerar na sua próxima Landing Page
-
-
-
 A landing page de um projeto é uma das primeiras coisas que o usuário entra em contato ao se relacionar com um produto digital. Por isso, o cuidado com essa parte do sotware é essencial na hora de pensar em conversões, leads e novos usuários. Neste post, falarei sobre alguns mitos que muitas vezes são aplicados na criação de landing pages, mas que podem estar atrapalhando o sucesso do seu produto.
 
 <!--more-->
