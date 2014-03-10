@@ -9,17 +9,27 @@ published: false
 post_styles: hints
 ---
 
-This is a quick tip on how to make facebook authentication work on ActiveAdmin.
+This is a quick tip on how to make Facebook authentication work on ActiveAdmin.
 
 <!--more-->
 
-ActiveAdmin is a very nice admin interface for Ruby on Rails applications. It provides some nice defaults and it's also customisable enough to do something not so trivial.
+ActiveAdmin is a very nice admin interface for Ruby on Rails applications. It provides some nice defaults and it's also customizable enough to do something not so trivial.
 
 Facebook authentication is also a very nice feature to have in your application. Let Facebook handle the credentials and don't worry about saving/salting/encrypting passwords on your side.
 
 ActiveAdmin allow us to change the default authentication system that it uses, that is Devise. You can change this to your own solution. Let's see where you need to change it.
 
 I won't go on full details on how to implement the authentication with Facebook. For that, you can read my [other post](http://helabs.com.br/blog/2013/06/24/implementando-login-via-facebook-na-sua-app-rails) on how to achieve this.
+
+### Set the user as an Admin
+
+Generate a new migration to add a admin column on the User's table.
+
+{% highlight ruby linenos %}
+  $ rails generate migration add_admin_to_users admin:boolean
+{% endhighlight %}
+
+Make sure to add a default value for this column to avoid the [Three-state boolean problem](http://robots.thoughtbot.com/avoid-the-threestate-boolean-problem?utm_content=buffer44c5d)
 
 ### Creating the controller helper methods
 
@@ -31,8 +41,10 @@ class ApplicationController < ActionController::Base
 
   private
 
-  def authenticate_user!
-    redirect_to(root_url, notice: "You need to be authenticated") unless current_user
+  def authenticate_admin_user!
+    unless user_signed_in? && current_user.admin?
+      redirect_to(root_url, notice: "You need to be authenticated")
+    end
   end
 
   def current_user
@@ -45,35 +57,11 @@ class ApplicationController < ActionController::Base
 end
 {% endhighlight %}
 
-The `#authenticate_user!` method will be used in a before_action to check if there is an User logged in. The `#current_user` just finds the User based on the id that is set on the session.
+The `#authenticate_admin_user!` method will be used in a before_action to check if there is an User logged in inside ActiveAdmin. The `#current_user` just finds the User based on the id that is set on the session.
 
-We now need to configure ActiveAdmin to use these methods. Just open the `config/initializers/active_admin.rb` file. This is the configuration file for ActiveAdmin.
+We now need to configure ActiveAdmin to use the `#current_user` method to find the logged in user. Just open the `config/initializers/active_admin.rb` file. This is the configuration file for ActiveAdmin.
 
-Find the line that configures the authentication method. It is around line 58.
-
-{% highlight ruby linenos %}
-# ...
-
-# This setting changes the method which Active Admin calls
-# within the controller.
-config.authentication_method = :authenticate_admin_user!
-
-# ...
-{% endhighlight %}
-
-Change the authentication method to the one on your `ApplicationController`.
-
-{% highlight ruby linenos %}
-  # ...
-
-  # This setting changes the method which Active Admin calls
-  # within the controller.
-  config.authentication_method = :authenticate_user!
-
-  # ...
-{% endhighlight %}
-
-Next, search for the line that configures the method that ActiveAdmin will use to identify the current logged in user. It's around the line 85.
+Search for the line that configures the method that ActiveAdmin will use to identify the current logged in user. It's around the line 85.
 
 {% highlight ruby linenos %}
 # ...
