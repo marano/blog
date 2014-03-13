@@ -103,6 +103,24 @@ end
 
 Save your images in `/images/posts/YYYY-MM-DD/`. Your image URL will look like this: `/blog/images/posts/YYYY-MM-DD/`.
 
+### Create a list
+
+For create a list on your post, always use hifen (the "-"), like this:
+
+```
+- item1
+- item2
+- item3
+```
+
+And it will look like this: 
+
+- item1
+- item2
+- item3
+
+Don't use asterisk, otherwise the list will break. 
+
 ## LICENSE
 
 [Blog of HE:labs](http://helabs.com.br/blog/) and its content is licensed under an [Attribution-NonCommercial-ShareAlike 3.0 Unported license](http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).
