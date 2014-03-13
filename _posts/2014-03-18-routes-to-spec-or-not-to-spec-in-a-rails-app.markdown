@@ -47,7 +47,7 @@ Thanks Rails, looking to this past time, remembers me that we're much better tod
 
 ## Things can be even worst
 
-We were a website tunned in SEO. Every page was important to exist, the way it was, keeping there url untouched. There were also a lot of redirects of all kinds that should be kept.
+We were a website tunned in SEO. Every page was important to exist, the way it was, keeping there url untouched. There were also a lot of redirects of all kinds that should be kept. Any misstep would be a disaster to our pagerank.
 
 The easier way to discover what was the more important routes was use the website in localhost, keeping the eyes on the logs to see which was the controllers and actions activated in every click I did in the browser. Based on these experiments I started creating tests to the routes. But the major problem was not to discover the ones that were in use. The big problem was to discover what were the routes **really not in use**, so we could block any access to it and just return what is expected to a nonexistent url: 404.
 
