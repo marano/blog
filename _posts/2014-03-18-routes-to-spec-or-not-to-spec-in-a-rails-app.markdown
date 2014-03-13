@@ -20,9 +20,9 @@ This is a topic with some controversy about the benefits of having well spec'ed 
 
 <!--more-->
 
-Some time ago I was hired to work on a company that had a huge Rails app with millions of users. At that time, to have a **huge** website in Rails was not as common as it is today. We were probably on the TOP 20 (maybe TOP 10? Does anyone have any kind of statistic of big Rails apps during 2006-2010?) website in the world using Rails in terms of number of unique visits. In my hands the website moved from Rails 1 to Rails 2 and then to Rails 3 (Rails 3 beta when I left to found HE:labs), and had one major redesign.
+Some time ago I was hired to work on a company that had a huge Rails app with millions of users. At that time, to have a **huge** website in Rails was not as common as it is today. We were probably on the TOP 20 (maybe TOP 10? Does anyone have any kind of statistic of big Rails apps during 2006-2010?) website in the world using Rails in terms of number of visits. In my hands the website moved from Rails 1 to Rails 2 and then to Rails 3 (Rails 3 beta when I left to found HE:labs), and had one major redesign.
 
-When I joined the team we had poor code coverage for tests. Almost nonexistent to be true. It was buggy. Thousands of exceptions were happening everyday. Lots of slow queries. Very unstable. So first of all I had to start learning the code and the business. But it was a **lot** of code for a website that was not so big in terms of features... I was walking on thin ice when doing any little change. It wasn't always possible to predict what would be the effects of a change in the business logic.
+When I joined the team we had poor code coverage by tests. Almost nonexistent to be true. It was buggy. Thousands of exceptions were happening everyday. Lots of slow queries. Very unstable. So first of all I had to start learning the code and the business. But it was a **lot** of code for a website that was not so big in terms of features... I was walking on thin ice when doing any little change. It wasn't always possible to predict what would be the effects of a change in the business logic.
 
 For every change I made in code, I wrote a test. At that time we used Test::Unit. We moved to Rspec some years later. I was making sure that what I was doing was going to have the desired result. If something got broken with my changes, I had to write another test to catch that undesired behavior and fix it. With these little steps, when I left the company, we were with almost 99% of the code covered by specs, including the routes. It was a slow process. I wasn't the only developer in the team, but it wasn't until I decided to act that we started to get the app back on track.
 
@@ -75,7 +75,7 @@ resources :articles, only: [:index]
 
 If you had written the specs of which routes **should not** exist, it would alert you about that and you would fix the code before committing or going to production. That's the most important thing about testing routes.
 
-You can say that it's not a problem to leave these lost routes there. After all, there is no link to it in any place... It may not be a problem now. But what if, some months later, another developer inherits ``ArticlesController`` from [inherited resources][inherited-resources]? You will start exposing to public actions that should not even exist. It's not hard to imagine why bots exists exploiting Rails applications seeking flaws like this.
+You can say that it's not a problem to leave these lost routes there. After all, there is no link to it in any place... It may not be a problem now. But what if, some months later, another developer inherits ``ArticlesController`` from [inherited resources][inherited-resources]? You will start exposing to public actions that should not even exist. It's likely that bots that exploit these flaws in Rails applications already exist.
 
 Other issues could happen too... Like Rails being exposed to a security issue that exploits undefined actions with open routes? (no more futurology from this point, I promise ;-)
 
