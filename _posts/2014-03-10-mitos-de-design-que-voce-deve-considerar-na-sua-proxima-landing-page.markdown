@@ -58,8 +58,6 @@ Mais espaços em branco, criando áreas vazias em volta de textos por exemplo, a
 
 [http://alistapart.com/article/whitespace](http://alistapart.com/article/whitespace)
 
-
-
 ### Call-to-action em cores vibrantes convertem mais
 
 
