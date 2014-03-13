@@ -20,36 +20,40 @@ This is a topic with some controversy about the benefits of having well spec'ed 
 
 <!--more-->
 
-Many time ago I was hired to work on a company that had a huge Rails app with millions of users. At that time to have a **huge** website in Rails was not as common as it is today. We were probably on the TOP 20 (maybe TOP 10? Do anyone have any kind of statistic of big Rails apps in the period of 2007-2010?) biggest website in the world using Rails in terms of number of accesses. In my hands the website moved from Rails 1 to Rails 2 and then to Rails 3 (Rails 3 beta when I left to found HE:labs) and had one major redesign.
+Many time ago I was hired to work on a company that had a huge Rails app with millions of users. At that time to have a **huge** website in Rails was not as common as it is today. We were probably on the TOP 20 (maybe TOP 10? Do anyone have any kind of statistic of big Rails apps in the period of 2006-2010?) biggest website in the world using Rails in terms of number of accesses. In my hands the website moved from Rails 1 to Rails 2 and then to Rails 3 (Rails 3 beta when I left to found HE:labs) and had one major redesign.
 
-When I joined the team we had poor code coverage by tests. Almost nonexistent to be true. It was buggy. Thousants of exceptions happens everyday. Lot's of slow queries. Much unstability. So first of all I had to start learning the code and the business. But it was a **lot** of code to a website that was not so big in terms of features... I was walking on thin ice when doing any little change. Not always was possible to forecast what would be the effects of a change in the business logic.
+When I joined the team we had poor code coverage by tests. Almost nonexistent to be true. It was buggy. Thousands of exceptions were happening everyday. Lot of slow queries. Very unstable. So first of all I had to start learning the code and the business. But it was a **lot** of code for a website that was not so big in terms of features... I was walking on thin ice when doing any little change. Not always was possible to predict what would be the effects of a change in the business logic.
 
-For every step I did in code, I wrote a test (At that time we used Test::Unit. Some years later we moved to Rspec.), at least to make sure that what I was doing was going to have the desired result. If anything breaks together with my changes, I had to write another test to catch that undesired behavior and fix it. In these little steps when I left the company we was with almost 99% of the code covered by specs, including the routes. It was a slow process. I was not the only person in the team, but was with me that we started to put the app on the road.
+For every change I did in code, I was writing a test. At that time we used Test::Unit. We moved to Rspec some years later. I was making sure that what I was doing was going to have the desired result. If something got broken with my changes, I had to write another test to catch that undesired behavior and fix it. With these little steps when I left the company we was with almost 99% of the code covered by specs, including the routes. It was a slow process. I wasn't the only developer in the team, but it was with me that we started to get the app back on track.
 
 ## What was the deal with the routes?
 
-In the past, Rails was know to be more flexible with routes. The RESTful concept implemented in the Rails routes became when the app was already written. So there was **a lot** of routes that did not make any sense if you would think in terms of the kind of REST that Rails implemented.
+In the past, Rails was known to be more flexible with routes. The RESTful concept was implemented into the Rails routes after the app was already written. So there were **a lot** of routes that did not make any sense in terms of the RESTful routes of Rails.
 
-To make things even worst, Rails by default added at the end of the ``routes.rb`` file the following code:
+To make things even worse, Rails added the following code at the end of the ``routes.rb`` file by default:
 
 {% highlight ruby linenos %}
 map.connect ':controller/:action/:id'
 map.connect ':controller/:action/:id.:format'
 {% endhighlight %}
 
-To the ones that are not from that time: it means that we can have many routes in the beginning of the ``routes.rb`` file. **BUT** if an accessed url did not match with any of the routes defined before, Rails would look in the controllers if there was any ``controller`` with name that matched with the desired url and then with the desired ``action`` and pass to the action (as ``params[:id]``) a possible ``id`` that was after the last dash in the url given.
+To the ones that are not from that time: it means that we can have many routes in the beginning of the ``routes.rb`` file, **BUT** if an accessed url did not match with any of the routes defined before, Rails would look:
 
-This was a terrible thing because you could have a controller with no routes defined in the ``routes.rb`` file, with a lot of actions inside and you can't even know if any of that actions are still in use or not. In our case, the code was really bad, so there was a lot of unused code/actions. How to distinguish the code that is in use to the ones that is not? Remember, there was almost no tests in the beginning! [See more about Rails 1.2 routes][rails-1-2-routing] and also about [named routes][named-routes].
+1. In the controllers if there was any controller with the name that matched with the requested url;
+2. Inside the controller the requested action;
+3. And then it would try to pass to the action (as ``params[:id]``) a possible id that was after the last slash in the given url.
 
-Look that the request would go into the action the way I explained no matter what was the HTTP verb used (GET/POST did not matter). This means that many bots crawled the website following links that was supposed to be POST requests, with expectation of some params being given, which caused a lot of unuseful hits and lots of exceptions (at that time, the code mostly did not check if the desired parameters for an action were present in ``params``).
+This was a terrible thing because you wouldn't even know if any of those actions are still meant to be accessible or not. In our case, the code was really bad, there was a lot of unused actions. How to distinguish the code that is in use to the ones that is not? Remember, there were almost no tests in the beginning! [See more about Rails 1.2 routes][rails-1-2-routing] and also about [named routes][named-routes].
 
-Thanks Rails, looking to this past time, remembers me that we're much better today than was there. ;-)
+The request could go into the action the way I explained no matter what was the HTTP verb used (GET/POST did not matter). This means that many bots crawled the website following links that were supposed to be POST requests, with expectation of some params being given, which caused a lot of unuseful hits and lots of exceptions (at that time, the code mostly did not check if the requested parameters for an action were present in ``params`` or not).
 
-## Things can be even worst
+Thanks Rails, looking to those times, I can say that we're much better today. ;-)
 
-We were a website tunned in SEO. Every page was important to exist, the way it was, keeping there url untouched. There were also a lot of redirects of all kinds that should be kept. Any misstep would be a disaster to our pagerank.
+## Things can be even worse
 
-The easier way to discover what was the more important routes was use the website in localhost, keeping the eyes on the logs to see which was the controllers and actions activated in every click I did in the browser. Based on these experiments I started creating tests to the routes. But the major problem was not to discover the ones that were in use. The big problem was to discover what were the routes **really not in use**, so we could block any access to it and just return what is expected to a nonexistent url: 404.
+We had a website tuned in for SEO. Every page was important to exist, the way it was, keeping there url untouched. There were also a lot of redirects of all kinds that should be kept. Any misstep would be a disaster to our pagerank.
+
+The easier way to discover which were more important routes was to use the website in localhost, keeping the eyes on the logs to see which of the controllers and actions were activated by every click I was doing in the browser. Based on these experiments I started creating tests for the routes. But the major problem was not to discover the ones that were in use. The big problem was to discover what were the routes **really not in use**, so we could block any access to it and just return what is expected to a nonexistent url: 404.
 
 The website was like a swiss cheese with lots of holes everywhere and we had to start blocking access to urls that **should not** exist anymore, but were there, public, and being banged by a lot of bots and users with a high risk of having security issues.
 
@@ -69,13 +73,15 @@ When the desired was:
 resources :articles, only: [:index]
 {% endhighlight %}
 
-If you had written the specs of what routes **should not** exist, it would alert you about that and you would fix the code before commit or go to production. That's the most importance of testing routes in Rails today.
+If you had written the specs of which routes **should not** exist, it would alert you about that and you would fix the code before commit or go to production. That's the most important thing about testing routes.
 
-You can say that it's not a problem to leave these lost routes there. After all there is no link to it in any place... It may not be a problem now. But what if, some months later, other developer inherit ``ArticlesController`` from [inherited resources][inherited-resources]? You will start exposing to public actions that should not even exist. I would not think it's hard if do already exists bots, just for Rails applications, seeking flaws like this.
+You can say that it's not a problem to leave these lost routes there. After all there is no link to it in any place... It may not be a problem now. But what if, some months later, other developer inherit ``ArticlesController`` from [inherited resources][inherited-resources]? You will start exposing to public actions that should not even exist. It's not hard to believe that already exist bots, just for Rails applications, seeking flaws like this.
 
-Other issues could happens... Like Rails being exposed to a security issue that exploits undefined actions with open routes? (no more futurology from this point, I promess ;-)
+Other issues could happen too... Like Rails being exposed to a security issue that exploits undefined actions with open routes? (no more futurology from this point, I promise ;-)
 
 Is it worth taking a risk like these, because of lazyness to write a simple test file with 20 lines of code? I don't think so. In this case the use of [Defensive programming][defensive-programming] is highly desirable.
+
+I'm not saying that if you do not write route specs you'll become like our website. Definitely our problem was not **only** the missing routing tests. But you know the [Broken windows theory][Broken_windows_theory], right? So I don't need to say anything more.
 
 This is an example of what I think is a good approach to spec the code above:
 
@@ -99,13 +105,11 @@ end
 
 As you can see, I cover, not the only the accessible action, but also the remaining REST actions that are not accessible.
 
-It's also good to cover the url helpers of the routes that exists. It ensures that they correctly exists (as you will use it in links and/or forms) and that urls are being well generated, according to the given params (in this case, no params).
+It's also good to cover the url helpers of the routes that exists. It ensures that they exist correctly (as you will use it in links and/or forms) and that the urls are being well generated, according to the given params (in this case, no params).
 
 ## The end
 
 Routes specs are a lot connected with controller specs. For me, it should live in the same file. I mean: the ``routing`` and the ``helpers`` describes from the routes spec file would live inside the regular controller spec file. I already tried it some months ago (still in Rails 3), but it did not works there. Rspec have some glue that makes it only works inside ``spec/routes`` directory. I never tried it again later.
-
-Hope it helps to convince you how important is to spec your routes.
 
 To the curious: the website was Redeparede.com. Some years later sold to [Clasificados.com][clasificados].
 
@@ -115,3 +119,4 @@ To the curious: the website was Redeparede.com. Some years later sold to [Clasif
 [inherited-resources]: https://github.com/josevalim/inherited_resources
 [clasificados]: http://www.clasificados.com/
 [defensive-programming]: http://en.wikipedia.org/wiki/Defensive_programming
+[Broken_windows_theory]: http://en.wikipedia.org/wiki/Broken_windows_theory
