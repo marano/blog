@@ -20,7 +20,7 @@ This is a topic with some controversy about the benefits of having well spec'ed 
 
 <!--more-->
 
-Some time ago I was hired to work on a company that had a huge Rails app with millions of users. At that time, to have a **huge** website in Rails was not as common as it is today. We were probably on the TOP 20 (maybe TOP 10? Does anyone have any kind of statistic of big Rails apps during 2006-2010?) website in the world using Rails in terms of number of visits. In my hands the website moved from Rails 1 to Rails 2 and then to Rails 3 (Rails 3 beta when I left to found HE:labs), and had one major redesign.
+Some time ago I was hired to work on a company that had a huge Rails app with millions of users. The website was like a swiss cheese with lots of holes everywhere and we had to start blocking access to urls that **should not** exist anymore, but were there, public, and being banged by a lot of bots and users with a high risk of having security issues. At that time, to have a **huge** website in Rails was not as common as it is today. We were probably on the TOP 20 (maybe TOP 10? Does anyone have any kind of statistic of big Rails apps during 2006-2010?) website in the world using Rails in terms of number of visits. In my hands the website moved from Rails 1 to Rails 2 and then to Rails 3 (Rails 3 beta when I left to found HE:labs), and had one major redesign.
 
 When I joined the team we had poor code coverage by tests. Almost nonexistent to be true. It was buggy. Thousands of exceptions were happening everyday. Lots of slow queries. Very unstable. So first of all I had to start learning the code and the business. But it was a **lot** of code for a website that was not so big in terms of features... I was walking on thin ice when doing any little change. It wasn't always possible to predict what would be the effects of a change in the business logic.
 
@@ -54,8 +54,6 @@ Thanks Rails, looking to those times, I can say that we're much better today. ;-
 We had a website tuned for SEO. Every page was important to exist, the way it was, keeping its url untouched. There were also a lot of redirects of all kinds that should be kept. Any misstep would be a disaster to our pagerank.
 
 The easier way to discover which routes were more important was to use the website in localhost, observing the logs to see which of the controllers and actions were activated by every click in the browser. Based on these experiments I started creating tests for the routes. But the major problem was not to discover the ones that were in use. The biggist problem was discovering what were the routes **really not in use**, so we could block any access to it and just return what is expected to a nonexistent url: 404.
-
-The website was like a swiss cheese with lots of holes everywhere and we had to start blocking access to urls that **should not** exist anymore, but were there, public, and being banged by a lot of bots and users with a high risk of having security issues.
 
 This is the point where the tests or specs on routes are so important. To define which routes exists and which one are not supposed to exist.
 
