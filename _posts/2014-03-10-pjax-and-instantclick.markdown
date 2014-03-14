@@ -13,7 +13,7 @@ categories:
 
 ---
 
-The subject of Performance Optimization has a bunch of techniques and tools such as inlining (in cases where it is better to have just one file containing HTML, CSS and Javascript), spriting (when we join images of a page in just one image file) and Ajax (when new content is loaded in the background). In this article we will go into details of a technique called pjax and a tool called InstantClick.
+The subject of Performance Optimization has a bunch of techniques and tools such as inlining (in cases where it is better to have CSS and Javascript inside the HTML file or even [images inside CSS](http://stackoverflow.com/questions/1207190/embedding-base64-images)), spriting (when we join images of a page in just one image file) and Ajax (when new content is loaded in the background). In this article we will go into details of a technique to speed up your site called pjax and a tool called InstantClick.
 
 <!--more-->
 
