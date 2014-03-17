@@ -119,7 +119,40 @@ And it will look like this:
 - item2
 - item3
 
-Don't use asterisk, otherwise the list will break. 
+Don't use asterisk, otherwise the list will break.
+
+Or, you can use simples html like this:
+
+```
+<ul>
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+</ul>
+
+or
+
+<ol>
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+</ol>
+```
+And it will be like this: 
+
+<ul>
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+</ul>
+
+or
+
+<ol>
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+</ol>
 
 ## LICENSE
 
