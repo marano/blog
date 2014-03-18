@@ -3,7 +3,7 @@ published: true
 author: Sylvestre Mergulhão
 layout: post
 title: "Routes: to spec or not to spec in a Rails app?"
-date: 2014-03-17 14:00
+date: 2014-03-18 14:00
 comments: true
 categories:
   - rails
