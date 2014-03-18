@@ -83,6 +83,10 @@ $ git merge <name-of-the-branch>
 $ git push
 ```
 
+## Maintainers
+
+- [Bia](https://github.com/beatrizcp87)
+
 ## Notes
 
 ### Code Highlighting
