@@ -3,7 +3,6 @@ published: true
 author: Crystal Affonso
 layout: post
 title: "Novo membro: Guilherme Sá"
-date: 2013-12-06 17:00
 comments: true
 categories:
   - Novo membro

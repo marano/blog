@@ -3,7 +3,6 @@ published: true
 author: Flavia Fortes
 layout: post
 title: "Performance Protips"
-date: 2013-12-18 15:00
 comments: true
 categories:
   - heroku

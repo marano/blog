@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "HE:labs marca presença no Startup Farm do Rio de Janeiro"
-date: 2012-08-31 08:00
 comments: true
 categories:
   - Novidades

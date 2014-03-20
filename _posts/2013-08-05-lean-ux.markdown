@@ -3,7 +3,6 @@ published: true
 author: Aluísio Azevedo
 layout: post
 title: "Um pouco sobre Lean UX"
-date: 2013-08-05 10:45
 comments: true
 categories:
   - design

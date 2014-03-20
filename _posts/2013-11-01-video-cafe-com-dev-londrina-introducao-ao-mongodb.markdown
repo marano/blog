@@ -3,7 +3,6 @@ published: true
 author: Eduardo Fiorezi
 layout: post
 title: "[video] Introdução ao mongoDB - Café com Dev Londrina"
-date: 2013-11-01 10:00
 comments: true
 categories:
   - eduardo fiorezi

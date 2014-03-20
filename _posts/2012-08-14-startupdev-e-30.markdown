@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "Startup DEV é 30"
-date: 2012-08-14 08:00
 comments: true
 categories:
   - Novidades

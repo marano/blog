@@ -2,7 +2,6 @@
 author: Mikael Carrara
 layout: post
 title: "Agile Development, Simplicidade e UX"
-date: 2013-07-15 15:03
 comments: true
 categories:
   - design

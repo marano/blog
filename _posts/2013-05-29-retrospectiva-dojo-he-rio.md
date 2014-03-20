@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Retrospectiva - HE:Rio DOJO 24/05"
-date: 2013-05-29 11:30
 comments: true
 categories:
   - cafe com dev

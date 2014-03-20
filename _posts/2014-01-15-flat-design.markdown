@@ -3,7 +3,6 @@ published: true
 author: Rodrigo Gomes
 layout: post
 title: "Flat Design: a nova tendência da web"
-date: 2014-01-15 16:00
 comments: true
 categories:
   - design

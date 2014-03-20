@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Novo membro: Bruno Fernando"
-date: 2013-07-02 11:30
 comments: true
 categories:
   - time

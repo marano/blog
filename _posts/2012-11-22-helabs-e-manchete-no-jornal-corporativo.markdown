@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "HE:labs é manchete no Jornal Corporativo de 21/11"
-date: 2012-11-22 10:00
 comments: true
 categories:
   - Novidades

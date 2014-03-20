@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "Para onde vamos?"
-date: 2011-07-29 08:00
 comments: true
 categories:
   - Novidades

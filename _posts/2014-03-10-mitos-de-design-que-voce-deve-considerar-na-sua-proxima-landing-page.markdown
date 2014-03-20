@@ -3,7 +3,6 @@ published: true
 author: Aluísio Azevedo
 layout: post
 title: "Mitos de design que você deve considerar na sua próxima Landing Page"
-date: 2014-03-10 12:00
 comments: true
 categories:
   - design

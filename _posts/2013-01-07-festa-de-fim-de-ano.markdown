@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "Festa de fim de ano da HE:labs"
-date: 2013-01-07 10:00
 comments: true
 categories:
   - HE:atividades

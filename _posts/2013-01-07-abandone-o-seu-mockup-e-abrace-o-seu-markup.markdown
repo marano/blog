@@ -2,7 +2,6 @@
 author: Aluisio Azevedo
 layout: post
 title: "Abandone o seu mockup e abrace o seu markup"
-date: 2013-01-07 17:43
 comments: true
 categories:
   - design

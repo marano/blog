@@ -2,7 +2,6 @@
 author: Matheus Bras
 layout: post
 title: "Aprendizados com o Startup DEV"
-date: 2013-01-25 10:00
 comments: true
 categories:
   - startupdev

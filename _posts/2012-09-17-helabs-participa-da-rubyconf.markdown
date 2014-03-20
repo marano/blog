@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "HE:labs participa da Ruby Conf"
-date: 2012-09-17 08:00
 comments: true
 categories:
   - Novidades

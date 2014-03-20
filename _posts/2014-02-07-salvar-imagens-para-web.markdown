@@ -3,7 +3,6 @@ published: true
 author: Dirceu Pauka
 layout: post
 title: "Como salvar imagens para web"
-date: 2014-02-07 16:45
 comments: true
 categories:
   - design

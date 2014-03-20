@@ -2,7 +2,6 @@
 author: Organização Rails Girls RJ
 layout: post
 title: "HE:labs in Rails Girls RJ"
-date: 2013-01-18 12:20
 comments: true
 categories:
   - rails

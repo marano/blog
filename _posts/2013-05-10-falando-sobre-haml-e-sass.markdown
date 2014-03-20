@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Falando sobre HAML e SASS"
-date: 2013-05-10 15:00
 comments: true
 categories:
   - Rodrigo Gomes

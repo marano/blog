@@ -3,7 +3,6 @@ published: true
 author: Krystal Campioni
 layout: post
 title: "The perks of using SASS - Creating color pallets with variables and functions"
-date: 2014-03-17 17:16
 comments: true
 categories:
   - front-end

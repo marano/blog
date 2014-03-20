@@ -3,7 +3,6 @@ published: true
 author: Rafael Lima
 layout: post
 title: "Tivemos um cliente insatisfeito, vamos aprender!"
-date: 2013-10-01 20:30
 comments: true
 categories:
   - startupdev

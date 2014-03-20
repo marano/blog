@@ -2,7 +2,6 @@
 author: Vinicius Teles
 layout: post
 title: "Lançamento do site DesenvolvimentoAgil.com.br"
-date: 2013-01-21 16:00
 comments: true
 categories:
   - desenvolvimento agil

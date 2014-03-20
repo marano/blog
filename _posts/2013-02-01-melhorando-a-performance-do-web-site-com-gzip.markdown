@@ -2,7 +2,6 @@
 author: Pedro Marins
 layout: post
 title: "Melhorando a performance do web site com gzip"
-date: 2013-02-01 12:30
 comments: true
 categories:
   - pedro marins

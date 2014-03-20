@@ -2,7 +2,6 @@
 author: Pedro Marins
 layout: post
 title: "Tech Talks - Rodrigo Martins: Escrevendo código de forma clara e objetiva"
-date: 2012-11-30 15:52
 comments: true
 categories:
   - tech talks

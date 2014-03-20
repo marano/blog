@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "Startupdev é destaque na Exame"
-date: 2011-10-09 08:00
 comments: true
 categories:
   - Novidades

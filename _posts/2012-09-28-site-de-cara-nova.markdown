@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "Site da HE:labs está de cara nova"
-date: 2012-09-28 08:00
 comments: true
 categories:
   - Novidades

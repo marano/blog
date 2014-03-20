@@ -3,7 +3,6 @@ published: true
 author: Aluísio Azevedo
 layout: post
 title: "Redesign do Startupdev"
-date: 2013-11-26 15:00
 comments: true
 categories:
   - startupdev

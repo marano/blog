@@ -3,7 +3,6 @@ published: true
 author: Ali Ismayilov
 layout: post
 title: "How to upload big files to Amazon S3 while using Heroku"
-date: 2014-02-21 12:16
 comments: true
 categories:
   - ali ismayilov

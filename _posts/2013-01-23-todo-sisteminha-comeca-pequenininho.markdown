@@ -2,7 +2,6 @@
 author: Eduardo Fiorezi
 layout: post
 title: "Todo sisteminha começa pequenininho"
-date: 2013-01-23 16:30
 comments: true
 categories:
   - desenvolvimento agil

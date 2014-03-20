@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Novos membros: Analu e Ali"
-date: 2013-11-13 15:00
 comments: true
 categories:
   - Analu

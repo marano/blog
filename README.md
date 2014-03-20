@@ -16,11 +16,9 @@ $ git checkout -b post/title-of-your-post
 
 ```
 ---
-published: false
-author: Your Name
 layout: post
 title: "Title"
-date: YYYY-MM-DD HH:MM
+author: Your Name
 comments: true
 categories:
   - Tag1
@@ -58,27 +56,27 @@ $ git push origin post/title-of-your-post
 ```
 $ git pull --rebase
 ```
- 
+
 2) Pull the post to a branch to do reviews and/or modifications:
 
 ```
 $ git checkout -b <name-of-the-branch> origin/<name-of-the-branch>
 ```
- 
+
 3) After review/modification, checkout the gh-pages branch:
- 
+
 ```
 $ git checkout gh-pages
 ```
- 
+
 4) Merge post's branch into gh-pages:
- 
+
 ```
 $ git merge <name-of-the-branch>
 ```
- 
+
 5) If everything is ok, update the remote repo to publish it:
- 
+
 ```
 $ git push
 ```
@@ -117,7 +115,7 @@ For create a list on your post, always use hifen (the "-"), like this:
 - item3
 ```
 
-And it will look like this: 
+And it will look like this:
 
 - item1
 - item2
@@ -142,7 +140,7 @@ or
   <li>item 3</li>
 </ol>
 ```
-And it will be like this: 
+And it will be like this:
 
 <ul>
   <li>item 1</li>

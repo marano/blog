@@ -3,7 +3,6 @@ published: false
 author: Rafael Fiuza
 layout: post
 title: "Turn simple with Query Objects"
-date: 2014-01-27 17:00
 comments: true
 categories:
   - Rafael Fiuza

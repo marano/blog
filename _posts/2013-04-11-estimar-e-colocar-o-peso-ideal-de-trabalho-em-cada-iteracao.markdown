@@ -2,7 +2,6 @@
 author: Eduardo Fiorezi
 layout: post
 title: "Estimar é colocar o peso ideal de trabalho em cada iteração"
-date: 2013-04-11 11:00
 comments: true
 categories:
   - desenvolvimento agil

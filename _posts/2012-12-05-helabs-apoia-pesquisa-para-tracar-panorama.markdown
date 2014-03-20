@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "HE:labs apoia pesquisa para traçar panorama do M-Commerce brasileiro"
-date: 2012-12-05 12:00
 comments: true
 categories:
   - Novidades

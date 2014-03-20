@@ -3,7 +3,6 @@ published: true
 author: Sylvestre Mergulhão
 layout: post
 title: "Custos invisíveis"
-date: 2013-07-23 11:34
 comments: true
 categories: 
   - TI

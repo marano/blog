@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Retrospectiva Café com DEV HE:Rio 28/06"
-date: 2013-07-12 14:30
 comments: true
 categories:
   - cafe com dev

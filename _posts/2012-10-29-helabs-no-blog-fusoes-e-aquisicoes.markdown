@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "HE:labs no blog Fusões & Aquisições"
-date: 2012-10-29 08:00
 comments: true
 categories:
   - Novidades

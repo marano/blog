@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "HE:labs patrocina Startup Rio Meetup"
-date: 2012-11-16 10:00
 comments: true
 categories:
   - Novidades

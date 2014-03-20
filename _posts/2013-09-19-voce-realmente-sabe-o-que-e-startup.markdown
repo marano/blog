@@ -3,7 +3,6 @@ published: true
 author: Flavia Fortes
 layout: post
 title: "Você, realmente, sabe o que é uma startup? E MVP? Então vem comigo..."
-date: 2013-09-19 14:15
 comments: true
 categories:
   - helabs

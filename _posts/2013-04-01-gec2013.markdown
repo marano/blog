@@ -2,7 +2,6 @@
 author: Rafael Lima
 layout: post
 title: "Global Entrepreneurship Congress 2013 no Rio de Janeiro"
-date: 2013-04-01 9:00
 comments: true
 categories:
   - rafael lima

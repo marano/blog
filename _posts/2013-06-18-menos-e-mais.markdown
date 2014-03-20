@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Menos é mais"
-date: 2013-06-18 11:00
 comments: true
 categories:
   - comunicação
