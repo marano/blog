@@ -3,7 +3,6 @@ published: true
 layout: post
 author: Mauro George
 title: Rails Rumble 2013
-date: 2013-10-21 11:11
 comments: true
 categories:
   - mauro george

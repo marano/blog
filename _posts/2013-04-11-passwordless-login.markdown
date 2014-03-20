@@ -2,7 +2,6 @@
 author: Matheus Bras
 layout: post
 title: "Passwordless Login"
-date: 2013-04-11 11:15
 comments: true
 categories:
   - matheus bras

@@ -3,7 +3,6 @@ published: true
 author: Crystal Affonso
 layout: post
 title: "Novo membro: Fábio Rehm"
-date: 2014-01-29 17:00
 comments: true
 categories:
   - Novo membro

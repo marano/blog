@@ -2,7 +2,6 @@
 author: Pedro Nascimento
 layout: post
 title: "Modularizando sua aplicação usando Engines"
-date: 2012-12-12 12:12
 comments: true
 categories:
   - rails

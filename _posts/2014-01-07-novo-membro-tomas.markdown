@@ -3,7 +3,6 @@ published: true
 author: Crystal Affonso
 layout: post
 title: "Novo membro: Tomás Müller"
-date: 2014-01-07 14:00
 comments: true
 categories:
   - Novo membro

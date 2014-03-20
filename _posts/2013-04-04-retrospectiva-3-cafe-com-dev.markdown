@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Retrospectiva - 3° Café com DEV"
-date: 2013-04-04 10:21
 comments: true
 categories:
   - cafe com dev

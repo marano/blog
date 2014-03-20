@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Retrospectiva Café com DEV - HE:Londrina 24/05"
-date: 2013-05-31 16:30
 comments: true
 categories:
   - cafe com dev

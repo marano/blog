@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Novos membros: Dirceu e Flavia"
-date: 2013-06-07 18:00
 comments: true
 categories:
   - time

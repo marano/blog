@@ -3,7 +3,6 @@ published: true
 author: Crystal Affonso
 layout: post
 title: "Visita de Rafael Santos à HE:labs"
-date: 2013-09-02 16:00
 comments: true
 categories:
   - helabs

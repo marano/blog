@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "Startup DEV no Jornal O Globo "
-date: 2012-07-05 08:00
 comments: true
 categories:
   - Novidades

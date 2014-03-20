@@ -3,7 +3,6 @@ published: true
 author: Matheus Bras
 layout: post
 title: "Use Background Jobs e não deixe o usuário esperando"
-date: 2013-10-31 10:00
 comments: true
 categories:
   - matheus bras

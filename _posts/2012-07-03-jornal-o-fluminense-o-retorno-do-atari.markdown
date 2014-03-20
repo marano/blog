@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "Jornal O Fluminense - O retorno do Atari"
-date: 2012-07-03 08:00
 comments: true
 categories:
   - Novidades

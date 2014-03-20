@@ -3,7 +3,6 @@ published: true
 author: Mikael Carrara
 layout: post
 title: "Design Responsivo Parte I: Arquivos CSS e Breakpoints"
-date: 2013-02-27 10:15
 comments: true
 categories:
   - design

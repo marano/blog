@@ -3,7 +3,6 @@ published: true
 author: Ali Ismayilov
 layout: post
 title: "Resting is part of working"
-date: 2013-12-26 16:51
 comments: true
 categories:
   - productivity

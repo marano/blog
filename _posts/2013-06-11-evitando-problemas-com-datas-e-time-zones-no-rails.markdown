@@ -3,7 +3,6 @@ published: true
 author: Cayo Medeiros (yogodoshi)
 layout: post
 title: "Evitando problemas com datas e time zones no Rails"
-date: 2013-06-11 10:20
 comments: true
 categories:
   - time zone

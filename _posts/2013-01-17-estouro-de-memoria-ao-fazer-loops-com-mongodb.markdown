@@ -2,7 +2,6 @@
 author: Cayo Medeiros (yogodoshi)
 layout: post
 title: "Estouro de memória ao fazer loops com MongoDB"
-date: 2013-01-17 11:00
 comments: true
 categories:
   - yogodoshi

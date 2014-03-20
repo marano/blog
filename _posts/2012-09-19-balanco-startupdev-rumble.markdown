@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "Balanço do Startup DEV Rumble"
-date: 2012-09-19 08:00
 comments: true
 categories:
   - Novidades

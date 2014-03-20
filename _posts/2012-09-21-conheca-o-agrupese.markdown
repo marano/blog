@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "Conheça o Agrupe.se, campeão do Startup DEV Rumble"
-date: 2012-09-21 08:00
 comments: true
 categories:
   - Novidades

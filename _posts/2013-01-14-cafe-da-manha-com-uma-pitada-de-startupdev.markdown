@@ -2,7 +2,6 @@
 author: Rafael Lima
 layout: post
 title: "Café da manhã com uma pitada de Startup DEV"
-date: 2013-01-14 12:43
 comments: true
 categories: startupdev 
 ---

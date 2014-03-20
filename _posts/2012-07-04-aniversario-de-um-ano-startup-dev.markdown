@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "Aniversário de um ano do Startupdev"
-date: 2012-07-04 08:00
 comments: true
 categories:
   - HE:atividades

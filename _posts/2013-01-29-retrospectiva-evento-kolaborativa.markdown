@@ -2,7 +2,6 @@
 author: Andre Cytryn
 layout: post
 title: "Retrospectiva - evento Kolaborativa"
-date: 2013-01-29 10:30
 comments: true
 categories:
   - eventos

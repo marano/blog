@@ -3,7 +3,6 @@ published: true
 author: Crystal Affonso
 layout: post
 title: "Novo membro: Márcio Júnior"
-date: 2014-01-13 17:00
 comments: true
 categories:
   - Novo membro

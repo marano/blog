@@ -2,7 +2,6 @@
 author: Rodrigo Gomes
 layout: post
 title: "Era HTML5: A nova Era da web"
-date: 2013-07-09 13:35
 comments: true
 categories:
   - Rodrigo Gomes

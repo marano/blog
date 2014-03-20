@@ -3,7 +3,6 @@ published: true
 author: Sylvestre Mergulhão
 layout: post
 title: "Não vendemos projetos de software"
-date: 2013-10-10 16:30
 comments: true
 categories:
   - agile

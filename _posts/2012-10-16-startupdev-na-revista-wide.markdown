@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "Startup DEV na Revista Wide de setembro/outubro"
-date: 2012-10-16 08:00
 comments: true
 categories:
   - Novidades

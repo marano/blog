@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "Artigo de Sylvestre Mergulhão no Webinsider"
-date: 2012-12-05 11:00
 comments: true
 categories:
   - Novidades

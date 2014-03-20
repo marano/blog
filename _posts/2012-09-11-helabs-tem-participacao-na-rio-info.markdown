@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "HE:labs tem participação especial no Rio Info 2012"
-date: 2012-09-11 08:00
 comments: true
 categories:
   - Novidades

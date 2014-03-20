@@ -3,7 +3,6 @@ published: true
 author: Thiago Borges
 layout: post
 title: "The 12 Factor app"
-date: 2013-07-10 14:00
 comments: true
 categories:
   - Thiago Borges

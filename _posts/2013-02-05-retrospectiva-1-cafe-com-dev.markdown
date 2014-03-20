@@ -2,7 +2,6 @@
 author: Pedro Marins
 layout: post
 title: "Retrospectiva - 1° Café com DEV"
-date: 2013-02-05 09:30
 comments: true
 categories:
   - pedro marins

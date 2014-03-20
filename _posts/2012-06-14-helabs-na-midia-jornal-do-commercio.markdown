@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "HE:labs na Mídia: Jornal do Commércio"
-date: 2012-06-14 08:00
 comments: true
 categories:
   - Novidades

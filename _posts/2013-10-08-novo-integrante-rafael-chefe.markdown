@@ -3,7 +3,6 @@ published: true
 author: Crystal Affonso
 layout: post
 title: "Novo membro: Rafael Chefe"
-date: 2013-10-08 15:00
 comments: true
 categories:
   - time

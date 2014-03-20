@@ -3,7 +3,6 @@ published: true
 author: HE:labs
 layout: post
 title: "HE:labs no Geeks on Mocha"
-date: 2012-10-04 08:00
 comments: true
 categories:
   - Startupdev

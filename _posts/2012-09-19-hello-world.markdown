@@ -2,7 +2,6 @@
 author: Pedro Nascimento
 layout: post
 title: "Hello World"
-date: 2012-09-19 08:44
 comments: true
 categories:
  - Novidades 
