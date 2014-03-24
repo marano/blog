@@ -16,7 +16,7 @@ categories:
   
 ---
 
-Dessa vez não irei escrever sobre nada tecnologico nem sobre um workflow que aumenta a produtividade mas sim sobre um aspecto que faz muita diferença quando o objetivo é entregar valor e segurança para o cliente.
+Dessa vez não irei escrever sobre nada tecnológico nem sobre um workflow que aumenta a produtividade mas sim sobre um aspecto que faz muita diferença quando o objetivo é entregar valor e segurança para o cliente.
 
 Trabalhar na HE:labs nos faz melhorar em muitos aspectos. E um desses aspectos é o "Relacionamento com o cliente".
 <!--more-->
@@ -55,7 +55,7 @@ Na reunião o cliente está apresentando um sonho, um desejo. É como estivesse 
 - é importante respeitar. Na reunião é sempre bom indagar, entender o publico alvo do projeto e porque o cliente acredita que é algo que valha a pena investir e comprar a briga dele, deixando claro que estão no mesmo time.
 
 ## 5. Confiança
-Só vá para a reunião se estiver minimamente preparado. Ja tive experiência de ser metralhado pelo cliente apenas porque ele sabia mais do sistema do que eu. É normal o cliente saber do negócio, mas do sistema, é responsabilidade nossa conhecer o maximo possivel. E se não souber, perguntar nunca me trouxe problemas. Ja não perguntar sim.
+Só vá para a reunião se estiver minimamente preparado. Já tive experiência de ser metralhado pelo cliente apenas porque ele sabia mais do sistema do que eu. É normal o cliente saber do negócio, mas do sistema, é responsabilidade nossa conhecer o máximo possível. E se não souber, perguntar nunca me trouxe problemas. Já não perguntar sim.
 
 ## 6. Tornar pessoal
 Alguns não gostam. Eu acho imprescindível.
@@ -65,3 +65,4 @@ O cliente é uma pessoa assim como o desenvolvedor (apesar de não acreditarem).
 Fazer um atendimento pessoal não significa que vão te importunar no domingo nem que o cliente vai querer ouvir seus problemas. Apenas deixa mais divertido do que ir falar com um atendente de operadora de celular.
 
 Enfim, essa lista não é definitiva em nenhum ponto. São apenas alguns pontos mas que tenho percebido no decorrer dos tempos que tenho tido ótimos resultados.
+
