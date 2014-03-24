@@ -11,6 +11,8 @@ categories:
   - dicas
   - atendimento
   - workflow
+  - agile
+  - processos
   
 ---
 
