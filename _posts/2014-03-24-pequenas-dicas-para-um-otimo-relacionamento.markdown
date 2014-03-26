@@ -3,7 +3,6 @@ published: true
 author: Rafael Fiuza
 layout: post
 title: "Pequenas dicas para um ótimo relacionamento"
-date: 2014-03-24 16:42
 comments: true
 categories:
   - Rafael Fiuza
