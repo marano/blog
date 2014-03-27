@@ -14,6 +14,7 @@ layout: nil
     <email>tech@helabs.com.br</email>
     <uri>http://helabs.com.br/nosso-time/</uri>
   </author>
+  <icon>http://helabs.com.br/images/logo_sq.jpg</icon>
 
   {% for post in site.posts %}
   <entry>
