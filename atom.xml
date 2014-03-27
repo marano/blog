@@ -10,8 +10,9 @@ layout: nil
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>http://helabs.com.br/blog/</id>
   <author>
-    <name>Time HE:labs</name>
-    <email>time@hehabs.com.br</email>
+    <name>HE:labs Team</name>
+    <email>tech@helabs.com.br</email>
+    <uri>http://helabs.com.br/nosso-time/</uri>
   </author>
 
   {% for post in site.posts %}
