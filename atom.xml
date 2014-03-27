@@ -19,6 +19,7 @@ layout: nil
     <id>http://helabs.com.br/blog{{ post.id }}</id>
     <link type="text/html" rel="alternate" href="http://helabs.com.br/blog{{ post.url }}"/>
     <title>{{ post.title | xml_escape }}</title>
+    <summary>{{ post.excerpt | strip_html | strip_newlines | condense_spaces | xml_escape }}</summary>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
       <name>{{ post.author }}</name>
