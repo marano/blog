@@ -3,7 +3,7 @@ layout: nil
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- 
+
   <title>www.helabs.com.br/blog</title>
   <link href="http://helabs.com.br/blog/"/>
   <link type="application/atom+xml" rel="self" href="http://helabs.com.br/blog/atom.xml"/>
@@ -28,5 +28,5 @@ layout: nil
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
   {% endfor %}
- 
+
 </feed>
