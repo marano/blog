@@ -141,7 +141,9 @@ layout: nil
               Outros posts
               *|RSS:RECENT|*
 
-              *|CALENDAR_ITEMS:|*
+
+              *|FEEDBLOCK:http://helabs.com.br/blog/atom.xml|*
+              *|FEEDITEMS:[$count=4]|*
               <tr>
                 <td align="center" valign="top">
                   <table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -153,10 +155,10 @@ layout: nil
                               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
                                   <td valign="top" class="textContentCal">
-                                    <h4 mc:edit="month">OUT</h4>
+                                    <h4>OUT</h4>
                                     <hr width="60%" align="right" noshade="">
-                                    <p mc:edit="date1" class="textneutral">
-                                      21-24
+                                    <p class="textneutral">
+                                      *|FEEDITEM:DATE|*
                                     </p>
                                   </td>
                                 </tr>
@@ -166,9 +168,9 @@ layout: nil
                               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
                                   <td valign="top" class="textContentDes">
-                                    <h5 mc:edit="evet_tittle1">Future.com</h5>
-                                    <p mc:edit="event_text1" class="textneutral">
-                                      No Rio de Janeiro.
+                                    <h5>*|FEEDITEM:TITLE|*</h5>
+                                    <p class="textneutral">
+                                      *|FEEDITEM:AUTHOR|*
                                     </p>
                                   </td>
                                 </tr>
@@ -181,7 +183,7 @@ layout: nil
                   </table>
                 </td>
               </tr>
-              *|END:CALENDAR_ITEMS|*
+              *|END:FEEDBLOCK|*
 
               *|TWITTER:FULLPROFILE|*
               *|TWITTER:TWEETS(5)|*
