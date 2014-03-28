@@ -3,16 +3,16 @@ published: true
 author: Francisco Martins
 layout: post
 title: "Criando uma gem configurável"
-date: 2014-03-10 12:00
+date: 2014-03-28 12:00
 comments: true
 categories:
   - ruby
   - gem
 ---
 
-Há alguns meses eu vi que a Riot estava trabalhando numa [API][api] para o League Of Legends, e resolvi criar uma [gem][riot_client] que serviria de interface para essa API, a título de prática.
+Há alguns meses, vi que a Riot estava trabalhando numa [API][api] para o League Of Legends e resolvi criar uma [gem][riot_client] que serviria de interface para ela a título de prática.
 
-Eu acabei desanimando em continuar quando vi que a API BR estava um pouco atrás da internacional e encontrei um bug (que não foi corrigido até hoje), mas independente disso, a experiência ficou e eu prometi fazer um post a respeito.
+Eu acabei desanimando em continuar quando vi que a API BR estava um pouco atrás da internacional e encontrei um bug (que não foi corrigido até hoje). Mas independentemente disso, a experiência ficou e eu me prometi fazer um post a respeito.
 
 <!--more-->
 
@@ -26,9 +26,9 @@ Uma dica que falta neste guia é que você pode usar o bundler para criar o esqu
   $ bundle gem minha_gem
 {% endhighlight %}
 
-### Adicionando suporte à configurações
+### Adicionando suporte às configurações
 
-Você já deve ter percebido que algumas gems possuem uma opção de configuração, como:
+Você já deve ter percebido que algumas gems possuem opções de configuração, como:
 
 {% highlight ruby linenos %}
 RSpec.configure do |config|
@@ -48,9 +48,9 @@ ActiveSupport.on_load(:active_model_serializers) do
 end
 {% endhighlight %}
 
-Tornar sua gem configurável permite que ela seja usada em diferentes projetos de forma customizada e é bastante simples. No caso da RiotClient, cada projeto que a utilizasse precisaria ter sua própria ApiKey e seria muito mais elegante fazer dessa forma do que passar como parametro cada vez que a classe fosse instanciada.
+Tornar sua gem configurável permite que ela seja usada em diferentes projetos de forma customizada e é bastante simples. No caso da RiotClient, cada projeto que a utilizasse precisaria ter sua própria ApiKey e seria muito mais elegante fazer dessa forma do que passar como parâmetro cada vez que a classe fosse instanciada.
 
-O primeiro passo é criar uma classe que vai representar os dados de cofiguração:
+O primeiro passo é criar uma classe que representará os dados de cofiguração:
 
 {% highlight ruby linenos %}
   module MinhaGem
