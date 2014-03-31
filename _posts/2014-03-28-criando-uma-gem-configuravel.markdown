@@ -3,7 +3,6 @@ published: true
 author: Francisco Martins
 layout: post
 title: "Criando uma gem configurável"
-date: 2014-03-28 12:00
 comments: true
 categories:
   - ruby
