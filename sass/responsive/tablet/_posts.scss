@@ -1,24 +1,27 @@
 #posts-list{
   width: 100%;
+  display: block;
   .post{
-    width: 100%;
-    text-align: center;
-    .flex-box{
+    width: 100% !important;
+    text-align: center !important;
+    display: block !important;
+    border: none !important;
+    padding: 0 0 20px !important;
+
+    .flex-box {
       text-align: left;
       width: 75%;
       height: auto;
-      margin: 40px auto 0 auto;
+      margin: 20px auto 0 !important;
       float:none;
       border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+
+      .post-title { font-size: 1.25em }
     }
+  }
 
-
-
-    /* First post */
-
-
-
-
+  > .post {
     &:first-child{
       width: 100%;
       text-align: center;
@@ -33,6 +36,7 @@
         display: block;
         padding: 20px;
         top: -20px;
+        position: static;
         .post-title {
           padding:0;
           font-size: 1.25em;
@@ -59,14 +63,8 @@
         margin-bottom: 10px;
       }
     }
-
-
-
-    /* final de first post */
-
-
-
   }
+  /* final de first post */
 }
 
 .full-post-header {

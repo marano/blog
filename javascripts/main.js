@@ -46,4 +46,11 @@ $(function(){
     $(this).attr('href', url);
   });
 
+
+  // Wrap for the post list
+  var posts = $("#posts-list > .post:not(:first-child)");
+  for(var i = 0; i < posts.length; i+=3) {
+    posts.slice(i, i+3).wrapAll("<div class='row'></div>");
+  }
+
 });
