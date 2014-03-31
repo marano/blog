@@ -1,13 +1,7 @@
 #posts-list{
   width: 100%;
-  .post{
-
-
-
-    /* first post */ 
-
-
-
+  > .post{
+    /* first post */
     &:first-child{
       width: 100%;
       text-align: center;
@@ -29,10 +23,8 @@
           margin:0 0 10px 0;
           a{
             position: relative;
-            top:10px;
             padding:0;
             color: #990000;
-            top:clear;
           }
         }
         .author-info p, .post-excerpt p, .view-more{

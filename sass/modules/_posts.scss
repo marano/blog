@@ -18,14 +18,61 @@
       width: 306px;
 
       &:last-child { border-right: none }
+
+      .post-title {
+        font-size: 1.2em;
+        line-height: 1.4em;
+        margin-bottom: 5px;
+
+        a { display: block }
+      }
+
+      .post-excerpt {
+        font-size: 0.9em;
+        line-height: 1.5em;
+
+        p img { display: none }
+      }
+
+      .author-info { font-size: 0.7em }
+      .tags2 { padding: 0 }
+
+      ul {
+        margin: 8px 0 0 0;
+        padding: 0;
+
+        li {
+          display: inline;
+          margin-right: 20px;
+          font-size: em(15px);
+
+          a { text-decoration: none }
+
+          &.view-more a {
+            @extend %buttons;
+            height: 36px;
+            line-height: 33px;
+            background: #fff;
+            border:1px solid #eee;
+            display: inline-block;
+
+            &:hover {
+              border-color: #ccc;
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      &:nth-child(3n+1) .flex-box { margin-right: 0 }
     }
   }
 
+  /* FIRST POST */
   > .post {
     position: relative;
     .post-header { @extend %post-header }
 
-    /* FIRST POST */
     &:first-child {
       border-bottom: none;
       z-index: 10;
@@ -77,64 +124,29 @@
         font-size: 12px;
         line-height: 14px;
       }
-    }
-  }
-  /* Final de first post */
 
+      ul {
+        list-style: none;
+        padding-top: 10px;
 
-  .post {
-    ul {
-      margin: 8px 0 0 0;
-      padding: 0;
+        li.view-more a {
+          @extend %buttons;
+          height: 36px;
+          line-height: 33px;
+          background: #fff;
+          border:1px solid #eee;
+          display: inline-block;
 
-      li {
-        display: inline;
-        margin-right: 20px;
-        font-size: em(15px);
-        a { text-decoration: none; }
-
-        &.view-more {
-          a {
-            @extend %buttons;
-            height: 36px;
-            line-height: 33px;
-            background: #fff;
-            border:1px solid #eee;
-            display:block
-            &:hover {
-              border-color: #ccc;
-              opacity: 1;
-            }
+          &:hover {
+            border-color: #ccc;
+            opacity: 1;
+            text-decoration: none;
           }
         }
       }
     }
-    .flex-box {
-      .tags2{
-        padding:0;
-
-      }
-      .post-title a{
-        display:block;
-      }
-    }
-
-    &:nth-child(3n+1){
-      .flex-box{
-        margin-right: 0;
-      }
-    }
-
-    .post-excerpt {
-      font-size: em(17px);
-      line-height: 24px;
-
-      p img {
-        display: none;
-      }
-    }
-
   }
+  /* Final de first post */
 }
 
 #post-sharing {
