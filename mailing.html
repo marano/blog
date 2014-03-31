@@ -13,6 +13,7 @@ layout: nil
       table{border-collapse:collapse;}
       img, a img{border:0; outline:none; text-decoration:none;}
       h1, h2, h3, h4, h5, h6{margin:0; padding:0;}
+      ul li{ text-align: left;}
       p{margin: 1em 0;}
       a{color:#993333;}
       a:hover{color:003366;}
@@ -22,7 +23,7 @@ layout: nil
       table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up. */
       #outlook a{padding:0;} /* Force Outlook 2007 and up to provide a "view in browser" message. */
       img{-ms-interpolation-mode: bicubic;} /* Force IE to smoothly render resized images. */
-      body, table, td, p, a, li, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;} /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
+      body, table, td, p, a, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;} /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
       /*////// FRAMEWORK STYLES //////*/
       .flexibleContainerCell{padding-top:20px; padding-right:20px; padding-left:20px; }
       .flexibleContainerCell2{padding-top:20px; padding-right:20px; padding-left:0px; }
@@ -65,6 +66,7 @@ layout: nil
       td[class="textContentLast"], td[class="imageContentLast"]{padding-top:20px !important;}
       td[id="bodyCell"]{padding-top:10px !important; padding-Right:10px !important; padding-Left:10px !important;}
       tr[id="tweets"]{ margin:20px 0 20px 0; padding: 20px;}
+      .listleft ul li {text-align: left;}
       }
     </style>
   </head>
@@ -192,7 +194,7 @@ layout: nil
               </tr>
               *|END:FEEDBLOCK|*
               <tr>
-                <td align="center" valign="top" class="flexibleContainerCell">
+                <td align="center" valign="top" class="flexibleContainerCell listleft">
                   <p align="left">
                     *|TWITTER:TWEETS5|*
                   </p>
