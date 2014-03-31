@@ -47,7 +47,7 @@ Um bom design de código ajuda na evolução do sistema, pois tudo torna-se mais
 Eu gosto muito da frase de Kent Beck, onde diz: “Eu não sou um grande programador; Sou apenas um bom programador com excelentes hábitos”. Acredito que bons programadores necessitem cultivar estes hábitos. E a refatoração merece um espaço considerável no nosso dia a dia de desenvolvedores de software.
 
 
-Leia o segundo post da série [Refatoração Parte II - Mal cheiros](/blog/2014/03/02/refatoracao-parte-ii-mal-cheiros/)
+Leia o segundo post da série [Refatoração Parte II - Maus cheiros](/blog/2014/03/02/refatoracao-parte-ii-mal-cheiros/)
 
 
 Siga-me no Twitter: [@eduardofiorezi](http://twitter.com/eduardofiorezi)
