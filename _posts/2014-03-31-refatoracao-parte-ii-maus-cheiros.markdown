@@ -2,7 +2,6 @@
 author: Eduardo Fiorezi
 layout: post
 title: "Refatoração Parte II - Maus cheiros"
-date: 2014-03-31 16:00
 comments: true
 categories:
   - desenvolvimento agil

@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Novo membro: Israel Ribeiro"
-date_pt_BR: 2013-09-27
 categories:
   - novo membro
   - time
