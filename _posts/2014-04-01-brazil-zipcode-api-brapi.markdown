@@ -60,4 +60,6 @@ $ heroku addons:add brapi
 
 This will set `BRAPI_TOKEN` variable on your app which you can use to make authenticated requests to Brapi.
 
+To get an early access write us on [tech@helabs.com.br](mailto:tech@helabs.com.br).
+
 If you are interested in integrating the API in your software, keep reading us and we'll tell you more about Brapi's [Ruby](https://github.com/Helabs/brapi-ruby) and [PHP](https://github.com/Helabs/brapi-php) clients on our next blog posts :wink:.
