@@ -30,3 +30,6 @@ exclude:
   - config.ru
   - sass
   - config.rb
+
+gems:
+  - jemoji
