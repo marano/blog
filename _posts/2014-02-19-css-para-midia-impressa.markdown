@@ -3,14 +3,13 @@ published: true
 author: Mikael Carrara
 layout: post
 title: "CSS Para Mídia Impressa"
-date: 2014-02-19 10:00
+date: 2014-04-02 10:00
 comments: true
 categories:
   - impressao
   - css
   - midia impressa
   - mikael carrara
-
 ---
 
 Estamos acostumados a projetar interfaces web sem nos preocupar muito com a versão para impressão do conteúdo. Mas em determinados tipos de projetos, como um blog por exemplo, em que a leitura é o foco de toda experiência, precisamos tomar cuidado para que a versão para impressão tenha uma experiência agradável.
