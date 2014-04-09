@@ -25,7 +25,7 @@ Sempre que possível faça reuniões com video, apareça para o seu cliente, a l
 
 
 ###Como se fosse pessoalmente.
-Faça com que a reunião começe de forma mais descontraída, mais informal, fale sobre assuntos de interesse da outra pessoa, e caso já tenha um pouco mais de intimidade, perguntas mais pessoais são bem vindas como "O que fez no fim de semana?", "Você foi ao evento X que aconteceu semana passada?" ou mesmo "Você viu a noticia X do seu concorrente? Vou te enviar o link por email". Sempre tenha em mente começar uma reunião de forma informal, mas claro, tente se manter breve e logo começe realmente a conversar os assuntos em pauta.
+Faça com que a reunião se inicie de forma mais descontraída, mais informal, fale sobre assuntos de interesse da outra pessoa, e caso já tenha um pouco mais de intimidade, perguntas mais pessoais são bem vindas como "O que fez no fim de semana?", "Você foi ao evento X que aconteceu semana passada?" ou mesmo "Você viu a noticia X do seu concorrente? Vou te enviar o link por email". Sempre tenha em mente começar uma reunião de forma informal, mas claro, tente se manter breve e logo inicie realmente a conversar os assuntos em pauta.
 
 
 ###Pergunte, opine, participe!
