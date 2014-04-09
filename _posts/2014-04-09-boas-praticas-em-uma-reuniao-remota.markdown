@@ -3,7 +3,7 @@ published: true
 author: Anézio Marques de Campos Junior
 layout: post
 title: "Boas práticas em uma reunião remota"
-date: 2014-03-17 12:00
+date: 2014-04-09 12:00
 comments: true
 categories:
   - reunião remota
