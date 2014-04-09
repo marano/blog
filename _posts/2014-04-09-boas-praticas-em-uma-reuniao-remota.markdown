@@ -11,16 +11,16 @@ categories:
   
 ---
 
-Reuniões remotas já são frequentes em muitas empresas e as que ainda não aderiram a tal prática inevitavelmente terão que se adaptar em breve. É inegavel o ganho em tempo, custo e também melhor qualidade de vida de forma geral dando mais liberdade para ter essas reuniões de casa ou de onde quiser. Além dessas vantagems algo que também tem crescido muito é o home-office, ou seja, dar a liberdade para a pessoa trabalhar de casa resultando em um conforto, rendimento e economia até então inalcancavel.
+Reuniões remotas já são frequentes em muitas empresas e as que ainda não aderiram a tal prática inevitavelmente terão que se adaptar em breve. É inegável o ganho em tempo, custo e também melhor qualidade de vida de forma geral dando mais liberdade para ter essas reuniões de casa ou de onde quiser. Além dessas vantagems algo que também tem crescido muito é o home-office, ou seja, dar a liberdade para a pessoa trabalhar de casa resultando em um conforto, rendimento e economia até então inalcançável.
 
-É muito comum que em decorrência dessa facilidade proporcionada não se tenha contato presencial algum, e isso acaba reduzindo a intimidade, aquela falta de contato olho no olho, a criação de um elo pessoal mais forte e consequentemente credibilidade. Em alguns casos algumas pessoas que fazem reuniões remotas até passam desapercebidos, são apenas "seres" que supostamente estão presentes mas não tem interação alguma.
+É muito comum que em decorrência dessa facilidade proporcionada não se tenha contato presencial algum, e isso acaba reduzindo a intimidade, aquela falta de contato olho no olho, a criação de um elo pessoal mais forte e consequentemente credibilidade. Em alguns casos algumas pessoas que fazem reuniões remotas até passam despercebidos, são apenas "seres" que supostamente estão presentes mas não tem interação alguma.
 
 E esse contato mais humano é algo fundamental na decisão de um cliente contratar o seu produto ou serviço, ou mesmo um profissional ser mais valorizado dentro de sua empresa. Quanto menor for a sua ligação humana menor vai ser também a possibilidade de você transmitir com credibilidade a sua imagem.
 
 Mas esse lado negativo das reuniões remotas podem ser diminuídos bastante ou mesmo anulados, basta procurar tomar algumas atitudes, detalhes, que auxiliam nisso.
 
 
-###Ligue a camera!
+###Ligue a câmera!
 Sempre que possível faça reuniões com video, apareça para o seu cliente, a leitura de linguagem corporal pode ser muito importante para o seu cliente sentir mais confiança em você. As pessoas se sentem mais confortáveis em assumir um compromisso quando ela pode ver a pessoa do outro lado, não apenas um nome e uma voz. Em uma reunião com várias pessoas isso se torna ainda mais importante, mesmo que você não fale muito, apenas de as pessoas verem o seu rosto ali, vendo que você realmente está prestando atenção sobre a discussão isso já faz você ser notado. Apenas estar presente não é o suficiente, mostre que realmente está na reunião e que você faz parte dela.
 
 
