@@ -17,11 +17,11 @@ The subject of Performance Optimization has a bunch of techniques and tools such
 
 <!--more-->
 
-**pjax** works by grabbing HTML from your server via Ajax and replacing the content of the body on your page with the ajax'd HTML body. It then updates the browser's current URL using HTML5 [pushState](http://badassjs.com/post/840846392/location-hash-is-dead-long-live-html5-pushstate) without reloading your page's layout or any resources (JS, CSS), giving the appearance of a fast, full page load. But really it's just **Ajax and pushState**. For browsers that does't support pushState link clicks will result in a normal full page load.
+**pjax** works by grabbing HTML from your server via Ajax and replacing the content of the body on your page with the ajax loaded HTML body. It then updates the browser's current URL using HTML5 [pushState](http://badassjs.com/post/840846392/location-hash-is-dead-long-live-html5-pushstate) without reloading your page layout or any resources (JS, CSS), giving the appearance of a fast, full page load. But really it's just **Ajax and pushState**. For browsers that does't support pushState link clicks will result in a normal full page load.
 
-As latency is inevitable with today's internet architecture, [InstantClick](http://instantclick.io/) JavaScript library cheats by preloading links visitors are likely to click on. Before visitors click on a link, they hover over that link. Between these two events **InstantClick preload the page** (with pjax), so that the page is already there when user click.
+As latency is inevitable with today internet architecture, [InstantClick](http://instantclick.io/) JavaScript library cheats by preloading links visitors are likely to click on. Before visitors click on a link, they hover over that link. Between these two events **InstantClick preload the page** (with pjax), so that the page is already there when user click.
 
-We are using this library on our own website. Please navigate through internal links to see how fast is it: [helabs.com.br](http://helabs.com.br/).
+We are using this library on our own website. You can navigate through internal links to see how fast is it: [helabs.com.br](http://helabs.com.br/).
 
 ### Related links:
 
