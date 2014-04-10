@@ -23,7 +23,7 @@ As latency is inevitable with today's internet architecture, [InstantClick](http
 
 We are using this library on our own website. Please navigate through internal links to see how fast is it: [helabs.com.br](http://helabs.com.br/).
 
-## Related links:
+### Related links:
 
 [InstantClick](http://instantclick.io/)
 [jquery-pjax](https://github.com/defunkt/jquery-pjax)
