@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Rupy Brazil 2013"
+author: Mauro George
+comments: true
+categories:
+  - mauro george
+  - talk
+  - rupy
+  - rails
+  - active record
+---
+
+In november, 2013 [Mauro George](https://twitter.com/maurogeorge), goes to Rupy Brazil 2013 to talk about Rails models.
+<!--more-->
+
+In november, 2013 I had the pleasure to do a talk on the Rupy Brazil 2013 on São José dos Campos/SP. I made some new friends and got together old friends.
+I made a talk called [Model of the colossus](http://pt.slideshare.net/maurogeorge/model-of-the-colossus-2) where I give some tips about how to cleanup your Rails models. Here is the video with translation.
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/HuxgmHCpKc0" frameborder="0" allowfullscreen></iframe>
+
+I hope you enjoy! Here is the list of all talks of the event [http://rupy.com.br](http://rupy.com.br).
+
