@@ -21,19 +21,22 @@ Ok, provavelmente não seria bem assim que diria. Mas imagine dar o poder de alt
 Sim, isso já é possivel. Apresento a vocês a gem [Phrasing](https://github.com/infinum/phrasing).
 
 
-A instalação é simples e está bem descrito no github. E a forma de uso também. Fiz um pequeno [projeto]() para ilustrar.
+A instalação é simples e está bem descrito no github. E a forma de uso também. Fiz um pequeno [projeto](https://github.com/guiloyins/test-phrasing) para ilustrar.
 Para esse exemplo precisaremos de tesoura, cola e um simples projeto em rails.
 
-Após adicionar o `gem "phrasing"` no Gemfile, rodar `bundle`, `rake phrasing:install` e `rake db:migrate` será adicionado um arquivo chamado phrasing_helper.rb. 
+Após adicionar o `gem "phrasing"` no Gemfile, rodar `bundle`, `rake phrasing:install` e `rake db:migrate` será adicionado um arquivo chamado phrasing_helper.rb. Nesse helper o metodo can_edit_phrases precisa ser implementado para controlar quem e quando pode editar algo.
 
-```
+{% highlight ruby linenos %}
 module PhrasingHelper
 
   def can_edit_phrases?
     request.subdomains.first == 'edit' && current_user.admin?
   end
 end
-```
+{% endhighlight %}
+
+Finalmente, na view basta adicionar `phrase('whatever')` onde deseja que possa ser editado. Nesse caso, se existir um arquivo de internacionalização com a tag 'whatever', o texto já virá populado com o conteúdo do yml. Caso não exista, aparecerá 'whatever' na tela. De qualquer forma, pode ser editado.
+
 
 
 
