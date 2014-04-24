@@ -39,6 +39,7 @@ Finalmente, na view basta adicionar `phrase('whatever')` onde deseja que possa s
 
 Enfim, é uma ótima gem e bem poderosa, inclusive permitindo que ela altere dados sem precisar de um formulario.
 
+Usem e digam o que acharam.
 
-
+Até a próxima!
 
