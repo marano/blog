@@ -11,11 +11,11 @@ categories:
   - active record
 ---
 
-In november, 2013 [Mauro George](https://twitter.com/maurogeorge), goes to Rupy Brazil 2013 to talk about Rails models.
+In november, 2013 [Mauro George](https://twitter.com/maurogeorge), went to Rupy Brazil 2013 to talk about Rails models.
 <!--more-->
 
 In november, 2013 I had the pleasure to do a talk on the Rupy Brazil 2013 on São José dos Campos/SP. I made some new friends and got together old friends.
-I made a talk called [Model of the colossus](http://pt.slideshare.net/maurogeorge/model-of-the-colossus-2) where I give some tips about how to cleanup your Rails models. Here is the video with translation.
+I made a talk called [Model of the colossus](http://pt.slideshare.net/maurogeorge/model-of-the-colossus-2) where I gave some tips about how to clean up your Rails models. Here is the video with translation.
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/HuxgmHCpKc0" frameborder="0" allowfullscreen></iframe>
 
