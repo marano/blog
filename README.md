@@ -24,7 +24,8 @@ categories:
   - Tag1
   - Tag2
 ---
-
+Intro
+<!--more-->              <- please don't forget this
 Post content
 ```
 
