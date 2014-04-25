@@ -15,6 +15,8 @@ categories:
 
 Sometimes, you just want to make your database objects threadsafe and run parallel/concurrent tasks on them without making a mess.
 
+<!--more-->
+
 Imagine the following situation:
 
 * You have a background job (cheers, [Sidekiq](http://sidekiq.org/)!) that will run and update/modify a list of database records based on some logic.
