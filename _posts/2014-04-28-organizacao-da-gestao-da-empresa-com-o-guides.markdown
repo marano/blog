@@ -3,7 +3,6 @@ published: true
 author: Rafael Lima
 layout: post
 title: "Organização da gestão da empresa com o Guides"
-date: 2014-04-28 18:00
 comments: true
 categories:
   - rafael lima
