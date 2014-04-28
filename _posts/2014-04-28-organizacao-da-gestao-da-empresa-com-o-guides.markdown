@@ -34,7 +34,7 @@ Quando alguma coisa não dá certo e temos um problema qualquer, além de resolv
 
 Esse é o nosso "[teste de regressão](http://en.wikipedia.org/wiki/Regression_testing)" :)
 
-O Guides é uma de nossas ferramentas de melhoria contínua. Conseguimos evitar os mesmos erros do passado e por conseuqência aumentar a qualidade do nosso serviço.
+O Guides é uma de nossas ferramentas de melhoria contínua. Conseguimos evitar os mesmos erros do passado e por consequência aumentar a qualidade do nosso serviço.
 
 Existem inúmeros benefícios de se ter um Guides na sua empresa, mas eles só serão realmente percebidos se você experimentar. Por isso, eu recomendo a todos que tem um time de desenvolvimento, que façam o mesmo.
 
