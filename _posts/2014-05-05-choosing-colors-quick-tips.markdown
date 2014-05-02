@@ -39,6 +39,6 @@ Avoid aggressive backgrounds, unless you have a lot of empty spaces. Make it cle
 
 ##Now some useful links for working with colors: 
 
-"[Colour Lovers <3](http://www.colourlovers.com/)"
-"[Adobe Kuler](https://kuler.adobe.com/create/color-wheel/)"
+[Colour Lovers <3](http://www.colourlovers.com/) |
+[Adobe Kuler](https://kuler.adobe.com/create/color-wheel/)
 
