@@ -14,23 +14,23 @@ categories:
 
 Who do you know that is willing to acknowledge failure and memorize it? When have you last reflected about the costs of failing? 
 
-As we build products and retrospect about improvements, our thoughts lead to decisions that can vary from negative to just [outright weird](http://techcrunch.com/2014/03/01/our-dangerous-obsession-with-the-mvp/). As a creator, you cannot develop the right product for your client if you fall in love with a prototype that nobody wants to buy. That’s a common situation, but it's the wrong way to fail. Don’t worry about building a perfect app, or the perfect design, or having the perfect process. Just improve these and other aspects of your project continuously. But reading this post alone won1't not be enough. Development can get costly since users are so unpredictable, so constantly dig deep and reason why. 
+As we build products and retrospect about improvements, our thoughts lead to decisions that can vary from negative to just [outright weird](http://techcrunch.com/2014/03/01/our-dangerous-obsession-with-the-mvp/). As a creator, you cannot develop the right product for your client if you fall in love with a prototype that nobody wants to buy. That’s a common situation, but it's the wrong way to fail. Don’t worry about building a perfect app, or the perfect design, or having the perfect process. Just improve these and other aspects of your project continuously. But reading this post alone won't not be enough. Often development can get costly since users are so unpredictable. You'll have to enjoy digging deep within your failed experiences and [question your beliefs](http://stavreas.com/raising-your-ceiling/). 
 
 <!--more-->
 
-Get your inner ideas about failures out of limbo.
-
-Retrospect for a day about your project, and then wait. After you digest it, you’ll have new ideas. While doing it, do not be afraid to think about those costly project expenses you had, or the bad or embarrassing moments you’ve put yourself through during your product development journey.
+Get your inner ideas about failures out of limbo. Retrospect for a day about your project, and then wait. After you digest it, you’ll have new ideas. While doing it, do not be afraid to think about those costly project expenses you had, or the embarrassing moments you’ve put yourself through during your journey.
 
 If you're doing this right, you should be thinking about things that didn't turn out exactly how you've expected. Constantly ask yourself how much did it cost you to fail.
 
-If you find that you’re penalizing yourself too much for personal failings and suddenly you get stupid negative thoughts roaming around, that’s ok. Classify and memorize these failings. 
+If you find that you’re penalizing yourself too much for personal failings and suddenly get stupid negative thoughts roaming around, that’s ok. Classify and memorize these failings. 
 
-Learn to safely ignore stupid thoughts by [intentionally exposing mistakes](http://www.amazon.com/dp/1592407331/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=19YIDUV9BAOE&coliid=I3BYFJET0IMJ6R) to friends and coworkers. This can serve as a mechanism so that failures don’t jump to or stay in limbo. This type of stuff happens all the time when we work collectively as well, so to solve this, we created retrospective meetings at work. 
+Learn to safely ignore wrong thoughts by [intentionally exposing mistakes](http://www.amazon.com/dp/1592407331/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=19YIDUV9BAOE&coliid=I3BYFJET0IMJ6R) to friends and coworkers. This can serve as a mechanism so that failures don’t jump to or stay in limbo. This type of stuff happens all the time when we work collectively as well, so to solve this, you can implement retrospective meetings at work. 
 
 If your intentions are good and you're truly passionate about improving what’s around you, than stressing about unhealthy thoughts ruling the mind is not necessary. If you're stressing, retrospect with a friend or a coworker. I don’t know about you, but I would rather expose my failings early on and take an “I-care-where-this-leads-me-years-from-now” approach, rather than ignoring a ticking time bomb.
 
-Take notice about failures that turn into hidden weaknesses. Be willing to look in the mirror and recognize this stuff is very important for us becoming better change-makers, creators or entrepreneurs (better human beings). Manage your client, friends and families expectations when they provoke your progress or success with [outdated corporate values](http://en.wikipedia.org/wiki/Command_and_control_%28management%29). These have taught us not to speak freely and expose failure as it should. The smartest thing you can do is to take one step back before taking two steps forwards. Here's how...
+Finally, manage your friends and families' expectations if they challenge the success of a work in progress. They often don't understand the complexities of trying to launch products. Educate them will. 
+
+Start taking notes on failures that turn into hidden weaknesses. Being willing to look in the mirror and recognizing this stuff is very important for us to become better change-makers, creators or entrepreneurs (better human beings). Here's how...
 
 ## Exercise: 
 
