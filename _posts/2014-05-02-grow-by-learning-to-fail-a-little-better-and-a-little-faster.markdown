@@ -30,7 +30,7 @@ Learn to safely ignore stupid thoughts by [intentionally exposing mistakes](http
 
 If your intentions are good and you're truly passionate about improving what’s around you, than stressing about unhealthy thoughts ruling the mind is not necessary. If you're stressing, retrospect with a friend or a coworker. I don’t know about you, but I would rather expose my failings early on and take an “I-care-where-this-leads-me-years-from-now” approach, rather than ignoring a ticking time bomb.
 
-Take notice about failures that turn into hidden weaknesses. Be willing to look in the mirror and recognize this stuff is very important for us becoming better change-makers, creators or entrepreneurs (better human beings). Manage your client, friends and families expectations when they provoke your progress or success with [outdated corporate values] (http://en.wikipedia.org/wiki/Command_and_control_(management). These have taught us not to speak freely and expose failure as it should. The smartest thing you can do is to take one step back before taking two steps forwards. Here's how...
+Take notice about failures that turn into hidden weaknesses. Be willing to look in the mirror and recognize this stuff is very important for us becoming better change-makers, creators or entrepreneurs (better human beings). Manage your client, friends and families expectations when they provoke your progress or success with [outdated corporate values](http://en.wikipedia.org/wiki/Command_and_control_%28management%29). These have taught us not to speak freely and expose failure as it should. The smartest thing you can do is to take one step back before taking two steps forwards. Here's how...
 
 ## Exercise: 
 
