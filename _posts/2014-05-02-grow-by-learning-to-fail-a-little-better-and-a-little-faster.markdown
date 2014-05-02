@@ -14,7 +14,7 @@ categories:
 
 Who do you know that is willing to acknowledge failure and memorize it? When have you last reflected about the costs of failing? 
 
-As we build products and retrospect about improvements, our thoughts lead to decisions that can vary from negative to just [outright weird](http://techcrunch.com/2014/03/01/our-dangerous-obsession-with-the-mvp/). As a creator, you cannot develop the right product for your client if you fall in love with a prototype that nobody wants to buy. That’s common situation, but it's the wrong way to fail. Don’t worry about building a perfect app, or the perfect design, or having the perfect process. Just improve these and other aspects of your project continuously. But reading alone won't not be enough. Development can get costly since users are so unpredictable, so constantly dig deep and reason why. 
+As we build products and retrospect about improvements, our thoughts lead to decisions that can vary from negative to just [outright weird](http://techcrunch.com/2014/03/01/our-dangerous-obsession-with-the-mvp/). As a creator, you cannot develop the right product for your client if you fall in love with a prototype that nobody wants to buy. That’s a common situation, but it's the wrong way to fail. Don’t worry about building a perfect app, or the perfect design, or having the perfect process. Just improve these and other aspects of your project continuously. But reading this post alone won1't not be enough. Development can get costly since users are so unpredictable, so constantly dig deep and reason why. 
 
 <!--more-->
 
@@ -42,8 +42,8 @@ Preferably do this exercise with somebody else, biweekly. If it’s your first t
 
 - Present the Post-its to friends, a coworker, or a co-founder, or personally review each Post-it out loud. If there’s a fix or a new belief, present the solution or belief for each Post-it.
 
-- Review all Post-its that need improvement. For each, define an action, a new principle or method, and respect it. Test it 14 days.
+- Review all Post-its that need improvement. For each, define an action, a new principle or method, and respect it. Test it for 14 days.
 
 Take a stab at it and ask yourself how you can learn from your experience.
 
-Producing good ideas requires that we do intellectual work. Retrospection can simplify. When you need a little motivation to get this stuff going, do it in group or with somebody who's also involved in your project. Good luck!
+Producing good ideas requires that we do intellectual work. Retrospection can simplify. When you need a little motivation to get this stuff going, do it in group or with somebody who's also invested in your project. Good luck!
