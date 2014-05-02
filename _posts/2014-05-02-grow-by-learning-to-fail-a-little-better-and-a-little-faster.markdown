@@ -2,7 +2,7 @@
 published: true
 author: Guilherme Sa
 layout: post
-title: "Grow Products by Learning to Fail a Little Better and Little Faster"
+title: "Grow Products by Learning to Fail a Little Better and a Little Faster"
 comments: true
 categories:
   - guilherme sa
@@ -26,7 +26,7 @@ If you're doing this right, you should be thinking about things that didn't turn
 
 If you find that you’re penalizing yourself too much for personal failings and suddenly you get stupid negative thoughts roaming around, that’s ok. Classify and memorize these failings. 
 
-Learn to safely ignore stupid thoughts by [intentionally exposing mistakes] (http://www.amazon.com/dp/1592407331/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=19YIDUV9BAOE&coliid=I3BYFJET0IMJ6R) to friends and coworkers. This can serve as a mechanism so that failures don’t jump to or stay in limbo. This type of stuff happens all the time when we work collectively as well, so to solve this, we created retrospective meetings at work. 
+Learn to safely ignore stupid thoughts by [intentionally exposing mistakes](http://www.amazon.com/dp/1592407331/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=19YIDUV9BAOE&coliid=I3BYFJET0IMJ6R) to friends and coworkers. This can serve as a mechanism so that failures don’t jump to or stay in limbo. This type of stuff happens all the time when we work collectively as well, so to solve this, we created retrospective meetings at work. 
 
 If your intentions are good and you're truly passionate about improving what’s around you, than stressing about unhealthy thoughts ruling the mind is not necessary. If you're stressing, retrospect with a friend or a coworker. I don’t know about you, but I would rather expose my failings early on and take an “I-care-where-this-leads-me-years-from-now” approach, rather than ignoring a ticking time bomb.
 
