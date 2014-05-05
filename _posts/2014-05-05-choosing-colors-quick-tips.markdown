@@ -39,9 +39,12 @@ Avoid aggressive backgrounds, unless you have a lot of empty spaces. Make it cle
 
 ##Conclusion 
 
-I hope my post has been helpful to you. Noting: that this is my way of doing things is not the absolute truth. If you work as a designer, you should use the theories of usability and user experience added to your own practical experience.
+I hope my post has been helpful to you. Noting: that this is my way of doing things is not the absolute truth. If you work as a designer, you should use the theories of usability and user experience added to your own practical experience. Be creative. 
 
 I also have some interesting links for working with colors: 
 [Colour Lovers <3](http://www.colourlovers.com/) |
 [Adobe Kuler](https://kuler.adobe.com/create/color-wheel/)
+
+Feel free to comment and share your own experience choosing color for your project. I'll be glad to read. ;-)
+
 
