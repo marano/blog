@@ -12,15 +12,15 @@ categories:
 
 ---
 
-Today I will talk about choosing color palettes to work on a new project. This is my method to decide about the base colors that will be on the project interface. Hope you like it.
+Today I will talk about choosing color palettes to work on a new project. This is my method to decide about the base colors that will be on the project interface. I Hope you like it.
 
 <!--more-->
 
-First of all, you'll have to check if your client already has a visual identity or not. If he/she does, it will be faster, but let's assume that he/she doesn't. In this case, you will have to do some research about the business, and check what colors better represent the idea and the target market. Another good practice is to research the competitors’ colors to avoid choosing anything close to what’s already out there.
+First of all, you'll have to check if your client already has a visual identity or not. If he/she does, it will be faster, but let's assume that he/she doesn't. In this case, you will have to do some research about the business, and check what colors better represent the idea and the target market. Another good practice is to research the competitors’ colors to avoid choosing anything similar to what’s already out there.
 
 When you’re done picking the base color to his/her visual identity, it’s time to make it work on an interface. 
 
-I like to use cleaner colors and elements when I start a project, because it is all about the first step of an idea and it has to be easy and comfortable to navigate through. I think that every first step has to be basic because the project should evolve and transform itself as long as it’s being used. You’ll find that the real functional and visual necessities start to appear during its evolution.
+I like to use cleaner colors and elements when I start a project, because it is all about the first step of an idea and it has to be easy and comfortable to navigate through. I think that every first step has to be basic because the project should evolve and transform itself as long as it’s being used. You’ll find that the real functional and visual needs begin to emerge alongside the project's evolution
 
 So, my advice is start with less. One or two base colors. 
 
