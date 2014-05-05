@@ -37,8 +37,11 @@ And about paragraphs, I like to use neutral colors, but please, avoid black. And
 Avoid aggressive backgrounds, unless you have a lot of empty spaces. Make it clean. Nobody likes to get tired from navigating your site.
 
 
-##Now some useful links for working with colors: 
+##Conclusion 
 
+I hope my post has been helpful to you. Noting: that this is my way of doing things is not the absolute truth. If you work as a designer, you should use the theories of usability and user experience added to your own practical experience.
+
+I also have some interesting links for working with colors: 
 [Colour Lovers <3](http://www.colourlovers.com/) |
 [Adobe Kuler](https://kuler.adobe.com/create/color-wheel/)
 
