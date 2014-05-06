@@ -11,17 +11,15 @@ categories:
   - active record
 ---
 
-On my last [post](http://helabs.com.br/blog/2013/12/18/performance-protips/) I described how I proceeded to fix a server time out caused by performance issues that occurred in one of our applications. As I promised, I'm coming back to talk about a very important point on the refactoring process.
+On my last [post](http://helabs.com.br/blog/2013/12/18/performance-protips/) I described what I've done to fix a server time out caused by performance issues that occurred in one of our applications. As I promised, I'm coming back to talk about a very important point on the refactoring process.
 
 <!--more-->
 
 Hello, everyone!
 
-On my last [post](http://helabs.com.br/blog/2013/12/18/performance-protips/) I described how I proceeded to fix a server time out caused by performance issues that occurred in one of our applications. As I promised, I'm coming back to talk about a very important point on the refactoring process.
+On my last [post](http://helabs.com.br/blog/2013/12/18/performance-protips/) I described what I've done to fix a server time out caused by performance issues that occurred in one of our applications. As I promised, I'm coming back to talk about a very important point on the refactoring process.
 
-The topic is N + 1 Queries.
-
-The n + 1 queries occur when we have associations. For example:
+So, today's topic are those nasty n + 1 queries that occurs when we have associations. For example:
 
 {% highlight ruby linenos %}
 #model
@@ -41,8 +39,6 @@ class ExamsController < ApplicationController
 end
 {% endhighlight %}
 
-And we have to call them somewhere:
-
 {% highlight ruby linenos %}
 #view
  - @exams.each do |exam|
@@ -51,11 +47,11 @@ And we have to call them somewhere:
 
 In this case, it's being executed not only 1 query to find 100 exams, but actually 1 + 100
 queries to find the creator of each exam.
-This situation is very common, because the code above looks good at first sight, but behind the scenes doesn't.
+This situation is very common, because the code above looks good at first sight, but behind the scenes it doesn't.
 
 So, how do we fix that? With [Eager Loading Associations](http://guides.rubyonrails.org/active_record_querying.html#eager-loading-associations)
 
-In our controller we specify wich associations we want to be loaded at the same time exams are being loaded from the database, using the includes method:
+In our controller we specify which associations we want to be loaded at the same time exams are being loaded from the database, using the includes method:
 
 {% highlight ruby linenos %}
 #controller
@@ -80,7 +76,7 @@ end
 
 Configure it as stated on Bullet's README and everytime you have a n + 1 query it will warn you. :)
 
-Whenever you feel that your app is getting slower, check the queries! Solved that, there are still 2 important topics remaining: Select versus Pluck and Ruby Memoization. Both I'm looking forward to explain for you next time!
+Whenever you feel that your app is getting slower, check out the queries! Solved that, there are still 2 important topics remaining: Select versus Pluck and Ruby Memoization. Both I'm looking forward to explain for you next time!
 
 Hope you like it!
 Hugs!
