@@ -67,7 +67,7 @@ class ExamsController < ApplicationController
 end
 {% endhighlight %}
 
-And, that's it. No more N + 1 queries!
+And, that's it. No more N + 1 Queries!
 
 Ok, but I bet there are many n + 1 queries in your application and you have no idea that it's going on. Instead of looking for them on the app's logs, let me introduce you an easier way to discover them, the [Bullet Gem](https://github.com/flyerhzm/bullet). Add this to your development group on Gemfile:
 
