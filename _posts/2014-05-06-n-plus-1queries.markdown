@@ -17,7 +17,7 @@ On my last [post](http://helabs.com.br/blog/2013/12/18/performance-protips/) I d
 
 Hello, everyone!
 
-On my last [post](http://helabs.com.br/blog/2013/12/18/performance-protips/) I described how I proceed to fix a server time out caused by performance issues that occurred in one of our applications. As I promised, I'm coming back to talk about a very important point on the refactoring process.
+On my last [post](http://helabs.com.br/blog/2013/12/18/performance-protips/) I described how I proceeded to fix a server time out caused by performance issues that occurred in one of our applications. As I promised, I'm coming back to talk about a very important point on the refactoring process.
 
 The topic is N + 1 Queries.
 
