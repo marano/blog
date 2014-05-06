@@ -21,7 +21,7 @@ On my last [post](http://helabs.com.br/blog/2013/12/18/performance-protips/) I d
 
 The topic is N + 1 Queries.
 
-The N + 1 queries occur when we have associations. For example:
+The n + 1 queries occur when we have associations. For example:
 
 {% highlight ruby linenos %}
 #model
@@ -55,7 +55,7 @@ This situation is very common, because the code above looks good at first sight,
 
 So, how do we fix that? With [Eager Loading Associations](http://guides.rubyonrails.org/active_record_querying.html#eager-loading-associations)
 
-In our controller we specify wich associations we want to be loaded at the same time exams are being loaded from the database using the includes method:
+In our controller we specify wich associations we want to be loaded at the same time exams are being loaded from the database, using the includes method:
 
 {% highlight ruby linenos %}
 #controller
