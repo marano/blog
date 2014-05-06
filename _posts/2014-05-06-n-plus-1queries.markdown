@@ -26,8 +26,8 @@ The N + 1 queries occur when we have associations. For example:
 {% highlight ruby linenos %}
 #model
 class Exam < ActiveRecord::Base
-    belongs_to :creator, class_name: "User",
-                    foreign_key: "creator_id"
+  belongs_to :creator, class_name: "User",
+                  foreign_key: "creator_id"
 end
 {% endhighlight %}
 
