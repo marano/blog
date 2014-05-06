@@ -104,7 +104,7 @@ Configure it as stated on Bullet's README and everytime you have a n + 1 query i
 
 Whenever you feel that your app is getting slower, check out the queries! Solved that, there are still 2 important topics remaining: Select versus Pluck and Ruby Memoization. Both I'm looking forward to explain for you next time!
 
-Hope you like it!
+Hope you liked it!
 Hugs!
 
 
