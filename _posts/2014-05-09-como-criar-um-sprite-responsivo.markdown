@@ -63,7 +63,7 @@ Vamos imaginar o seguinte exemplo: uma lista de escudos de times. Temos 5 escudo
 }
 {% endhighlight %}
 
-Veja este exemplo [neste link](http://jsfiddle.net/LDL39/).
+Veja este exemplo [neste link](http://jsfiddle.net/LDL39/1).
 
 Apenas isso funcionaria bem para o básico, ou seja, utilizarmos os escudos no tamanho original deles, sem pensarmos em responsivo.
 Imaginem que temos um breakpoint para mobile, com um valor máximo de 768px. Nossos escudos devem iniciar em 64px e ir diminuindo, dependendo da resolução do device. Os cinco escudos devem sempre ficar na mesma linha. Como faremos para exibir escudos com tamanhos diferentes, se só temos um sprite com tamanho fixo? Vejam a versão atualizada do CSS mostrado acima, já preparado para o modelo responsivo:
@@ -123,7 +123,7 @@ $crest-max-size: 64px; // Tamanho máximo dos escudos
 
 Veja que utilizei porcentagem para posicionar cada imagem dentro do sprite e também utilizei `background-size`, onde 100% significa um escudo. Já que temos 5, então o valor será de 500%. O `padding-bottom` com valor de 100%, podemos utilizar para "imitar" a largura na altura. Como temos um valor de largura indefinido (100% sempre), a altura também se ajustará a este valor. Como a altura será baseada no padding de 100%.
 
-Veja o resultado deste trabalho [neste link](http://jsfiddle.net/uyst4/).
+Veja o resultado deste trabalho [neste link](http://jsfiddle.net/uyst4/1).
 
 Aumente e diminua a janela do resultado que você verá os escudos aumentando e diminuindo, de acordo com a resolução.
 
