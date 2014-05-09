@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 author: Rafael Fiuza
 layout: post
 title: "Use Phrasing e seja feliz"
