@@ -3,7 +3,6 @@ published: false
 author: Rafael Fiuza
 layout: post
 title: "Use Phrasing e seja feliz"
-date: 2014-04-14 12:00
 comments: true
 categories:
   - Rails
@@ -12,7 +11,7 @@ categories:
   
 ---
 
-Talvez o titulo desse post seja um pouco tendencioso. Mas bem pouco.
+Talvez o título desse post seja um pouco tendencioso. Mas bem pouco.
 Imagine a cena: No meio da semana, com diversas tarefas para serem feitas e que precisam estar prontos na quinta feira, seu cliente pede para alterar um texto em produção. Agora imagine que você pode dizer para ele: "Mude você!".
 
 <!--more-->
@@ -24,7 +23,7 @@ Sim, isso já é possivel. Apresento a vocês a gem [Phrasing](https://github.co
 A instalação é simples e está bem descrito no github. E a forma de uso também. Fiz um pequeno [projeto](https://github.com/guiloyins/test-phrasing) para ilustrar.
 Para esse exemplo precisaremos de tesoura, cola e um simples projeto em rails.
 
-Após adicionar a `gem "phrasing"` no Gemfile, rodar `bundle`, `rake phrasing:install` e `rake db:migrate` será adicionado um arquivo chamado phrasing_helper.rb na pasta helpers. Nesse helper o metodo can_edit_phrases precisa ser implementado para controlar quem e quando pode editar algo.
+Após adicionar a `gem "phrasing"` no Gemfile, rodar `bundle`, `rake phrasing:install` e `rake db:migrate`. Ao fazer o `rake phrasing:install` será também adicionado um arquivo chamado phrasing_helper.rb na pasta helpers. Nesse helper o metodo can_edit_phrases precisa ser implementado para controlar quem e quando pode editar algo.
 
 {% highlight ruby linenos %}
 module PhrasingHelper
