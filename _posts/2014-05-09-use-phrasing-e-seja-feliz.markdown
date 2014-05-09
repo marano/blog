@@ -20,7 +20,7 @@ Ok, provavelmente não seria bem assim que diria. Mas imagine dar o poder de alt
 Sim, isso já é possivel. Apresento a vocês a gem [Phrasing](https://github.com/infinum/phrasing).
 
 
-A instalação é simples e está bem descrito no github. E a forma de uso também. Fiz um pequeno [projeto](https://github.com/guiloyins/test-phrasing) para ilustrar. O mesmo pode ser testado [aqui](http://phrasing-test.herokuapp.com/edit).
+A instalação é simples e está bem descrito na pagina do github da gem. E a forma de uso também. Fiz um pequeno [projeto](https://github.com/guiloyins/test-phrasing) para ilustrar. O mesmo pode ser testado [aqui](http://phrasing-test.herokuapp.com/edit).
 Para esse exemplo precisaremos de tesoura, cola e um simples projeto em rails.
 
 Após adicionar a `gem "phrasing"` no Gemfile, rodar `bundle`, `rake phrasing:install` e `rake db:migrate`. Ao fazer o `rake phrasing:install` será também adicionado um arquivo chamado phrasing_helper.rb na pasta helpers. Nesse helper o metodo can_edit_phrases precisa ser implementado para controlar quem e quando pode editar algo.
