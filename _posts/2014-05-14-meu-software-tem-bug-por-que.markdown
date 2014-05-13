@@ -22,7 +22,7 @@ Analisando cada um dos casos separadamente podemos entendê-los melhor e assim p
 
 ## Conhecimento do problema
 
-Para elevar o conhecimento das pessoas envolvidas sobre o problema a ser resolvido, em [nossa metodologia](http://helabs.com.br/magica/) nós separamos um dia de trabalho de cada semana, a reunião de planejamento, onde rodamos uma dinâmica e detalhamos cada porção do problema para que tenhamos certeza de que o problema a ser resolvido está claro para todos, inclusive para o nosso cliente.
+Para elevar o conhecimento das pessoas envolvidas sobre o problema a ser resolvido, em [nossa metodologia](http://helabs.com.br/magica/) nós separamos um dia de trabalho de cada semana, a reunião de planejamento. Neste dia rodamos uma dinâmica e detalhamos cada porção do problema. Tudo isso para que tenhamos certeza de que o problema a ser resolvido está claro para todos, inclusive para o nosso cliente.
 
 É por isso que esse dia é tão importante. Não é um dia para programação. É um dia para entendimento completo do problema.
 
