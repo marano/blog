@@ -18,6 +18,8 @@ Cada pessoa tem um nível de conhecimento do problema que precisa ser resolvido.
 
 Os bugs são gerados quando na implementação de uma funcionalidade existe alguma falta de entendimento do problema, falta de conhecimento das ferramentas, um lapso de atenção ou um mix desses.
 
+Existem também bugs que passam a ocorrer por conta de dependências externas (integrações com Facebook, Paypal, etc). Não entrarei no mérito desses, pois é o caso de manutenção normal do sistema, que precisa sempre ocorrer.
+
 Analisando cada um dos casos separadamente podemos entendê-los melhor e assim propor soluções melhores para cada situação.
 
 ## Conhecimento do problema
@@ -28,7 +30,7 @@ Para elevar o conhecimento das pessoas envolvidas sobre o problema a ser resolvi
 
 ## Conhecimento sobre as ferramentas
 
-Para sempre elevarmos o nível de conhecimento de cada [membro do time](http://helabs.com.br/nosso-time/), temos dias de investimento, onde as pessoas trabalham em [projetos opensource](http://helabs.com.br/opensource/), workshops, techtalks, posts para nosso blog etc.
+Para sempre elevarmos o nível de conhecimento de cada [membro do time](http://helabs.com.br/nosso-time/), temos dias de investimento, onde as pessoas trabalham em [projetos opensource](http://helabs.com.br/opensource/), workshops, techtalks, posts para nosso blog, etc.
 
 Esses dias não são cobrados dos clientes e por isso são chamados de **dias de investimento**. É investimento da empresa, nas pessoas do time. Tudo isso tem muitos benefícios, difundi o conhecimento das ferramentas que utilizamos entre os membros do time e contribui com toda a comunidade opensource.
 
