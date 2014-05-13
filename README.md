@@ -6,81 +6,43 @@ Or you can follow these steps:
 
 1) Clone the repository [git@github.com:Helabs/blog.git](https://github.com/Helabs/blog) and make sure the branch is `gh-pages`.
 
-2) Create a branch with the title of your post.
+2) Create the post file and local branch
 
 ```
-$ git checkout -b post/title-of-your-post
+$ rake new_post['Title of the post']
 ```
 
-3) Create a file with name format `_posts/YYYY-MM-DD-title-of-your-post.markdown`.
-
-```
----
-layout: post
-title: "Title"
-author: Your Name
-comments: true
-categories:
-  - Tag1
-  - Tag2
----
-Intro
-<!--more-->              <- please don't forget this
-Post content
-```
-
-4) Make sure that the project runs and you can open it on your browser [http://localhost:4000/blog/](http://localhost:4000/blog/) (Don't forget to put trailing '/').
+3) Make sure that the project runs and you can open it on your browser [http://localhost:4000/blog/](http://localhost:4000/blog/) (Don't forget to put trailing '/').
 
 ```
 $ foreman start
 ```
 
-5) Commit changes.
+4) Write your post and commit it.
 
 ```
-$ git add .
 $ git commit -am 'post: Title of your post'
 ```
 
-6) Push the branch.
+5) Push the branch.
 
 ```
-$ git push origin post/title-of-your-post
+$ git push --set-upstream origin post/title-of-your-post
 ```
 
-7) Send a pull request by GitHub web interface.
+6) Send a pull request by GitHub web interface.
 
 ## Publishing a post
 
-1) Make sure your gh-pages branch is updated:
+1) Go to the post pull request on GitHub web interface.
 
-```
-$ git pull --rebase
-```
+2) Check if the publish date is correct on the post filename. It should be the current day. If it's wrong, ask the author to fix it.
 
-2) Pull the post to a branch to do reviews and/or modifications:
+3) Merge it clicking on the green button.
 
-```
-$ git checkout -b <name-of-the-branch> origin/<name-of-the-branch>
-```
+4) Remove the branch clicking on the gray button.
 
-3) After review/modification, checkout the gh-pages branch:
-
-```
-$ git checkout gh-pages
-```
-
-4) Merge post's branch into gh-pages:
-
-```
-$ git merge <name-of-the-branch>
-```
-
-5) If everything is ok, update the remote repo to publish it:
-
-```
-$ git push
-```
+5) See if it's working live!
 
 ## Maintainers
 
