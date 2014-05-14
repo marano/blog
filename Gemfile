@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem "rake", "~> 10.1.0"
-gem 'github-pages', '17'
+gem 'github-pages', '18'
 gem 'compass'
 gem 'bourbon'
 
