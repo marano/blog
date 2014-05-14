@@ -119,6 +119,12 @@ or
   <li>item 3</li>
 </ol>
 
-## LICENSE
+## License
 
 [Blog of HE:labs](http://helabs.com.br/blog/) and its content is licensed under an [Attribution-NonCommercial-ShareAlike 3.0 Unported license](http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode).
+
+## Made with love by HE:labs
+
+![HE:labs](http://helabs.com.br/images/logo.png)
+
+This blog was created and is maintained by [HE:labs](https://github.com/Helabs).
