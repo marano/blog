@@ -29,7 +29,7 @@ It's hard to find icon font families that actually have all the icons your are g
 <h2>How to use Fontastic:</h2> 
 
 <ul style="list-style: decimal inside">
-    <li>First of all, you need to creat an account. It's free don't worry, and they say it's gonna be free forever: <a href="http://fontastic.me/" target="_blank">www.fontastic.me</a></li>
+    <li>First of all, you need to create an account. It's free don't worry, and they say it's gonna be free forever: <a href="http://fontastic.me/" target="_blank">www.fontastic.me</a></li>
     <li>Now just choose the icons you are going to use. Click on them to select any icon you want from any font-family available.    </li>
     <p><img src="/blog/images/posts/2014-05-14/0.png"></p>
 
