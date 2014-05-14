@@ -1,5 +1,4 @@
 ---
-published: true
 author: Flavia Fortes
 layout: post
 title: "Performance Protips"

@@ -1,5 +1,4 @@
 ---
-published: true
 author: Thiago Belem
 layout: post
 title: "Thread-safing your objects with the Lockable concern"

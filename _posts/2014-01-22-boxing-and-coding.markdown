@@ -1,5 +1,4 @@
 ---
-published: true
 author: Rafael Chefe
 layout: post
 title: "Boxing and Coding"

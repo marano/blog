@@ -1,5 +1,4 @@
 ---
-published: true
 author: Rodrigo Reginato
 layout: post
 title: "State Machine"

@@ -1,5 +1,4 @@
 ---
-published: true
 author: Mauro George
 layout: post
 title: "How do I test an application_controller on a rails app"

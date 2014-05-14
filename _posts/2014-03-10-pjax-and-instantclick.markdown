@@ -1,5 +1,4 @@
 ---
-published: true
 author: Dirceu Pauka
 layout: post
 title: "Speed up your website with InstantClick"

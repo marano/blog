@@ -1,5 +1,4 @@
 ---
-published: true
 author: Rafael Fiuza
 layout: post
 title: "Pequenas dicas para um ótimo relacionamento"

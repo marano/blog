@@ -1,5 +1,4 @@
 ---
-published: true
 author: Mikael Carrara
 layout: post
 title: "Usando CSS Reset De Forma Mais Crítica"

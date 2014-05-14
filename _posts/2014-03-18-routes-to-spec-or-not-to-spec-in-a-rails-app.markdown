@@ -1,5 +1,4 @@
 ---
-published: true
 author: Sylvestre Mergulhão
 layout: post
 title: "Routes: to spec or not to spec in a Rails app?"

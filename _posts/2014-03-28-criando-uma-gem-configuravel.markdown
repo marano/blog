@@ -1,5 +1,4 @@
 ---
-published: true
 author: Francisco Martins
 layout: post
 title: "Criando uma gem configurável"

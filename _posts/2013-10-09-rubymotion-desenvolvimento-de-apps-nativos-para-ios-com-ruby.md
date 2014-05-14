@@ -1,5 +1,4 @@
 ---
-published: true
 author: Francisco Martins
 layout: post
 title: "Rubymotion - Desenvolvimento de apps nativos para iOS com Ruby"

@@ -1,5 +1,4 @@
 ---
-published: true
 author: HE:labs
 layout: post
 title: "HE:labs faz campanha de doação de sangue"

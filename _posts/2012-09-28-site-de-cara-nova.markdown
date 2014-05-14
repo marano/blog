@@ -1,5 +1,4 @@
 ---
-published: true
 author: HE:labs
 layout: post
 title: "Site da HE:labs está de cara nova"

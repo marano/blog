@@ -1,5 +1,4 @@
 ---
-published: true
 author: Cayo Medeiros (yogodoshi)
 layout: post
 title: "Melhorando o Email Activity do SendGrid"

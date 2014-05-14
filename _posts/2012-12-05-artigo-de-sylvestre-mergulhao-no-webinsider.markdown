@@ -1,5 +1,4 @@
 ---
-published: true
 author: HE:labs
 layout: post
 title: "Artigo de Sylvestre Mergulhão no Webinsider"

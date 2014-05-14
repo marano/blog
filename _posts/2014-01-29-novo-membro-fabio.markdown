@@ -1,5 +1,4 @@
 ---
-published: true
 author: Crystal Affonso
 layout: post
 title: "Novo membro: Fábio Rehm"

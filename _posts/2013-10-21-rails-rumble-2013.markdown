@@ -1,5 +1,4 @@
 ---
-published: true
 layout: post
 author: Mauro George
 title: Rails Rumble 2013

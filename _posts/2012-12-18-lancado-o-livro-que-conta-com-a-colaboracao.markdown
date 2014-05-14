@@ -1,5 +1,4 @@
 ---
-published: true
 author: HE:labs
 layout: post
 title: "Lançado o livro que conta com a colaboração de Rafael Lima"

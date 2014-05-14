@@ -1,5 +1,4 @@
 ---
-published: true
 author: HE:labs
 layout: post
 title: "HE:labs é manchete no Jornal Corporativo de 21/11"

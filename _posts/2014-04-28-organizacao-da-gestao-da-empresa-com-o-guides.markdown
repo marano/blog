@@ -1,5 +1,4 @@
 ---
-published: true
 author: Rafael Lima
 layout: post
 title: "Organização da gestão da empresa com o Guides"

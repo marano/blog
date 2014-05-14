@@ -1,5 +1,4 @@
 ---
-published: true
 author: Flavia Fortes
 layout: post
 title: "Você, realmente, sabe o que é uma startup? E MVP? Então vem comigo..."

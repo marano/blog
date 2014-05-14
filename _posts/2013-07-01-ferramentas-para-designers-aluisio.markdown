@@ -1,5 +1,4 @@
 ---
-published: true
 author: Aluísio Azevedo
 layout: post
 title: "Ferramentas para Designers"

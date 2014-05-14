@@ -1,5 +1,4 @@
 ---
-published: true
 author: Mikael Carrara
 layout: post
 title: "Design Responsivo Parte I: Arquivos CSS e Breakpoints"

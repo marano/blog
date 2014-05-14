@@ -1,5 +1,4 @@
 ---
-published: true
 author: Rafael Fiuza
 layout: post
 title: "Turn simple with Query Objects"

@@ -1,5 +1,4 @@
 ---
-published: true
 author: Beatriz Correia
 layout: post
 title: "Sobre criatividade e bloqueio"

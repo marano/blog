@@ -1,5 +1,4 @@
 ---
-published: true
 author: Eduardo Fiorezi
 layout: post
 title: "[video] Introdução ao mongoDB - Café com Dev Londrina"

@@ -1,5 +1,4 @@
 ---
-published: true
 author: Sylvestre Mergulhão
 layout: post
 title: "Quando consegue nos enviar esse orçamento?"

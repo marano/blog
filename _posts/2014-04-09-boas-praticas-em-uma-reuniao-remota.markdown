@@ -1,5 +1,4 @@
 ---
-published: true
 author: Anézio Marques de Campos Junior
 layout: post
 title: "Boas práticas em uma reunião remota"
