@@ -1,4 +1,3 @@
-
 ---
 published: true
 author: Krystal Campioni
