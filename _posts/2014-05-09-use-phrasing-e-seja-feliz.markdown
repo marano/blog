@@ -1,5 +1,4 @@
 ---
-published: true
 author: Rafael Fiuza
 layout: post
 title: "Use Phrasing e seja feliz"
@@ -8,7 +7,7 @@ categories:
   - Rails
   - Ruby
   - Gems
-  
+
 ---
 
 Talvez o título desse post seja um pouco tendencioso. Mas bem pouco.
