@@ -108,12 +108,6 @@ layout: default
         </li>
       </ul>
     </div>
-
-    {% if site.disqus_short_name and page.comments == true %}
-      <div id="disqus_thread" aria-live="polite">
-        <h6>Comentários</h6>
-        {% include disqus_thread.html %}
-      </div>
-    {% endif %}
+    {% include disqus_thread.html %}
   </div>
 </section>
