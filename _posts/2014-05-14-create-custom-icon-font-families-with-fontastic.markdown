@@ -2,7 +2,6 @@
 author: Krystal Campioni
 layout: post
 title: "Create custom icon font-families with Fontastic - No more pixelated icons on retina displays"
-comments: true
 categories:
   - front-end
   - css

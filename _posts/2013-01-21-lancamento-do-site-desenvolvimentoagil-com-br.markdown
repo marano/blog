@@ -2,7 +2,6 @@
 author: Vinicius Teles
 layout: post
 title: "Lançamento do site DesenvolvimentoAgil.com.br"
-comments: true
 categories:
   - desenvolvimento agil
   - xp

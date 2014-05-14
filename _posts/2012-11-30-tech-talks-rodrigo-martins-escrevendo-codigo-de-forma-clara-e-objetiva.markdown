@@ -2,7 +2,6 @@
 author: Pedro Marins
 layout: post
 title: "Tech Talks - Rodrigo Martins: Escrevendo código de forma clara e objetiva"
-comments: true
 categories:
   - tech talks
   - rails

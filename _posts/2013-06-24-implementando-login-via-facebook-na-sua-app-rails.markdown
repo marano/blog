@@ -2,7 +2,6 @@
 author: Matheus Bras
 layout: post
 title: "Implementando Login via Facebook na sua App Rails"
-comments: true
 categories:
   - facebook login
   - oauth

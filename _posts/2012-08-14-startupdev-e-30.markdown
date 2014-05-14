@@ -2,7 +2,6 @@
 author: HE:labs
 layout: post
 title: "Startup DEV é 30"
-comments: true
 categories:
   - Novidades
   - Startupdev

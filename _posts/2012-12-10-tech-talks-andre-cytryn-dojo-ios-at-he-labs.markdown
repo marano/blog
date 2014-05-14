@@ -2,7 +2,6 @@
 author: Mauro George
 layout: post
 title: "Tech Talks - André Cytryn: dojo iOS @ HE:labs"
-comments: true
 categories:
   - tech talks
   - ios

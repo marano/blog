@@ -2,7 +2,6 @@
 author: Rafael Fiuza
 layout: post
 title: "Pequenas dicas para um ótimo relacionamento"
-comments: true
 categories:
   - Rafael Fiuza
   - non tech

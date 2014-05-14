@@ -2,7 +2,6 @@
 author: Rafael Lima
 layout: post
 title: "Tivemos um cliente insatisfeito, vamos aprender!"
-comments: true
 categories:
   - startupdev
   - clientes

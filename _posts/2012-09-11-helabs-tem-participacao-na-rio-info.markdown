@@ -2,7 +2,6 @@
 author: HE:labs
 layout: post
 title: "HE:labs tem participação especial no Rio Info 2012"
-comments: true
 categories:
   - Novidades
   - eventos

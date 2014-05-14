@@ -2,7 +2,6 @@
 layout: post
 title: "Brazil Zipcode API - Brapi"
 author: Ali Ismayilov
-comments: true
 categories:
   - brapi
   - api

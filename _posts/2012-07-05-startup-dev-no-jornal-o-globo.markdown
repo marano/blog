@@ -2,7 +2,6 @@
 author: HE:labs
 layout: post
 title: "Startup DEV no Jornal O Globo "
-comments: true
 categories:
   - Novidades
      

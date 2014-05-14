@@ -2,7 +2,6 @@
 layout: post
 author: Mauro George
 title: Rails Rumble 2013
-comments: true
 categories:
   - mauro george
   - rails rumble

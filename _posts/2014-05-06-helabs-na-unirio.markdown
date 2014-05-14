@@ -2,7 +2,6 @@
 layout: post
 title: "Apresentação de Ruby on Rails na Unirio"
 author: Mauro George
-comments: true
 categories:
   - mauro george
   - sylvestre mergulhao

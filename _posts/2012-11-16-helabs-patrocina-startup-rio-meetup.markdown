@@ -2,7 +2,6 @@
 author: HE:labs
 layout: post
 title: "HE:labs patrocina Startup Rio Meetup"
-comments: true
 categories:
   - Novidades
      

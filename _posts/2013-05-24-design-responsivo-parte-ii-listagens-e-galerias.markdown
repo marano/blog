@@ -2,7 +2,6 @@
 author: Mikael Carrara
 layout: post
 title: "Design Responsivo Parte II: Listagens e Galerias"
-comments: true
 categories:
   - design
   - css

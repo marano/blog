@@ -2,7 +2,6 @@
 author: Mikael Carrara
 layout: post
 title: "Design Responsivo Parte III: Viewports"
-comments: true
 categories:
   - design
   - css

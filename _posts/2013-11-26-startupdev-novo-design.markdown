@@ -2,7 +2,6 @@
 author: Aluísio Azevedo
 layout: post
 title: "Redesign do Startupdev"
-comments: true
 categories:
   - startupdev
   - design

@@ -2,7 +2,6 @@
 author: Rafael Fiuza
 layout: post
 title: "Trabalho remoto, e daí?"
-comments: true
 categories:
   - Rafael Fiuza
   - trabalho remoto

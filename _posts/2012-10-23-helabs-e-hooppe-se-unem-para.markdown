@@ -2,7 +2,6 @@
 author: HE:labs
 layout: post
 title: "HE:labs e Hooppe se unem para levar Startup DEV ao Sul do país"
-comments: true
 categories:
   - Novidades
      

@@ -2,7 +2,6 @@
 author: Beatriz Correia
 layout: post
 title: "Choosing colors: quick tips"
-comments: true
 categories:
   - Beatriz Correia
   - color

@@ -2,7 +2,6 @@
 author: HE:labs
 layout: post
 title: "HE:labs marca presença no Startup Farm do Rio de Janeiro"
-comments: true
 categories:
   - Novidades
   - eventos

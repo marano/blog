@@ -2,7 +2,6 @@
 author: Pedro Marins
 layout: post
 title: "Tech Talks - Rodrigo Pinto: Explorando as views Rails"
-comments: true
 categories:
   - Cafe com DEV
   - Rails

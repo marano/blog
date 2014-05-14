@@ -2,7 +2,6 @@
 author: HE:labs
 layout: post
 title: "Para onde vamos?"
-comments: true
 categories:
   - Novidades
      

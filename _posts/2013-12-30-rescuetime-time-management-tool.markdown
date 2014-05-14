@@ -2,7 +2,6 @@
 author: Dirceu Pauka
 layout: post
 title: "RescueTime: time management tool"
-comments: true
 categories:
   - productivity
   - tool

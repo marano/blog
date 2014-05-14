@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Visita de Rafael Santos à HE:labs"
-comments: true
 categories:
   - helabs
   - rafael chefe

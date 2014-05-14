@@ -2,7 +2,6 @@
 author: HE:labs
 layout: post
 title: "Aniversário de um ano do Startupdev"
-comments: true
 categories:
   - HE:atividades
      

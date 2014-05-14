@@ -2,7 +2,6 @@
 author: Rafael Lima
 layout: post
 title: "Startup DEV agora é um marketplace"
-comments: true
 categories:
   - startupdev
   - business

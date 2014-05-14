@@ -2,7 +2,6 @@
 author: Rafael Chefe
 layout: post
 title: "Boxing and Coding"
-comments: true
 categories:
   - english
   - rafael chefe

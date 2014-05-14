@@ -2,7 +2,6 @@
 author: Sylvestre Mergulhão
 layout: post
 title: "Seu ambiente de trabalho mais limpo usando Vagrant"
-comments: true
 categories:
   - vagrant
   - osx

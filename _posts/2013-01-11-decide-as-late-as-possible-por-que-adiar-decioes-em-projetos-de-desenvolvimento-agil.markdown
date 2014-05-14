@@ -2,7 +2,6 @@
 author: André Cytryn
 layout: post
 title: "'Decide as late as possible' - Por que adiar decisões em projetos de desenvolvimento ágil"
-comments: true
 categories:
   - andre cytryn
   - lean startup

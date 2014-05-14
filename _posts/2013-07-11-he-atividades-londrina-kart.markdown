@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "HE:atividades Londrina: Kart"
-comments: true
 categories:
   - he:atividades
   - crystal

@@ -2,7 +2,6 @@
 author: Rafael Lima
 layout: post
 title: "Começando uma Startup com um MVP Concierge"
-comments: true
 categories:
   - startup
   - howto

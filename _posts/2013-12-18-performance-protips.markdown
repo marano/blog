@@ -2,7 +2,6 @@
 author: Flavia Fortes
 layout: post
 title: "Performance Protips"
-comments: true
 categories:
   - heroku
   - protips

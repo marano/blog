@@ -3,7 +3,6 @@ published: false
 author: Rafael Fiuza
 layout: post
 title: "Simplificando com Query Objects"
-comments: true
 categories:
   - Rafael Fiuza
   - Rails

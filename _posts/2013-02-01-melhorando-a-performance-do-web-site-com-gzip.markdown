@@ -2,7 +2,6 @@
 author: Pedro Marins
 layout: post
 title: "Melhorando a performance do web site com gzip"
-comments: true
 categories:
   - pedro marins
   - app

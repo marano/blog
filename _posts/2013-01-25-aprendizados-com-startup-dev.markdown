@@ -2,7 +2,6 @@
 author: Matheus Bras
 layout: post
 title: "Aprendizados com o Startup DEV"
-comments: true
 categories:
   - startupdev
   - desenvolvimento agil

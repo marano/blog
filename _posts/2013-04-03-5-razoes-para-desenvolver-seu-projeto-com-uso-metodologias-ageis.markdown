@@ -2,7 +2,6 @@
 author: Raphael Periard
 layout: post
 title: "5 razões para desenvolver seu projeto com uso metodologias ágeis."
-comments: true
 categories:
   - raphael periard
   - agile

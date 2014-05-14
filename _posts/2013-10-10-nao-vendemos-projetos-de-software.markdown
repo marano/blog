@@ -2,7 +2,6 @@
 author: Sylvestre Mergulhão
 layout: post
 title: "Não vendemos projetos de software"
-comments: true
 categories:
   - agile
   - sylvestre mergulhao

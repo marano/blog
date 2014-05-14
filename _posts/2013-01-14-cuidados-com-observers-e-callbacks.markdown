@@ -2,7 +2,6 @@
 author: Anézio Marques
 layout: post
 title: "Cuidados com Observers e callbacks"
-comments: true
 categories:
   - rails
 

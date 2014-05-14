@@ -2,7 +2,6 @@
 layout: post
 title: "Como criar um sprite responsivo"
 author: Thiago Gonzalez
-comments: true
 categories:
   - front-end
   - css

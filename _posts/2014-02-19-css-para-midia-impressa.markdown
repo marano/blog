@@ -3,7 +3,6 @@ author: Mikael Carrara
 layout: post
 title: "CSS Para Mídia Impressa"
 date: 2014-04-02 10:00
-comments: true
 categories:
   - impressao
   - css

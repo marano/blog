@@ -5,7 +5,6 @@ title: "Novo membro: Israel Ribeiro"
 categories:
   - novo membro
   - time
-comments: true
 
 ---
 

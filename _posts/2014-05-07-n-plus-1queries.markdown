@@ -2,7 +2,6 @@
 layout: post
 title: "N + 1 Queries in Rails"
 author: Flavia Fortes
-comments: true
 categories:
   - flavia fortes
   - n+1 query

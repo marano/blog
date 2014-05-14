@@ -2,7 +2,6 @@
 author: Guilherme Sa
 layout: post
 title: "Grow Products by Learning to Fail a Little Better and a Little Faster"
-comments: true
 categories:
   - guilherme sa
   - decision-making

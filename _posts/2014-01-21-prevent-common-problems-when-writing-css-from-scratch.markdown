@@ -2,7 +2,6 @@
 author: Krystal Campioni
 layout: post
 title: "Prevent common problems when writing CSS from scratch"
-comments: true
 categories:
   - front-end
   - css

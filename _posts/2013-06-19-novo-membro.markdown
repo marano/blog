@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Novo membro: Thiago Gonzalez"
-comments: true
 categories:
   - thiago gonzalez
   - novo membro

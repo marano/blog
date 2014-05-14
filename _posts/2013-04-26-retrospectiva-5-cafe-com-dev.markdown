@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Retrospectiva - Café com DEV 19/04"
-comments: true
 categories:
   - cafe com dev
   - marcelo pereira

@@ -2,7 +2,6 @@
 author: Mauro George
 layout: post
 title: "Criando páginas não tão estáticas no rails"
-comments: true
 categories:
   - mauro george
   - rails

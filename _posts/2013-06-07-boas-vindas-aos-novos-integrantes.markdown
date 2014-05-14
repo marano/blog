@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Novos membros: Dirceu e Flavia"
-comments: true
 categories:
   - time
   - flavia fortes

@@ -2,7 +2,6 @@
 author: HE:labs
 layout: post
 title: "HE:labs no Tecno Blog Info"
-comments: true
 categories:
   - Novidades
      

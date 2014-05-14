@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Novo membro: Tomás Müller"
-comments: true
 categories:
   - Novo membro
   - tomas muller

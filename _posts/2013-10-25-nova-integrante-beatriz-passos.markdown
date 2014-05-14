@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Novo membro: Beatriz Passos"
-comments: true
 categories:
   - Novo membro
   - beatriz correia

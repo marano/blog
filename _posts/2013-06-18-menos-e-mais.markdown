@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Menos é mais"
-comments: true
 categories:
   - comunicação
   - crescimento

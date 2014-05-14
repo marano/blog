@@ -2,7 +2,6 @@
 author: Dirceu Pauka
 layout: post
 title: "Como salvar imagens para web"
-comments: true
 categories:
   - design
   - otimização

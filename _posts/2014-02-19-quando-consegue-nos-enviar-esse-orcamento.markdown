@@ -2,7 +2,6 @@
 author: Sylvestre Mergulhão
 layout: post
 title: "Quando consegue nos enviar esse orçamento?"
-comments: true
 categories:
   - sylvestre mergulhao
   - mvp

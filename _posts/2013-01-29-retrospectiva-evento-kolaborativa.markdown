@@ -2,7 +2,6 @@
 author: Andre Cytryn
 layout: post
 title: "Retrospectiva - evento Kolaborativa"
-comments: true
 categories:
   - eventos
   - andre cytryn

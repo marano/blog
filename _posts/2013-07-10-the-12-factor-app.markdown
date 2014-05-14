@@ -2,7 +2,6 @@
 author: Thiago Borges
 layout: post
 title: "The 12 Factor app"
-comments: true
 categories:
   - Thiago Borges
   - Deploy

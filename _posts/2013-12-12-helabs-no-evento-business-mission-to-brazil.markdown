@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "HE:labs no evento Business Mission to Brazil"
-comments: true
 categories:
   - crystal
   - eventos

@@ -3,7 +3,6 @@ author: Thiago Belem
 layout: post
 title: "Thread-safing your objects with the Lockable concern"
 date: 2014-04-25 14:00
-comments: true
 categories:
   - threadsafe
   - lock

@@ -3,7 +3,6 @@ author: Dirceu Pauka
 layout: post
 title: "Speed up your website with InstantClick"
 date: 2014-04-14 09:00
-comments: true
 categories:
   - javascript
   - otimização

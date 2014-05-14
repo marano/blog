@@ -2,7 +2,6 @@
 author: Matheus Bras
 layout: post
 title: "Passwordless Login"
-comments: true
 categories:
   - matheus bras
   - ruby

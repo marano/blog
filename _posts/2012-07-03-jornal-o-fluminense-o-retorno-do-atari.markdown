@@ -2,7 +2,6 @@
 author: HE:labs
 layout: post
 title: "Jornal O Fluminense - O retorno do Atari"
-comments: true
 categories:
   - Novidades
      

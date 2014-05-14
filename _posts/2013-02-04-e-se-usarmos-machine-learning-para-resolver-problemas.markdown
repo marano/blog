@@ -2,7 +2,6 @@
 author: Rafael Fiuza
 layout: post
 title: "E se usarmos Machine Learning para resolver problemas"
-comments: true
 categories:
   - rafael fiuza
   - rails
