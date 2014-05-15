@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Brazil Zipcode API - Brapi"
+title: "Brazil Postal Code API - Brapi"
 author: Ali Ismayilov
 categories:
   - brapi
   - api
   - brazil
-  - zipcode
+  - postal code
   - ibge
   - ali ismayilov
   - english
 ---
 
-Today we announce our new Heroku addon - Brapi. Brapi will provide programmatic access to zipcode, city, POI, address information about Brazil. It is built for developers, like us.
+Today we announce our new Heroku addon - Brapi. Brapi will provide programmatic access to postal code, city, POI, address information about Brazil. It is built for developers, like us.
 
 <!--more-->
 
@@ -20,9 +20,9 @@ Today we announce our new Heroku addon - Brapi. Brapi will provide programmatic 
 
 Currently, Brapi provides following endpoints:
 
-- Zipcode GET _by zipcode numbers_
+- PostalCode GET _by postal code numbers_
 - City GET _by IBGE code_
-- Zipcode POST _update/create_
+- PostalCode POST _update/create_
 
 Response you get is a JSON object:
 
@@ -31,8 +31,8 @@ Response you get is a JSON object:
   "neighborhood": "Centro",
   "street_name": "Presidente Vargas",
   "street_type": "Avenida",
-  "formatted_zipcode": "20071-905",
-  "zipcode_numbers": "20071905",
+  "formatted_postal_code": "20071-905",
+  "postal_code_numbers": "20071905",
   "complement": "- de 585 a 1261 - lado ímpar",
   "location": null,
   "city": {
@@ -47,7 +47,7 @@ Response you get is a JSON object:
 
 We, at HE:labs try to make our customers lives easy. We try to solve their problems with simpler solutions. We believe that keeping things simple makes us more productive. Also we contribute for [open source](http://helabs.com.br/opensource/) to make developers lives easy too.
 
-Here we present alpha access to our brand new API - Brapi. Brapi will allow developers easily provide access to Brazilian zipcodes and cities. By programmatically accessing this data developers can build better UX for their customers with less effort.
+Here we present alpha access to our brand new API - Brapi. Brapi will allow developers easily provide access to Brazilian postal codes and cities. By programmatically accessing this data developers can build better UX for their customers with less effort.
 
 To keep things simple, we will provide Brapi service through Heroku Addons. The service was already reviewed by Heroku team, and ready for use. But before going public, we'd like to give exclusive access to our readers. This way we want to receive early feedback and meet the most desired features.
 
