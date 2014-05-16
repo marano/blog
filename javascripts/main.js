@@ -54,6 +54,20 @@ $(function(){
   }
 
   // Send the first post to the featured div
-  var firstPost = $("#posts-list > .post:first-child");
-  firstPost.appendTo("#static-image");
+  function moveElementTo() {
+    var firstPostOnList = $("#posts-list > .post:first-child");
+    var firstPostOnFeatured = $("#static-image > .post:first-child");
+    var width = $(window).width();
+
+    if(width >= 960) {
+      firstPostOnList.appendTo("#static-image");
+    } else {
+      firstPostOnFeatured.prependTo("#posts-list");
+    }
+  }
+
+  moveElementTo();
+  $(window).on('resize', function() {
+    moveElementTo();
+  });
 });
