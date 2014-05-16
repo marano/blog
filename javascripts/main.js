@@ -53,4 +53,7 @@ $(function(){
     posts.slice(i, i+3).wrapAll("<div class='row'></div>");
   }
 
+  // Send the first post to the featured div
+  var firstPost = $("#posts-list > .post:first-child");
+  firstPost.appendTo("#static-image");
 });
