@@ -67,5 +67,7 @@ $(function(){
   }
 
   moveElementTo();
-  $(window).on('resize', moveElementTo());
+  $(window).on('resize', function() {
+    moveElementTo()
+  });
 });
