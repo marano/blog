@@ -7,9 +7,7 @@ categories:
   - active admin
 ---
 
-Ah, administrative interfaces. Sometimes so simples, sometimes so complex. The only sure is that they will stay with us
-for years. In this post we'll learn how to implement a "quick add" and "quick edit" feature on active admin that you can
-leverage if your admin panel is rapidly becoming a mess.
+In this post we'll learn how to implement a "quick add" and "quick edit" feature on active admin that you can use to give users more agility on administrative operations.
 
 <!--more-->
 
@@ -44,14 +42,8 @@ index. Also, having link to update the project budget, with the same behavior, c
 
 ## Preparing active admin
 
-To accomplish both of our objectives we are going to use modal dialogs. Among the bests is [Fancybox](https://github.com/fancyapps/fancyBox).
-FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images, html content and multi-media on your webpages.
-It is built on the top of the popular JavaScript framework jQuery and is both easy to implement and a snap to customize.
-Licensed under [Creative Commons Attribution-NonCommercial 3.0](http://creativecommons.org/licenses/by-nc/3.0/) license, you are free to use fancyBox
-for your personal or non-profit website projects, or you can get the author's permission to use fancyBox for commercial
-websites by [paying a fee](http://fancyapps.com/store/).
-
-After installing fancybox into your application, change the active admin assets to look like this:
+To accomplish both of our objectives we are going to use modal dialogs. Here specifically, we will use [Fancybox](https://github.com/fancyapps/fancyBox).
+After installing Fancybox into your application (you can use [this gem](https://github.com/kyparn/fancybox2-rails/)), change the active admin assets to look like this:
 
 app/assets/javascripts/**active_admin.js.coffee:**
 {% highlight coffeescript linenos %}
@@ -83,7 +75,7 @@ get '/admin/projects/new/quick_add' => 'admin/projects#quick_add', as: :admin_pr
 post '/admin/projects/quick_create' => 'admin/projects#quick_create', as: :admin_project_quick_create
 {% endhighlight %}
 
-Edit the `app/admin/project.rb` and add the following action item to open the quick add modal from project index:
+Edit the `app/admin/project.rb` and add the following action item to let users open the quick add modal only from project index:
 
 {% highlight ruby linenos %}
 action_item only: :index do
@@ -104,6 +96,7 @@ controller do
   def quick_create
     @project = Project.new(permitted_params[:project])
     @project.save
+    render 'quick_response', layout: false
   end
 end
 {% endhighlight %}
@@ -117,7 +110,7 @@ app/views/admin/projects/**quick_add.html.slim**:
   h2 New Project
   p.modal-description Project Quick Add.
 
-  section#quick-add-errors
+  section#quick-errors
     = render 'error_messages', object: @project
 
   section.form-fluid
@@ -130,7 +123,7 @@ app/views/admin/projects/**quick_add.html.slim**:
           = f.submit 'Save'
 {% endhighlight %}
 
-app/views/admin/projects/**quick_create.js.erb**:
+app/views/admin/projects/**quick_response.js.erb**:
 
 {% highlight erb linenos %}
 <% if @project.errors.any? %>
@@ -141,6 +134,71 @@ app/views/admin/projects/**quick_create.js.erb**:
 <% end %>
 {% endhighlight %}
 
+Note the usage of an `error_messages` partial. Here I'm using [the one included by Pah](https://github.com/Helabs/pah/blob/master/lib/pah/files/app/views/application/_error_messages.html.slim).
+Also, this same file will be used as response for the quick edit feature that follows.
+
 ## The quick edit
 
-TODO from tomasmuller: write here about quick edit.
+Add the following routes to your application:
+
+{% highlight ruby linenos %}
+get '/admin/projects/:id/edit/quick_edit' => 'admin/projects#quick_edit', as: :admin_project_quick_edit
+post '/admin/projects/:id/quick_update' => 'admin/projects#quick_update', as: :admin_project_quick_update
+{% endhighlight %}
+
+Edit the `app/admin/project.rb` and override the index page. The trick here is how we append our new quick edit link to the default ones:
+
+{% highlight ruby linenos %}
+index do
+  column :id
+  column :name
+  column :client
+  column :budget
+  # more columns definitions...
+
+  actions defaults: true do |project|
+    link_to 'Quick Edit', admin_project_quick_edit_path(project), class: 'fancybox', data: { 'fancybox-type' => 'ajax' }
+  end
+end
+{% endhighlight %}
+
+Still on `app/admin/project.rb`, implement the `quick_edit` and `quick_update` controller actions.
+
+{% highlight ruby linenos %}
+controller do
+  # def quick_add...
+  # def quick_create...
+
+  def quick_edit
+    @project = Project.new
+    render layout: false
+  end
+
+  def quick_update
+    @project = Project.find(params[:id])
+    @project.update(permitted_params[:project])
+    render 'quick_response', layout: false
+  end
+end
+{% endhighlight %}
+
+Finally, the view:
+
+app/views/admin/projects/**quick_edit.html.slim**:
+
+{% highlight haml linenos %}
+#modal
+  h2 Quick Edit Project
+  p.modal-description Edit Project Budget.
+
+  section#quick-errors
+    = render 'error_messages', object: @project
+
+  section.form-fluid
+    = simple_form_for(@project, url: admin_project_quick_update_path, remote: true) do |f|
+      .form-inputs
+        = f.input :budget
+      ul.form-actions
+        li
+          = f.submit 'Save'
+{% endhighlight %}
