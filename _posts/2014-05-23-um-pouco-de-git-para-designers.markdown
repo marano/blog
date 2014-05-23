@@ -78,10 +78,10 @@ git checkout master
 É interessante também sempre antes de começar a trabalhar rodar o comando:
 
 {% highlight bash linenos %}
-git pull --rebase
+git pull
 {% endhighlight %}
 
-Esse é comando que vai deixar o repositório (baixado na sua máquina) em dia com as alterações feitas por outros colaboradores. Quando você roda o **git pull --rebase**, o Git baixa todas as alterações disponíveis no servidor e junta com a sua versão local. É importante sempre trabalhar com o código atualizado para evitar conflitos no futuro.
+Esse é comando que vai deixar o repositório (baixado na sua máquina) em dia com as alterações feitas por outros colaboradores. Quando você roda o **git pull**, o Git baixa todas as alterações disponíveis no servidor e junta com a sua versão local. É importante sempre trabalhar com o código atualizado para evitar conflitos no futuro.
 
 ## Push
 
