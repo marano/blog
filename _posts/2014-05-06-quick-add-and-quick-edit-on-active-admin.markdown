@@ -141,7 +141,7 @@ Add the following routes to your application:
 
 {% highlight ruby linenos %}
 get '/admin/projects/:id/edit/quick_edit' => 'admin/projects#quick_edit', as: :admin_project_quick_edit
-post '/admin/projects/:id/quick_update' => 'admin/projects#quick_update', as: :admin_project_quick_update
+patch '/admin/projects/:id/quick_update' => 'admin/projects#quick_update', as: :admin_project_quick_update
 {% endhighlight %}
 
 Edit the `app/admin/project.rb` and override the index page. The trick here is how we append our new Quick Edit link to the default ones - View, Edit, Delete:
@@ -168,7 +168,7 @@ controller do
   # def quick_create...
 
   def quick_edit
-    @project = Project.new
+    @project = Project.find(params[:id])
     render layout: false
   end
 
@@ -200,3 +200,225 @@ app/views/admin/projects/**quick_edit.html.slim**:
         li
           = f.submit 'Save'
 {% endhighlight %}
+
+## Tests
+
+Now let's write the tests for our custom quick add and quick edit features.
+
+Yes, [we test routes](http://helabs.com.br/blog/2014/03/18/routes-to-spec-or-not-to-spec-in-a-rails-app/). So, here it is:
+
+spec/routing/**admin_projects_routing_spec.rb**:
+
+{% highlight ruby linenos %}
+require 'spec_helper'
+
+describe Admin::ProjectsController do
+
+  describe 'quick add' do
+    describe 'routes' do
+      it { expect(get('/admin/projects/new/quick_add')).to route_to('admin/projects#quick_add') }
+      it { expect(post('/admin/projects/quick_create')).to route_to('admin/projects#quick_create') }
+    end
+
+    describe 'route helpers' do
+      it { expect(admin_project_quick_add_path).to eq('/admin/projects/new/quick_add') }
+      it { expect(admin_project_quick_create_path).to eq('/admin/projects/quick_create') }
+    end
+  end
+
+  describe 'quick edit' do
+    describe 'routes' do
+      it { expect(get('/admin/projects/1/edit/quick_edit')).to route_to(controller: 'admin/projects', action: 'quick_edit', id: '1') }
+      it { expect(patch('/admin/projects/1/quick_update')).to route_to(controller: 'admin/projects', action: 'quick_update', id: '1') }
+    end
+
+    describe 'route helpers' do
+      it { expect(admin_project_quick_edit_path(1)).to eq('/admin/projects/1/edit/quick_edit') }
+      it { expect(admin_project_quick_update_path(1)).to eq('/admin/projects/1/quick_update') }
+    end
+  end
+
+end
+{% endhighlight %}
+
+And now the tests for the custom action methods added to projects (active)admin controller. To implement them, here we are going to use
+a [shared example for authentication required](https://github.com/FlaviaFortes/strawberrycake/blob/master/spec/support/shared_example_for_authentication.rb),
+and a `sign_in` method defined in one of our spec support files.
+
+spec/controllers/admin/**projects_controller_spec.rb**:
+
+{% highlight ruby linenos %}
+require 'spec_helper'
+
+describe Admin::ProjectsController do
+
+  let!(:user) { create(:user, admin: true) }
+
+  describe "GET 'quick_add'" do
+    include_examples 'authentication required' do
+      let(:action) { get :quick_add }
+    end
+
+    context 'logged in' do
+      before do
+        sign_in(user)
+        get :quick_add
+      end
+
+      it { expect(assigns(:project)).to be_a Project }
+      it { should respond_with(:success) }
+      it { should render_template(:quick_add) }
+      it { should render_template(layout: false) }
+    end
+  end
+
+  describe "POST 'quick_create'" do
+    include_examples 'authentication required' do
+      let(:action) { xhr :post, :quick_create }
+    end
+
+    context 'logged in' do
+      before do
+        sign_in(user)
+      end
+
+      context 'with invalid params' do
+        let(:params) do
+          { project: { name: nil, client: nil } }
+        end
+
+        it 'not create a new project' do
+          expect do
+            xhr :post, :quick_create, params
+          end.to_not change(Project, :count)
+        end
+
+        it 'assign @project' do
+          xhr :post, :quick_create, params
+          expect(assigns(:project)).to be_a(Project)
+        end
+
+        it "render the 'quick_response'" do
+          xhr :post, :quick_create, params
+          should render_template(:quick_response)
+          should render_template(layout: false)
+        end
+      end
+
+      context 'with valid params' do
+        let(:params) do
+          { project: { name: 'XPTO Project', client: 'Foo Bar Client Name' } }
+        end
+
+        it 'create a new project' do
+          expect do
+            xhr :post, :quick_create, params
+          end.to change(Project, :count).by(1)
+        end
+
+        it 'assign the new @project' do
+          xhr :post, :quick_create, params
+          expect(assigns(:project)).to be_a(Project)
+        end
+
+        it '@project is persisted' do
+          xhr :post, :quick_create, params
+          expect(assigns(:project)).to be_persisted
+        end
+
+        it "render the 'quick_response'" do
+          xhr :post, :quick_create, params
+          should render_template(:quick_response)
+          should render_template(layout: false)
+        end
+      end
+    end
+  end
+
+  describe "GET 'quick_edit'" do
+    let!(:project) { create(:project) }
+
+    include_examples 'authentication required' do
+      let(:action) { get :quick_edit, id: project }
+    end
+
+    context 'logged in' do
+      before do
+        sign_in(user)
+        get :quick_edit, id: project
+      end
+
+      it { expect(assigns(:project)).to eq project }
+      it { should respond_with(:success) }
+      it { should render_template(:quick_edit) }
+      it { should render_template(layout: false) }
+    end
+  end
+
+  describe "POST 'quick_update'" do
+    let!(:project) { create(:project, budget: 77000) }
+
+    include_examples 'authentication required' do
+      let(:action) { xhr :post, :quick_update, id: project }
+    end
+
+    context 'logged in' do
+      before do
+        sign_in(user)
+      end
+
+      context 'with invalid params' do
+        let(:params) do
+          { id: project, project: { budget: 'abc' } }
+        end
+
+        it 'not create a new project' do
+          expect do
+            xhr :post, :quick_update, params
+          end.to change { project.reload.budget }.to be_zero
+        end
+
+        it 'assign the edited @project' do
+          xhr :post, :quick_update, params
+          expect(assigns(:project)).to eq project
+        end
+
+        it "render the 'quick_response'" do
+          xhr :post, :quick_update, params
+          should render_template(:quick_response)
+          should render_template(layout: false)
+        end
+      end
+
+      context 'with valid params' do
+        let(:params) do
+          { id: project, project: { budget: '88000' } }
+        end
+
+        it 'change project budget' do
+          expect do
+            xhr :post, :quick_update, params
+          end.to change{ project.reload.budget }.from(77000).to(88000)
+        end
+
+        it 'assign the updated @project' do
+          xhr :post, :quick_update, params
+          expect(assigns(:project)).to eq project
+        end
+
+        it "render the 'quick_response'" do
+          xhr :post, :quick_update, params
+          should render_template(:quick_response)
+          should render_template(layout: false)
+        end
+      end
+    end
+  end
+
+end
+{% endhighlight %}
+
+
+## Conclusion
+
+Summing up, ....
