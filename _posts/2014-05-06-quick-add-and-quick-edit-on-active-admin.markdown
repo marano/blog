@@ -33,12 +33,10 @@ Imagine that you have to build a administrative panel to manage the projects of 
 have a <u>name</u>, <u>description</u>, <u>client</u>, <u>start date</u>, <u>end date</u>, <u>participants</u>,
 <u>tags</u>, <u>budget</u>, <u>documents</u>, <u>images</u>, <u>links</u>, etc. The list of attributes and associations can easily continue.
 
-Considering the objectives of this post let's suppose that inserting a new project and updating the budget are the most common operations.
-
-Instead of offering only the project admin panel, will all project fields and associations available, where users will
-access just add or edit one or two fields, it would be very handy if we could quick insert new projects only by supplying
-the project name and client, without leaving the list of projects and loosing any filter previously applied to the projects
-index. Also, having link to update the project budget, with the same behavior, could let our users even happier.
+Considering the objectives of this post, let's suppose that inserting a new project and updating the budget are the most common operations.
+It would be very handy if we could quick insert new projects only by supplying the project name and client, without leaving the list of
+projects and loosing any filter previously applied to the projects index. Also, having link to update the project budget, with the same
+behavior, could let our users even happier.
 
 ## Preparing active admin
 
@@ -134,8 +132,8 @@ app/views/admin/projects/**quick_response.js.erb**:
 <% end %>
 {% endhighlight %}
 
-Note the usage of an `error_messages` partial. Here I'm using [the one included by Pah](https://github.com/Helabs/pah/blob/master/lib/pah/files/app/views/application/_error_messages.html.slim).
-Also, this same file will be used as response for the quick edit feature that follows.
+This same file will be used as response for the quick edit feature that follows. Also, note the usage of an `error_messages` partial.
+Here I'm using [the one included by Pah](https://github.com/Helabs/pah/blob/master/lib/pah/files/app/views/application/_error_messages.html.slim).
 
 ## The quick edit
 
@@ -146,7 +144,7 @@ get '/admin/projects/:id/edit/quick_edit' => 'admin/projects#quick_edit', as: :a
 post '/admin/projects/:id/quick_update' => 'admin/projects#quick_update', as: :admin_project_quick_update
 {% endhighlight %}
 
-Edit the `app/admin/project.rb` and override the index page. The trick here is how we append our new quick edit link to the default ones:
+Edit the `app/admin/project.rb` and override the index page. The trick here is how we append our new Quick Edit link to the default ones - View, Edit, Delete:
 
 {% highlight ruby linenos %}
 index do
