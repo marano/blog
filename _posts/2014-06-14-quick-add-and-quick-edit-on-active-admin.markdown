@@ -11,7 +11,7 @@ In this post we'll learn how to implement a "quick add" and "quick edit" feature
 
 <!--more-->
 
-![Bad UI](/blog/images/posts/2014-05-06/bad_ui.jpg)
+![Bad UI](/blog/images/posts/2014-06-14/bad_ui.jpg)
 <div style="text-align: center;">Not quite a web interface, but you get the point.</div>
 <p> </p>
 
