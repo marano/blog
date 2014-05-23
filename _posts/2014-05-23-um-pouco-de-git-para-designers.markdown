@@ -98,3 +98,9 @@ Se eu tivesse permissão para apenas rodar o **git push** na *branch* **master**
 ## Conclusão
 
 Criar uma *branch* e fazer um *Pull Request* com o que você criou de novo, é o conceito chave para usar o Git como ferramenta para sair propondo novos designs por aí. Isso possibilita inúmeras pessoas opinarem sobre o que você está proprondo com sua *Pull Request*, propor melhorias, etc. O que parece bastante produtivo tanto para projetos open source quanto para projetos privados.
+
+
+## Recurso
+
+A Code School oferece um console pra você fazer seus primeiros testes com Git:
+https://try.github.io/levels/1/challenges/1
