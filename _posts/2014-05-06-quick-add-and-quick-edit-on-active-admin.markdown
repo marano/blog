@@ -421,4 +421,8 @@ end
 
 ## Conclusion
 
-Summing up, ....
+Administrative panels always will be among us. They are very useful for clients to have complete control over a system feature.
+But sometimes they can turn into something very boring, scary and hard to use, due the clutter of having too much data, controls and information, all into one single interface.
+
+Active admin can help us a lot to easily ship full featured administrative interfaces. Beyond all features that the gem offer out of the box,
+ we can build custom features like the ones shown on this post to facilitate the life of our customers.
