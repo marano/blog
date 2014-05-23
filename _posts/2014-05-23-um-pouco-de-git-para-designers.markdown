@@ -31,7 +31,7 @@ git clone git@github.com:ruby/www.ruby-lang.org.git
 
 ## Commit
 
-Depois de clonado o repositório e entrado dentro do diretório correto, você está pronto pra começar a "commitar". Sempre antes de um *commit* você precisa adicionar suas alterações:
+Depois de clonado o repositório e entrado no diretório correto, você está pronto pra começar a "commitar". Sempre antes de um *commit* você precisa adicionar suas alterações:
 
 {% highlight bash linenos %}
 git add .
