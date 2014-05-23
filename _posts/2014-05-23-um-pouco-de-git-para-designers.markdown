@@ -75,17 +75,17 @@ git checkout master
 
 ## Pull
 
-E interessante também sempre antes de começar a trabalhar rodar o comando:
+É interessante também sempre antes de começar a trabalhar rodar o comando:
 
 {% highlight bash linenos %}
 git pull --rebase
 {% endhighlight %}
 
-Esse é comando que vai deixar o repositório (baixado na sua máquina) em dia com as alterações feitas por outros colaboradores. Quando você roda o **git pull --rebase**, o Git baixa todas as alterações disponíveis no servidor e junta com a sua versão local. E importante sempre trabalhar com o código atualizado para evitar conflitos no futuro.
+Esse é comando que vai deixar o repositório (baixado na sua máquina) em dia com as alterações feitas por outros colaboradores. Quando você roda o **git pull --rebase**, o Git baixa todas as alterações disponíveis no servidor e junta com a sua versão local. É importante sempre trabalhar com o código atualizado para evitar conflitos no futuro.
 
 ## Push
 
-**Push** é o comando responsável em mandar suas alterações/commits para o servidor. Quando você faz um git push na *branch* **master**, todos os seus commits são enviados para o servidor.
+**Push** é o comando responsável por mandar suas alterações/commits para o servidor. Quando você faz um git push na *branch* **master**, todos os seus commits são enviados para o servidor.
 
 Se você estiver numa outra *branch*, ao dar *Push*, você vai alimentar com os *commits*, a *Pull Request* relacionada a essa *branch*.
 
