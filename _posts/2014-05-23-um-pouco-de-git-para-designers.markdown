@@ -2,7 +2,7 @@
 published: true
 author: Mikael Carrara
 layout: post
-title: "Um pouco de git para designers"
+title: "Um Pouco de Git para Designers"
 date: 2014-05-26 10:30
 comments: true
 categories:
@@ -40,7 +40,7 @@ git add .
 E então você pode commitar:
 
 {% highlight bash linenos %}
-$ git commit -m "Improvement on header"
+git commit -m "Improvement on header"
 {% endhighlight %}
 
 Quando você commita, você cria um "nó" no histórico dos documentos envolvidos naquele *commit*, então quando no futuro você precisar voltar pra uma versão mais antiga da interface, basta apenas voltar para esse "nó" específico. Você não corre o risco de perder ou duplicar código. Além disso fica melhor documentado todas as versões da interface.
