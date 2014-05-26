@@ -3,7 +3,7 @@ published: true
 author: Mikael Carrara
 layout: post
 title: "Um pouco de git para designers"
-date: 2014-05-23 15:00
+date: 2014-05-26 10:30
 comments: true
 categories:
   - git
