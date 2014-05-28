@@ -1,9 +1,7 @@
 ---
-published: true
 author: Thiago Gonzalez
 layout: post
 title: "Doing vertical align on elements like a boss"
-comments: true
 categories:
   - thiago gonzalez
   - html

@@ -1,9 +1,7 @@
 ---
-published: true
 author: Aluísio Azevedo
 layout: post
 title: "Ferramentas para Designers"
-comments: true
 categories:
   - design
   - front-end

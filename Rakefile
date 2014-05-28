@@ -19,7 +19,6 @@ task :new_post, :title do |t, args|
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
     post.puts "author: Insert your name here"
-    post.puts "comments: true"
     post.puts "categories:"
     post.puts "  - Tag1"
     post.puts "  - Tag2"

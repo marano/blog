@@ -2,7 +2,6 @@
 author: Pedro Nascimento
 layout: post
 title: "Modularizando sua aplicação usando Engines"
-comments: true
 categories:
   - rails
   - lunks

@@ -1,9 +1,7 @@
 ---
-published: true
 author: Crystal Affonso
 layout: post
 title: "Novo membro: Fábio Rehm"
-comments: true
 categories:
   - Novo membro
   - fabio rehm

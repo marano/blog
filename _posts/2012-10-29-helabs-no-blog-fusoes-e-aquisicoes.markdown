@@ -1,9 +1,7 @@
 ---
-published: true
 author: HE:labs
 layout: post
 title: "HE:labs no blog Fusões & Aquisições"
-comments: true
 categories:
   - Novidades
      

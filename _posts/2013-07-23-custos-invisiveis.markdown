@@ -1,9 +1,7 @@
 ---
-published: true
 author: Sylvestre Mergulhão
 layout: post
 title: "Custos invisíveis"
-comments: true
 categories: 
   - TI
   - gastos

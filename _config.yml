@@ -1,4 +1,5 @@
 title: Blog do Time
+encoding: 'utf-8'
 author: Time HE:labs
 pygments: true
 permalink: /:year/:month/:day/:title/
@@ -30,3 +31,6 @@ exclude:
   - config.ru
   - sass
   - config.rb
+
+gems:
+  - jemoji

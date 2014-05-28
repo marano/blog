@@ -1,9 +1,7 @@
 ---
-published: true
 author: Thiago Belem
 layout: post
 title: Gerando dados "reais" com o Faker
-comments: true
 categories:
   - thiago belem
   - faker

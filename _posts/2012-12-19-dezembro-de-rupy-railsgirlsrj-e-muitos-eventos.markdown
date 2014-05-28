@@ -2,7 +2,6 @@
 author: Rodrigo Pinto
 layout: post
 title: "Dezembro de RUPY, RailsGirls-RJ e muitos eventos"
-comments: true
 categories:
   - rodrigo pinto
   - sylvestre mergulhao

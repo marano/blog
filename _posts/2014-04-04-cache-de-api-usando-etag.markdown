@@ -2,7 +2,6 @@
 author: Thiago Borges
 layout: post
 title: Cache de API usando ETag
-comments: true
 categories:
   - thiago borges
   - cache

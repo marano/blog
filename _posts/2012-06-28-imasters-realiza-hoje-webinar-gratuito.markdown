@@ -1,9 +1,7 @@
 ---
-published: true
 author: HE:labs
 layout: post
 title: "iMasters realiza hoje webinar gratuito sobre Ruby"
-comments: true
 categories:
   - Novidades
      

@@ -1,9 +1,7 @@
 ---
-published: true
 author: Sylvestre Mergulhão
 layout: post
 title: "Prazos e estimativas segundo Klaus Wuestefeld"
-comments: true
 categories:
   - agile
   - sylvestre mergulhao

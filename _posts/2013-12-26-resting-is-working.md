@@ -1,9 +1,7 @@
 ---
-published: true
 author: Ali Ismayilov
 layout: post
 title: "Resting is part of working"
-comments: true
 categories:
   - productivity
   - english

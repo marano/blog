@@ -1,9 +1,7 @@
 ---
-published: true
 author: Israel Ribeiro
 layout: post
 title: "Hospedando sites com Github Pages"
-comments: true
 categories:
   - israel ribeiro
   - github

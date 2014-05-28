@@ -53,4 +53,21 @@ $(function(){
     posts.slice(i, i+3).wrapAll("<div class='row'></div>");
   }
 
+  // Send the first post to the featured div
+  function moveElementTo() {
+    var firstPostOnList = $("#posts-list > .post:first-child");
+    var firstPostOnFeatured = $("#static-image > .post:first-child");
+    var width = $(window).width();
+
+    if(width >= 960) {
+      firstPostOnList.appendTo("#static-image");
+    } else {
+      firstPostOnFeatured.prependTo("#posts-list");
+    }
+  }
+
+  moveElementTo();
+  $(window).on('resize', function() {
+    moveElementTo()
+  });
 });

@@ -1,9 +1,7 @@
 ---
-published: true
 author: HE:labs
 layout: post
 title: "HE:labs participa da Ruby Conf"
-comments: true
 categories:
   - Novidades
   - eventos

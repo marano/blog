@@ -1,9 +1,7 @@
 ---
-published: true
 author: HE:labs
 layout: post
 title: "Balanço do Startup DEV Rumble"
-comments: true
 categories:
   - Novidades
   - Startupdev rumble

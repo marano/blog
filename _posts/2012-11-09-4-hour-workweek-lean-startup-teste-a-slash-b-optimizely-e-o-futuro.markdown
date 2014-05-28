@@ -2,7 +2,6 @@
 author: Sylvestre Mergulhão
 layout: post
 title: "4 Hour Workweek, Lean Startup, Teste A/B, Optimizely e o Futuro"
-comments: true
 categories:
 - Lean startup
 - Sylvestre Mergulhao

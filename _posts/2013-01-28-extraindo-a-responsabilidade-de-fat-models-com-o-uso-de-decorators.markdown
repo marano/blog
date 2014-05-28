@@ -2,7 +2,6 @@
 author: Mauro George
 layout: post
 title: "Extraindo a responsabilidade de Fat Models com o uso de Decorators no Rails"
-comments: true
 categories:
   - mauro george
   - decorator

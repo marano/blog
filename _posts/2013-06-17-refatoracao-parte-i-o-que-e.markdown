@@ -2,7 +2,6 @@
 author: Eduardo Fiorezi
 layout: post
 title: "Refatoração Parte I - O que é?!"
-comments: true
 categories:
   - desenvolvimento agil
   - refactoring

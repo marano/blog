@@ -1,9 +1,7 @@
 ---
-published: true
 author: Bruno Fernando
 layout: post
 title: "Organizando projeto Sass"
-comments: true
 categories:
   - Bruno Fernando
   - CSS

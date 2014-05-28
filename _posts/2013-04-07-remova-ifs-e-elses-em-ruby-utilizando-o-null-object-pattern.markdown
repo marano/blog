@@ -2,7 +2,6 @@
 author: Mauro George
 layout: post
 title: "Remova Ifs e Elses em Ruby utilizando o Null Object Pattern"
-comments: true
 categories:
   - mauro george
   - ruby

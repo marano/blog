@@ -1,9 +1,7 @@
 ---
-published: true
 author: Aluísio Azevedo
 layout: post
 title: "Um pouco sobre Lean UX"
-comments: true
 categories:
   - design
   - lean

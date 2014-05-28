@@ -1,9 +1,7 @@
 ---
-published: true
 author: Israel Ribeiro
 layout: post
 title: "The foundations of good code"
-comments: true
 categories:
   - israel ribeiro
   - agile

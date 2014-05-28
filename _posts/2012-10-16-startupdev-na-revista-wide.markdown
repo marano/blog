@@ -1,9 +1,7 @@
 ---
-published: true
 author: HE:labs
 layout: post
 title: "Startup DEV na Revista Wide de setembro/outubro"
-comments: true
 categories:
   - Novidades
   - Startupdev

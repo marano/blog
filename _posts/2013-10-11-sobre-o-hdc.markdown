@@ -1,9 +1,7 @@
 ---
-published: true
 author: Crystal Affonso
 layout: post
 title: "Hack & Design Conference 2013: avassalou!"
-comments: true
 categories:
   - HDC
   - eventos

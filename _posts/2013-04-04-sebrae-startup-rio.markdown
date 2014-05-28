@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "SEBRAE Startup Rio"
-comments: true
 categories:
   - startup
   - sebrae

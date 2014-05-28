@@ -1,9 +1,7 @@
 ---
-published: true
 author: Thiago Borges
 layout: post
 title: "Extraindo informações com Nokogiri"
-comments: true
 categories:
   - Thiago Borges
   - Nokogiri

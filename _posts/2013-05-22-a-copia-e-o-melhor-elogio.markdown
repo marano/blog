@@ -1,9 +1,7 @@
 ---
-published: true
 author: Rafael Lima
 layout: post
 title: "A cópia é o melhor elogio"
-comments: true
 categories:
   - startupdev
   - plagio

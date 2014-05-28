@@ -1,9 +1,7 @@
 ---
-published: true
 author: HE:labs
 layout: post
 title: "Webholic - Maratona de Programação"
-comments: true
 categories:
   - Novidades
      

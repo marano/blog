@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Retrospectiva - 4° Café com DEV"
-comments: true
 categories:
   - cafe com dev
   - rodrigo vidal

@@ -1,9 +1,7 @@
 ---
-published: true
 author: HE:labs
 layout: post
 title: "HE:labs recebe visita do Deputado Otavio Leite"
-comments: true
 categories:
   - Novidades
    

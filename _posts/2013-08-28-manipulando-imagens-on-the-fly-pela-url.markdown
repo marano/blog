@@ -1,9 +1,7 @@
 ---
-published: true
 author: Matheus Bras
 layout: post
 title: "Manipulando imagens on-the-fly pela URL"
-comments: true
 categories:
   - Matheus Bras
   - Dragonfly

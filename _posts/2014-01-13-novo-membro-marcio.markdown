@@ -1,9 +1,7 @@
 ---
-published: true
 author: Crystal Affonso
 layout: post
 title: "Novo membro: Márcio Júnior"
-comments: true
 categories:
   - Novo membro
   - marcio junior

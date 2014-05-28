@@ -1,9 +1,7 @@
 ---
-published: true
 author: HE:labs
 layout: post
 title: "HE:labs e 21212 se unem para exibir The Lean Startup Conference ao vivo"
-comments: true
 categories:
   - Novidades
   - Lean Startup

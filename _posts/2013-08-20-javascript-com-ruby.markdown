@@ -1,9 +1,7 @@
 ---
-published: true
 author: Rafael Fiuza
 layout: post
 title: "Como escrever Javascript de forma divertida"
-comments: true
 categories:
   - Rafael Fiuza
   - javascript

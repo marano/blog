@@ -2,7 +2,6 @@
 author: Organização Rails Girls RJ
 layout: post
 title: "HE:labs in Rails Girls RJ"
-comments: true
 categories:
   - rails
   - ramon page

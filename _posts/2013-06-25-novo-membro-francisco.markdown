@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Novo membro: Francisco Martins"
-comments: true
 categories:
   - novo membro
   - francisco martins

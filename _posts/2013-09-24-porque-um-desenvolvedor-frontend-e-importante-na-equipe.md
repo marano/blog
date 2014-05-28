@@ -8,7 +8,6 @@ categories:
   - back-end
   - design
   - time
-comments: true
 
 ---
 

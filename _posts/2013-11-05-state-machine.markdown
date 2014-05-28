@@ -1,9 +1,7 @@
 ---
-published: true
 author: Rodrigo Reginato
 layout: post
 title: "State Machine"
-comments: true
 categories:
   - Rodrigo Reginato
   - State Machine

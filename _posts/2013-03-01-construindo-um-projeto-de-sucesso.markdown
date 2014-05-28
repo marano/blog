@@ -2,7 +2,6 @@
 author: Rodrigo Pinto
 layout: post
 title: "Construindo um projeto de sucesso"
-comments: true
 categories:
   - xp
   - agile

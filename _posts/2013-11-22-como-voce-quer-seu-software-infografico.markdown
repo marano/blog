@@ -2,7 +2,6 @@
 author: Crystal Affonso
 layout: post
 title: "Infográfico: Como você quer o seu software?"
-comments: true
 categories:
   - app
   

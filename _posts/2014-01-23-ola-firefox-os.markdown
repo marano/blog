@@ -1,9 +1,7 @@
 ---
-published: true
 author: Francisco Martins
 layout: post
 title: "Olá, Firefox OS"
-comments: true
 categories:
   - francisco martins
   - Firefox OS

@@ -1,9 +1,7 @@
 ---
-published: true
 author: HE:labs
 layout: post
 title: "Universo Smart - Start-ups de Aplicativos"
-comments: true
 categories:
   - Novidades
      

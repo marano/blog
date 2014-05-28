@@ -2,7 +2,6 @@
 layout: post
 title: "Rupy Brazil 2013"
 author: Mauro George
-comments: true
 categories:
   - mauro george
   - talk

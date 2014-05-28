@@ -1,9 +1,7 @@
 ---
-published: true
 author: Crystal Affonso
 layout: post
 title: "Novo membro: Guilherme Sá"
-comments: true
 categories:
   - Novo membro
   - Guilherme sa

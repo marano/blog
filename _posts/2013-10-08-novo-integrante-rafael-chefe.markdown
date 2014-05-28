@@ -1,9 +1,7 @@
 ---
-published: true
 author: Crystal Affonso
 layout: post
 title: "Novo membro: Rafael Chefe"
-comments: true
 categories:
   - time
   - Novo membro

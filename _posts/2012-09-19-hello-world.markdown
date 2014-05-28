@@ -2,7 +2,6 @@
 author: Pedro Nascimento
 layout: post
 title: "Hello World"
-comments: true
 categories:
  - Novidades 
  - Lunks

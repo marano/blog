@@ -2,7 +2,6 @@
 author: Eduardo Fiorezi
 layout: post
 title: "Refatoração Parte II - Maus cheiros"
-comments: true
 categories:
   - desenvolvimento agil
   - refactoring

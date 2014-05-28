@@ -2,7 +2,6 @@
 author: Rafael Lima
 layout: post
 title: "Testes (bem) mais rápidos no RSpec"
-comments: true
 categories:
   - rails
   - rspec

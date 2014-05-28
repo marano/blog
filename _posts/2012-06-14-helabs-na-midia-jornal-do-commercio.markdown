@@ -1,9 +1,7 @@
 ---
-published: true
 author: HE:labs
 layout: post
 title: "HE:labs na Mídia: Jornal do Commércio"
-comments: true
 categories:
   - Novidades
      
