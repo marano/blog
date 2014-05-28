@@ -179,7 +179,8 @@ class Person
 end
 {% endhighlight %}
 
-You can check the diff here.
+You can check the diff
+[here](https://github.com/thiagogabriel/attribute-methods-example/commit/43ba895e8fda47b5c682de963a5e377beb3e04ad).
 
 It is important to have name conventions to implement reusable code
 like this, and attribute methods guide us to this direction.
