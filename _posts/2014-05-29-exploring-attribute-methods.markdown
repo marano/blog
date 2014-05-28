@@ -39,8 +39,8 @@ person.name_change   # => ["Peter", "Bob"]
 person.reset_name!   # => "Peter"
 {% endhighlight %}
 
-All these **_changed?**, **_was?**, **_change** and
-**reset_ !** are set using the facilities of Attribute
+All these `_changed?`, `_was?`, `_change` and
+`reset_ !` are set using the facilities of Attribute
 Methods.
 
 Why should I care about it?
@@ -55,15 +55,16 @@ which means a big chance of bugs and inconsistency.
 To implement something like *Dirty* module, we have to
 implement the requirements:
 
-1. Include ActiveModel::AttributeMethods in your class.
-2. Call each of its method you want to add, such as attribute_method_suffix or attribute_method_prefix.
-3. Call define_attribute_methods after the other methods are called.
-4. Define the various generic _attribute methods that you have declared.
+1. Include `ActiveModel::AttributeMethods` in your class.
+2. Call each of its method you want to add, such as `attribute_method_suffix` or `attribute_method_prefix`.
+3. Call `define_attribute_methods` after the other methods are called.
+4. Define the various generic `_attribute` methods that you have declared.
 
-Now that we all know how it behaves and what is necessary, we can start the process. I'm assuming the project is set up with Active Model and RSpec, just to simplify the example.
+Now that we all know how it behaves and what is necessary, we can start the process.
+I'm assuming the project is set up with Active Model and RSpec, just to simplify the example.
 
 ### Example
-The idea is to implement a method *_taken?* that checks if the attribute
+The idea is to implement a method `_taken?` that checks if the attribute
 is included on a predefined resource. It simple returns true if the
 attribute value already exists or false if it doesn't.
 
@@ -123,7 +124,7 @@ since Rails preloads all gems.
 
 The tricky part is using metaprogramming to call attribute specific
 methods, like on line *14*, which calls the private method
-*#name_collection*.
+`#name_collection`.
 
 Now that the tests are passing, I can create the test for the email
 attribute:
