@@ -17,8 +17,8 @@ explore some Ruby code using [CTags][ctags].
 Mostly to see some documentation, also to understand how
 the method works under the hood and learn some tricks.
 During this process, I found out about
-ActiveModel::AttributeMethods and I'll explore it using
-TDD on this post.
+[ActiveModel::AttributeMethods][attr-methods]
+and I'll explore it using TDD on this post.
 
 <!--more-->
 
@@ -26,7 +26,8 @@ First of all, what Attribute Methods is?
 
 It is module that provides an easy way to create
 prefixed and suffixed methods. For example on
-ActiveModel::Dirty:
+[ActiveModel::Dirty][dirty],
+with is implemented using Attribute Methods:
 
 {% highlight ruby linenos %}
 person = Person.new(name: 'Peter')
@@ -38,7 +39,7 @@ person.name_change   # => ["Peter", "Bob"]
 person.reset_name!   # => "Peter"
 {% endhighlight %}
 
-All these **_changed?** **was?** **change** and
+All these **_changed?**, **_was?**, **_change** and
 **reset_ !** are set using the facilities of Attribute
 Methods.
 
@@ -120,7 +121,7 @@ class Person
 On ordinary Rails projets, you don't need to worry about the first line,
 since Rails preloads all gems.
 
-The triky part is using metaprogramming to call attribute specific
+The tricky part is using metaprogramming to call attribute specific
 methods, like on line *14*, which calls the private method
 *#name_collection*.
 
@@ -179,14 +180,15 @@ end
 
 You can check the diff here.
 
-It is important to have name conventions too implement reusable code like this, and attribute methods guide us to this direction.
+It is important to have name conventions to implement reusable code
+like this, and attribute methods guide us to this direction.
 
 
 ### Conclusion
 
 It is always important to keep the code as DRY as possible.
-We, at HE:labs, use CodeClimate to point the bad smells, like
-duplication, complexity, and chorn. We also have 100% test coverage
+Here at HE:labs we use CodeClimate to point the bad smells, like
+duplication, complexity, and churn. We also have 100% test coverage
 to help us refactoring with confidence.
 
 This kind of refactoring is recommended when the whole team
@@ -197,3 +199,5 @@ you.
 
 
 [ctags]: http://ctags.sourceforge.net/
+[attr-methods]: http://api.rubyonrails.org/classes/ActiveModel/AttributeMethods.html
+[dirty]: http://api.rubyonrails.org/classes/ActiveModel/Dirty.html
