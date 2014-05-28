@@ -20,8 +20,6 @@ During this process, I found out about
 ActiveModel::AttributeMethods and I'll explore it using
 TDD on this post.
 
-<!-- Attribute Methods was found when I tried to understand how ActiveModel::Dirty works. -->
-
 <!--more-->
 
 First of all, what Attribute Methods is?
