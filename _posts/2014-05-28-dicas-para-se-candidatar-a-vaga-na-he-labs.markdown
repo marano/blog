@@ -41,4 +41,4 @@ Se for atrasar a entrega do teste, não puder participar da conversa no horário
 
 ## Conclusão
 
-Dedique-se! Se está se candidatanto é porque tem interesse em trabalhar conosco. Então, basta seguir essas dicas para aumentar a sua chance!
+Dedique-se! Se está se candidatando é porque tem interesse em trabalhar conosco. Então, basta seguir essas dicas para aumentar a sua chance!
