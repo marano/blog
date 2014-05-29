@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Meu software tem bug! Por que?!"
+title: "Meu software tem bug! Por quê?!"
 author: Sylvestre Mergulhão
 comments: true
 categories:
@@ -32,7 +32,7 @@ Para elevar o conhecimento das pessoas envolvidas sobre o problema a ser resolvi
 
 Para sempre elevarmos o nível de conhecimento de cada [membro do time](http://helabs.com.br/nosso-time/), temos dias de investimento, onde as pessoas trabalham em [projetos opensource](http://helabs.com.br/opensource/), workshops, techtalks, posts para nosso blog, etc.
 
-Esses dias não são cobrados dos clientes e por isso são chamados de **dias de investimento**. É investimento da empresa, nas pessoas do time. Tudo isso tem muitos benefícios, difundi o conhecimento das ferramentas que utilizamos entre os membros do time e contribui com toda a comunidade opensource.
+Esses dias não são cobrados dos clientes e por isso são chamados de **dias de investimento**. É investimento da empresa, nas pessoas do time. Tudo isso tem muitos benefícios, difunde o conhecimento das ferramentas que utilizamos entre os membros do time e contribui com toda a comunidade opensource.
 
 ## O que pode causar um lapso de atenção?
 
@@ -50,6 +50,6 @@ O trabalho de programação exige concentração intensa e foco, muito foco. E..
 
 Estamos sempre disponíveis online, realizando o trabalho, mas em geral o contato com o cliente no dia-a-dia (exceto no dia da reunião de planejamento) ocorre no [começo e/ou no final do dia](http://desenvolvimentoagil.com.br/xp/praticas/reuniao_pe), quando não estamos num momento de codificação.
 
-Mantendo todas essas práticas alcançamos no longo prazo de execução de cada projeto níveis baixos de bugs comuns e níveis extremamente baixos de bugs críticos, que impactam o uso pelos usuários em produção.
+Mantendo todas essas práticas alcançamos, no longo prazo de execução de cada projeto, níveis baixos de bugs comuns e níveis extremamente baixos de bugs críticos, que impactam o uso pelos usuários em produção.
 
 Quais são as suas dicas para reduzir o número de bugs?!
