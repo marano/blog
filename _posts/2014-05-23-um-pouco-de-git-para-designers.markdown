@@ -57,7 +57,9 @@ git branch
 
 Para criar uma nova *branch*:
 
+{% highlight bash linenos %}
 git branch design-mikael
+{% endhighlight %}
 
 Para entrar nessa nova *branch*:
 
