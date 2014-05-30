@@ -19,9 +19,7 @@ Quando você se interessa por código, muitas oportunidades de participar de pro
 
 O objetivo desse post, é passar um pouco da minha experiência com Git para outros web designers interessados em começar a fazer seus primeiros commits.
 
-Recentemente participei de uma competição para um redesign do site oficial da linguagem Ruby. Infelizmente não fui o vencedor, mas valeu a experiência. Vou usar minha *Pull Request* na competição como exemplo para o post:
-
-https://github.com/ruby/www.ruby-lang.org/pull/341
+Recentemente participei de uma competição para um redesign do site oficial da linguagem Ruby. Infelizmente não fui o vencedor, mas valeu a experiência. Vou usar minha [Pull Request](https://github.com/ruby/www.ruby-lang.org/pull/341) na competição como exemplo para o post:
 
 Geralmente o primeiro comando que você usa do Git é o git clone, para “clonar” (copiar para sua máquina) o reposítorio com todo o código do projeto através de uma chave SSH, por exemplo:
 
@@ -91,7 +89,7 @@ Se você estiver numa outra *branch*, ao dar *Push*, você vai alimentar com os 
 
 Por exemplo, quando eu estava trabalhando no projeto do Ruby, sempre que eu rodava no terminal o comando **git push**, meus *commits* alimentavam minha *Pull Request* lá no Github dentro da *branch* **design-mikael**:
 
-https://github.com/ruby/www.ruby-lang.org/pull/341/commits
+[https://github.com/ruby/www.ruby-lang.org/pull/341/commits](https://github.com/ruby/www.ruby-lang.org/pull/341/commits)
 
 Se eu tivesse permissão para apenas rodar o **git push** na *branch* **master**, essa minha nova proposta de design teria simplesmente sobrescrevido a versão em produção antes que os jurados da competição pudessem julgar minha proposta.
 
