@@ -19,7 +19,7 @@ Quando você se interessa por código, muitas oportunidades de participar de pro
 
 O objetivo desse post, é passar um pouco da minha experiência com Git para outros web designers interessados em começar a fazer seus primeiros commits.
 
-Recentemente participei de uma competição para um redesign do site oficial da linguagem Ruby. Infelizmente não fui o vencedor, mas valeu a experiência. Vou usar minha [Pull Request](https://github.com/ruby/www.ruby-lang.org/pull/341) na competição como exemplo para o post:
+Recentemente participei de uma competição para um redesign do site oficial da linguagem Ruby. Infelizmente não fui o vencedor, mas valeu a experiência. Vou usar minha [Pull Request](https://github.com/ruby/www.ruby-lang.org/pull/341) na competição como exemplo para o post.
 
 Geralmente o primeiro comando que você usa do Git é o git clone, para “clonar” (copiar para sua máquina) o reposítorio com todo o código do projeto através de uma chave SSH, por exemplo:
 
@@ -95,10 +95,10 @@ Se eu tivesse permissão para apenas rodar o **git push** na *branch* **master**
 
 ## Conclusão
 
-Criar uma *branch* e fazer um *Pull Request* com o que você criou de novo, é o conceito chave para usar o Git como ferramenta para sair propondo novos designs por aí. Isso possibilita inúmeras pessoas opinarem sobre o que você está proprondo com sua *Pull Request*, propor melhorias, etc. O que parece bastante produtivo tanto para projetos open source quanto para projetos privados.
+Criar uma *branch* e fazer um *Pull Request* com o que você criou de novo, é o conceito chave para usar o Git como ferramenta para sair propondo novos designs por aí. Isso possibilita inúmeras pessoas opinarem sobre o que você está propondo com sua *Pull Request*, propor melhorias, etc. O que parece bastante produtivo tanto para projetos open source quanto para projetos privados.
 
 
 ## Recurso
 
 A Code School oferece um console pra você fazer seus primeiros testes com Git:
-https://try.github.io/levels/1/challenges/1
+[https://try.github.io/levels/1/challenges/1](https://try.github.io/levels/1/challenges/1)
