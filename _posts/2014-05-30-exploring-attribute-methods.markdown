@@ -27,7 +27,7 @@ First of all, what Attribute Methods is?
 It is module that provides an easy way to create
 prefixed and suffixed methods. For example on
 [ActiveModel::Dirty][dirty],
-with is implemented using Attribute Methods:
+which is implemented using Attribute Methods:
 
 {% highlight ruby linenos %}
 person = Person.new(name: 'Peter')
@@ -199,7 +199,9 @@ harder to change if the attributes start diverging the shared
 behavior. If this day come, your tests will be there to support
 you.
 
+The code of this example is on [github][gh-example].
 
 [ctags]: http://ctags.sourceforge.net/
 [attr-methods]: http://api.rubyonrails.org/classes/ActiveModel/AttributeMethods.html
 [dirty]: http://api.rubyonrails.org/classes/ActiveModel/Dirty.html
+[gh-example]: https://github.com/thiagogabriel/attribute-methods-example
