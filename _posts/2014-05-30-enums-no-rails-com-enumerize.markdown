@@ -144,6 +144,18 @@ app/specs/models/**invoice_spec.rb**:
 
 Você pode conferir a lista completa de todas as funcionalidades visitando o [repositório no github](https://github.com/brainspec/enumerize)
 
+### Rails 4.1
+
+Como enumerações vinham sendo muito requisitadas, o rails 4.1 adicionou o [ActiveRecord::Enum](http://edgeapi.rubyonrails.org/classes/ActiveRecord/Enum.html), 
+que vai disponibilizar pra você um método de classe chamado `enum`, pelo qual você poderá criar uma enumeração de forma parecida com o enumerize.
+Usando ele no nosso exemplo fica assim:
+
+{% highlight ruby linenos %}
+  class Invoice
+    enum status: [:pending, :canceled, :paid]
+  end
+{% endhighlight %}
+
 ### Conclusão
 
 Quando se ver brigando com coisas repetitivas, dê uma pesquisada no github se esse problema já não foi resolvido.
