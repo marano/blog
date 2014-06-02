@@ -50,7 +50,7 @@ pt-BR:
          paid: paga 
 {% endhighlight %}
 
-Para verificarmos o status de uma instancia invoice podemos usar as constantes declaradas em `Invoice::Status`
+Para verificarmos o status de uma instância invoice podemos usar as constantes declaradas em `Invoice::Status`
 
 {% highlight ruby linenos %}
 if invoice.status == Invoice::Status::PENDING
@@ -85,7 +85,7 @@ Isso funciona bem, mas para cada campo que precisarmos que seja uma enumeração
 E nada disso é referente a regras de negócio, apenas estamos gastando tempo criando enumerações, que geram linhas de código que
 geram manutenção.
 
-Toda vez que me vejo fazendo coisas como essa penso: "Concerteza deve existir algo que já resolva esse problema". Então comecei
+Toda vez que me vejo fazendo coisas como essa penso: "Com certeza deve existir algo que já resolva esse problema". Então comecei
 a pesquisar no github uma gem que pudesse ajudar com isso. Foi quando achei a [enumerize](https://github.com/brainspec/enumerize)
 
 Usando ela podemos fazer uma limpa na nossa classe `Invoice` deixando ela assim:
@@ -158,5 +158,5 @@ Usando ele no nosso exemplo fica assim:
 
 ### Conclusão
 
-Quando se ver brigando com coisas repetitivas, dê uma pesquisada no github se esse problema já não foi resolvido.
+Quando se vir brigando com coisas repetitivas, dê uma pesquisada no github se esse problema já não foi resolvido.
 A comunidade ruby é famosa por se unir pra resolver problemas comuns. Não reinvente a roda!
