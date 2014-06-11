@@ -13,7 +13,7 @@ categories:
 ## TODO: FIX LINKS, DATE AND IMAGES
 
 I've been willing to try out [AngularJS](https://angularjs.org/) for a long time
-and on this post I'll talk about my journey on building [rubygems-charts](),
+and on this post I'll talk about my journey building [rubygems-charts](https://github.com/fgrehm/rubygems-charts),
 a simple Single Page Application that fetches RubyGems downloads count from the
 RubyGems API for each released version and displays that data on a chart.
 
@@ -28,7 +28,7 @@ having to write a lot of boilerplate code to make things work, being [data bindi
 a big chunk of it. I know that these days there are nice plugins for Backbone that
 solves this problem but I really wanted to learn something new and try out AngularJS.
 The framework comes with support for that out of the box and is actually one of its
-[strengths](https://docs.angularjs.org/guide/databinding) and I picked it it as my
+[strengths](https://docs.angularjs.org/guide/databinding), so I picked it as my
 next MV\* JavaScript framework to learn.
 
 Also, from [its website](https://angularjs.org):
@@ -91,8 +91,8 @@ yo angular
 {% endhighlight %}
 
 The generator will ask you a couple questions to scaffold the app and I recommend
-that you choose to not use [Sass](http://sass-lang.com/) and [Compass](http://compass-style.org/)
-when asked unless you know what they are and are willing to use them. Also, please
+that you answer "No" to use [Sass](http://sass-lang.com/) and [Compass](http://compass-style.org/)
+when asked, unless you know what they are and are willing to use them. Also, please
 make sure you keep the `angular-route` module option selected when asked which
 AngularJS modules you'd like to include since we'll be using it on rubygems-charts.
 
@@ -124,7 +124,7 @@ change the template at `app/views/main.html` to something like this:
 </ul>
 {% endhighlight %}
 
-When rendering that template, the [`ng-repeat` directive]()
+When rendering that template, the [`ng-repeat` directive](https://docs.angularjs.org/api/ng/directive/ngRepeat)
 will perform a loop over the `rubyGemVersions` model available on our controller scope
 and will assign each element of the array into the `stats` variable within the
 `ng-repeat` "block". The  `{% raw %}{{<EXPRESSION>}}{% endraw %}` is how we tell
@@ -132,8 +132,8 @@ Angular to render some attribute of our `version` JavaScript object into the HTM
 
 If you try refreshing the page with the code above, you'll notice that nothing gets
 displayed since we haven't set the `rubyGemVersions` variable anywhere. Before
-getting to loading the data from the RubyGems API, let's first make sure we our
-template works with some faka data. So open up your `app/scripts/controllers/main.js`
+getting to loading the data from the RubyGems API, let's first make sure our
+template works with some fake data. So open up your `app/scripts/controllers/main.js`
 and change it to:
 
 {% highlight js linenos %}
@@ -158,19 +158,19 @@ The result of that is something that should look like this:
 
 ### Hooking up the controller with real data from the RubyGems API
 
-Now that we now how to connect our controller with the view, let's move on to loading
+Now that we know how to connect our controller with the view, let's move on to loading
 the data from the real RubyGems API into our list.
 
 The data that we want to use comes from the [Gem versions endpoint](http://guides.rubygems.org/rubygems-org-api/#gem-version-methods)
 of the RubyGems API but unfortunately we can't access it directly from the browser because of the
-[same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy). Luckly,
+[same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy). Luckily,
 there is already a service built by [@i2bskn](https://github.com/i2bskn) available at
 [http://rubygems-jsonp.herokuapp.com](http://rubygems-jsonp.herokuapp.com) that wraps
 the RubyGems API for [JSONP](http://en.wikipedia.org/wiki/JSONP) so we can work around
 that.
 
 To abstract our API calls from the controller, we'll create a custom service that will
-fetch our data and will act as a wrapper around AngularJS builtin [`$http` service](https://docs.angularjs.org/api/ng/service/$http)
+fetch our data and will act as a wrapper around AngularJS' built-in [`$http` service](https://docs.angularjs.org/api/ng/service/$http)
 that is used for communication with remote HTTP servers. To make things easier, we'll
 use Yeoman's angular generator to create the service with `yo angular:service RubyGemsApi`,
 then we'll change the `app/scripts/services/rubygemsapi.js` file to:
@@ -220,7 +220,7 @@ gem coming directly from the API.
 Loading the stats for a single gem is not very exciting, let's create a form to ask the
 user which gem he / she will like to see the stats for.
 
-First we'll add a form on top of the template at `app/views/main.html`:
+First, we'll add a form on top of the template at `app/views/main.html`:
 
 {% highlight html linenos %}
 <form ng-submit="loadGemStats()">
@@ -252,18 +252,18 @@ enter.
 
 ## Plotting user provided information on a chart
 
-Cool, we are able to read the gem name from a form, load the data from the API but what
+Cool, we are able to read the gem name from a form, load the data from the API. But what
 about the chart? To make things easier, we'll use an Angular plugin called [angular-google-chart](https://github.com/bouil/angular-google-chart)
-that provides a `google-chart` directive we can use on our apps so that we don't have
+that provides a `google-chart` directive we can use in our apps so that we don't have
 to reinvent the wheel.
 
 ### Installing and configuring angular-google-chart
 
-I haven't mentioned it yet but the application we are working on is using [Bower](http://bower.io/)
+I haven't mentioned it yet, but the application we are working on is using [Bower](http://bower.io/)
 to manage our front-end dependencies. Bower is a package manager that helps you find and
 install your application dependencies (like CSS frameworks and JS libraries) without the
 need to manually download and update them. Bower should have been installed alongside
-the application bootstrap but if it is not you can run `npm install bower -g`.
+the application bootstrap, but if it is not, you can run `npm install bower -g`.
 
 With Bower in place, we'll run `bower install angular-google-chart --save` to install
 the package and we'll update the `app/index.html` file to include its JS file. Search
@@ -278,10 +278,10 @@ angular-googler-chart JS file:
 {% endhighlight %}
 
 This will load the JS for the component, but we also need to tell Angular that our app
-depends on it before using it. For that we need to change our app's `module` defition
+depends on it before using it. For that, we need to change our app's `module` definition
 at `app/scripts/app.js` to load googlechart alongside other dependencies.
 
-On `app/scripts/app.js` we'll find some code like this:
+On `app/scripts/app.js`, we'll find some code like this:
 
 {% highlight js linenos %}
 angular
@@ -292,7 +292,7 @@ angular
 {% endhighlight %}
 
 That will vary depending on which services you've selected when scaffolding the app with
-Yeoman but to load the googlechart module it's a matter of adding a new string to that
+Yeoman, but to load the googlechart module, it's a matter of adding a new string to that
 array and we should be good to go:
 
 {% highlight js linenos %}
@@ -374,9 +374,9 @@ angular
   });
 {% endhighlight %}
 
-With that in place we'll have a variable `gemName` set on the [`$routeParams` service]().
-To trigger a redirect, we'll use the [`$location` service]().
-Thanks to AngularJS magic, changing the controller to work with those services is
+With that in place we'll have a variable `gemName` set on the [`$routeParams` service](https://docs.angularjs.org/api/ngRoute/service/$routeParams)
+To trigger a redirect, we'll use the [`$location` service](https://docs.angularjs.org/api/ng/service/$location).
+Thanks to AngularJS' magic, changing the controller to work with those services is
 pretty easy and is commented out on the snippet below:
 
 {% highlight js linenos %}
@@ -400,30 +400,30 @@ angular.module('rubygemsChartsApp')
   });
 {% endhighlight %}
 
-Now when you visit `http://localhost:9000/#/rails` you'll see that the chart is built
+Now when you visit `http://localhost:9000/#/rails`, you'll see that the chart is built
 right away without the need to submit the form!
 
 
 ## Deploy
 
-Now that the app is "done", it's time to make it go live and deploy it somewhere.
+Now that the app is "done", it's time to go live and deploy it somewhere.
 
 The application is basically a set of HTML, CSS and JavaScript files that are generated
 using `grunt build`, when you run that command, everything gets compiled and dropped
 on the `dist` folder of your project. Hosting them on an Apache or nginx server is a
-matter of uploading the files to the appropriate directory. Deploying to [GitHub Pages]()
-is as simple as creating a `gh-pages` branch on your git repository and commiting +
+matter of uploading the files to the appropriate directory. Deploying to [GitHub Pages](https://pages.github.com/)
+is as simple as creating a `gh-pages` branch on your git repository and committing +
 pushing the files generated over there.
 
-I chose to deploying to [Heroku]() but it required a few changes to the app so that I
-can let it do the compilation and I don't have to worry about commiting generated
-files into source control.
+I chose to deploy it to [Heroku](https://www.heroku.com/) but it required a few changes
+to the app so that I can let it do the compilation and I don't have to worry about
+committing generated files into source control.
 
 ### Building the app after a `git push` on Heroku
 
 First thing we'll do is [customize the build process](https://devcenter.heroku.com/articles/nodejs-support#customizing-the-build-process)
 in order to install bower dependencies and compile the application assets. Looking at
-Heroku's documentation for node.js apps I found out that we can tell it to run some
+Heroku's documentation for node.js apps, I found out that we can tell it to run some
 commands after the [default `npm install`]() with the `postinstall` config of the
 `scripts` section of the `package.json` file:
 
@@ -446,7 +446,7 @@ only and [will have their installation skipped on Heroku by default]().
 
 ### Serving static files
 
-We are almost ready to push the app to Heroku but since it does not know how to serve
+We are almost ready to push the app to Heroku, but since it does not know how to serve
 the static files out of the box, we'll use [node-static](https://github.com/cloudhead/node-static)
 to run a simple static file server.
 
@@ -455,7 +455,7 @@ to the "start" config of your "scripts" section of the `package.json` file.
 
 ### The final `package.json`
 
-The versions you'll end up having on your `package.json` will vary but this is how
+The versions you'll end up having on your `package.json` will vary, but this is how
 your `package.json` should look like:
 
 {% highlight json lineos %}
@@ -508,12 +508,12 @@ your `package.json` should look like:
 {% endhighlight %}
 
 Now you should be a `git push heroku master && heroku ps:scale web=1` away from having
-your app up and runing on Heroku.
+your app up and running on Heroku.
 
 
 ## Conclusion
 
-This was a looong post but I hope you enjoyed reading it and that it has given you a
+This was a looong post, but I hope you enjoyed reading it and that it has given you a
 good introduction on the basic concepts of building a single page application using
 AngularJS. Overall, I found it to be a pretty easy to use framework and I hope that
 I'll have a chance to use it on a real app soon.
