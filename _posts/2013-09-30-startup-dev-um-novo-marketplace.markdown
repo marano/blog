@@ -6,7 +6,7 @@ categories:
   - startupdev
   - business
   - startup
-  
+published: false
 ---
 
 Quem acompanha a HE:labs desde o início, sabe que o Startup DEV foi um super alavancador de negócios para a empresa. A grande novidade é que agora o Startup DEV não é mais um produto da HE:labs, mas uma nova empresa com uma nova pegada. Nós queremos alavancar outros negócios e ao mesmo tempo, oferecer uma gama de serviços mais completa para nossos clientes. O Startup DEV é agora um marketplace.
@@ -54,7 +54,7 @@ Para o cliente final, nós oferecemos a garantia de bons serviços e uma gama de
 
 É um modelo de negócios novo e muito interessante para todas as partes. E por fim, queremos dizer que esse será o nosso primeiro negócio global. Já estamos trabalhando para ter presença no exterior.
 
-Essa é a novidade que eu gostaria de contar, estamos muito felizes com essa evolução e pretendemos continuar crescendo dessa forma. 
+Essa é a novidade que eu gostaria de contar, estamos muito felizes com essa evolução e pretendemos continuar crescendo dessa forma.
 
 Quem me acompanha no Twitter [@rafaelp](http://twitter.com/rafaelp), já devia saber que tinham novidades vindo por aí :)
 
