@@ -24,10 +24,9 @@ For a sneak peek at what we're going to build, check out the [live demo](http://
 I've done a lot of [Backbone](http://backbonejs.org/) on the past and I remember
 having to write a lot of boilerplate code to make things work, being [data binding](http://en.wikipedia.org/wiki/Data_binding)
 a big chunk of it. I know that these days there are nice plugins for Backbone that
-solves this problem but I really wanted to learn something new and try out AngularJS.
-The framework comes with support for that out of the box and is actually one of its
-[strengths](https://docs.angularjs.org/guide/databinding), so I picked it as my
-next MV\* JavaScript framework to learn.
+solves this problem but I really wanted to learn something new. AngularJS comes
+with support for data binding out of the box and is actually one of its [strengths](https://docs.angularjs.org/guide/databinding),
+so I picked it as my next MV\* JavaScript framework to learn.
 
 Also, from [its website](https://angularjs.org):
 
@@ -373,7 +372,7 @@ angular
 {% endhighlight %}
 
 With that in place we'll have a variable `gemName` set on the [`$routeParams` service](https://docs.angularjs.org/api/ngRoute/service/$routeParams)
-To trigger a redirect, we'll use the [`$location` service](https://docs.angularjs.org/api/ng/service/$location).
+and to trigger a redirect, we'll use the [`$location` service](https://docs.angularjs.org/api/ng/service/$location).
 Thanks to AngularJS' magic, changing the controller to work with those services is
 pretty easy and is commented out on the snippet below:
 
@@ -422,7 +421,7 @@ committing generated files into source control.
 First thing we'll do is [customize the build process](https://devcenter.heroku.com/articles/nodejs-support#customizing-the-build-process)
 in order to install bower dependencies and compile the application assets. Looking at
 Heroku's documentation for node.js apps, I found out that we can tell it to run some
-commands after the [default `npm install`]() with the `postinstall` config of the
+commands after the default `npm install` with the `postinstall` config of the
 `scripts` section of the `package.json` file:
 
 {% highlight json linenos %}
@@ -438,9 +437,9 @@ commands after the [default `npm install`]() with the `postinstall` config of th
 {% endhighlight %}
 
 Another thing we'll need to do is to `npm install grunt-cli bower --save` and change the
-[`package.json` "dependencies"]()
-config to include [Grunt]() related packages as they are currently set to development
-only and [will have their installation skipped on Heroku by default]().
+`package.json` "dependencies" config to include [Grunt](http://gruntjs.com/) related
+packages as they are currently set to development only and will have their installation
+skipped on Heroku by default because of the `--production` flag that [gets provided to `npm install`](https://github.com/heroku/heroku-buildpack-nodejs/blob/master/bin/compile#L94).
 
 ### Serving static files
 
@@ -519,7 +518,7 @@ I'll have a chance to use it on a real app soon.
 Bear in mind, though, that the framework is very powerful and we've barely scratched
 the surface in terms of what it has to offer and we didn't analyze anything in great
 depth. If you are interested on learning more about Angular, I recommend reading its
-great documentation available at [URL]().
+great tutorial available at [https://docs.angularjs.org/tutorial](https://docs.angularjs.org/tutorial).
 
 Sources for the app can be found at [https://github.com/fgrehm/rubygems-charts](https://github.com/fgrehm/rubygems-charts)
 and you can try it out on [http://rubygems-charts.herokuapp.com](http://rubygems-charts.herokuapp.com).
