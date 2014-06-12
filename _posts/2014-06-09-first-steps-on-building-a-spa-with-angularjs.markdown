@@ -10,8 +10,6 @@ categories:
   - english
 ---
 
-## TODO: FIX LINKS, DATE AND IMAGES
-
 I've been willing to try out [AngularJS](https://angularjs.org/) for a long time
 and on this post I'll talk about my journey building [rubygems-charts](https://github.com/fgrehm/rubygems-charts),
 a simple Single Page Application that fetches RubyGems downloads count from the
@@ -279,7 +277,7 @@ angular-googler-chart JS file:
 
 This will load the JS for the component, but we also need to tell Angular that our app
 depends on it before using it. For that, we need to change our app's `module` definition
-at `app/scripts/app.js` to load googlechart alongside other dependencies.
+at `app/scripts/app.js` to load the `googlechart` module alongside other dependencies.
 
 On `app/scripts/app.js`, we'll find some code like this:
 
@@ -292,7 +290,7 @@ angular
 {% endhighlight %}
 
 That will vary depending on which services you've selected when scaffolding the app with
-Yeoman, but to load the googlechart module, it's a matter of adding a new string to that
+Yeoman, but to load the `googlechart` module, it's a matter of adding a new string to that
 array and we should be good to go:
 
 {% highlight js linenos %}
@@ -306,7 +304,7 @@ angular
 
 ### Building the chart with RubyGems data
 
-Given that the google chart module is properly set up, we can now replace our ugly
+Given that the Google Chart module is properly set up, we can now replace our ugly
 `<ul>` with a nice looking chart, so open up `app/views/main.html` and change the
 unordered list to:
 
