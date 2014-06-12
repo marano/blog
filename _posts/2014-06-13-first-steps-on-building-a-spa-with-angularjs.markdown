@@ -58,7 +58,7 @@ concepts that you need to be familiar with to better understand this post:
 | [Scopes](https://docs.angularjs.org/guide/scope) | Context where the model is stored so that controllers, directives and expressions can access it. |
 | [Expressions](https://docs.angularjs.org/guide/expression) | How you access variables and functions from the scope. |
 | [Dependency injection](https://docs.angularjs.org/guide/di) | A software design pattern that deals with how components get hold of their dependencies. |
-| [Router]() | |
+| [Router](https://docs.angularjs.org/api/ngRoute/service/$route) | A service that is used for deep-linking URLs to controllers and views. It's a module that is distributed separately from the core Angular framework. |
 
 _To find out about other framework concepts please check the [Developer Guide](https://docs.angularjs.org/guide/)_
 
@@ -98,15 +98,13 @@ Once the bootstrapping process is done, we should be able to fire up a web serve
 with `grunt serve` and visit `http://localhost:9000` to see a "Hello world" page
 like the one below:
 
-`IMAGE`
+![image](/blog/images/posts/2014-06-13/hello-world.png)
 
 ## Fetching RubyGems API data and displaying it to the user
 
 Instead of building the chart right away, we'll start by reading the Gem name using
 a form and render the downloads stats data in a `<ul>` to make things simpler so we
 can better understand how the pieces fit together.
-
-`SCREENSHOT`
 
 ### Preparing our view to render the data
 
@@ -152,7 +150,7 @@ please have a look at AngularJS docs for [dependency injection](https://docs.ang
 
 The result of that is something that should look like this:
 
-`SCREENSHOT`
+![image](/blog/images/posts/2014-06-13/hard-coded-list.png)
 
 ### Hooking up the controller with real data from the RubyGems API
 
@@ -212,6 +210,8 @@ angular.module('rubygemsChartsApp')
 
 Now if you reload the page you'll see the numbers for the [letter_opener](https://github.com/ryanb/letter_opener)
 gem coming directly from the API.
+
+![image](/blog/images/posts/2014-06-13/letter_opener.png)
 
 ### Reading user input from a form
 
@@ -344,7 +344,7 @@ angular.module('rubygemsChartsApp')
 
 And voilà:
 
-`SCREENSHOT`
+![image](/blog/images/posts/2014-06-13/rails-chart.png)
 
 ## Sharing the chart with others
 
