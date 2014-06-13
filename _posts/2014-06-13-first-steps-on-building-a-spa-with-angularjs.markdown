@@ -52,10 +52,10 @@ concepts that you need to be familiar with to better understand this post:
 | [Directive](https://docs.angularjs.org/guide/directive) | Markers on a DOM element (such as an attribute, element name, comment or CSS class) that tell AngularJS's HTML compiler to attach a specified behavior to that DOM element or transform the DOM element and its children. |
 | [Template](https://docs.angularjs.org/guide/templates) | HTML with additional markup that gets rendered into a view. |
 | [Controller](https://docs.angularjs.org/guide/controller) | The business logic behind views. |
-| [Services](https://docs.angularjs.org/guide/services) | Reusable business logic independent of views. |
-| Models | The data shown to the user in the view and with which the user interacts. |
-| [Scopes](https://docs.angularjs.org/guide/scope) | Context where the model is stored so that controllers, directives and expressions can access it. |
-| [Expressions](https://docs.angularjs.org/guide/expression) | How you access variables and functions from the scope. |
+| [Service](https://docs.angularjs.org/guide/services) | Reusable business logic independent of views. |
+| Model | The data shown to the user in the view and with which the user interacts. |
+| [Scope](https://docs.angularjs.org/guide/scope) | Context where the model is stored so that controllers, directives and expressions can access it. |
+| [Expression](https://docs.angularjs.org/guide/expression) | How you access variables and functions from the scope. |
 | [Dependency injection](https://docs.angularjs.org/guide/di) | A software design pattern that deals with how components get hold of their dependencies. |
 | [Router](https://docs.angularjs.org/api/ngRoute/service/$route) | A service that is used for deep-linking URLs to controllers and views. It's a module that is distributed separately from the core Angular framework. |
 
