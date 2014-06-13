@@ -43,7 +43,7 @@ that _"is not a single piece in the overall puzzle of building the client-side
 of a web application. It handles all of the DOM and AJAX glue code you once
 wrote by hand and puts it in a well-defined structure"_.
 
-The frameworks is made out of many different "things" but here's a list of
+The framework is made out of many different "things" but here's a list of
 concepts that you need to be familiar with to better understand this post:
 
 | Concept | Description |
