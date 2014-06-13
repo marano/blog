@@ -48,7 +48,7 @@ concepts that you need to be familiar with to better understand this post:
 
 | Concept | Description |
 | ------- | ----------- |
-| View    | What the user sees (the DOM) |
+| View    | What the user sees (the DOM). |
 | [Directive](https://docs.angularjs.org/guide/directive) | Markers on a DOM element (such as an attribute, element name, comment or CSS class) that tell AngularJS's HTML compiler to attach a specified behavior to that DOM element or transform the DOM element and its children. |
 | [Template](https://docs.angularjs.org/guide/templates) | HTML with additional markup that gets rendered into a view. |
 | [Controller](https://docs.angularjs.org/guide/controller) | The business logic behind views. |
