@@ -112,6 +112,7 @@ Don't use asterisk, otherwise the list will break.
 ## Maintainers
 
 - [Bia](https://github.com/beatrizcp87)
+- [Fábio Rehm](https://github.com/fgrehm)
 
 ## Made with love by HE:labs
 
