@@ -72,7 +72,7 @@ With node.js and npm in place, we'll need to install [Yeoman](http://yeoman.io/)
 and its [angular generator](https://github.com/yeoman/generator-angular) so that
 we can scaffold our app:
 
-{% highlight sh %}
+{% highlight sh linenos %}
 npm install yo generator-angular -g
 {% endhighlight %}
 
