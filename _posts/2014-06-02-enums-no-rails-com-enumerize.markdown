@@ -14,6 +14,9 @@ uma fatura pode ter um campo `status` que pode ter os valores `["pending", "canc
 
 <!--more-->
 
+Como não queremos ter esses valores hardcoded no código, podemos criar constantes representando cada um deles.
+Assim sempre estaremos atribuindo ou comparando o status com os valores dessas constantes evitando por exemplo status inválidos como `"padi"`.
+
 Para resolver esse problema podemos implementar algo assim:
 
 app/model/**invoice.rb**:
