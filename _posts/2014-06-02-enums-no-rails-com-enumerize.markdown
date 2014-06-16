@@ -11,6 +11,9 @@ categories:
 
 É muito comum uma classe ter certos atributos que tem valores predeterminados. Como por exemplo
 uma fatura pode ter um campo `status` que pode ter os valores `["pending", "canceled", "paid"]`.
+
+<!--more-->
+
 Para resolver esse problema podemos implementar algo assim:
 
 app/model/**invoice.rb**:
