@@ -17,7 +17,7 @@ De tempos em tempos é comum abrirmos vagas para desenvolvedores assim como para
 Do nosso lado, não temos RH ou uma pessoa que fique responsável por isso. Quem faz este papel é todo o time. Como temos [dias de investimentos](http://helabs.com.br/magica/), nos quais não trabalhamos diretamente para os clientes, utilizamos estes dias para entrar em contato com os candidatos, analisar os testes, etc.
 
 Não quer dizer que não haja organização. Temos um sistema interno para gerenciar o envio de testes e as etapas seguintes até a contratação. Assim, se uma pessoa pegou para ela a responsabilidade de lidar com um candidato, ela deve finalizar o processo todo com este candidato.
-Então procuramos sempre profissionais que gostaríamos de trabalhar lado a lado :heart:.
+Então procuramos sempre profissionais com quem gostaríamos de trabalhar lado a lado :heart:.
 
 ## A mensagem
 
@@ -27,7 +27,7 @@ Então não envie apenas um link do seu site/blog/github/behance a não ser que 
 
 Não diga também que quer trabalhar conosco porque temos cerveja liberada na sexta-feira, porque a empresa parece legal ou porque temos um time bom :beer: :guitar:. Legal que você curte isto, se achar relevante enviar este tipo de informação, ok, mas que não seja apenas isto! Quando um candidato entra em contato conosco ele está fazendo uma venda do seu trabalho.
 
-A dica é: Escreva! Coloque os links que julgar interessante, mas também fale dos seus últimos trabalhos, envie link deles, fale sobre os desafios, o que tem aprendido. Palestrou recentemente? Fale também. Ou seja, o que você tem à agregar a empresa. Se venda melhor, diga o que você tem de bom e porque devemos contratar você e não os outros.
+A dica é: Escreva! Coloque os links que julgar interessante, mas também fale dos seus últimos trabalhos, envie link deles, fale sobre os desafios, o que tem aprendido. Palestrou recentemente? Fale também. Ou seja, o que você tem a agregar a empresa. Se venda melhor, diga o que você tem de bom e porque devemos contratar você e não os outros.
 
 ## O teste
 
