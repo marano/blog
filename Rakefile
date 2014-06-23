@@ -29,3 +29,23 @@ task :new_post, :title do |t, args|
     post.puts "Write full content here"
   end
 end
+
+desc "Fix the author link of posts from people that are no longer on the team"
+task :fix_author_links do
+  require 'open-uri'
+  require 'json'
+  require 'jekyll'
+
+  team = JSON.parse(open('http://helabs.com.br/team.json').read)['team']
+  team_names = team.map { |member| member['full_name'] }
+
+  config = Jekyll.configuration({})
+  site   = Jekyll::Site.new(config)
+  site.read
+  site.posts.each do |post|
+    author = post.data['author']
+    #next if author == 'HE:labs'
+
+    puts [post.title, author, team_names.include?(author)].inspect
+  end
+end
