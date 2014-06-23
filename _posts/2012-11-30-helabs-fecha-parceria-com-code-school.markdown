@@ -1,5 +1,4 @@
 ---
-author: HE:labs
 layout: post
 title: "HE:labs fecha parceria com Code School e traz Rails for Zombies ao Brasil"
 categories:

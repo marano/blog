@@ -1,5 +1,4 @@
 ---
-author: HE:labs
 layout: post
 title: "Startupdev é destaque na Exame"
 categories:

@@ -1,5 +1,4 @@
 ---
-author: HE:labs
 layout: post
 title: "Webholic - Maratona de Programação"
 categories:

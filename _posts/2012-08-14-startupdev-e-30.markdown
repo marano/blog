@@ -1,5 +1,4 @@
 ---
-author: HE:labs
 layout: post
 title: "Startup DEV é 30"
 categories:

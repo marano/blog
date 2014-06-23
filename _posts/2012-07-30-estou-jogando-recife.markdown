@@ -1,5 +1,4 @@
 ---
-author: HE:labs
 layout: post
 title: "\"Estou Jogando\", desenvolvido pelo Startup DEV, é destaque no G1"
 categories:
