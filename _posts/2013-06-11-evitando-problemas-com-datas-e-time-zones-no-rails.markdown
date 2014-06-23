@@ -1,5 +1,6 @@
 ---
 author: Cayo Medeiros (yogodoshi)
+hide_author_link: true
 layout: post
 title: "Evitando problemas com datas e time zones no Rails"
 categories:

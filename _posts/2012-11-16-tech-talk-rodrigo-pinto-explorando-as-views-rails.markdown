@@ -1,5 +1,6 @@
 ---
 author: Pedro Marins
+hide_author_link: true
 layout: post
 title: "Tech Talks - Rodrigo Pinto: Explorando as views Rails"
 categories:

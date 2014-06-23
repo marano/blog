@@ -2,6 +2,7 @@
 layout: post
 title: "Codeclimate"
 author: Rodrigo Reginato
+hide_author_link: true
 categories:
  - rodrigo reginato
  - codeclimate

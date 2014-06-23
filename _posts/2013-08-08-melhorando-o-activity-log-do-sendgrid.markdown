@@ -1,5 +1,6 @@
 ---
 author: Cayo Medeiros (yogodoshi)
+hide_author_link: true
 layout: post
 title: "Melhorando o Email Activity do SendGrid"
 categories:

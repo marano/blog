@@ -1,5 +1,6 @@
 ---
 author: Organização Rails Girls RJ
+hide_author_link: true
 layout: post
 title: "HE:labs in Rails Girls RJ"
 categories:

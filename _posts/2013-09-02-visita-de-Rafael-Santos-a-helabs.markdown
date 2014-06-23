@@ -1,5 +1,6 @@
 ---
 author: Crystal Affonso
+hide_author_link: true
 layout: post
 title: "Visita de Rafael Santos à HE:labs"
 categories:

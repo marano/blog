@@ -1,5 +1,6 @@
 ---
 author: Aluísio Azevedo
+hide_author_link: true
 layout: post
 title: "Redesign do Startupdev"
 categories:

@@ -1,5 +1,6 @@
 ---
 author: Pedro Nascimento
+hide_author_link: true
 layout: post
 title: "Modularizando sua aplicação usando Engines"
 categories:

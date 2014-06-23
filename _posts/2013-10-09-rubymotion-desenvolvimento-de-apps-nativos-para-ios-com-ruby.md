@@ -1,5 +1,6 @@
 ---
 author: Francisco Martins
+hide_author_link: true
 layout: post
 title: "Rubymotion - Desenvolvimento de apps nativos para iOS com Ruby"
 date_pt_BR: 09 Oct 2013

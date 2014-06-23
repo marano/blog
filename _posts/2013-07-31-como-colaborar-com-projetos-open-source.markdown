@@ -2,6 +2,7 @@
 layout: post
 title: "Como colaborar com projetos open-source"
 author: Pedro Nascimento
+hide_author_link: true
 categories: 
 - opensource
 - lunks

@@ -1,5 +1,6 @@
 ---
 author: Aluisio Azevedo
+hide_author_link: true
 layout: post
 title: "Abandone o seu mockup e abrace o seu markup"
 categories:

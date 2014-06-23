@@ -1,5 +1,6 @@
 ---
 author: Francisco Martins
+hide_author_link: true
 layout: post
 title: "Olá, Firefox OS"
 categories:

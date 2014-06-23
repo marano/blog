@@ -1,5 +1,6 @@
 ---
 author: Rafael Chefe
+hide_author_link: true
 layout: post
 title: "Boxing and Coding"
 categories:

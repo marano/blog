@@ -1,5 +1,6 @@
 ---
 author: Rodrigo Reginato
+hide_author_link: true
 layout: post
 title: "State Machine"
 categories:

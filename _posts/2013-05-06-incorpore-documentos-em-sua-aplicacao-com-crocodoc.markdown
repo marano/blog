@@ -1,5 +1,6 @@
 ---
 author: Rodrigo Reginato Marques
+hide_author_link: true
 layout: post
 title: "Incorpore documentos em sua aplicação com Crocodoc"
 categories:

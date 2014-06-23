@@ -1,5 +1,6 @@
 ---
 author: Pedro Marins
+hide_author_link: true
 layout: post
 title: "Retrospectiva - 1° Café com DEV"
 categories:

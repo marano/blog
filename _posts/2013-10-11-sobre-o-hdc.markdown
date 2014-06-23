@@ -1,5 +1,6 @@
 ---
 author: Crystal Affonso
+hide_author_link: true
 layout: post
 title: "Hack & Design Conference 2013: avassalou!"
 categories:

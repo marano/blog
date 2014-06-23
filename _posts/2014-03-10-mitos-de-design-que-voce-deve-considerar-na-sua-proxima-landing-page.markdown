@@ -1,5 +1,6 @@
 ---
 author: Aluísio Azevedo
+hide_author_link: true
 layout: post
 title: "Mitos de design que você deve considerar na sua próxima Landing Page"
 categories:

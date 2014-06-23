@@ -1,5 +1,6 @@
 ---
 author: Crystal Affonso
+hide_author_link: true
 layout: post
 title: "Retrospectiva - HE:Rio DOJO 24/05"
 categories:

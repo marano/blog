@@ -1,5 +1,6 @@
 ---
 author: Ali Ismayilov
+hide_author_link: true
 layout: post
 title: "Resting is part of working"
 categories:

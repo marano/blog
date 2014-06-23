@@ -1,5 +1,6 @@
 ---
 author: Bruno Fernando
+hide_author_link: true
 layout: post
 title: "Organizando projeto Sass"
 categories:
