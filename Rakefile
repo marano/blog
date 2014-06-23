@@ -44,8 +44,22 @@ task :fix_author_links do
   site.read
   site.posts.each do |post|
     author = post.data['author']
-    #next if author == 'HE:labs'
 
-    puts [post.title, author, team_names.include?(author)].inspect
+    # Skip posts that have the author set to the site default
+    next if author == nil
+
+    # Skip posts for members that we already know that are no longer on the team
+    next if post.data['hide_author_link']
+
+    unless team_names.include?(author)
+      print "Changing #{post.path} to hide the author link... "
+
+      post_contents = File.read(post.path)
+      post_contents.gsub!(/^(author: #{Regexp.escape author})$/, "\\1\nhide_author_link: true")
+      open(post.path, 'w') do |file|
+        file.print(post_contents)
+      end
+      puts 'DONE!'
+    end
   end
 end
