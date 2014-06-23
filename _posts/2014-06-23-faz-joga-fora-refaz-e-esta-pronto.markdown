@@ -60,7 +60,7 @@ Eu penso na mesma hora:
 
 Existe uma pegadinha nessa história. E ela está na premissa de que eu fiz a mesma coisa diversas vezes. Embora estamos nos referindo a *upload de arquivo* como uma coisa única, não é.
 
-Condiderando que eu implementei *upload de arquivo* 100 vezes, posso afirmar tranquilamente que no mínimo foram 80 implementações COMPLETAMENTE diferentes. Em outras palavras, posso garantir que 80% da vezes foram implementações diferentes. Então na verdade, na maioria das vezes eu implementei *o upload de arquivos* pela primeira vez.
+Considerando que eu implementei *upload de arquivo* 100 vezes, posso afirmar tranquilamente que no mínimo foram 80 implementações COMPLETAMENTE diferentes. Em outras palavras, posso garantir que 80% da vezes foram implementações diferentes. Então na verdade, na maioria das vezes eu implementei *o upload de arquivos* pela primeira vez.
 
 Eu não sou retardado :)
 
@@ -87,7 +87,7 @@ Enfim, a regra aqui é nunca considerar que você já sabe como fazer a funciona
 
 Quando comecei a implementação do upload de documentos no Boleto Simples eu escolhi fazer da forma mais comum que é sugerida na maioria dos casos para aplicações [Rails](http://rubyonrails.org/).
 
-Para o back-end eu escolhi usar o [Paperclip](https://github.com/thoughtbot/paperclip), uma bilbioteca muito boa e completa. Há quem diga que o [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) é melhor. Conheço e já usei, mas não foi minha escolha.
+Para o back-end eu escolhi usar o [Paperclip](https://github.com/thoughtbot/paperclip), uma biblioteca muito boa e completa. Há quem diga que o [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) é melhor. Conheço e já usei, mas não foi minha escolha.
 
 Para o front-end eu escolhi usar o [dropzonejs](http://www.dropzonejs.com/) que já estava presente no [FlatLab](http://themeforest.net/item/flatlab-bootstrap-3-responsive-admin-template/5902687), tema que eu uso no projeto.
 
@@ -101,9 +101,9 @@ Eu queria mudar por que não gostei da estratégia. Na implementação que eu fi
 
 Navegador (Front-end) -> Heroku (Back-end) -> Amazon S3 (Storage)
 
-Essa foi a forma mais rápida de implementar, fiz em menos de um dias. Mas eu não gostei, por que em termos de escalabilidade de infra-estrutura, enviar um arquivo direto para o back-end da própria aplicação, principalmente no Heroku, é um problema.
+Essa foi a forma mais rápida de implementar, fiz em menos de um dia. Mas eu não gostei, por que em termos de escalabilidade de infra-estrutura, enviar um arquivo direto para o back-end da própria aplicação, principalmente no Heroku, é um problema.
 
-O back-end deve sempre "liberar" as chamadas que recebe do front-end de forma bem rápida (em milesegundos). Nessa estratégia descrita acima, cada chamada de envio de arquivo do front-end para o back-end iria demorar o tempo de transferência do arquivo. Então, caso o usuário enviasse um arquivo grande (de 5 megabytes por exemplo), a requisição ia ficar "presa" por minutos (ao invés de milesegundos). Isso iria causar um grande problema de performance, principalmente por que como se trata de envio de documentos que em geral são digitalizados, o risco de vários usuários enviarem arquivos grande é muito alto.
+O back-end deve sempre "liberar" as chamadas que recebe do front-end de forma bem rápida (em milissegundos). Nessa estratégia descrita acima, cada chamada de envio de arquivo do front-end para o back-end iria demorar o tempo de transferência do arquivo. Então, caso o usuário enviasse um arquivo grande (de 5 megabytes por exemplo), a requisição ia ficar "presa" por minutos (ao invés de milissegundos). Isso iria causar um grande problema de performance, principalmente por que como se trata de envio de documentos que em geral são digitalizados, o risco de vários usuários enviarem arquivos grande é muito alto.
 
 Aí que vem o dilema. Manter do jeito que está ou implementar de uma forma que resolva a performance?
 
@@ -163,7 +163,7 @@ Sabe que lição que eu aprendi nesse caso?
 
 Nenhuma!
 
-Sinceramente eu não aprendi nada aqui. O que aconteceu é natural pra mim, eu sei que desenvovler software é assim e tudo que aconteceu está dentro da minha expectativa.
+Sinceramente eu não aprendi nada aqui. O que aconteceu é natural pra mim, eu sei que desenvolver software é assim e tudo que aconteceu está dentro da minha expectativa.
 
 Eu sei que na próxima vez que eu implementar qualquer coisa, inclusive um upload de arquivo, esse dilema pode acontecer novamente e invariavelmente a necessidade de refazer tudo também.
 
