@@ -13,18 +13,16 @@ layout: default
   <div class="container">
 
     <header class="full-post-header">
-      {% if page.author %}
-        {% assign author = page.author %}
-      {% else %}
-        {% assign author = site.author %}
-      {% endif %}
-
       <h1 class="post-title">
         {{ page.title | titlecase }}
       </h1>
-      {% if author %}
+      {% if page.author %}
         <div class="author-info">
-          Postado por <span><a class="author-link">{{ author }}</a></span> em <span>{{ page.date | date: "%d/%m/%Y" }}</span>
+          Postado por <span><a class="author-link">{{ page.author }}</a></span> em <span>{{ page.date | date: "%d/%m/%Y" }}</span>
+        </div>
+      {% else %}
+        <div class="author-info">
+          Postado por <span>{{ site.author }}</span> em <span>{{ page.date | date: "%d/%m/%Y" }}</span>
         </div>
       {% endif %}
     </header>
