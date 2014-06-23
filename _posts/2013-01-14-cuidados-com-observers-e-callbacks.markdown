@@ -1,5 +1,5 @@
 ---
-author: Anézio Marques
+author: Anézio Campos
 layout: post
 title: "Cuidados com Observers e callbacks"
 categories:
