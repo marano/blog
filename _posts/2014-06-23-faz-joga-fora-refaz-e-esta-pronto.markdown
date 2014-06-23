@@ -20,7 +20,7 @@ Este post tem um viés técnico, mas é de fácil leitura e relevante para quem 
 
 Atualmente estou programando o [Boleto Simples](http://boletosimples.com.br), um produto que sou um dos fundadores e que está sendo desenvolvido também pela HE:labs.
 
-O Boleto Simples é um sistema que requer uma série de validações de segurança. Dentre todas, é requerido que o usuário envie cópia dos documentos pessoas, comprovante de endereço, e outros arquivos. Para tal se fez necessário um _"simples upload de arquivo"_.
+O Boleto Simples é um sistema que requer uma série de validações de segurança. Dentre todas, é requerido que o usuário envie cópia dos documentos pessoais, comprovante de endereço, e outros arquivos. Para tal se fez necessário um _"simples upload de arquivo"_.
 
 <span title="Homenagem ao Vinis ;-)">Pára tudo!</span> Eu sempre digo que **NENHUMA funcionalidade é simples**. As funcionalidades podem ser fáceis para algum desenvolvedor, e fácil é diferente de simples. Desenvolver software é um trabalho complexo por natureza, visto que **nenhum software é igual a outro**. Se você está desenvolvendo qualquer coisa, é por que não existe outra igual já feita. Ter isso com premissa, te fará mais feliz ao fazer o seu próprio software.
 
