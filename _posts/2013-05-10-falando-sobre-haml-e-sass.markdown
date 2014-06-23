@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Falando sobre HAML e SASS"
+author: Rodrigo Gomes
 categories:
   - Rodrigo Gomes
   - HAML
