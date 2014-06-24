@@ -56,7 +56,7 @@ task :fix_author_links do
     next if post.data['hide_author_link']
 
     unless team_names.include?(author)
-      print "Changing #{post.path} to hide the author link... "
+      print "Changing #{post.path} to hide the author link (#{author})... "
 
       post_contents = File.read(post.path)
       post_contents.gsub!(/^(author: #{Regexp.escape author})$/, "\\1\nhide_author_link: true")
