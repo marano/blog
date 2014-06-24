@@ -109,6 +109,16 @@ Don't use asterisk, otherwise the list will break.
 
 1. Wait a little bit and access the blog to see the new post
 
+## Removing links to authors that are no longer on the team from blog posts
+
+Run:
+
+```sh
+rake fix_author_links
+```
+
+Then `git commit` and `git push` the changes back to the `gh-pages` branch.
+
 ## Maintainers
 
 - [Bia](https://github.com/beatrizcp87)
