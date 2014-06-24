@@ -18,13 +18,13 @@ Este post tem um viés técnico, mas é de fácil leitura e relevante para quem 
 
 ## A falácia da programação como pecinhas de Lego.
 
-Atualmente estou programando o [Boleto Simples](http://boletosimples.com.br), um produto que sou um dos fundadores e que está sendo desenvolvido também pela HE:labs.
+Atualmente estou programando o [Boleto Simples](http://boletosimples.com.br), um produto do qual sou um dos fundadores e que está sendo desenvolvido também pela HE:labs.
 
 O Boleto Simples é um sistema que requer uma série de validações de segurança. Dentre todas, é requerido que o usuário envie cópia dos documentos pessoais, comprovante de endereço, e outros arquivos. Para tal se fez necessário um _"simples upload de arquivo"_.
 
-<span title="Homenagem ao Vinis ;-)">Pára tudo!</span> Eu sempre digo que **NENHUMA funcionalidade é simples**. As funcionalidades podem ser fáceis para algum desenvolvedor, e fácil é diferente de simples. Desenvolver software é um trabalho complexo por natureza, visto que **nenhum software é igual a outro**. Se você está desenvolvendo qualquer coisa, é por que não existe outra igual já feita. Ter isso com premissa, te fará mais feliz ao fazer o seu próprio software.
+<span title="Homenagem ao Vinis ;-)">Pára tudo!</span> Eu sempre digo que **NENHUMA funcionalidade é simples**. As funcionalidades podem ser fáceis para algum desenvolvedor, e fácil é diferente de simples. Desenvolver software é um trabalho complexo por natureza, visto que **nenhum software é igual a outro**. Se você está desenvolvendo qualquer coisa, é por que não existe outra igual já feita. Ter isso como premissa, te fará mais feliz ao fazer o teu próprio software.
 
-A parte de qualquer sistema que pode ser aproveitada em outro software acaba virando uma biblioteca, as vezes pagas e as vezes open-source. Elas são usados para agilizar o desenvolvimento de novos softwares. Isso é muito comum na nossa realidade. A HE:labs, por exemplo, colabora com [alguns projetos open-source](http://helabs.com.br/opensource/).
+A parte de qualquer sistema que pode ser aproveitada em outro software acaba virando uma biblioteca, às vezes pagas e às vezes open-source. Elas são usados para agilizar o desenvolvimento de novos softwares. Isso é muito comum na nossa realidade. A HE:labs, por exemplo, colabora com [alguns projetos open-source](http://helabs.com.br/opensource/).
 
 Diferente do que parece, o fato de usar bibliotecas prontas não torna o desenvolvimento trivial. Eu já ouvi diversas vezes pessoas falando: "Mas isso já foi feito antes, então agora você vai fazer rapidinho. É só montar o que está pronto."
 
@@ -117,7 +117,7 @@ Essas duas visões são conflitantes. E chegar no equilíbrio é bem difícil. O
 
 Esse dilema acontece com frequencia nos meu projetos pessoais. Para mim, tomar essa decisão é **relativamente** fácil visto que eu sou ao mesmo tempo o cliente e o desenvolvedor e consigo avaliar rapidamente o trade-off.
 
-Mesmo assim, antes de tomar a decisão de refazer tudo que eu tinha feito, eu "deixei o código descançar". Ou seja, eu parei o que eu estava fazendo, deixei um dia passar, dormi pensando no problema e só depois tomei a decisão. Nesse momento eu estava decidindo o peso que eu queria dar para o meu lado empreendedor e pro meu lado desenvolvedor.
+Mesmo assim, antes de tomar a decisão de refazer tudo que eu tinha feito, eu "deixei o código descansar". Ou seja, eu parei o que eu estava fazendo, deixei um dia passar, dormi pensando no problema e só depois tomei a decisão. Nesse momento eu estava decidindo o peso que eu queria dar para o meu lado empreendedor e pro meu lado desenvolvedor.
 
 ## Qual seria uma opção melhor (para esse caso)?
 
@@ -153,7 +153,7 @@ Eu digo que nesse caso não. Embora essa decisão pareça técnica, ela foi muit
 
 O Boleto Simples é um sistema que só faz sentido se tiver um volume alto de usuários. Nas metas internas estamos prevendo a entrada de centenas de novos usuários por mês já a partir do primeiro mês, chegando na casa dos milhares de novos usuários mensalmente.
 
-Essa funcionalidade será usada por todos os usuários que irão gerar receita. Ou seja, é uma parte crítica para que o negócio começe a dar dinheiro. Ter problema nessa funcionalidade significaria perder receita diretamente. Poderia ser uma funcionalidade a parte, menos relevante e usada por um número mínimo de usuários, mas não é.
+Essa funcionalidade será usada por todos os usuários que irão gerar receita. Ou seja, é uma parte crítica para que o negócio comece a dar dinheiro. Ter problema nessa funcionalidade significaria perder receita diretamente. Poderia ser uma funcionalidade à parte, menos relevante e usada por um número mínimo de usuários, mas não é.
 
 Ter uma solução que desse conta de centenas de usuários de uma só vez era super relevante. Por isso fiquei feliz com o resultado final e não me arrependo. No mais, vale dizer que a decisão foi tomada após eu já ter feito da forma mais simples, ou seja, eu tinha todas as informações em mãos para poder comparar.
 
@@ -177,7 +177,7 @@ Teoricamente sim, mas na prática não.
 
 Achar que vai ser possível acertar de primeira, sem fazer spikes e sem fazer experimentações é burrice. A tecnologia evolui, as bibliotecas evoluem, os protocolos mudam, os navegadores são atualizados com mais suportes.
 
-Eu não falei aqui por exemplo da barra de progresso que mostra o percentual do arquivo que já foi enviado para o servidor. Voltando lá nos anos 90 isso não era nem possível de fazer, a web não suportava isso. Hoje em dia já suporta. Na minha próxima implementação de upload de arquivo é possível que já hajam novas bibliotecas com recursos mais avançados para upload em dispositivos móveis, por exemplo. Pode ser que exista um novo serviço de processamento mais poderoso. E por aí vai....
+Eu não falei aqui por exemplo da barra de progresso que mostra o percentual do arquivo que já foi enviado para o servidor. Voltando lá nos anos 90 isso não era nem possível de fazer, a web não suportava isso. Hoje em dia já suporta. Na minha próxima implementação de upload de arquivo é possível que já haja novas bibliotecas com recursos mais avançados para upload em dispositivos móveis, por exemplo. Pode ser que exista um novo serviço de processamento mais poderoso. E por aí vai....
 
 Essa evolução natural vai fazer com que eu tenha que aprender tudo de novo e estruturar o meu código de outra forma.
 
