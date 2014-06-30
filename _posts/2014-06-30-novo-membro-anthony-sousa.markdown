@@ -19,4 +19,4 @@ Anthony é designer formado e avassala ajudando startups e produtos web a melhor
 
 Aos 23 anos ele já havia fundado 2 empresas e está sempre fazendo hackdays com os amigos criando novos produtos digitais.
 
-Acha esquisito falar em terceira pessoa e está muito feliz em integrar o time da He:Labs!
+Acha esquisito falar em terceira pessoa e está muito feliz em integrar o time da HE:labs!
