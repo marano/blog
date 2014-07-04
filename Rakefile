@@ -48,10 +48,6 @@ task :fix_author_links do
     # Skip posts that have the author set to the site default
     next if author == nil
 
-    # HACK: Anézio is still on the team but his name on the team JSON is set to
-    #       Anézio Marques, and his slug is set to 'anezio-campos'
-    next if author == 'Anézio Campos'
-
     # Skip posts for members that we already know that are no longer on the team
     next if post.data['hide_author_link']
 
