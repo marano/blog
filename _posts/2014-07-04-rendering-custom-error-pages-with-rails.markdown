@@ -67,6 +67,6 @@ And *voilà*, there's our 404 page being rendered!
 
 # Conclusion
 
-This is a really simple way of implementing a reusable machanism to catch those common errors without clutering our controllers with repeated code. You can even create a class or a module to isolate this raise-the-error/treat-the-error logic without much effort.
+This is a really simple way of implementing a reusable mechanism to catch those common errors without clutering our controllers with repeated code. You can even create a class or a module to isolate this raise-the-error/treat-the-error logic without much effort.
 
 Share your thoughts with us and comment about your prefered way of doing things!
