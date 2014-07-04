@@ -23,7 +23,7 @@ class WorkersController < ApplicationController
 end
 {% endhighlight %}
 
-On ApplicationController, write a method that will raise an appropriate exception for the error you're dealing with. In this case, as we're treating a simple 404 error, we'll raise ActiveRecord::RecordNotFound:
+On `ApplicationController`, write a method that will raise an appropriate exception for the error you're dealing with. In this case, as we're treating a simple 404 error, we'll raise `ActiveRecord::RecordNotFound`:
 
 {% highlight ruby linenos %}
 class ApplicationController < ActionController::Base
@@ -35,7 +35,7 @@ class ApplicationController < ActionController::Base
 end
 {% endhighlight %}
 
-Then you #rescue_from it and render the page:
+Then you `rescue_from` it and render the page:
 
 {% highlight ruby linenos %}
 class ApplicationController < ActionController::Base
