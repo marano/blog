@@ -11,7 +11,7 @@ post_style: new-member
 
 Nova integrante na HE:Rio, bem-vinda Cacau Azevedo!
 
-![Cacau Azevedo](/blog/images/posts/2014-06-30/cacau-azevedo.jpg)
+![Cacau Azevedo](/blog/images/posts/2014-07-08/cacau-azevedo.jpg)
 
 <!--more-->
 
