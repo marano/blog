@@ -39,7 +39,7 @@ If everything goes OK, you can now run the project!
 
         $ rake new_post['Title of the post']
 
-1. Write your post.
+1. Write your post and **make sure the author link on the post points to your profile on HE:labs website**.
 1. Commit your changes.
 
         $ git add .
