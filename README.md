@@ -117,7 +117,7 @@ Run:
 rake fix_author_links
 ```
 
-Then `git commit` and `git push` the changes back to the `gh-pages` branch.
+Then double check if the posts were changed correctly, `git commit` and `git push` the changes back to the `gh-pages` branch.
 
 ## Maintainers
 
