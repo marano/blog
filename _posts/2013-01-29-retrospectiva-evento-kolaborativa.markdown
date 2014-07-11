@@ -1,5 +1,6 @@
 ---
 author: Andre Cytryn
+hide_author_link: true
 layout: post
 title: "Retrospectiva - evento Kolaborativa"
 categories:

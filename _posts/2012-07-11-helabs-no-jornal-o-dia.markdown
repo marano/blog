@@ -1,5 +1,4 @@
 ---
-author: HE:labs
 layout: post
 title: "HE:labs no Jornal O Dia - Descontração no ambiente de trabalho"
 categories:

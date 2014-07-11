@@ -1,5 +1,6 @@
 ---
 author: Ali Ismayilov
+hide_author_link: true
 layout: post
 title: "How to upload big files to Amazon S3 while using Heroku"
 categories:

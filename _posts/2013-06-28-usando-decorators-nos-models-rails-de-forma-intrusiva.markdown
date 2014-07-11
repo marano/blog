@@ -2,6 +2,7 @@
 layout: post
 title: "Usando decorators nos models Rails de forma intrusiva"
 author: Rodrigo Pinto
+hide_author_link: true
 categories:
   - rodrigo pinto
   - decorator

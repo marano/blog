@@ -1,5 +1,6 @@
 ---
 author: Rodrigo Pinto
+hide_author_link: true
 layout: post
 title: "Dezembro de RUPY, RailsGirls-RJ e muitos eventos"
 categories:

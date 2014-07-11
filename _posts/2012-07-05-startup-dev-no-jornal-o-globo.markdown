@@ -1,5 +1,4 @@
 ---
-author: HE:labs
 layout: post
 title: "Startup DEV no Jornal O Globo "
 categories:

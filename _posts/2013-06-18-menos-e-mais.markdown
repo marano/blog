@@ -1,12 +1,14 @@
 ---
 layout: post
 title: "Menos é mais"
+author: Raphael Periard
+hide_author_link: true
 categories:
   - comunicação
   - crescimento
   - comercial
   - Raphael Periard
-  
+
 ---
 
 ### Quanto menor o produto, melhor.

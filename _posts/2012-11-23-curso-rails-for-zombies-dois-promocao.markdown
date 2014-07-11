@@ -1,5 +1,6 @@
 ---
 author: Rodrigo Pinto
+hide_author_link: true
 layout: post
 title: Curso Rails for Zombies 2 presencial e promoção
 categories:

@@ -1,5 +1,6 @@
 ---
 author: Aluísio Azevedo
+hide_author_link: true
 layout: post
 title: "Ferramentas para Designers"
 categories:

@@ -1,5 +1,4 @@
 ---
-author: HE:labs
 layout: post
 title: "Artigo de Sylvestre Mergulhão no Webinsider"
 categories:

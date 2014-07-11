@@ -39,7 +39,7 @@ If everything goes OK, you can now run the project!
 
         $ rake new_post['Title of the post']
 
-1. Write your post.
+1. Write your post and **make sure the author link on the post points to your profile on HE:labs website**.
 1. Commit your changes.
 
         $ git add .
@@ -108,6 +108,16 @@ Don't use asterisk, otherwise the list will break.
     ![Delete branch](images/readme/delete-branch.png)
 
 1. Wait a little bit and access the blog to see the new post
+
+## Removing links to authors that are no longer on the team from blog posts
+
+Run:
+
+```sh
+rake fix_author_links
+```
+
+Then double check if the posts were changed correctly, `git commit` and `git push` the changes back to the `gh-pages` branch.
 
 ## Maintainers
 

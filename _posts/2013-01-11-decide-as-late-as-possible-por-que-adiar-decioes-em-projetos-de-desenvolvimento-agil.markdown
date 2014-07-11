@@ -1,5 +1,6 @@
 ---
 author: André Cytryn
+hide_author_link: true
 layout: post
 title: "'Decide as late as possible' - Por que adiar decisões em projetos de desenvolvimento ágil"
 categories:

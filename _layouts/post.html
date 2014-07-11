@@ -15,8 +15,10 @@ layout: default
     <header class="full-post-header">
       {% if page.author %}
         {% assign author = page.author %}
+        {% assign hide_author_link = page.hide_author_link %}
       {% else %}
         {% assign author = site.author %}
+        {% assign hide_author_link = true %}
       {% endif %}
 
       <h1 class="post-title">
@@ -24,7 +26,13 @@ layout: default
       </h1>
       {% if author %}
         <div class="author-info">
-          Postado por <span><a class="author-link">{{ author }}</a></span> em <span>{{ page.date | date: "%d/%m/%Y" }}</span>
+          Postado por
+          {% if hide_author_link == true %}
+            <span>{{ author }}</span>
+          {% else %}
+            <span><a class="author-link">{{ author }}</a></span>
+          {% endif %}
+          em <span>{{ page.date | date: "%d/%m/%Y" }}</span>
         </div>
       {% endif %}
     </header>

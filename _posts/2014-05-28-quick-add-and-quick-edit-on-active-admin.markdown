@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Quick add and quick edit on Active Admin"
-author: Tomás Augusto Müller
+author: Tomás Müller
 comments: true
 categories:
   - active admin

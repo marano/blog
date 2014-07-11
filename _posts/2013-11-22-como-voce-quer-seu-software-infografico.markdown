@@ -1,5 +1,6 @@
 ---
 author: Crystal Affonso
+hide_author_link: true
 layout: post
 title: "Infográfico: Como você quer o seu software?"
 categories:

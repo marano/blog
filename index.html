@@ -22,15 +22,24 @@ description: 'HE:labs é uma empresa pioneira em desenvolvimento de sistemas web
         </h1>
         {% if post.author %}
           {% assign author = post.author %}
+          {% assign hide_author_link = post.hide_author_link %}
         {% elsif page.author %}
           {% assign author = page.author %}
+          {% assign hide_author_link = page.hide_author_link %}
         {% else %}
           {% assign author = site.author %}
+          {% assign hide_author_link = true %}
         {% endif %}
         {% if author %}
           <div class="author-info">
             <p>
-              Postado por <span><a class="author-link">{{ author }}</a></span> em <span>{{ post.date | date: "%d/%m/%Y" }}</span>
+              Postado por
+              {% if hide_author_link == true %}
+                <span>{{ author }}</span>
+              {% else %}
+                <span><a class="author-link">{{ author }}</a></span>
+              {% endif %}
+              em <span>{{ post.date | date: "%d/%m/%Y" }}</span>
             </p>
           </div>
         {% endif %}

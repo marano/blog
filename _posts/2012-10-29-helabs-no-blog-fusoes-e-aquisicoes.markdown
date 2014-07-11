@@ -1,5 +1,4 @@
 ---
-author: HE:labs
 layout: post
 title: "HE:labs no blog Fusões & Aquisições"
 categories:

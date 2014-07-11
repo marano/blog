@@ -1,5 +1,6 @@
 ---
 author: Krystal Campioni
+hide_author_link: true
 layout: post
 title: "Prevent common problems when writing CSS from scratch"
 categories:

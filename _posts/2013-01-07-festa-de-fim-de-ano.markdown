@@ -1,5 +1,4 @@
 ---
-author: HE:labs
 layout: post
 title: "Festa de fim de ano da HE:labs"
 categories:

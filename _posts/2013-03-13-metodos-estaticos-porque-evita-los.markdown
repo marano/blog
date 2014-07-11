@@ -2,6 +2,7 @@
 layout: post
 title: Métodos estáticos, porque evitá-los
 author: Pedro Nascimento
+hide_author_link: true
 categories: lunks ruby refactoring
 
 ---

@@ -1,5 +1,4 @@
 ---
-author: HE:labs
 layout: post
 title: "HE:labs participa da Ruby Conf"
 categories:

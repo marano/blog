@@ -2,6 +2,7 @@
 layout: post
 title: "Brazil Postal Code API - Brapi"
 author: Ali Ismayilov
+hide_author_link: true
 categories:
   - brapi
   - api

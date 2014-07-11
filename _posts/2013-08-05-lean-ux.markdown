@@ -1,5 +1,6 @@
 ---
 author: Aluísio Azevedo
+hide_author_link: true
 layout: post
 title: "Um pouco sobre Lean UX"
 categories:

@@ -1,5 +1,5 @@
 ---
-author: Guilherme Sa
+author: Guilherme Sá
 layout: post
 title: "Grow Products by Learning to Fail a Little Better and a Little Faster"
 categories:

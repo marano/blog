@@ -1,5 +1,6 @@
 ---
 author: Crystal Affonso
+hide_author_link: true
 layout: post
 title: "Novo membro: Fábio Rehm"
 categories:

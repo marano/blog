@@ -2,6 +2,7 @@
 layout: post
 title: "Testes de aceitação com capybara e cucumber"
 author: Rodrigo Reginato
+hide_author_link: true
 categories:
   - rodrigo reginato
   - cucumber

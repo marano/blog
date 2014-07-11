@@ -1,6 +1,6 @@
 title: Blog do Time
 encoding: 'utf-8'
-author: Time HE:labs
+author: HE:labs
 pygments: true
 permalink: /:year/:month/:day/:title/
 markdown: rdiscount

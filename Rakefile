@@ -29,3 +29,37 @@ task :new_post, :title do |t, args|
     post.puts "Write full content here"
   end
 end
+
+desc "Fix the author link of posts from people that are no longer on the team"
+task :fix_author_links do
+  require 'open-uri'
+  require 'json'
+  require 'jekyll'
+
+  team = JSON.parse(open('http://helabs.com.br/team.json').read)['team']
+  team_names = team.map { |member| member['full_name'] }
+
+  config = Jekyll.configuration({})
+  site   = Jekyll::Site.new(config)
+  site.read
+  site.posts.each do |post|
+    author = post.data['author']
+
+    # Skip posts that have the author set to the site default
+    next if author == nil
+
+    # Skip posts for members that we already know that are no longer on the team
+    next if post.data['hide_author_link']
+
+    unless team_names.include?(author)
+      print "Changing #{post.path} to hide the author link (#{author})... "
+
+      post_contents = File.read(post.path)
+      post_contents.gsub!(/^(author: #{Regexp.escape author})$/, "\\1\nhide_author_link: true")
+      open(post.path, 'w') do |file|
+        file.print(post_contents)
+      end
+      puts 'DONE!'
+    end
+  end
+end
