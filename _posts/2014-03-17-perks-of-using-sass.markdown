@@ -1,5 +1,6 @@
 ---
 author: Krystal Campioni
+hide_author_link: true
 layout: post
 title: "The perks of using SASS - Creating color pallets with variables and functions"
 categories:
