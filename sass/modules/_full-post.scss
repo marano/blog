@@ -64,6 +64,34 @@
     font-size: em(17px);
     line-height: 29px !important;
 
+    table{
+      height:auto;
+      width:auto;
+      margin:0;
+      padding:0;
+      color: #666;
+      background:#fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      border: collapse;
+
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px;
+      border-radius:5px;
+      tr{
+        th{
+          background-color: #eaebec;
+
+        }
+        td,
+        th{
+          border: 1px solid #ccc;
+          padding: 10px;
+          font-size: 12px;
+        }
+      }
+    }
+
     ul {
       list-style: disc inside;
       margin-bottom: 20px;
