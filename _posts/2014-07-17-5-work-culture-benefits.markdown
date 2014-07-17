@@ -9,7 +9,7 @@ categories:
   - english
 ---
 
-Flat organization culture is somenthing there I only have experienced here at He:labs. It is already a environment that I love. So I decided to share a few point of my experience about it. 
+Flat organization culture is something that I have only experienced here at HE:labs. It is already an environment that I love. So I decided to share a few points of my experience about it.
 
 <!--more-->
 
@@ -21,7 +21,7 @@ I'll explain some points of my personal experience working on a flat organizatio
 
 ##Team Communication x Client.
 
-This is a very important point. When work on a hierarchical organization, the information and the feedback have to pass to a communicator (manager or atendend) before it arrives to the professionals that execute the project. It means that the real meaning of this information can be lost because of the personal interpretation filter between one person to another. The result is rework. 
+This is a very important point. When working with hierarchies, the information and the feedback have to pass to a communicator (manager or atendend) before it arrives to the professionals that execute the project. It means that the real meaning of this information can be lost because of the personal interpretation filter between one person to another. The result is rework. 
 
 So one benefit of our structure of work is that we don't have this middleman, so we are free to have a direct meeting with the clients and cut a lot of bureaucracy and information gaps. 
 
