@@ -17,8 +17,6 @@ Since I've started in HE:labs, I am always surprised by the alternative work cul
 
 Why?
 
-I'll explain some points of my personal experience working on a flat organization environment.
-
 ##Team Communication x Client.
 
 This is a very important point. When working with hierarchies, the information and the feedback have to pass to a communicator (manager or atendend) before it arrives to the professionals that execute the project. It means that the real meaning of this information can be lost because of the personal interpretation filter between one person to another. The result is rework. 
