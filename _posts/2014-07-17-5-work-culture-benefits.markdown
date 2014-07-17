@@ -13,7 +13,7 @@ Flat organization culture is something that I have only experienced here at HE:l
 
 <!--more-->
 
-Since I've started in HE:labs, I am always surprised by the alternative work culture we have here and it's benefits. Teams that work on a particular project don’t have a manager to help them make decisions or manage the share of tasks. But it still works and it is much more engaging work this way than on a hierarchical organization.
+Since I've started in HE:labs, I always get surprised by the alternative work culture we have here and the benefits it comes along with it. Teams that work on a particular project don’t have a manager to help them make decisions or manage the share of tasks. But it still works and it is much more engaging work this way than on a hierarchical organization.
 
 Why?
 
@@ -25,11 +25,11 @@ So one benefit of our structure of work is that we don't have this middleman, so
 
 ##The deliverable product
 
-When you don't have a middleman between you and your client, you can have a better feel on the idea of the product, knowing your client and his or her’s expectations about it. So, you can't help but feel like the product is also yours. You become more easily engaged to the project.
+When you don't have a middleman between you and your client, you can have a better feel on the idea of the product, knowing your client and his or hers expectations about it. So, you can't help but feel like the product is also yours. You become more easily engaged to the project.
 
 ##Commitment
 
-All the team will be on the meeting, so everyone knows all the information that the team need to know. Nothing is missed. That is important to encourage everyone on the team to interact with the client and their decisions. Because if something becomes a gap on the planning meeting, everyone gets harmed. It develops a good sense of responsibility on team members.
+All the team will be on the meeting, so everyone knows all the information that the team needs to know. Nothing is missed. That is important to encourage everyone on the team to interact with the client and their decisions. Because if something becomes a gap on the planning meeting, everyone gets harmed. It develops a good sense of responsibility on team members.
 
 ##Confidence
 
