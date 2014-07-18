@@ -29,11 +29,11 @@ When you don't have a middleman between you and your client, you can have a bett
 
 ##Commitment
 
-All the team will be on the meeting, so everyone knows all the information that the team needs to know. Nothing is missed. That is important to encourage everyone on the team to interact with the client and their decisions. Because if something becomes a gap on the planning meeting, everyone gets harmed. It develops a good sense of responsibility on team members.
+All the team will be on the meeting, so everyone knows all the information that the team needs to know. Nothing is missed. That is important to encourage everyone on the team to interact with the client and their decisions.  If something becomes a gap on the planning meeting, everyone gets harmed. It develops a good sense of responsibility on team members.
 
 ##Confidence
 
-When you work on a team, everyone is responsible for everything on the project. There is no manager. As long as the project is implemented, everyone is in charge to test and improve it if there is any need. It ends up geting people closer and creates a confidence relationship between team members. 
+When you work on a team, everyone is responsible for everything on the project. There is no manager. As long as the project is implemented, everyone is in charge to test and improve it if there is any need. It ends up bringing people closer and helps developing a confidence relationship between team members.
 
 ##Learnable skills
 
