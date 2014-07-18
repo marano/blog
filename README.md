@@ -6,7 +6,7 @@ This is the HE:labs Blog code, you can see the live blog on http://helabs.com.br
 
 To run this project you need to have:
 
-* Ruby 2.1.0 - You can use [RVM](http://rvm.io)
+* Ruby 2.1.2 - You can use [RVM](http://rvm.io)
 
 ## Setup the project
 
