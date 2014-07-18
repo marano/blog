@@ -10,7 +10,7 @@ categories:
 post_style: new-member
 ---
 
-Novo integrante na HE:Rio, bem-vindo Márcio Costa!
+Novo integrante na HE:labs, bem-vindo Márcio Costa!
 
 ![Márcio Costa](/blog/images/posts/2014-07-18/marcio-costa.jpg)
 <!--more-->
@@ -21,4 +21,4 @@ funciona como combustível para o dia a dia.
 Fortalezense, esportista de fim de semana aposentado, jogador de vídeogame e autodidata, começou sua carreira na publicidade
 offline e depois que descobriu o design para midias digitais não quis mais saber de nada e se devotou a causa.
 
-Não acreditava muito em formulários de "Trabalhe com a gente" até preencher o da HE:Labs e vir parar aqui!
+Não acreditava muito em formulários de "Trabalhe com a gente" até preencher o da HE:labs e vir parar aqui!
