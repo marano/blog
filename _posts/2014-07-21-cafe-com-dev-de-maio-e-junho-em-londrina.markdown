@@ -11,14 +11,14 @@ categories:
 
 Nos meses de Maio e Junho aconteceram duas edições do Café com Dev em Londrina-PR.
 
-Em Maio, o tema foi Git e foi apresentado pelo Felipe Duardo com participação do Mikael Carrara, Flávio Granero e Eduardo Fiorezi.
+Em Maio, o tema foi Git e foi apresentado pelo [Felipe Duardo][twitter-felipe] com participação do [Mikael Carrara][twitter-mikael], [Flávio Granero][twitter-flavio] e [Eduardo Fiorezi][twitter-eduardo].
 
-Em Junho foi a vez do Thiago Borges falar sobre "Como o Rails melhorou o desenvolvimento web".
+Em Junho foi a vez do [Thiago Borges][twitter-borges] falar sobre "Como o Rails melhorou o desenvolvimento web".
 <!--more-->
 
 ### O básico de Git e Github
 
-O formato de apresentação sobre Git foi diferente. Felipe Duardo começou aprensentando o básico de Git e Github e em seguida fez uma dinâmica para várias pessoas colaberarem com pull request via Github. Em seguida, Mikael Carrara contou como foi sua experiência fazendo uma [proposta de layout][proposta-mikael] para o site do Ruby que resultou em um concurso aberto para todos da web. Por último, Flávio Granero e Eduardo Fiorezi contaram como é o workflow de desenvolvimento na Inaka e HE:labs usando o Github.
+O formato de apresentação sobre Git foi diferente. Felipe Duardo começou aprensentando o básico de Git e [Github][github] e em seguida fez uma dinâmica para várias pessoas colaberarem com pull request via Github. Em seguida, Mikael Carrara contou como foi sua experiência fazendo uma [proposta de layout][proposta-mikael] para o site do Ruby que resultou em um concurso aberto para todos da web. Por último, Flávio Granero e Eduardo Fiorezi contaram como é o workflow de desenvolvimento na [Inaka][inaka] e [HE:labs][helabs] usando o Github.
 
 Abaixo, seguem as apresentações de Git do Café com Dev.
 
@@ -32,7 +32,7 @@ Abaixo, seguem as apresentações de Git do Café com Dev.
 ### Como o Rails melhorou o desenvolvimento web
 
 
-No Café com Dev sobre "Como o Rails melhorou o desenvolvimento web", os tópicos foram convenção sobre configuração, DRY (don't repeat yourself), heroku, performance e muito mais.
+No Café com Dev sobre "Como o Rails melhorou o desenvolvimento web", os tópicos foram convenção sobre configuração, DRY (don't repeat yourself), [heroku][], performance e muito mais.
 
 O vídeo está disponível abaixo.
 
@@ -49,3 +49,11 @@ Para saber sobre os eventos e novidades, siga a gente em [@helabs][twitter-helab
 [proposta-mikael]: https://github.com/ruby/www.ruby-lang.org/pull/341
 [twitter-helabs]: https://twitter.com/helabs
 [slide-borges]: https://speakerdeck.com/thiagoborges/como-o-rails-melhorou-o-desenvolvimento-web
+[twitter-felipe]: https://twitter.com/ofelipeduardo
+[twitter-mikael]: https://twitter.com/mikaelcarrara
+[twitter-flavio]: https://twitter.com/flaviogranero
+[twitter-eduardo]: https://twitter.com/eduardofiorezi
+[twitter-borges]: https://twitter.com/tgabrielborges
+[inaka]: http://inaka.net
+[helabs]: http://helabs.com.br/
+[heroku]: http://www.heroku.com/
