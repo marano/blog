@@ -8,9 +8,9 @@ categories:
   - rails
 ---
 
-Graphs are data structures tremendously useful to understand and represent many
+Graphs are data structures highly useful to understand and represent many
 real world problems in all kinds of areas such as business, government, and
-business.
+science.
 
 <!--more-->
 
@@ -21,7 +21,7 @@ build one drawing it on a paper.
 ## So, what is a graph?
 
 Mathematically speaking, a graph is just a collection of vertices and edges. Or
-if you don't like math, a graph is a set of nodes and relationships that connect
+if you don't like math, a set of nodes and relationships that connect
 them. Graphs represent entities with nodes (vertices), and the way that entities
 relate with each other are expressed by relationships (edges).
 
@@ -52,14 +52,14 @@ using relational database queries. I'll be covering some of them on my next post
 <div style="text-align: center;">What's a Graph Database - <a href="http://www.neo4j.org/learn/neo4j">Courtesy of Neo4j friends</a>.</div>
 <p> </p>
 
-Beyond what the image show, and now talking specifically about Neo4j, I'd like to
-add that Neo4j have native query language called Cypher, and also offer a RESTful
-API to connect to the database.
+Beyond the image above, and now talking specifically about Neo4j, it is an open-source graph database supported by 
+[Neo Technology](http://www.neotechnology.com/), that stores data using the Property Graph model. It is reliable, with 
+full ACID transactions, expressive, with a powerful, human readable graph query language called Cypher, and simple, 
+accessible by a convenient REST interface or an object-oriented Java API.
 
 So, enough theory and talking for now.
 
-Let's prepare our environment to play a little with Neo4j, and build a simple
-Rails application.
+Let's prepare our environment to play a little with Neo4j, and build a simple Rails application.
 
 ## Installing Neo4j
 
@@ -82,10 +82,10 @@ When you have it installed, open a terminal window and type: `neo4j start`. This
 command will start the Neo4j server on your machine. Now go check it on your
 browser accessing `http://localhost:7474/`. You'll be presented with super nice
 administration panel, where you can visualize the data stored on your neo4j
-instance, create nodes, and check all instance configuration.
+instance, manipulate data using the Cypher Query Language, and check all instance configuration.
 
 ![Neo4j empty admin](/blog/images/posts/2014-07-25/neo4j_admin_empty.png)
-<div style="text-align: center;">Neo4j admin panel - No data to display, fresh install.</div>
+<div style="text-align: center;">Neo4j console - No data to display, fresh install.</div>
 <p> </p>
 
 ## Neo4j on Rails
