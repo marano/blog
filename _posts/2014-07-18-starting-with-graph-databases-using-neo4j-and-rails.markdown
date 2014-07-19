@@ -90,4 +90,17 @@ instance, manipulate data using the Cypher Query Language, and check all instanc
 
 ## Neo4j on Rails
 
-TODO.
+Neo4j is built on top of Java. So, as we want use Ruby on Rails here, let's connect our app through Neo4j REST API.
+ 
+To make things simpler, we'll use the awesome gem (surprisingly) called [neo4j](rubygems.org/gems/neo4j). 
+The version 2.x is the stable version. But here we will use it directly from the master branch where the version three is
+[under active development](https://github.com/andreasronge/neo4j/wiki/Neo4j-v3).
+
+Add to your Gemfile:
+
+{% highlight ruby linenos %}
+gem 'neo4j', github: 'andreasronge/neo4j'
+{% endhighlight %}
+
+Music. This will be the theme of our demo application. Let's start with a dead simple app. Two models: `Artist` and `Music`.
+One artist has many musics, and a music belongs to a artist.
