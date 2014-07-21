@@ -88,19 +88,49 @@ instance, manipulate data using the Cypher Query Language, and check all instanc
 <div style="text-align: center;">Neo4j console - No data to display, fresh install.</div>
 <p> </p>
 
-## Neo4j on Rails
+## Putting Neo4j on Rails
 
-Neo4j is built on top of Java. So, as we want use Ruby on Rails here, let's connect our app through Neo4j REST API.
+Neo4j is built on top of Java and the rock solid JVM. As we want use (MRI) Ruby on Rails here, let's connect our app 
+using its exposed REST API.
  
-To make things simpler, we'll use the awesome gem (surprisingly) called [neo4j](rubygems.org/gems/neo4j). 
+To make things simpler, we'll use the awesome gem (surprisingly) called [neo4j](http://rubygems.org/gems/neo4j) from
+[@andreasronge](https://github.com/andreasronge/). 
 The version 2.x is the stable version. But here we will use it directly from the master branch where the version three is
-[under active development](https://github.com/andreasronge/neo4j/wiki/Neo4j-v3).
+[under active development](https://github.com/andreasronge/neo4j/wiki/Neo4j-v3), and which enable us to use the MRI Ruby
+connecting to Neo4j via its REST interface. If you are into JRuby, you can even use the stable version and connect using the 
+embedded db (by filesystem), which means a Neo4j instance running on the same JVM of you app.
 
-Add to your Gemfile:
+Another option to connect a MRI Ruby application to the Neo4j REST interface is the 
+[Neography](https://github.com/maxdemarzi/neography/) gem from [@maxdemarzi](https://github.com/maxdemarzi).
+
+But here we will use the first one. Go ahead and add it to your Gemfile:
 
 {% highlight ruby linenos %}
 gem 'neo4j', github: 'andreasronge/neo4j'
 {% endhighlight %}
 
-Music. This will be the theme of our demo application. Let's start with a dead simple app. Two models: `Artist` and `Music`.
-One artist has many musics, and a music belongs to a artist.
+Let's start with a dead simple app. Two models: `Artist` and `Music`. One artist can interpret many musics 
+(`has_n(:musics).to(Music)`), and a music belongs to a artist.
+
+I will not paste the application code here on this blog post since we are using the unstable version of the neo4j gem, 
+and much of the code could become outdated quickly. Instead of replicating code here, you can check the 
+[live demo](http://interpretations.herokuapp.com) which is running on Heroku, and the updated [source code](https://github.com/tomasmuller/interpretations) 
+on my Github account.
+
+Before you dive into the demo application code, just let me highlight some key points about the usage of the Neo4j gem 
+on a Rails app:
+
+- Delete the db folder of your project. We aren't going to use migrations or a seeds file.
+- Pick the frameworks you want from Rails, [changing Active Record by Neo4j](https://github.com/tomasmuller/interpretations/config/application.rb). 
+Don't forget to remove any reference to active_record on your app's `config/environments/*.rb` files.
+- Configure [where is your Neo4j instance](https://github.com/tomasmuller/interpretations/config/application.rb). During 
+the development you can connect on `localhost:7474`. On Heroku we are going to use the great 
+[GrapheneDB](http://www.graphenedb.com/) which provides Neo4j graph database as a service.
+- [Add `Neo4j::ActiveNode` to the models](https://github.com/tomasmuller/interpretations/models). Here the fun begins. 
+Each model class will represent a node, a entity on a graph. And as you should remember, a node contains properties and 
+relationships. The neo4j gem gives us [a nice API to compose](https://github.com/andreasronge/neo4j/wiki/Neo4j-v3#property) 
+our nodes, supporting the well known [Active Model validations API](https://github.com/andreasronge/neo4j/blob/master/lib/neo4j/active_node/validations.rb#L7).  
+
+## Conclusion
+
+TODO.
