@@ -27,10 +27,10 @@ complex problems such as optimization algorithms.
 
 This graph model is formally known as Property Graph. A property graph has the following characteristics:
 
-- It contains nodes and relationships
-- Nodes contain properties (key-value pairs)
-- Relationships are named and directed, and **always** have a start and end node
-- Relationships can also contain properties (key-value pairs)
+- It contains nodes and relationships.
+- Nodes contain properties (key-value pairs).
+- Relationships are named and directed, and **always** have a start and end node.
+- Relationships can also contain properties (key-value pairs).
 
 Despite being intuitive and easy to understand, the property graph model can be used to describe almost all graph use 
 cases.
@@ -51,9 +51,8 @@ Beyond the image above, and now talking specifically about Neo4j, it is an open-
 full ACID transactions, expressive, with a powerful, human readable graph query language called Cypher, and simple, 
 accessible by a convenient REST interface or an object-oriented Java API.
 
-So, enough theory and talking for now.
-
-Let's prepare our environment to play a little with Neo4j, and build a simple Rails application.
+Enough theory and talking for now. Let's prepare our environment to play a little with Neo4j, and build a simple Rails 
+application.
 
 ## Installing Neo4j
 
@@ -68,13 +67,13 @@ Or, if you prefer, follow these five steps:
 4. Create a environment variable named `NEO4J_HOME`, pointing to this symbolic link.
 5. Change the `PATH` environment variable, adding the `NEO4J_HOME/bin` to it.
 
-This way, in the future when you want to update the Neo4j database on your machine, you must only download the new 
+This way, in the future when you want to update the Neo4j database on your machine, you can just download the new 
 version, unpack, and update the symbolic link pointing it to the new version.
 
 When you have it installed, open a terminal window and type: `neo4j start`. This command will start the Neo4j server on 
 your machine. Now go check it on your browser accessing `http://localhost:7474/`. You'll be presented with super nice
-administration panel, where you can visualize the data stored on your neo4j instance, manipulate data using the Cypher 
-Query Language, and check all instance configuration.
+administration panel, where you can visualize the data stored on your Neo4j instance, manipulate data using the Cypher 
+Query Language, check all instance configuration, and more.
 
 ![Neo4j empty admin](/blog/images/posts/2014-07-25/neo4j_admin_empty.png)
 <div style="text-align: center;">Neo4j console - No data to display, fresh install.</div>
@@ -83,7 +82,7 @@ Query Language, and check all instance configuration.
 ## Putting Neo4j on Rails
 
 Neo4j is built on top of Java and the rock solid JVM. As we want use (MRI) Ruby on Rails here, let's connect our app 
-using its exposed REST API.
+using Neo4j's REST API.
  
 To make things simpler, we'll use the awesome gem (surprisingly) called [neo4j](http://rubygems.org/gems/neo4j) from
 [@andreasronge](https://github.com/andreasronge/). 
@@ -92,7 +91,7 @@ The version 2.x is the stable version. But here we will use it directly from the
 connecting to Neo4j via its REST interface. If you are into JRuby, you can even use the stable version and connect using the 
 embedded db (by filesystem), which means a Neo4j instance running on the same JVM of you app.
 
-Another option to connect a MRI Ruby application to the Neo4j REST interface is the 
+Another option to connect a MRI Ruby application to Neo4j using the REST interface is the 
 [Neography](https://github.com/maxdemarzi/neography/) gem from [@maxdemarzi](https://github.com/maxdemarzi).
 
 But here we will use the first one. Go ahead and add it to your Gemfile:
@@ -101,23 +100,23 @@ But here we will use the first one. Go ahead and add it to your Gemfile:
 gem 'neo4j', github: 'andreasronge/neo4j'
 {% endhighlight %}
 
-Let's start with a dead simple app. Two models: `Artist` and `Music`. One artist can interpret many musics 
-(`has_n(:musics).to(Music)`), and a music belongs to a artist.
+Let's start with a dead simple app. Two models: `Artist` and `Music`. One artist can interpret many musics, and a music 
+belongs to a artist.
 
 I will not paste the application code here on this blog post since we are using the unstable version of the neo4j gem, 
 and much of the code could become outdated quickly. Instead of replicating code here, you can check the 
 [live demo](http://interpretations.herokuapp.com) which is running on Heroku, and the updated [source code](https://github.com/tomasmuller/interpretations) 
 on my Github account.
 
-Before you dive into the demo application code, just let me highlight some key points about the usage of the Neo4j gem 
+Before you dive into the demo application code, just let me highlight some key points about the usage of the neo4j gem 
 on a Rails app:
 
 - Delete the db folder of your project. We aren't going to use migrations or a seeds file.
 - Pick the frameworks you want from Rails, [changing Active Record by Neo4j](https://github.com/tomasmuller/interpretations/config/application.rb). 
-Don't forget to remove any reference to active_record on your app's `config/environments/*.rb` files.
+Don't forget to remove any reference to active record on your app's `config/environments/*.rb` files.
 - Configure [where is your Neo4j instance](https://github.com/tomasmuller/interpretations/config/application.rb). During 
 the development you can connect on `localhost:7474`. On Heroku we are going to use the great 
-[GrapheneDB](http://www.graphenedb.com/) which provides Neo4j graph database as a service.
+[GrapheneDB](http://www.graphenedb.com/) which provides Neo4j graph database as a service. [Use the add-on for this](https://devcenter.heroku.com/articles/graphenedb). 
 - [Add `Neo4j::ActiveNode` to the models](https://github.com/tomasmuller/interpretations/models). Here the fun begins. 
 Each model class will represent a node, a entity on a graph. And as you should remember, a node contains properties and 
 relationships. The neo4j gem gives us [a nice API to compose](https://github.com/andreasronge/neo4j/wiki/Neo4j-v3#property) 
