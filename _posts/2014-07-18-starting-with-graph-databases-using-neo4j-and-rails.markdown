@@ -62,11 +62,11 @@ Installing Neo4j on development machines is very easy. If you are on OSX and is 
 
 Or, if you prefer, follow these five steps:
 
-1. [Download the Neo4j Community package](http://www.neo4j.org/download)
-2. Unzip on your installations folder, let's say `~/Applications/`
-3. Create a symbolic link named `neo4j` to the unzipped folder. For instance: `ln -s ~/Applications/neo4j-community-2.1.2 ~/Applications/neo4j`
-4. Create a environment variable named `NEO4J_HOME`, pointing to this symbolic link
-5. Change the `PATH` environment variable, adding the `NEO4J_HOME/bin` to it
+1. [Download the Neo4j Community package](http://www.neo4j.org/download).
+2. Unzip on your installations folder, let's say `~/Applications/`.
+3. Create a symbolic link named `neo4j` to the unzipped folder. For instance: `ln -s ~/Applications/neo4j-community-2.1.2 ~/Applications/neo4j`.
+4. Create a environment variable named `NEO4J_HOME`, pointing to this symbolic link.
+5. Change the `PATH` environment variable, adding the `NEO4J_HOME/bin` to it.
 
 This way, in the future when you want to update the Neo4j database on your machine, you must only download the new 
 version, unpack, and update the symbolic link pointing it to the new version.
