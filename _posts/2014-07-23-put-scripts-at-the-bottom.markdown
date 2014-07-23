@@ -25,9 +25,9 @@ In this case and when using HAML you can define a place in your layout to page s
 And then in the specific page:
 
 `
-  - content_for :after_js_code do
-    :javascript
-     $(‘section’).hide();
+  content_for :after_js_code do
+  :javascript
+  $(‘section’).hide();
 `
 
 ###One more thing
