@@ -10,6 +10,8 @@ categories:
 
 While a script is downloading the browser won't start any other downloads, even on different hostnames. Have you ever noticed in some websites where the page seems to be loaded but the screen hangs white for some time while it's still loading more?
 
+<!--more-->
+
 This does not happen when all scripts are placed at the bottom. It is a best practice in order to speed up your website: Put scripts at the bottom.
 
 In some situations, it isn’t easy to move scripts to the bottom. It’s also a best practice not to have inline JavaScript in your pages. But it may have some inside a specific page and it may need a variable or a framework to work correctly.
