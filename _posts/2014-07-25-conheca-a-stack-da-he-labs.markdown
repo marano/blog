@@ -35,7 +35,7 @@ Foi muito bom esse foco, nos trouxe especialização na plataforma e hoje somos 
 
 Isso não quer dizer que não possamos utilizar outras tecnologias, mas com restrições. Se um cliente quer desenvolver uma _plataforma inteira_ exclusivamente em [PHP](http://en.wikipedia.org/wiki/PHP) ou [Java](http://en.wikipedia.org/wiki/Java_(programming_language\)), por exemplo, não pegamos o trabalho. Mas temos a flexibilidade de conhecer o suficiente dessas e outras linguagens para fazer integrações necessárias entre softwares que as utilizem e as plataformas em Ruby on Rails. Já fizemos esses tipos de integrações utilizando Java, PHP, Python e até coisas em linguagens bem mais exóticas.
 
-Também já trabalhamos em aplicativos com [Node.js](http://en.wikipedia.org/wiki/Node.js), o que mostrou que ele pode ter um futuro promissor, mas ainda imaturo no momento.
+Também já trabalhamos em aplicativos com [Node.js](http://en.wikipedia.org/wiki/Node.js), o que mostrou que ele pode ter um futuro promissor, mas ainda imaturo para as coisas que precisamos fazer.
 
 Mesmo em outras linguagens, fora do mundo Ruby, ainda desconheço um framework tão avançado, maduro e completo quanto o Ruby on Rails que possa se tornar um novo divisor de águas no médio prazo para aplicações web complexas. Então, por enquanto, o Ruby on Rails vai continuar fazendo parte da nossa stack principal.
 
