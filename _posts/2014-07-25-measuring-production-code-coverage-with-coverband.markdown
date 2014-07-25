@@ -61,14 +61,27 @@ run rake task
 
 * using slim it considers part of the template as not covered (even though it gets rendered, link to stuff on erb)
 * lots of lines not taken into consideration
-* TODO: unused associations?
+* TODO: check if unused associations will be picked up
+* models that are not in use will be hard to spot unless they have some custom logic that is not going to be hit and will lower its coverage
 * coverband VS rails assets
 * redis free addon limitations (no backup, storage capacity....)
+* https://twitter.com/danmayer/status/492793622765379586
+
+
+-------------------------------------
+
+TODO: Generate coverage from the heroku app
+
+Works because of single dyno
+
+figure out the performance impact on a real app
 
 --------------------------------
 
 conclusion
 
 >>>>>>>>>>>>>>>>>>>>>
+
+at he labs we strive for [100% code coverage from day one](), but that doesn't mean that what we write are actually in use on production
 
 tks to danmayer and xxxxx for reviewing
