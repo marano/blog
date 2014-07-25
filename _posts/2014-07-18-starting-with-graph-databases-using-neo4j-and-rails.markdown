@@ -76,7 +76,7 @@ administration panel, where you can visualize the data stored on your Neo4j inst
 Query Language, check all instance configuration, and more.
 
 ![Neo4j empty admin](/blog/images/posts/2014-07-25/neo4j_admin_empty.png)
-<div style="text-align: center;">Neo4j console - No data to display, fresh install.</div>
+<div style="text-align: center;">Neo4j web admin - No data to display, fresh install.</div>
 <p> </p>
 
 ## Putting Neo4j on Rails
@@ -121,6 +121,10 @@ the development you can connect on `localhost:7474`. On Heroku we are going to u
 Each model class will represent a node, a entity on a graph. And as you should remember, a node contains properties and 
 relationships. The neo4j gem gives us [a nice API to compose](https://github.com/andreasronge/neo4j/wiki/Neo4j-v3#property) 
 our nodes, supporting the well known [Active Model validations API](https://github.com/andreasronge/neo4j/blob/master/lib/neo4j/active_node/validations.rb#L7).  
+
+![Neo4j web admin](/blog/images/posts/2014-07-25/neo4j_web_admin_displaying_some_data.png)
+<div style="text-align: center;">Neo4j web admin - Displaying some nodes and relationships.</div>
+<p> </p>
 
 ## Next steps
 
