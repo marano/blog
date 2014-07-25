@@ -109,7 +109,8 @@ and much of the code could become outdated quickly. Instead of replicating code 
 on my Github account.
 
 Before you dive into the demo application code, just let me highlight some key points about the usage of the neo4j gem 
-on a Rails app:
+on a Rails app. I bootstrapped the app with [Pah](https://github.com/Helabs/pah/) gem, and started learning (the hard way) 
+how to make things work. So here is the main points that need your attention:
 
 - Delete the db folder of your project. We aren't going to use migrations or a seeds file.
 - Pick the frameworks you want from Rails, [removing Active Record and adding Neo4j](https://github.com/tomasmuller/interpretations/blob/master/config/application.rb#L4). 
