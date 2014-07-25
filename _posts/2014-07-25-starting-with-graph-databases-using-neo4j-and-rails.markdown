@@ -112,15 +112,15 @@ Before you dive into the demo application code, just let me highlight some key p
 on a Rails app:
 
 - Delete the db folder of your project. We aren't going to use migrations or a seeds file.
-- Pick the frameworks you want from Rails, [removing Active Record and adding Neo4j](https://github.com/tomasmuller/interpretations/config/application.rb). 
+- Pick the frameworks you want from Rails, [removing Active Record and adding Neo4j](https://github.com/tomasmuller/interpretations/blob/master/config/application.rb#L4). 
 Don't forget to remove any reference to active record on your app's `config/environments/*.rb` files.
-- Configure [where is your Neo4j instance](https://github.com/tomasmuller/interpretations/config/application.rb). During 
+- Configure [where is your Neo4j instance](https://github.com/tomasmuller/interpretations/blob/master/config/application.rb#L16). During 
 the development you can connect on `localhost:7474`. On Heroku we are going to use the great 
 [GrapheneDB](http://www.graphenedb.com/) which provides Neo4j graph database as a service. [Use the add-on for this](https://devcenter.heroku.com/articles/graphenedb). 
-- [Add `Neo4j::ActiveNode` to the models](https://github.com/tomasmuller/interpretations/models). Here the fun begins. 
+- [Add `Neo4j::ActiveNode` to the models](https://github.com/tomasmuller/interpretations/tree/master/app/models). Here is where the fun begins. 
 Each model class will represent a node, a entity on a graph. And as you should remember, a node contains properties and 
 relationships. The neo4j gem gives us [a nice API to compose](https://github.com/andreasronge/neo4j/wiki/Neo4j-v3#property) 
-our nodes, supporting the well known [Active Model validations API](https://github.com/andreasronge/neo4j/blob/master/lib/neo4j/active_node/validations.rb#L7).  
+our graph, supporting the well known [Active Model validations API](https://github.com/andreasronge/neo4j/blob/master/lib/neo4j/active_node/validations.rb#L7).  
 
 ![Neo4j web admin](/blog/images/posts/2014-07-25/neo4j_web_admin_displaying_some_data.png)
 <div style="text-align: center;">Neo4j web admin - Displaying some nodes and relationships.</div>
