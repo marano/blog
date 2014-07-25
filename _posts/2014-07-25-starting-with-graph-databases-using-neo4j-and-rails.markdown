@@ -128,7 +128,7 @@ our graph, supporting the well known [Active Model validations API](https://gith
 
 ## Next steps
 
-The intend of this blog post was introduce you to the world of Graph Databases, giving some theory about graphs and a 
+The intent of this blog post was introduce you to the world of Graph Databases, giving some theory about graphs and a 
 practical hands-on using Neo4j and Rails. Although the graph model of the demo application looks very simple, much can be
 learned until here.
  
