@@ -94,7 +94,7 @@ embedded db (by filesystem), which means a Neo4j instance running on the same JV
 Another option to connect a MRI Ruby application to Neo4j using the REST interface is the 
 [Neography](https://github.com/maxdemarzi/neography/) gem from [@maxdemarzi](https://github.com/maxdemarzi).
 
-But here we will use the first one. Go ahead and add it to your Gemfile:
+But here we will use the first one. Go ahead, add the reference to your `Gemfile` and `bundle install` it:
 
 {% highlight ruby linenos %}
 gem 'neo4j', github: 'andreasronge/neo4j'
