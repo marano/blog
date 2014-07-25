@@ -2,6 +2,7 @@
 layout: post
 title: "Put Scripts at the Bottom"
 author: Dirceu Pauka Jr
+hide_author_link: true
 categories:
   - javascript
   - otimização

@@ -1,5 +1,6 @@
 ---
 author: Dirceu Pauka
+hide_author_link: true
 layout: post
 title: "RescueTime: time management tool"
 categories:
