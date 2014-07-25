@@ -117,9 +117,10 @@ Don't forget to remove any reference to active record on your app's `config/envi
 - Configure [where is your Neo4j instance](https://github.com/tomasmuller/interpretations/blob/master/config/application.rb#L16). During 
 the development you can connect on `localhost:7474`. On Heroku we are going to use the great 
 [GrapheneDB](http://www.graphenedb.com/) which provides Neo4j graph database as a service. [Use the add-on for this](https://devcenter.heroku.com/articles/graphenedb). 
-- [Add `Neo4j::ActiveNode` to the models](https://github.com/tomasmuller/interpretations/tree/master/app/models). Here is where the fun begins. 
-Each model class will represent a node, a entity on a graph. And as you should remember, a node contains properties and 
-relationships. The neo4j gem gives us [a nice API to compose](https://github.com/andreasronge/neo4j/wiki/Neo4j-v3#property) 
+- [Add `Neo4j::ActiveNode` to the models](https://github.com/tomasmuller/interpretations/tree/master/app/models) ([there
+is generators to create them](https://github.com/andreasronge/neo4j/tree/master/lib/rails/generators)). Here is where 
+the fun begins. Each model class will represent a node, a entity on a graph. And as you should remember, a node contains 
+properties and relationships. The neo4j gem gives us [a nice API to compose](https://github.com/andreasronge/neo4j/wiki/Neo4j-v3#property) 
 our graph, supporting the well known [Active Model validations API](https://github.com/andreasronge/neo4j/blob/master/lib/neo4j/active_node/validations.rb#L7).  
 
 ![Neo4j web admin](/blog/images/posts/2014-07-25/neo4j_web_admin_displaying_some_data.png)
