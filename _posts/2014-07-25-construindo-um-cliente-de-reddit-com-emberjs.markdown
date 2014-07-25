@@ -51,7 +51,27 @@ ember new ember-reddit && cd ember-reddit
 {% endhighlight %}
 
 Uma vez dentro do diretório da aplicação podemos levantar o servidor usando `ember server` ou `ember s` e visitar a url
-http://localhost:4200. Se tudo ocorrer bem, você verá um título com *Welcome to Ember.js*.
+[http://localhost:4200](http://localhost:4200). Se tudo ocorrer bem, você verá um título com *Welcome to Ember.js*.
+
+![image](/blog/images/posts/ember-reddit/welcome.png)
+
+Para dar uma cara melhor ao projeto iremos utilizar o twitter boostrap, para instala-lo utilize `bower install bootstrap`.
+E para adiciona-lo na asset pipeline do ember-cli mude o arquivo Brocfile.js para:
+
+{% highlight javascript linenos %}
+var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+
+var app = new EmberApp();
+app.import('vendor/bootstrap/dist/css/bootstrap.css');
+
+module.exports = app.toTree();
+{% endhighlight %}
+
+Obs: o arquivo Brocfile.js não é recarregado automaticamente então você terá que reiniciar o servidor para pegar as alterações.
+
+Ao atualizar a página você verá que o título *Welcome to Ember.js* está um pouco maior, o que indica que o boostrap está sendo usado.
+
+![image](/blog/images/posts/ember-reddit/welcome-boostrap.png)
 
 # Criando a primeira rota
 
