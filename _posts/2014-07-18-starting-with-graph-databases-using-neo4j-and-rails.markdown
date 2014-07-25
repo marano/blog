@@ -46,10 +46,10 @@ covering some of them on my next posts.
 <div style="text-align: center;">What's a Graph Database - <a href="http://www.neo4j.org/learn/neo4j">Courtesy of Neo4j friends</a>.</div>
 <p> </p>
 
-Beyond the image above, and now talking specifically about Neo4j, it is an open-source graph database supported by 
-[Neo Technology](http://www.neotechnology.com/), that stores data using the Property Graph model. It is reliable, with 
-full ACID transactions, expressive, with a powerful, human readable graph query language called Cypher, and simple, 
-accessible by a convenient REST interface or an object-oriented Java API.
+Beyond the image above, and now talking specifically about Neo4j, it is an [open-source](https://github.com/neo4j) graph 
+database supported by [Neo Technology](http://www.neotechnology.com/), that stores data using the Property Graph model. 
+It is reliable, with full ACID transactions, expressive, with a powerful, human readable graph query language called 
+Cypher, and simple, accessible by a convenient REST interface or an object-oriented Java API.
 
 Enough theory and talking for now. Let's prepare our environment to play a little with Neo4j, and build a simple Rails 
 application.
@@ -103,7 +103,7 @@ gem 'neo4j', github: 'andreasronge/neo4j'
 Let's start with a dead simple app. Two models: `Artist` and `Music`. One artist can interpret many musics, and a music 
 belongs to a artist.
 
-I will not paste the application code here on this blog post since we are using the unstable version of the neo4j gem, 
+I will not paste the application code here on this blog post since we are using the alpha version of the neo4j gem, 
 and much of the code could become outdated quickly. Instead of replicating code here, you can check the 
 [live demo](http://interpretations.herokuapp.com) which is running on Heroku, and the updated [source code](https://github.com/tomasmuller/interpretations) 
 on my Github account.
@@ -112,7 +112,7 @@ Before you dive into the demo application code, just let me highlight some key p
 on a Rails app:
 
 - Delete the db folder of your project. We aren't going to use migrations or a seeds file.
-- Pick the frameworks you want from Rails, [changing Active Record by Neo4j](https://github.com/tomasmuller/interpretations/config/application.rb). 
+- Pick the frameworks you want from Rails, [removing Active Record and adding Neo4j](https://github.com/tomasmuller/interpretations/config/application.rb). 
 Don't forget to remove any reference to active record on your app's `config/environments/*.rb` files.
 - Configure [where is your Neo4j instance](https://github.com/tomasmuller/interpretations/config/application.rb). During 
 the development you can connect on `localhost:7474`. On Heroku we are going to use the great 
