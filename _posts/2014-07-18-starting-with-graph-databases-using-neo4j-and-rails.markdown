@@ -122,6 +122,15 @@ Each model class will represent a node, a entity on a graph. And as you should r
 relationships. The neo4j gem gives us [a nice API to compose](https://github.com/andreasronge/neo4j/wiki/Neo4j-v3#property) 
 our nodes, supporting the well known [Active Model validations API](https://github.com/andreasronge/neo4j/blob/master/lib/neo4j/active_node/validations.rb#L7).  
 
-## Conclusion
+## Next steps
 
-TODO.
+The intend of this blog post was introduce you to the world of Graph Databases, giving some theory about graphs and a 
+practical hands-on using Neo4j and Rails. Although the graph model of the demo application looks very simple, much can be
+learned until here.
+ 
+For future posts expect to read more about Neo4j, Cypher Query Language, and traversal algorithms. 
+
+So, what about learn by doing? I invite you to [clone the sample app](https://github.com/tomasmuller/interpretations/) 
+and start hacking it right away! Add some feature, improve the graph model in some way. Pull requests are welcome!
+
+And remember: graphs are everywhere!
