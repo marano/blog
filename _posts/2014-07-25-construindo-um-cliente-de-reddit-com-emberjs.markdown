@@ -76,10 +76,10 @@ Ao atualizar a página você verá que o título *Welcome to Ember.js* está um 
 # Criando nosso primeiro teste
 
 O ember.js vem com uma biblioteca de testes que usa uma dsl com uma sintaxe bem intuitiva e que tenta abstrair ao máximo possível as execuções
-assíncronas que o framework faz por de baixo dos panos, você pode encontrar mais informações a respeito dela no [guia oficial
-de testes](http://emberjs.com/guides/testing/). Essa biblioteca vem integrada por padrão no [qunit](http://qunitjs.com/) então você 
-não precisa ficar fazendo `asyncStart`, `start` e `stop` velhos conhecidos quando precisamos testar [códigos assíncronos](http://api.qunitjs.com/category/async-control/).
-Tanto a biblioteca de testes do ember como o qunit ja vem integrados, portanto você não precisa realizar nenhuma configuração.
+assíncronas, já que ajax é muito comum em SPA's. Você pode encontrar mais informações a respeito dela no [guia oficial de testes](http://emberjs.com/guides/testing/). 
+Essa biblioteca vem integrada por padrão no [qunit](http://qunitjs.com/) então você não precisa ficar fazendo `asyncStart`, `start` e `stop` 
+velhos conhecidos quando precisamos testar [códigos assíncronos](http://api.qunitjs.com/category/async-control/).
+Tanto a biblioteca de testes do ember como o qunit ja vem integrados no ember-cli, portanto você não precisa realizar nenhuma configuração ;).
 
 Vamos criar um teste simples para verificar se o título principal do site(h1) é igual a "Ember reddit". 
 Para isso vamos usar os geradores do ember-cli para criar um teste te aceitação:
@@ -98,14 +98,41 @@ test('visiting /', function() {
   visit('/');
 
   andThen(function() {
-    equal(currentPath(), 'index');
     equal(find('h1').text(), 'Ember reddit');
   });
 });
 {% endhighlight %}
 
-Para ver os testes executando visite [http://localhost:4200/tests](http://localhost:4200/tests). Você verá que esse teste vai falhar,
-vamos fazer ele passar alterando o arquivo **app/templates/application.hbs** para ter o seguinte conteúdo:
+Algumas explicações sobre o que o teste acima está fazendo: O `visit('/')` simula uma requisição para a raiz da aplicação. O `andThen` executa uma 
+função assim que o visit carrega a página, no nosso caso quando a página for carregada queremos verificar que o texto do elemento 'h1' é igual a 'Ember reddit'.
+O `find('h1').text()` nada mais é que uma chamada ao jQuery, é o mesmo que `$('h1').text()`.
+
+Para ver os testes executando visite [http://localhost:4200/tests](http://localhost:4200/tests). 
+Você verá que esse teste vai falhar, faremos ele passar mas primeiro vamos entender como o ember renderiza os templates.
+
+O ember.js usa convenção sobre configuração, então caso editássemos o arquivo **app/router.js** e criássemos uma rota chamada 'foo':
+
+{% highlight javascript linenos %}
+Router.map(function() {
+  this.route('foo');
+});
+{% endhighlight %}
+
+Ao acessar '/foo' seria renderizado o template **app/templates/foo.hbs** usando como layout o template **app/templates/application.hbs**.
+
+No nosso caso mesmo não tendo nenhuma rota criada ainda, o ember cria o seguinte mapeamento por padrão:
+
+{% highlight javascript linenos %}
+Router.map(function() {
+  // rota criada por padrão
+  // this.route('index', { path: '/' });
+});
+{% endhighlight %}
+
+Ou seja, uma rota chamada `index` que mapea para a url raiz da nossa aplicação. Logo ele está renderizando o template **app/templates/index.hbs**
+usando o layout **app/templates/application.hbs**. Como não temos o arquivo `index.hbs` ele não é renderizado apenas o seu layout.
+
+Agora que entendemos o que está acontecendo, podemos alterar o nosso layout para o seguinte código:
 
 {% highlight html linenos %}
 {% raw %}
@@ -114,5 +141,7 @@ vamos fazer ele passar alterando o arquivo **app/templates/application.hbs** par
 {{outlet}}
 {% endraw %}
 {% endhighlight %}
+
+O `{% raw %}{{outlet}}{% endraw %}` é onde cada template será renderizado.
 
 Após essa alteração você verá que todos os testes estão passando =).
