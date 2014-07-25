@@ -55,7 +55,7 @@ Uma vez dentro do diretório da aplicação podemos levantar o servidor usando `
 
 ![image](/blog/images/posts/ember-reddit/welcome.png)
 
-Para dar uma cara melhor ao projeto iremos utilizar o twitter boostrap, para instala-lo utilize `bower install bootstrap`.
+Para dar uma cara melhor ao projeto iremos utilizar o twitter boostrap, para instala-lo utilize `bower install bootstrap --save`.
 E para adiciona-lo na asset pipeline do ember-cli mude o arquivo Brocfile.js para:
 
 {% highlight javascript linenos %}
@@ -69,10 +69,50 @@ module.exports = app.toTree();
 
 Obs: o arquivo Brocfile.js não é recarregado automaticamente então você terá que reiniciar o servidor para pegar as alterações.
 
-Ao atualizar a página você verá que o título *Welcome to Ember.js* está um pouco maior, o que indica que o boostrap está sendo usado.
+Ao atualizar a página você verá que o título *Welcome to Ember.js* está um pouco maior, o que indica que os estilos do boostrap estão sendo usados.
 
 ![image](/blog/images/posts/ember-reddit/welcome-boostrap.png)
 
-# Criando a primeira rota
+# Criando nosso primeiro teste
 
-TODO
+O ember.js vem com uma biblioteca de testes que usa uma dsl com uma sintaxe bem intuitiva e que tenta abstrair ao máximo possível as execuções
+assíncronas que o framework faz por de baixo dos panos, você pode encontrar mais informações a respeito dela no [guia oficial
+de testes](http://emberjs.com/guides/testing/). Essa biblioteca vem integrada por padrão no [qunit](http://qunitjs.com/) então você 
+não precisa ficar fazendo `asyncStart`, `start` e `stop` velhos conhecidos quando precisamos testar [códigos assíncronos](http://api.qunitjs.com/category/async-control/).
+Tanto a biblioteca de testes do ember como o qunit ja vem integrados, portanto você não precisa realizar nenhuma configuração.
+
+Vamos criar um teste simples para verificar se o título principal do site(h1) é igual a "Ember reddit". 
+Para isso vamos usar os geradores do ember-cli para criar um teste te aceitação:
+
+{% highlight bash linenos %}
+ember generate acceptance-test index
+# version: 0.0.40
+# installing
+#   create tests/acceptance/index-test.js
+{% endhighlight %}
+
+Vamos alterar o teste gerado pelo ember-cli e adicionar o cenário esperado para a nossa app:
+
+{% highlight javascript linenos %}
+test('visiting /', function() {
+  visit('/');
+
+  andThen(function() {
+    equal(currentPath(), 'index');
+    equal(find('h1').text(), 'Ember reddit');
+  });
+});
+{% endhighlight %}
+
+Para ver os testes executando visite [http://localhost:4200/tests](http://localhost:4200/tests). Você verá que esse teste vai falhar,
+vamos fazer ele passar alterando o arquivo **app/templates/application.hbs** para ter o seguinte conteúdo:
+
+{% highlight html linenos %}
+{% raw %}
+<h1>Ember reddit</h1>
+
+{{outlet}}
+{% endraw %}
+{% endhighlight %}
+
+Após essa alteração você verá que todos os testes estão passando =).
