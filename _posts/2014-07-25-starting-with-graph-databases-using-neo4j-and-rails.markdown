@@ -79,7 +79,7 @@ Query Language, check all instance configuration, and more.
 <div style="text-align: center;">Neo4j web admin - No data to display, fresh install.</div>
 <p> </p>
 
-## Putting Neo4j on Rails
+## Using Neo4j from Rails
 
 Neo4j is built on top of Java and the rock solid JVM. As we want use (MRI) Ruby on Rails here, let's connect our app 
 using Neo4j's REST API.
