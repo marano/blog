@@ -145,3 +145,92 @@ Agora que entendemos o que está acontecendo, podemos alterar o nosso layout par
 O `{% raw %}{{outlet}}{% endraw %}` é onde cada template será renderizado.
 
 Após essa alteração você verá que todos os testes estão passando =).
+
+# Coletando dados da api do reddit
+
+Listaremos os tópicos populares do reddit, para isso precisamos consumir a [api rest](http://www.reddit.com/dev/api) deles.
+Como faremos algumas chamadas ajax, é interessante coloca-las num serviço para mante-las todas num lugar só.
+Vamos criar esse serviço usando o seguinte comando:
+
+{% highlight bash linenos %}
+ember generate service reddit
+# version: 0.0.40
+# installing
+#   create app/initializers/reddit.js
+#   create app/services/reddit.js
+#   create tests/unit/services/reddit-test.js
+{% endhighlight %}
+
+O endpoint a ser consumido é [http://www.reddit.com/hot.json](http://www.reddit.com/hot.json) que retorna um json. Esse json vai
+mudar de tempos em tempos porque o conteúdo retornado por ele é atualizado periodicamente, para nossos testes sempre trabalharem
+com o mesmo conteúdo vamos mockar essa chamada.
+
+**tests/helper/hot-fixture.js** 
+{% highlight javascript linenos %}
+import { defineFixture } from 'ic-ajax';
+
+var data = [...]; // adicione o json retornado pela api aqui
+
+export default defineFixture('http://www.reddit.com/hot.json', {
+  response: data,
+  jqXHR: {},
+  textStatus: 'success'
+});
+{% endhighlight %}
+
+O ember-cli já vem com o [ic-ajax](https://github.com/instructure/ic-ajax), que é uma versão do `jQuery.ajax` mais integrada com
+o ember.js. Além disso o ic-ajax possui um método para simularmos requisições ajax que é o `defineFixture` que estamos usando acima.
+
+Agora que temos a chamada da api mockada, vamos criar um teste:
+
+**tests/unit/services/reddit-test.js**
+{% highlight javascript linenos %}
+import { test, moduleFor } from 'ember-qunit';
+import { defineFixture } from 'ic-ajax';
+import { hotFixture } from '../../helpers/hot-fixture';
+
+
+moduleFor('service:reddit', 'RedditService', {
+  // Specify the other units that are required for this test.
+  // needs: ['service:foo']
+});
+
+// Replace this with your real tests.
+test('it exists', function() {
+  var service = this.subject();
+  ok(service);
+});
+
+test('it fetch the data', function() {
+  expect(2);
+  var service = this.subject();
+  service.hot().then(function(data) {
+    equal(data.kind, 'Listing');
+    equal(data.data.children.length, 25);
+  });
+});
+{% endhighlight %}
+
+Se você verificar o código acima, `moduleFor` e `this.subject` não são métodos do qunit. Esses métodos são adicionados por outra
+biblioteca chamada [ember-qunit](https://github.com/rwjblue/ember-qunit), que facilita a criação de testes unitários no ember.js.
+O `moduleFor` serve para especificar qual objeto queremos testar e suas dependencias. O `this.subject()` cria uma nova instancia
+desse objeto e resolve as suas dependencias.
+
+Ao rodar esses testes, como esperado eles falham pois não criamos o método `hot` ainda. Então vamos cria-lo:
+
+**app/services/reddit.js**
+{% highlight javascript linenos %}
+import Ember from 'ember';
+import ajax from 'ic-ajax';
+
+export default Ember.Object.extend({
+  host: 'http://www.reddit.com/',
+  request: function(path) {
+    return ajax(this.host + path + '.json');
+  },
+  hot: function() {
+    return this.request('hot');
+  }
+});
+{% endhighlight %}
+
