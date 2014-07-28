@@ -2,6 +2,7 @@
 layout: post
 title: "Rendering custom error pages with Rails"
 author: Israel Ribeiro
+published: false
 categories:
   - israel ribeiro
   - rails
