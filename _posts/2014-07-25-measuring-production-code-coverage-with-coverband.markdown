@@ -4,9 +4,9 @@ title: "Measuring production code coverage with coverband"
 author: Fábio Rehm
 categories:
   - fabio rehm
-  - javascript
-  - angularjs
-  - single page apps
+  - coverband
+  - code coverage
+  - heroku
   - english
 ---
 
@@ -47,7 +47,7 @@ In order to keep things simple, I laid out a "[legacy blog application](https://
 that has a few characteristics we are likely to find on old Ruby on Rails apps out
 in the wild.
 
-Imagine that the app has 100% code coverage (_just so you know it doesn't_), has
+Imagine that the app has a good code coverage (_just so you know it doesn't_), has
 been running on production for a few years and lots of things have changed along
 the way. The team initially implemented support for assigning categories to blog
 posts, allowed editing / removing comments and also highlighting posts for an
@@ -123,8 +123,8 @@ from my machine.
 Here at HE:labs we use a gem we've created called [jumpup](https://github.com/Helabs/jumpup)
 and its [heroku plugin](https://github.com/Helabs/jumpup-heroku) to automate the
 integration process and making it clear the remote coverage stats was just a
-matter of [adding the appropriate task to the list of integration tasks](https://github.com/fgrehm/legacy-blog-app/blob/master/lib/tasks/jumpup.rake#L10)
-but since it is just a rake task you can easily adapt it to your own deployment
+matter of [adding the appropriate task to the list of integration tasks](https://github.com/fgrehm/legacy-blog-app/blob/master/lib/tasks/jumpup.rake#L10).
+Given that it is just a rake task you can easily adapt it to your own deployment
 process / scripts.
 
 ## Exercising the sample app and looking at the results
@@ -133,17 +133,38 @@ The app is pretty small, so after deploying the app to Heroku I did "everything"
 that is possible to do through the UI, namely "[CRUD](http://en.wikipedia.org/wiki/Create,_read,_update_and_delete)"ing
 blog posts and commenting on them.
 
-Before you think I'm crazy, some things on the legacy blog app were done on purpose
-to better understand what kind of information we can get out of the report generated.
+The full report is available at [LINK](gh-pages) and here's what I found out.
 
-The full report is available at [LINK](gh-pages) and here's what I found out:
+### There's no magic
+
+Fist of all, don't expect coverband (or even [simplecov](https://github.com/colszowka/simplecov)
+which is used under the hood) to be magical. If a class body gets evaluated it
+will be considered as a hit. For example, things that are evaluated within the
+class body (like ActiveRecord validations) are always considered to be executed
+and you'll need additional information in order to better understand what is
+actually covered.
 
 ### Models
 
-* check if unused associations will be picked up
-* unused models
-* dead scopes
-* models that are not in use will be hard to spot unless they have some custom logic that is not going to be hit and will lower its coverage
+If you look at the codebase, there is no [Category]() usage on the app apart
+from an [association with the Post]()
+model that is [considered to be a hit]().
+Unfortunately there is no easy way we can properly detect that the Category model
+is not being used unless it have some additional logic. Simple models like that
+will just be evaluated and will be considered to be 100% covered but some hints
+like additional methods the model might have or inline hooks (like the crazy
+[before_save]()
+I implemented) are a good source of information.
+
+One tricky issue I found was related to identifying dead scopes. Single liners
+like [this one]() will be considered as a hit by coverband while scopes that
+spans multiple lines will be reported as not covered. I haven't checked if
+this is an issue with Coverband or SimpleCov but it is something we need to
+keep in mind when looking at the results.
+
+On a real world app, our models will have much more logic than what is present on
+the sample app and besides the issues pointed out above I believe we can get
+a lot of information about their usage with coverband.
 
 ### Controllers
 
@@ -165,6 +186,7 @@ The full report is available at [LINK](gh-pages) and here's what I found out:
 --------------------------------
 
 CONCLUSION
+
 
 figure out the performance impact on a real app
 link to report by dan
