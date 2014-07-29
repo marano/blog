@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Measuring production code coverage with coverband"
+title: "Measuring production code coverage with Coverband"
 author: Fábio Rehm
 categories:
   - fabio rehm
@@ -14,7 +14,7 @@ Here at HE:labs we strive for 100% code coverage on our projects [from day one](
 but that doesn't mean that the code we write are actually being used on production
 by real users. For sure we can get some insights by looking at analytics data,
 figuring out which pages are being accessed and things like that but this data
-won't tell us which code paths are actually being executed. That's where [coverband](https://github.com/danmayer/coverband)
+won't tell us which code paths are actually being executed. That's where [Coverband](https://github.com/danmayer/coverband)
 comes in.
 
 <!--more-->
@@ -61,25 +61,27 @@ will you know what is actually being used? On this contrived example it is prett
 simple to spot but on a real world medium / large sized Rails application it probably
 won't ;)
 
-## Setting up coverband for our app
+## Setting up Coverband for our app
 
 The coverage data will be stored on [redis](http://redis.io/) so make sure you
 have it running on your machine to try things out and also on the production
 environment so you can collect the data. For my tests, I chose to use the
 [Redis To Go](https://addons.heroku.com/redistogo) Heroku addon on its free plan.
 
+* redis free addon limitations (no backup, storage capacity....)
+
 With redis in place, we can then add the gem reference to our `Gemfile` and
 `bundle install` it:
 
 {% highlight ruby linenos %}
-# We don't need coverband on the test env, so we'll just require it when needed
+# We don't need Coverband on the test env, so we'll just require it when needed
 gem 'coverband', '1.0.0', require: false
 {% endhighlight %}
 
 After installing the gem, there are a few things we need to do before collecting
 data and generating reports.
 
-First we'll have to configure coverband options using its [config file](https://github.com/danmayer/coverband#configure-coverband-options).
+First we'll have to configure Coverband options using its [config file](https://github.com/danmayer/coverband#configure-coverband-options).
 There are a few options we can set but the ones I found out to be the most important
 ones are described on the [config provided with the legacy blog app](https://github.com/fgrehm/legacy-blog-app/blob/master/config/coverband.rb).
 For the purpose of my experiments I've set up the most "aggressive" settings but
@@ -105,7 +107,7 @@ have exercised.
 
 ## Setting things up for Heroku
 
-Right now there are no examples on how to use coverband on Heroku, the only thing
+Right now there are no examples on how to use Coverband on Heroku, the only thing
 I could find was [this issue](https://github.com/danmayer/coverband/issues/3) and
 I hope that this post will serve as a starting point for some docs on setting
 things up over there.
@@ -133,16 +135,27 @@ The app is pretty small, so after deploying the app to Heroku I did "everything"
 that is possible to do through the UI, namely "[CRUD](http://en.wikipedia.org/wiki/Create,_read,_update_and_delete)"ing
 blog posts and commenting on them.
 
-The full report is available at [LINK](gh-pages) and here's what I found out.
+The full report is available at [LINK](gh-pages) and here's what I found out
+when looking at the results.
 
 ### There's no magic
 
-Fist of all, don't expect coverband (or even [simplecov](https://github.com/colszowka/simplecov)
+Fist of all, don't expect Coverband (or even [simplecov](https://github.com/colszowka/simplecov)
 which is used under the hood) to be magical. If a class body gets evaluated it
 will be considered as a hit. For example, things that are evaluated within the
 class body (like ActiveRecord validations) are always considered to be executed
 and you'll need additional information in order to better understand what is
 actually covered.
+
+### Helpers
+
+Unused helpers code are the easiest to identify (!VERIFY!). Helpers will be reported
+on the baseline data and unused methods will be easily spotted (unless you are
+doing some badass meta programming black magic to define the methods of course):
+
+```
+IMAGE
+```
 
 ### Models
 
@@ -151,51 +164,94 @@ from an [association with the Post]()
 model that is [considered to be a hit]().
 Unfortunately there is no easy way we can properly detect that the Category model
 is not being used unless it have some additional logic. Simple models like that
-will just be evaluated and will be considered to be 100% covered but some hints
-like additional methods the model might have or inline hooks (like the crazy
+will have its class body evaluated and will be considered to be 100% covered.
+Some hints like additional methods the model might have or inline hooks (like the crazy
 [before_save]()
-I implemented) are a good source of information.
+I implemented) will be a good source of information.
 
 One tricky issue I found was related to identifying dead scopes. Single liners
-like [this one]() will be considered as a hit by coverband while scopes that
-spans multiple lines will be reported as not covered. I haven't checked if
-this is an issue with Coverband or SimpleCov but it is something we need to
-keep in mind when looking at the results.
+like the one below will be considered as a hit by Coverband:
 
-On a real world app, our models will have much more logic than what is present on
-the sample app and besides the issues pointed out above I believe we can get
-a lot of information about their usage with coverband.
+```
+IMAGE
+```
+
+While scopes that [spans multiple lines]()
+will be reported as not covered:
+
+```
+IMAGE
+```
+
+I haven't checked if this is an issue with Coverband or SimpleCov but it is
+something we need to keep in mind when looking at the results.
+
+On a real world app, our models will have much more logic than what is present
+on the sample app and besides the issues pointed out above I believe we can get
+a lot of information about their usage with Coverband.
 
 ### Controllers
 
-* dead controllers / actions
+While models can be tricky to analyze, controllers are more straightforward
+since they don't have much logic defined within the class body apart from
+filters.
 
-### Views
+Dead actions are somewhat easy to spot but we still need to pay attention to
+methods that have an empty body because Coverband / SimpleCov will consider
+that it has no relevant lines and will mark them as covered:
 
-* dead views
-* using slim it considers part of the template as not covered (even though it gets rendered, link to stuff on erb)
+```
+IMAGE
+```
+
+A good source of information on those cases are before and after filters since
+that's likely to be where the "empty action" logic is implemented.
+
+### Views and partials
+
+Views are a very special case because they are a mix of some template engine and
+Ruby code. Coverband can't record it on the baseline results because it would
+require it evaluate the template which in turn requires some controller logic
+to work. Because of that the only way we can spot dead views is to make sure we
+remove it alongside an unused controller action.
+
+Partials can't be recorded on Coverband baseline results as well because they have
+the same behavior as regular views. Unused partials will be hard to spot but a
+good source of information are partials that are surrounded by an `if` block that
+never gets entered like the one below:
+
+```
+IMAGE
+```
 
 ### Routes
 
-* test with redirect
+To finish up this initial analysis, we've got the routes which are also hard to
+identify dead code. Because they are declarative and the definition block is always
+executed, you'll only be able to spot dead routes that have a block that spans
+multiple lines associated with it:
 
-### Helpers
+```
+IMAGE
+```
 
-* highlighted post helper
+## Conclusion
 
---------------------------------
+I'm a bit biased to say this but by looking at the reports I could easily spot
+what the code I could safely remove from the sample app. I hope I can use it on
+a real app on the future and come back to write a new post with the outcome of
+that.
 
-CONCLUSION
+Keep in mind that having Coverband enabled will impact the performance of your
+app. When using it, you'll probably want to have it enabled for a short period
+of time or use a small sampling rate if you are willing to keep it enabled 100%
+of the time. There is a [C extension](https://github.com/danmayer/coverband_ext)
+on the works that [looks like will make things much faster](https://github.com/danmayer/coverband_ext#perf-improvements)
+but I haven't tried it yet.
 
+Hopefuly this post has given you a good start on what things you should look for
+when analyzing the results but feel free to download the code to try things out
+and let me know if you are able to identify other things we should look for.
 
-figure out the performance impact on a real app
-link to report by dan
-
-* redis free addon limitations (no backup, storage capacity....)
-
-tks to danmayer and xxxxx for reviewing
-
-coverband_ext
-https://github.com/danmayer/coverband_ext
-
-* report has to be generated with the same revision as the prod version
+If you used the gem in the past or if this post encouraged you to try out Coverband
+on your app please leave a comment sharing your experience!
