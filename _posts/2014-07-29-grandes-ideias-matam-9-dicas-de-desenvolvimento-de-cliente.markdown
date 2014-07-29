@@ -53,7 +53,7 @@ Se divulgação online for um canal promissor, aprenda a configurar uma simples 
 
 Não deixe de considerar as opções manuais! Crie panfletos pelo [Canva.com](https://www.canva.com/), vá à [eventos](http://www.meetup.com) da indústria, etc!
 
-**Conclusão: Como foi o processo de buscar pessoas. Foi fácil? Foi estressante? Na primeira vez, você vai fazer tudo errado. Aprenda a viver com isso de forma positiva. Se você não achou ninguém, procure voltar para exploração e persistir um pouco mais. Não entre em pânico se você não conseguir achar clientes! [Aprenda como e onde encontrar potenciais primeiros clientes.](https://translate.google.com/translate?hl=en&sl=en&tl=pt&u=http%3A%2F%2Fmfishbein.com%2Ffind-customer-development-interviews%2F).**
+**Conclusão: Como foi o processo de buscar pessoas. Foi fácil? Foi estressante? Na primeira vez, você vai fazer tudo errado. Aprenda a viver com isso de forma positiva. Se você não achou ninguém, procure voltar para exploração e persistir um pouco mais. Não entre em pânico se você não conseguir achar clientes! [Aprenda como e onde encontrar potenciais primeiros clientes.](https://translate.google.com/translate?hl=en&sl=en&tl=pt&u=http%3A%2F%2Fmfishbein.com%2Ffind-customer-development-interviews%2F)**
 
 ##**6. Um experimento sem um critério de aceitação não é válido.**
 
@@ -73,7 +73,7 @@ Como validar se o problema é de fato real, e não algo da sua cabeça?
 
 - Ao invés de validar suas teorias e crenças, escreva o falso da crença e crie hipóteses com base nisso:
 
-    - “Quais seriam as formas do meu negócio falhar?”_
+    - “Quais seriam as formas do meu negócio falhar?”
 
         - **O falso da crença:**  _“Eu não terei massa crítica suficiente para agradar um vendedor ou fabricante no meu site.”_
 
