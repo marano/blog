@@ -1,7 +1,7 @@
 title: Blog do Time
 encoding: 'utf-8'
 author: HE:labs
-pygments: true
+highlighter: 'pygments'
 permalink: /:year/:month/:day/:title/
 markdown: rdiscount
 paginate: 19
