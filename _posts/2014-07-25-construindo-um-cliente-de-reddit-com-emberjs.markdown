@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "construindo um cliente de reddit com emberjs"
+title: "Construindo um cliente de reddit com emberjs"
 author: Marcio Junior
 comments: true
 categories:
@@ -16,14 +16,14 @@ Iremos aprender a criar um cliente com base na api do reddit.
 
 <!--more-->
 
-# Pre requisitos
+### Pre requisitos
 
 Para esse tutorial usaremos o [ember-cli](http://www.ember-cli.com/), que é a interface de linha de comando que
 te dá todo o ferramental necessário para usar geradores, rodar o servidor, executar testes, minificar o javascript, etc.
 Ember-cli é feito em [node](http://nodejs.org/) e usa o [bower](http://bower.io/) pra resolver algumas dependencias 
 então será necessário ter essas duas ferramentas instaladas também.
 
-# Instalando o ember-cli
+### Instalando o ember-cli
 
 Utilizaremos nesse tutorial a versão 0.0.40 que é a mais atual no tempo que escrevo esse post.
 
@@ -36,7 +36,7 @@ ember --version
 # npm: 1.4.21
 {% endhighlight %}
 
-# Criando o projeto
+### Criando o projeto
 
 Uma vez instalado o ember-cli você terá disponível na sua linha de comando o comando `ember`. Para cria uma nova
 aplicação utilizaremos:
@@ -73,7 +73,7 @@ Ao atualizar a página você verá que o título *Welcome to Ember.js* está um 
 
 ![image](/blog/images/posts/ember-reddit/welcome-boostrap.png)
 
-# Criando nosso primeiro teste
+### Criando nosso primeiro teste
 
 O ember.js vem com uma biblioteca de testes que usa uma dsl com uma sintaxe bem intuitiva e que tenta abstrair ao máximo possível as execuções
 assíncronas, já que ajax é muito comum em SPA's. Você pode encontrar mais informações a respeito dela no [guia oficial de testes](http://emberjs.com/guides/testing/). 
@@ -136,9 +136,10 @@ Agora que entendemos o que está acontecendo, podemos alterar o nosso layout par
 
 {% highlight html linenos %}
 {% raw %}
-<h1>Ember reddit</h1>
-
-{{outlet}}
+<div class="container">
+  <h1>Ember reddit</h1>
+  {{outlet}}
+</div>
 {% endraw %}
 {% endhighlight %}
 
@@ -146,7 +147,7 @@ O `{% raw %}{{outlet}}{% endraw %}` é onde cada template será renderizado.
 
 Após essa alteração você verá que todos os testes estão passando =).
 
-# Coletando dados da api do reddit
+### Coletando dados da api do reddit
 
 Listaremos os tópicos populares do reddit, para isso precisamos consumir a [api rest](http://www.reddit.com/dev/api) deles.
 Como faremos algumas chamadas ajax, é interessante coloca-las num serviço para mante-las todas num lugar só.
@@ -233,4 +234,59 @@ export default Ember.Object.extend({
   }
 });
 {% endhighlight %}
+
+No serviço criado acima foi feito um método chamado `hot()` que realizada uma requisição ajax para o endpoint [http://www.reddit.com/hot.json](http://www.reddit.com/hot.json)
+
+### Criando nossa primeira rota
+
+Agora que temos o nosso serviço funcionando e testado, é hora de usa-lo no sistema. Para isso vamos criar uma rota chamada hot:
+
+{% highlight bash linenos %}
+ember generate route hot
+# version: 0.0.40
+# installing
+#   create app/routes/hot.js
+#   create app/templates/hot.hbs
+#   create tests/unit/routes/hot-test.js
+{% endhighlight %}
+
+Além disso vamos criar um teste de aceitação para certificar que o conteúdo vindo da api do reddit realmente está sendo mostrado para o usuário.
+
+{% highlight bash linenos %}
+ember generate acceptance-test hot
+# version: 0.0.40
+# installing
+#   create tests/acceptance/hot-test.js
+{% endhighlight %}
+
+**tests/acceptance/hot-test.js**
+{% highlight javascript linenos %}
+import Ember from 'ember';
+import startApp from '../helpers/start-app';
+import { hotFixture } from '../helpers/hot-fixture';
+
+var App;
+
+module('Acceptance: Hot', {
+  setup: function() {
+    App = startApp();
+  },
+  teardown: function() {
+    Ember.run(App, 'destroy');
+  }
+});
+
+test('visiting /hot', function() {
+  visit('/hot');
+
+  andThen(function() {
+    equal(find('h4').eq(0).text(), 'My buddy is an NFL running back. His kids dressed as Flash and Batman to fight him dressed as Bane.');
+    equal(find('h4').eq(1).text(), 'More selfies drawn by strangers');
+  });
+});
+{% endhighlight %}
+
+No teste acima é verificado os dois primeiros h4's. Esse elemento será usado para o título de cada item da lista vinda do reddit.
+Esse exemplo ficará diferente na sua applicação se você estiver realizando passo a passo esse tutorial, pois esses dados
+vem da fixture gerada anteriormente.
 
