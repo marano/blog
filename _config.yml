@@ -29,9 +29,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - config.ru
-  - sass
-  - config.rb
   - Rakefile
+
+sass:
+  sass_dir: _sass
+  style: :compressed
 
 gems:
   - jemoji
