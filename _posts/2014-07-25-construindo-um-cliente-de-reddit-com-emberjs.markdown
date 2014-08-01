@@ -290,3 +290,25 @@ No teste acima é verificado os dois primeiros h4's. Esse elemento será usado p
 Esse exemplo ficará diferente na sua applicação se você estiver realizando passo a passo esse tutorial, pois esses dados
 vem da fixture gerada anteriormente.
 
+O ember.js usa muito convenção sobre configuração tanto na organização dos arquivos quanto para resolver problemas comuns.
+Nesse caso o que queremos fazer é: carregar os dados iniciais, a.k.a model, de uma determinada tela. Para isso existe um método chamado
+`model`, ele é chamado pelo framework e espera algum objeto ou uma promise. Se for retornado uma promise ele irá esperar ela ser finalizada, 
+pegar o conteúdo dela e utilizar como model. No nosso caso como o `reddit.hot()` executa uma requisição ajax incapsulada numa promise
+o json retornado pela api será o nosso model. O código ficará assim:
+
+**app/routes/hot.js**
+{% highlight javascript linenos %}
+import Ember from 'ember';
+
+export default Ember.Route.extend({
+  model: function() {
+    return this.reddit.hot();
+  }
+});
+{% endhighlight %}
+
+É importante notar que o nosso serviço `reddit` é magicamente injetado na nossa rota. Na verdade essa mágica acontece quando geramos o serviço
+via `ember generate service reddit` nesse momento além de serem criados a rota e o teste unitário dela também é criado um `initializer` em
+`app/initializers/reddit.js`. Arquivos dentro dessa pasta são executados quando o framework inicializa, sendo uma boa oportunidade para registrar
+dependencias como no exemplo acima.
+
