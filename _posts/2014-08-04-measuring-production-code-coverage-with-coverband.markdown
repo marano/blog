@@ -22,7 +22,7 @@ comes in.
 
 Coverband is an awesome gem built by [Dan Mayer](http://mayerdan.com/) that had its
 initial release back in [December 2013](https://techblog.livingsocial.com/blog/2013/12/17/coverband-production-ruby-code-coverage/)
-and just reached maturity with a 1.0.0 release [last sunday](https://github.com/danmayer/coverband/commit/c7edb6895e143150d96f514f73011547918e308c).
+and just reached maturity with a [1.0.0 release](https://github.com/danmayer/coverband/commit/c7edb6895e143150d96f514f73011547918e308c).
 
 From its README:
 
@@ -222,6 +222,9 @@ never gets entered like the one below:
 
 ![image](/blog/images/posts/2014-08-04/unused_partial.png)
 
+_As Dan pointed out after a review of this post, to track unused views and partials
+we can use [flatfoot](https://github.com/livingsocial/flatfoot)._
+
 ### Routes
 
 To finish up this initial analysis, we've got the routes which are also hard to
@@ -254,3 +257,6 @@ and let me know if you are able to identify other things we can look for.
 
 If you used the gem in the past or if this post encouraged you to try out Coverband
 on your app please leave a comment sharing your experience!
+
+_A special thanks goes to Dan Mayer (coverband's author himself) for helping out
+reviewing this post and answering with some questions over twitter._
