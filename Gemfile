@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.1.2'
 
 gem "rake", "~> 10.1.0"
 gem 'github-pages', '18'
