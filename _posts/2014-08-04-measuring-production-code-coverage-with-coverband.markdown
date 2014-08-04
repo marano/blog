@@ -52,8 +52,8 @@ Imagine that the app has a good code coverage (_just so you know it doesn't_), h
 been running on production for a few years and lots of things have changed along
 the way. The team initially implemented support for assigning categories to blog
 posts, allowed editing / removing comments and also highlighting posts for an
-old "Featured" section. But, the product team has decided that all of the features
-above were not needed and the team didn't take enough care to remove all the code
+old "Featured" section. But, the product team has decided that all of those features
+ were not needed and the team didn't take enough care to remove all the code
 related to make them work.
 
 Now imagine that the company behind that app decided to hire the consultancy shop
@@ -189,7 +189,7 @@ a lot of information about their usage with Coverband.
 
 While models can be tricky to analyze, controllers are more straightforward
 since they don't have much logic defined within the class body apart from
-filters.
+filters definition.
 
 Dead actions are somewhat easy to spot but we still need to pay attention to
 methods that have an empty body because Coverband / SimpleCov will consider
