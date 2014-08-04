@@ -29,7 +29,7 @@ From its README:
 > It can be used as Rack middleware, wrapping a block with sampling, or manually
 configured to meet any need (like coverage on background jobs).
 
-What caught my attention when I first found out about the gem what [this section](https://github.com/danmayer/coverband#success)
+What caught my attention when I first found out about the gem was [this section](https://github.com/danmayer/coverband#success)
 from the project's README:
 
 > After running in production for 30 minutes, we were able very easily delete 2000
