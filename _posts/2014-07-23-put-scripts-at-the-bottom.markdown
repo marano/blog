@@ -13,7 +13,7 @@ While a script is downloading the browser won't start any other downloads, even 
 
 <!--more-->
 
-This does not happen when all scripts are placed at the bottom. It is a best practice in order to speed up your website: Put scripts at the bottom.
+This does not happen when all scripts are placed at the bottom. It is a best practice in order to speed up your website: *Put scripts at the bottom*.
 
 In some situations, it isn’t easy to move scripts to the bottom. It’s also a best practice not to have inline JavaScript in your pages. But it may have some inside a specific page and it may need a variable or a framework to work correctly.
 
@@ -35,7 +35,7 @@ And then in the specific page:
 
 ### One more thing
 
-Loading secondary content after page style and script will help your page load faster. For external widgets, for example a Facebook Like box, you can do the following:
+Loading secondary content after page style and script will help your page load faster. For external widgets, for example, Facebook Like box, you can do the following:
 
 {% highlight javascript linenos %}
 $(window).load(function() {
@@ -48,5 +48,4 @@ For images you can use [Lazyload](https://github.com/vvo/lazyload), the standalo
 
 Thank you for your attention and for making a faster Internet.
 
-You an find more best practices for speeding up your website: [https://developer.yahoo.com/performance/rules.html](https://developer.yahoo.com/performance/rules.html)
-
+More best practices for speeding up your website: [https://developer.yahoo.com/performance/rules.html](https://developer.yahoo.com/performance/rules.html)
