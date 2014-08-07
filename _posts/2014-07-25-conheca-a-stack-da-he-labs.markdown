@@ -1,20 +1,15 @@
 ---
 layout: post
-title: "Conheça a stack da HE:labs"
+title: "Conheça a stack da HE:labs, Parte 1"
 author: Sylvestre Mergulhão
 categories:
   - Sylvestre Mergulhao
+  - Backend
   - Rails
   - Ruby
   - Postgresql
   - Heroku
   - GitHub
-  - HTML5
-  - CSS3
-  - JavaScript
-  - jQuery
-  - AngularJS
-  - Ember.js
   - Memcached
   - Redis
   - Elasticsearch
@@ -23,7 +18,7 @@ categories:
   - DNSimple
 ---
 
-Na HE:labs nós trabalhamos com aplicativos web e integrações. Algumas pessoas me perguntam quais são as tecnologias e serviços que utilizamos. Vou listar algumas dessas ferramentas, também citando os principais motivos de as utilizarmos.
+Na HE:labs nós trabalhamos com aplicativos web e integrações. Algumas pessoas me perguntam quais são as tecnologias e serviços que utilizamos. Vou listar algumas dessas ferramentas da parte backend, também citando os principais motivos de as utilizarmos. Num artigo posterior publicaremos a nossa stack front-end.
 
 <!--more-->
 
@@ -61,21 +56,15 @@ O [Heroku](http://en.wikipedia.org/wiki/Heroku), que começou como um editor onl
 
 Para a HE:labs, que quer sempre entregar o máximo valor para o cliente no menor custo possível é o casamento perfeito. Nos permite focar no que somos os melhores que é fazer aplicativos web incríveis, muito rapidamente. E assim podemos deixar toda a administração e monitoramento da infraestrutura dos aplicativos com o Heroku. Eles tem feito isso de forma sensacional, melhor a cada dia. Já experimentamos outras plataformas como serviço, [PAAS](http://en.wikipedia.org/wiki/Platform_as_a_service) no termo em inglês, mas todas estão a anos-luz de distância.
 
-Mesmo assim, alguns clientes optam por terem sua própria infraestrutura. Uns por simples opção, outros por questões legais, o que dá para entender nos dois casos. Isso gerou um conflito interno na empresa. Afinal queremos é fazer o melhor software do mercado e não ficar tomando conta de servidores. Para resolver esses casos criamos um branch, chamado [HE:clouds](http://heclouds.com.br/), que trata exclusivamente de administração de infraestrutura, incluindo serviços de suporte 24x7, e atende os clientes que não tem interesse em utilizar o Heroku.
+Mesmo assim, alguns clientes optam por terem sua própria infraestrutura. Uns por simples opção, outros por questões legais, o que dá para entender nos dois casos.
 
-Ainda hoje me perguntam: "Mas você não tem sala de servidores na sua empresa?". Eu digo: "Não, pra que?". E depois tenho que rir!
+Ainda hoje me perguntam: "Você não tem sala de servidores na sua empresa?". Eu digo: "Não, pra que?". E depois tenho que rir!
 
 ## Controle de versão: GitHub
 
 Quando se está desenvolvendo software é necessário que o código fonte do projeto esteja armazenado em algum lugar. Esse lugar precisa estar acessível para todos os envolvidos no projeto. Mais importante do que simplesmente guardar os arquivos, esse lugar precisa permitir verificar que mudanças foram feitas no software, quando foram feitas, por qual motivo, etc. No meio acadêmico da [engenharia da computação](http://pt.wikipedia.org/wiki/Engenharia_de_computa%C3%A7%C3%A3o) isso de chama [gerência de configuração](http://pt.wikipedia.org/wiki/Ger%C3%AAncia_de_configura%C3%A7%C3%A3o_de_software).
 
 Nós utilizamos o [GitHub](http://en.wikipedia.org/wiki/GitHub), que na nossa visão é o que dispõe das melhores funcionalidades para trabalhar em softwares que estão com desenvolvimento ativo. O GitHub utiliza o controlador de versão [Git](http://en.wikipedia.org/wiki/Git_(software\)) como backend.
-
-## Front-end
-
-Como estamos falando de web, ou seja, principalmente aplicativos que rodam no navegador, algumas coisas são básicas como [HTML 5](http://en.wikipedia.org/wiki/HTML5), [CSS 3](http://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3), [JavaScript](http://en.wikipedia.org/wiki/JavaScript) em diversos frameworks ([jQuery](http://en.wikipedia.org/wiki/JQuery), [Angular](http://en.wikipedia.org/wiki/AngularJS), [Ember.js](http://en.wikipedia.org/wiki/Ember.js), etc) e estão todas dentro do nosso escopo de trabalho e largamente utilizadas.
-
-Nos meus estudos recentes me parece que o Ember.js é uma ótima aposta de um framework JavaScript que pode ter um grande futuro. O tempo dirá.
 
 ## Outros
 
