@@ -1,2 +1,1 @@
-jekyll: jekyll serve --watch --baseurl "/blog"
-compass: compass watch
+jekyll: bundle exec jekyll serve --watch --baseurl "/blog"
