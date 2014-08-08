@@ -2,7 +2,6 @@
 layout: post
 title: "Código CSS Enxuto, Neat, Grids e Frameworks"
 author: Mikael Carrara
-date: 2014-08-1 15:30
 comments: true
 categories:
   - neat
