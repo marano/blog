@@ -1,1 +1,1 @@
-jekyll: jekyll serve --watch --baseurl "/blog"
+jekyll: bundle exec jekyll serve --watch --baseurl "/blog"
