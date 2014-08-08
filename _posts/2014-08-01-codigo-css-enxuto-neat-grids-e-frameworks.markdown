@@ -14,9 +14,9 @@ Particularmente nunca gostei muito de usar frameworks para desenvolvimento front
 
 <!--more-->
 
-Sigo um raciocínio um pouco conservador em meus projetos, por exemplo, não vou instalar a biblioteca [Font Awesome](http://fortawesome.github.io/Font-Awesome/) só porque ela é bonita mas que na prática vou usá-la em 2 situações isoladas dentro do projeto. Talvez optaria por ela se eu tivesse que usar uns dez ícones, para aí sim compensar sua importação.
+Sigo um raciocínio um pouco conservador em meus projetos, por exemplo, não vou instalar a biblioteca [Font Awesome](http://fortawesome.github.io/Font-Awesome/) só porque ela é bonita, mas que na prática vou usá-la em 2 situações isoladas dentro do projeto. Talvez optaria por ela se eu tivesse que usar uns dez ícones, para aí sim compensar sua importação.
 
-Uma opção mais enxuta seria transformar esses ícones em imagens e embutí-las no meu CSS sprite. Obviamente isso não é muito produtivo mas é limpo e simples de entender se tiver duas linhas explicando no readme.md do projeto como adicionar ou remover ícones da interface. Além disso o próprio **SASS/COMPASS** já facilita esse tipo de coisa. Você pode montar seu sprite automaticamente usando ferramentas também como por exemplo: [InstantSprite](http://instantsprite.com/).
+Uma opção mais enxuta seria transformar esses ícones em imagens e embutí-las no meu CSS sprite. Obviamente isso não é muito produtivo, mas é limpo e simples de entender se tiver duas linhas explicando no readme.md do projeto como adicionar ou remover ícones da interface. Além disso o próprio **SASS/COMPASS** já facilita esse tipo de coisa. Você pode montar seu sprite automaticamente usando ferramentas também como por exemplo: [InstantSprite](http://instantsprite.com/).
 
 Nesse tipo de coisa, ainda continuarei tendo uma postura conservadora. Mas uma coisa que me deixa um pouco incomodado sendo conservador é quando eu tento construir um sistema de grids “na unha” e depois tento documentar como a lógica de layout desse meu sistema de grid como um todo funciona para designers posteriores darem continuidade no meu trabalho.
 
