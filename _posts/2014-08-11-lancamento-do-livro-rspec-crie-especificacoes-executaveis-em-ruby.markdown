@@ -13,7 +13,7 @@ Em 29/07 foi lançado o livro que eu estava escrevendo RSpec: Crie especificaç�
 
 <!--more-->
 
-[![Livro RSpec: Crie especificações executáveis em Ruby](/blog/images/posts/2014-07-29/rspec-ebook.png)](http://www.casadocodigo.com.br/products/livro-rspec)
+[![Livro RSpec: Crie especificações executáveis em Ruby](/blog/images/posts/2014-08-11/rspec-ebook.png)](http://www.casadocodigo.com.br/products/livro-rspec)
 
 No final do ano passado tive a [ideia de escrever um e-book](http://groselhas.maurogeorge.com.br/rspec-best-friends-meu-primeiro-e-book.html) e recentemente tive o prazer de lançar o mesmo em uma [parceria com a HE:labs e a Casa do Código](http://groselhas.maurogeorge.com.br/lancamento-do-livro-rspec-crie-especificacoes-executaveis-em-ruby.html).
 
