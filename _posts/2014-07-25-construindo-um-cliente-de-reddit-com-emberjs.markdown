@@ -28,7 +28,7 @@ então será necessário ter essas duas ferramentas instaladas também.
 Utilizaremos nesse tutorial a versão 0.0.40 que é a mais atual no tempo que escrevo esse post.
 
 {% highlight bash linenos %}
-npm install -g ember-cli@0.0.20
+npm install -g ember-cli@0.0.40
 # npm noise ...
 ember --version
 # version: 0.0.40
@@ -105,7 +105,7 @@ test('visiting /', function() {
 
 Algumas explicações sobre o que o teste acima está fazendo: O `visit('/')` simula uma requisição para a raiz da aplicação. O `andThen` executa uma 
 função assim que o visit carrega a página, no nosso caso quando a página for carregada queremos verificar que o texto do elemento 'h1' é igual a 'Ember reddit'.
-O `find('h1').text()` nada mais é que uma chamada ao jQuery, é o mesmo que `$('h1').text()`.
+O `find('h1').text()` nada mais é que uma chamada ao jQuery, é quase igual a `$('h1').text()`.
 
 Para ver os testes executando visite [http://localhost:4200/tests](http://localhost:4200/tests). 
 Você verá que esse teste vai falhar, faremos ele passar mas primeiro vamos entender como o ember renderiza os templates.
@@ -181,6 +181,9 @@ export default defineFixture('http://www.reddit.com/hot.json', {
 
 O ember-cli já vem com o [ic-ajax](https://github.com/instructure/ic-ajax), que é uma versão do `jQuery.ajax` mais integrada com
 o ember.js. Além disso o ic-ajax possui um método para simularmos requisições ajax que é o `defineFixture` que estamos usando acima.
+Se você está curioso a respeito da sintaxe `import { defineFixture } from 'ic-ajax';` ela nada mais é do que a forma de referenciar
+módulos que está sobre aprovação na próxima versão do javascript. É seguro usa-la no ember-cli porque ela é transpilada usando o
+[es6-module-transpiler](https://github.com/esnext/es6-module-transpiler).
 
 Agora que temos a chamada da api mockada, vamos criar um teste:
 
@@ -312,3 +315,57 @@ via `ember generate service reddit` nesse momento além de serem criados a rota 
 `app/initializers/reddit.js`. Arquivos dentro dessa pasta são executados quando o framework inicializa, sendo uma boa oportunidade para registrar
 dependencias como no exemplo acima.
 
+Vamos adicionar o template que será responsável por renderizar o conteúdo do endpoint /hot
+
+**app/templates/hot.hbs**
+{% highlight html linenos %}
+{% raw %}
+{{#each model.data.children}}
+  <div class="media" >
+    <div class="pull-left">
+      {{data.score}}
+    </div>
+    {{#if data.thumbnail}}
+      <a class="pull-left" {{bind-attr href=data.url}}>
+        <img class="media-object" {{bind-attr src=data.thumbnail}}>
+      </a>
+    {{/if}}
+    <div class="media-body">
+      <a {{bind-attr href=data.url}}>
+        <h4 class="media-heading">{{data.title}}</h4>
+      </a>
+    </div>
+  </div>
+{{/each}}
+{% endraw %}
+{% endhighlight %}
+
+O ember.js usa a biblioteca [handlebars.js](http://handlebarsjs.com/) para renderizar seu conteúdo. Ela é bem interessante porque
+possibilita que escrevamos:
+
+{% highlight html linenos %}
+{% raw %}
+{{#each people}}
+  <p>Hello {{name}}</p>
+{{/each}}
+{% endraw %}
+{% endhighlight %}
+
+ao invéz de:
+
+{% highlight javascript linenos %}
+var html = "";
+for(var i = 0; i < people.length; i++) {
+  var person = people[i];
+  html += "<p>" + person.name + "</p>";
+}
+// adiciona o html
+{% endhighlight %}
+
+O `{% raw %}{{#each model.data.children}}{% endraw %}` executa o bloco passando como contexto cada item do array. O `{% raw %}{{#if data.thumbnail}}{% endraw %}`
+verifica se existe uma url pro thumbnail para só assim renderizar a imagem. E por fim o `{% raw %}{{bind-attr src=data.thumbnail}}{% endraw %}`
+é usado para vincular um atributo do html a um propriedade de um objeto, nesse caso o attributo `src` a propriedade `data.thumbnail`.
+O ideal é que fosse apenas `{% raw %}<img src={{data.thumbnail}}/>{% endraw %}` mas isso ainda não é possível e deve ser usado o `bind-attr`.
+Após criar esse template, provavelmente agora os testes estão passando. Abaixo está uma imagem de como está a aplicação:
+
+![image](/blog/images/posts/ember-reddit/reddit-list.png)
