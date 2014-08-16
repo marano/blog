@@ -79,9 +79,8 @@ O ember.js vem com uma biblioteca de testes que usa uma dsl com uma sintaxe bem 
 assíncronas, já que ajax é muito comum em SPA's. Você pode encontrar mais informações a respeito dela no [guia oficial de testes](http://emberjs.com/guides/testing/). 
 Essa biblioteca vem integrada por padrão no [qunit](http://qunitjs.com/) então você não precisa ficar fazendo `asyncStart`, `start` e `stop` 
 velhos conhecidos quando precisamos testar [códigos assíncronos](http://api.qunitjs.com/category/async-control/).
-Tanto a biblioteca de testes do ember como o qunit ja vem integrados no ember-cli, portanto você não precisa realizar nenhuma configuração ;).
 
-Vamos criar um teste simples para verificar se o título principal do site(h1) é igual a "Ember reddit". 
+Vamos criar um teste simples para verificar se o título principal do site o h1 é igual a 'Ember reddit'. 
 Para isso vamos usar os geradores do ember-cli para criar um teste te aceitação:
 
 {% highlight bash linenos %}
@@ -104,7 +103,7 @@ test('visiting /', function() {
 {% endhighlight %}
 
 Algumas explicações sobre o que o teste acima está fazendo: O `visit('/')` simula uma requisição para a raiz da aplicação. O `andThen` executa uma 
-função assim que o visit carrega a página, no nosso caso quando a página for carregada queremos verificar que o texto do elemento 'h1' é igual a 'Ember reddit'.
+função assim que o visit carrega a página, no nosso caso quando a página for carregada queremos verificar que o texto do elemento h1 é igual a 'Ember reddit'.
 O `find('h1').text()` nada mais é que uma chamada ao jQuery, é quase igual a `$('h1').text()`.
 
 Para ver os testes executando visite [http://localhost:4200/tests](http://localhost:4200/tests). 
@@ -143,14 +142,14 @@ Agora que entendemos o que está acontecendo, podemos alterar o nosso layout par
 {% endraw %}
 {% endhighlight %}
 
-O `{% raw %}{{outlet}}{% endraw %}` é onde cada template será renderizado.
+O `{% raw %}{{outlet}}{% endraw %}` é um helper do handlebars.js onde cada template será renderizado.
 
-Após essa alteração você verá que todos os testes estão passando =).
+Após essa alteração você verá que todos os testes estão passando.
 
 ### Coletando dados da api do reddit
 
 Listaremos os tópicos populares do reddit, para isso precisamos consumir a [api rest](http://www.reddit.com/dev/api) deles.
-Como faremos algumas chamadas ajax, é interessante coloca-las num serviço para mante-las todas num lugar só.
+Utilizaremos ajax pare realizar essa chamada, e é interessante colocarmos num serviço para manter as chamadas da api num lugar só.
 Vamos criar esse serviço usando o seguinte comando:
 
 {% highlight bash linenos %}
@@ -181,7 +180,7 @@ export default defineFixture('http://www.reddit.com/hot.json', {
 
 O ember-cli já vem com o [ic-ajax](https://github.com/instructure/ic-ajax), que é uma versão do `jQuery.ajax` mais integrada com
 o ember.js. Além disso o ic-ajax possui um método para simularmos requisições ajax que é o `defineFixture` que estamos usando acima.
-Se você está curioso a respeito da sintaxe `import { defineFixture } from 'ic-ajax';` ela nada mais é do que a forma de referenciar
+Se você está curioso a respeito da sintaxe `import { defineFixture } from 'ic-ajax';` ela nada mais é do que a forma de utilizar
 módulos que está sobre aprovação na próxima versão do javascript. É seguro usa-la no ember-cli porque ela é transpilada usando o
 [es6-module-transpiler](https://github.com/esnext/es6-module-transpiler).
 
@@ -295,9 +294,9 @@ vem da fixture gerada anteriormente.
 
 O ember.js usa muito convenção sobre configuração tanto na organização dos arquivos quanto para resolver problemas comuns.
 Nesse caso o que queremos fazer é: carregar os dados iniciais, a.k.a model, de uma determinada tela. Para isso existe um método chamado
-`model`, ele é chamado pelo framework e espera algum objeto ou uma promise. Se for retornado uma promise ele irá esperar ela ser finalizada, 
-pegar o conteúdo dela e utilizar como model. No nosso caso como o `reddit.hot()` executa uma requisição ajax incapsulada numa promise
-o json retornado pela api será o nosso model. O código ficará assim:
+`model`, ele é chamado pelo framework e espera algum objeto ou uma [promise](http://promisesaplus.com/). Se for retornado uma promise 
+o framework irá esperar ela ser finalizada, pegar o conteúdo dela e utilizar como model. No nosso caso como o `reddit.hot()` executa uma 
+requisição ajax incapsulada numa promise o json retornado pela api será o nosso model. O código ficará assim:
 
 **app/routes/hot.js**
 {% highlight javascript linenos %}
@@ -313,7 +312,7 @@ export default Ember.Route.extend({
 É importante notar que o nosso serviço `reddit` é magicamente injetado na nossa rota. Na verdade essa mágica acontece quando geramos o serviço
 via `ember generate service reddit` nesse momento além de serem criados a rota e o teste unitário dela também é criado um `initializer` em
 `app/initializers/reddit.js`. Arquivos dentro dessa pasta são executados quando o framework inicializa, sendo uma boa oportunidade para registrar
-dependencias como no exemplo acima.
+injeções de dependencias.
 
 Vamos adicionar o template que será responsável por renderizar o conteúdo do endpoint /hot
 
@@ -362,7 +361,7 @@ for(var i = 0; i < people.length; i++) {
 // adiciona o html
 {% endhighlight %}
 
-O #each é um helper do handlebars que renderiza os elementos de um array. Existem outros, e é possível criar o seu prórpio caso necessário.
+O `{% raw %}{{#each}}{% endraw %}` é um helper do handlebars que renderiza os elementos de um array. Existem outros, e é possível criar o seu prórpio caso necessário.
 
 Um pouco de explicação sobre o que está acontecendo no `hot.hbs`:
 O `{% raw %}{{#each model.data.children}}{% endraw %}` executa o bloco passando como contexto cada item do array. O `{% raw %}{{#if data.thumbnail}}{% endraw %}`
@@ -372,8 +371,6 @@ O ideal é que fosse apenas `{% raw %}<img src={{data.thumbnail}}/>{% endraw %}`
 Após criar esse template, provavelmente agora os testes estão passando. Abaixo está uma imagem de como está a aplicação:
 
 ![image](/blog/images/posts/ember-reddit/reddit-list.png)
-
-### Controllers e propriedades compuatadas
 
 Podemos ver que as vezes aparecem imagens quebradas, eu não sei porque mas as vezes a api do reddit retorna os valores: `"self", "default", "nsfw"` para o campo
 `thumbnail`. E no momento só verificamos a presença da imagem usando `{% raw %}{{#if data.thumbnail}}{% endraw %}`. Existem algumas maneiras de resolver
@@ -424,6 +421,8 @@ export default Ember.Route.extend({
 {% endhighlight %}
 
 Isso funciona, mas podemos fazer melhor.
+
+### Controllers e propriedades computadas
 
 No ember existe uma camada de controller mas ela se comporta um pouco diferente do padrão MVC que estamos habituados. Os controllers no ember
 se comportam muito mais como presenters ou decorators. Cada controller é vínculado a um model, e quando existe uma propriedade referenciada
@@ -503,3 +502,11 @@ isso podemos usar o atributo `itemController` passando o nome do nosso controlle
 {{/each}}
 {% endraw %}
 {% endhighlight %}
+
+Depois de adicionar o nosso controller, agora aquelas imagens inválidas não aparecem mais e os dados são exibidos corretamente.
+Cada item renderizado agora não é um objeto do array `model.data.children` mas sim uma instancia de entry controller com cada objeto sendo o seu model.
+Como o nosso entry controller atua como um proxy, o `validThumbnailUrl` é pego dele, e os outros dados que estavam sendo referenciados no template
+são delegados ao model.
+
+O código completo deste cliente do reddit está na [minha conta do github](https://github.com/marcioj/ember-reddit).
+Fique a vontade pra deixar dúvidas ou sugestões. Abraços!
