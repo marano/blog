@@ -362,10 +362,144 @@ for(var i = 0; i < people.length; i++) {
 // adiciona o html
 {% endhighlight %}
 
+O #each é um helper do handlebars que renderiza os elementos de um array. Existem outros, e é possível criar o seu prórpio caso necessário.
+
+Um pouco de explicação sobre o que está acontecendo no `hot.hbs`:
 O `{% raw %}{{#each model.data.children}}{% endraw %}` executa o bloco passando como contexto cada item do array. O `{% raw %}{{#if data.thumbnail}}{% endraw %}`
 verifica se existe uma url pro thumbnail para só assim renderizar a imagem. E por fim o `{% raw %}{{bind-attr src=data.thumbnail}}{% endraw %}`
-é usado para vincular um atributo do html a um propriedade de um objeto, nesse caso o attributo `src` a propriedade `data.thumbnail`.
+é usado para vincular um atributo do html a um propriedade de um objeto, nesse caso o atributo `src` a propriedade `data.thumbnail`.
 O ideal é que fosse apenas `{% raw %}<img src={{data.thumbnail}}/>{% endraw %}` mas isso ainda não é possível e deve ser usado o `bind-attr`.
 Após criar esse template, provavelmente agora os testes estão passando. Abaixo está uma imagem de como está a aplicação:
 
 ![image](/blog/images/posts/ember-reddit/reddit-list.png)
+
+### Controllers e propriedades compuatadas
+
+Podemos ver que as vezes aparecem imagens quebradas, eu não sei porque mas as vezes a api do reddit retorna os valores: `"self", "default", "nsfw"` para o campo
+`thumbnail`. E no momento só verificamos a presença da imagem usando `{% raw %}{{#if data.thumbnail}}{% endraw %}`. Existem algumas maneiras de resolver
+esse problema, mas pra manter as coisas simples vamos ignorar imagens que não comecem com http ou https. 
+A primeira coisa que vem a mente é adicionar um if no template verificando isso com uma regex. Por exemplo:
+
+{% highlight html linenos %}
+{% raw %}
+...
+{{#if /^http[s]?:\/\//.test(data.thumbnail)}}
+  <a class="pull-left" {{bind-attr href=data.url}}>
+    <img class="media-object" {{bind-attr src=data.thumbnail}}>
+  </a>
+{{/if}}
+...
+{% endraw %}
+{% endhighlight %}
+
+Mas isso não funciona, e nesse caso não funciona de próposito. Por ser muito comum existirem templates com um monte de código jogado, que com o tempo
+acaba sendo díficil dar manutenção, pois não se entende do que se trata. Decidiram limitar o que o handlebars processa e ele não executa expressões.
+O que funcionaria seria o seguinte:
+
+{% highlight html linenos %}
+{% raw %}
+...
+{{#if validThumbnailUrl}}
+  <a class="pull-left" {{bind-attr href=data.url}}>
+    <img class="media-object" {{bind-attr src=data.thumbnail}}>
+  </a>
+{{/if}}
+...
+{% endraw %}
+{% endhighlight %}
+
+Mas daí teríamos que alterar o model da rota, e adicionar uma propriedade chamada `validThumbnailUrl` em cada dado:
+
+{% highlight javascript linenos %}
+export default Ember.Route.extend({
+  model: function() {
+    return this.reddit.hot().then(function(result) {
+      result.data.children.forEach(function(child) {
+        child.validThumbnailUrl = /^http[s]?:\/\//.test(child.data.thumbnail);
+      });
+      return result;
+    })
+  }
+});
+{% endhighlight %}
+
+Isso funciona, mas podemos fazer melhor.
+
+No ember existe uma camada de controller mas ela se comporta um pouco diferente do padrão MVC que estamos habituados. Os controllers no ember
+se comportam muito mais como presenters ou decorators. Cada controller é vínculado a um model, e quando existe uma propriedade referenciada
+no template, ela é primeiro procurada no controller e caso não exista é delegada ao model. Isso é bem interessante pois podemos mover as
+lógicas para esses controllers, deixando os models apenas com os dados.
+
+Vamos criar um controller e chama-lo de `entry` usando o seguinte comando:
+
+{% highlight bash linenos %}
+ember generate controller entry
+# version: 0.0.40
+# installing
+#   create app/controllers/entry.js
+#   create tests/unit/controllers/entry-test.js
+{% endhighlight %}
+
+No nosso teste queremos que ao fazer um `this.get('validThumbnailUrl')` ele seja true se `this.get('data.thumbnail')` retornar uma url válida.
+
+**tests/unit/controllers/entry-test.js**
+{% highlight javascript linenos %}
+test('#validThumbnailUrl returns true for http urls', function() {
+  var controller = this.subject();
+  controller.set('model', { data: {} });
+  controller.set('data.thumbnail', 'http://foo.com');
+  ok(controller.get('validThumbnailUrl'));
+});
+
+test('#validThumbnailUrl returns true for https urls', function() {
+  var controller = this.subject();
+  controller.set('model', { data: {} });
+  controller.set('data.thumbnail', 'http://foo.com');
+  ok(controller.get('validThumbnailUrl'));
+});
+
+test('#validThumbnailUrl returns false for empty urls', function() {
+  var controller = this.subject();
+  controller.set('model', { data: {} });
+  controller.set('data.thumbnail', '');
+  ok(!controller.get('validThumbnailUrl'));
+});
+
+test('#validThumbnailUrl returns false for not valid urls', function() {
+  var controller = this.subject();
+  controller.set('model', { data: {} });
+  controller.set('data.thumbnail', 'hue');
+  ok(!controller.get('validThumbnailUrl'));
+});
+{% endhighlight %}
+
+Perceba que estamos usando `this.get('prop')` e `this.set('prop', value)` ao invéz de `this.prop` e `this.prop = value`.
+Usa-se o `get` porque o controller é um proxy do model, ou seja, se a propriedade não existir no controller ele tenta achar no `model`.
+E o `set` é necessário para o controller mudar o valor do model.
+
+Para implementar o `validThumbnailUrl` no nosso controller vamos usar uma [propriedade computada](http://emberjs.com/guides/object-model/computed-properties/)
+
+**app/controllers/entry.js**
+{% highlight javascript linenos %}
+import Ember from 'ember';
+
+export default Ember.ObjectController.extend({
+  validThumbnailUrl: function() {
+    return /^http[s]?:\/\//.test(this.get('data.thumbnail'));
+  }.property('data.thumbnail')
+});
+{% endhighlight %}
+
+Após adicionar esse controller os testes agora passam.
+
+Uma vez criado esse controller precisamos fazer com que o framework use ele para cada item renderizado pelo `{% raw %}{{#each}}{% endraw %}`. Para
+isso podemos usar o atributo `itemController` passando o nome do nosso controller, que nesse caso é `entry`.
+
+**app/templates/hot.hbs**
+{% highlight html linenos %}
+{% raw %}
+{{#each model.data.children itemController="entry"}}
+  ...
+{{/each}}
+{% endraw %}
+{% endhighlight %}
