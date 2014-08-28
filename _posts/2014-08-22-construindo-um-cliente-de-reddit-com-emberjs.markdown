@@ -508,5 +508,8 @@ Cada item renderizado agora não é um objeto do array `model.data.children` mas
 Como o nosso entry controller atua como um proxy, o `validThumbnailUrl` é pego dele, e os outros dados que estavam sendo referenciados no template
 são delegados ao model.
 
-O código completo deste cliente do reddit está na [minha conta do github](https://github.com/marcioj/ember-reddit).
+O código completo deste cliente do reddit está na [minha conta do github](https://github.com/marcioj/ember-reddit). E você pode vê-lo online no heroku
+através da url [http://ember-reddit-client.herokuapp.com/hot](http://ember-reddit-client.herokuapp.com/hot)
+
 Fique a vontade pra deixar dúvidas ou sugestões. Abraços!
+
