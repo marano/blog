@@ -16,11 +16,11 @@ Iremos aprender a criar um cliente com base na api do reddit.
 
 <!--more-->
 
-### Pre requisitos
+### Pré-requisitos
 
 Para esse tutorial usaremos o [ember-cli](http://www.ember-cli.com/), que é a interface de linha de comando que
 te dá todo o ferramental necessário para usar geradores, rodar o servidor, executar testes, minificar o javascript, etc.
-Ember-cli é feito em [node](http://nodejs.org/) e usa o [bower](http://bower.io/) pra resolver algumas dependencias 
+Ember-cli é feito em [node](http://nodejs.org/) e usa o [bower](http://bower.io/) pra resolver algumas dependências 
 então será necessário ter essas duas ferramentas instaladas também.
 
 ### Instalando o ember-cli
@@ -129,7 +129,7 @@ Router.map(function() {
 {% endhighlight %}
 
 Ou seja, uma rota chamada `index` que mapea para a url raiz da nossa aplicação. Logo ele está renderizando o template **app/templates/index.hbs**
-usando o layout **app/templates/application.hbs**. Como não temos o arquivo `index.hbs` ele não é renderizado apenas o seu layout.
+usando o layout **app/templates/application.hbs**. Como não temos o arquivo `index.hbs` ele não é renderizado, apenas o seu layout.
 
 Agora que entendemos o que está acontecendo, podemos alterar o nosso layout para o seguinte código:
 
@@ -149,7 +149,7 @@ Após essa alteração você verá que todos os testes estão passando.
 ### Coletando dados da api do reddit
 
 Listaremos os tópicos populares do reddit, para isso precisamos consumir a [api rest](http://www.reddit.com/dev/api) deles.
-Utilizaremos ajax pare realizar essa chamada, e é interessante colocarmos num serviço para manter as chamadas da api num lugar só.
+Utilizaremos ajax para realizar essa chamada, e é interessante colocarmos num serviço para manter as chamadas da api num lugar só.
 Vamos criar esse serviço usando o seguinte comando:
 
 {% highlight bash linenos %}
@@ -216,8 +216,8 @@ test('it fetch the data', function() {
 
 Se você verificar o código acima, `moduleFor` e `this.subject` não são métodos do qunit. Esses métodos são adicionados por outra
 biblioteca chamada [ember-qunit](https://github.com/rwjblue/ember-qunit), que facilita a criação de testes unitários no ember.js.
-O `moduleFor` serve para especificar qual objeto queremos testar e suas dependencias. O `this.subject()` cria uma nova instancia
-desse objeto e resolve as suas dependencias.
+O `moduleFor` serve para especificar qual objeto queremos testar e suas dependências. O `this.subject()` cria uma nova instância
+desse objeto e resolve as suas dependências.
 
 Ao rodar esses testes, como esperado eles falham pois não criamos o método `hot` ainda. Então vamos cria-lo:
 
@@ -312,7 +312,7 @@ export default Ember.Route.extend({
 É importante notar que o nosso serviço `reddit` é magicamente injetado na nossa rota. Na verdade essa mágica acontece quando geramos o serviço
 via `ember generate service reddit` nesse momento além de serem criados a rota e o teste unitário dela também é criado um `initializer` em
 `app/initializers/reddit.js`. Arquivos dentro dessa pasta são executados quando o framework inicializa, sendo uma boa oportunidade para registrar
-injeções de dependencias.
+injeções de dependências.
 
 Vamos adicionar o template que será responsável por renderizar o conteúdo do endpoint /hot
 
@@ -504,7 +504,7 @@ isso podemos usar o atributo `itemController` passando o nome do nosso controlle
 {% endhighlight %}
 
 Depois de adicionar o nosso controller, agora aquelas imagens inválidas não aparecem mais e os dados são exibidos corretamente.
-Cada item renderizado agora não é um objeto do array `model.data.children` mas sim uma instancia de entry controller com cada objeto sendo o seu model.
+Cada item renderizado agora não é um objeto do array `model.data.children` mas sim uma instância de entry controller com cada objeto sendo o seu model.
 Como o nosso entry controller atua como um proxy, o `validThumbnailUrl` é pego dele, e os outros dados que estavam sendo referenciados no template
 são delegados ao model.
 
