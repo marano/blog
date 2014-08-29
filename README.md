@@ -4,7 +4,7 @@ This is the HE:labs Blog code, you can see the live blog on http://helabs.com.br
 
 ## Dependencies
 
-(if you don't have technical knowledge for run the blog on your computer, please go to the end of the read me, we have special tips for you)
+(if you don't have technical knowledge for run the blog on your computer, please go to the [end of this README](#for-non-technical-post-please-follow-these-steps), we have some special tips for you)
 
 To run this project you need to have:
 
@@ -126,13 +126,13 @@ Then double check if the posts were changed correctly, `git commit` and `git pus
 1) Open this file: 
 https://docs.google.com/a/helabs.com.br/document/d/1HTS0j_E18AUsLxeBx2zKQ6aUwZY4Lw_JTdnpvRG3zDA/edit#
 
-Obs: if you don't have acess to this file, please, as for the maintainers. 
+Obs: if you don't have acess to this file, please, ask for the maintainers. 
 
 2) Read the tutorial file and let the maintainers know if there is some doubt about it.
 
-3) When finish your post, send to one of the mainteiners the google docs file.
+3) When finish your post, send to one of the maintainers the google docs file.
 
-4) After your post go online, share if your friends! ;)
+4) After your post go online, share with your friends! ;)
 
 ## Maintainers
 
