@@ -45,7 +45,7 @@ Veja como é o output deste código, depois de gerado:
 {% endhighlight %}
 
 O código é gerado de acordo com os parâmetros que foram passados no Mixin, então, como os valores que vão ser gerados não são sempre os mesmos, a utilização de Mixin é recomendada.
-Podemos utilizar Mixins sem parâmetros também, mas o código será repetido, exatamente como ele é, em todo local que ele for chamado, sendo útil para evitar duplicação de código e repetições desnecessárias (DRY). Veja:
+Podemos utilizar Mixins sem parâmetros também, mas o código será repetido, exatamente como ele é, em todo local que ele for chamado. Veja:
 
 {% highlight sass linenos %}
 @mixin container-style {
