@@ -12,7 +12,7 @@ categories:
 Ember.js é um framework javascript MVC que atua do lado cliente. Seus criadores foram Yehuda Katz e Tom Dale,
 mas atualmente recebe contribuições de diversos desenvolvedores no github. 
 
-Iremos aprender a criar um cliente com base na api do reddit.
+Nesse post iremos aprender a criar um cliente com base na api do reddit.
 
 <!--more-->
 
@@ -20,7 +20,7 @@ Iremos aprender a criar um cliente com base na api do reddit.
 
 Para esse tutorial usaremos o [ember-cli](http://www.ember-cli.com/), que é a interface de linha de comando que
 te dá todo o ferramental necessário para usar geradores, rodar o servidor, executar testes, minificar o javascript, etc.
-Ember-cli é feito em [node](http://nodejs.org/) e usa o [bower](http://bower.io/) pra resolver algumas dependências 
+O ember-cli é feito em [node](http://nodejs.org/) e usa o [bower](http://bower.io/) pra resolver algumas dependências 
 então será necessário ter essas duas ferramentas instaladas também.
 
 ### Instalando o ember-cli
@@ -76,11 +76,11 @@ Ao atualizar a página você verá que o título *Welcome to Ember.js* está um 
 ### Criando nosso primeiro teste
 
 O ember.js vem com uma biblioteca de testes que usa uma dsl com uma sintaxe bem intuitiva e que tenta abstrair ao máximo possível as execuções
-assíncronas, já que ajax é muito comum em SPA's. Você pode encontrar mais informações a respeito dela no [guia oficial de testes](http://emberjs.com/guides/testing/). 
-Essa biblioteca vem integrada por padrão no [qunit](http://qunitjs.com/) então você não precisa ficar fazendo `asyncStart`, `start` e `stop` 
+assíncronas, já que ajax é muito comum em SPA(Single page application)'s. Você pode encontrar mais informações a respeito dela no [guia oficial de testes](http://emberjs.com/guides/testing/). 
+Essa biblioteca vem integrada por padrão no [qunit](http://qunitjs.com/) então você não precisa ficar fazendo `asyncStart`, `start` e `stop`, 
 velhos conhecidos quando precisamos testar [códigos assíncronos](http://api.qunitjs.com/category/async-control/).
 
-Vamos criar um teste simples para verificar se o título principal do site o h1 é igual a 'Ember reddit'. 
+Vamos criar um teste simples para verificar se o título principal do site, o h1, é igual a 'Ember reddit'. 
 Para isso vamos usar os geradores do ember-cli para criar um teste te aceitação:
 
 {% highlight bash linenos %}
@@ -103,8 +103,8 @@ test('visiting /', function() {
 {% endhighlight %}
 
 Algumas explicações sobre o que o teste acima está fazendo: O `visit('/')` simula uma requisição para a raiz da aplicação. O `andThen` executa uma 
-função assim que o visit carrega a página, no nosso caso quando a página for carregada queremos verificar que o texto do elemento h1 é igual a 'Ember reddit'.
-O `find('h1').text()` nada mais é que uma chamada ao jQuery, é quase igual a `$('h1').text()`.
+função assim que o visit carrega a página. No nosso caso quando a página for carregada queremos verificar que o texto do elemento h1 é igual a 'Ember reddit'.
+O `find('h1').text()` nada mais é que uma chamada ao jQuery. É quase igual a `$('h1').text()`.
 
 Para ver os testes executando visite [http://localhost:4200/tests](http://localhost:4200/tests). 
 Você verá que esse teste vai falhar, faremos ele passar mas primeiro vamos entender como o ember renderiza os templates.
