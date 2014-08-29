@@ -13,7 +13,7 @@ categories:
 Essa é a primeira parte de uma série de posts sobre Sass e como tirar o máximo proveito dele. Vamos começar esta série buscando entender o que é e como utilizar Mixins e Extends, suas diferenças e as melhores situações para aplicar cada um.
 <!--more-->
 
-Sass é um pré processador de CSS que possui várias funções que ajudam a reutilizar seu código e a escrevê-lo de forma organizada, mas muitas pessoas não utilizam nem 10% de todas as vantagens propostas.
+Sass é um pré-processador de CSS que possui diversas funções que ajudam a reutilizar seu código e a escrevê-lo de forma organizada, mas muitas pessoas não utilizam nem 10% de todos recursos disponíveis.
 
 ## Mixin
 Quando você utiliza Mixin, seu código é repetido toda vez que o mixin é chamado. É uma boa prática para quem quer utilizar parâmetros que mudam conforme suas chamadas, por exemplo:
