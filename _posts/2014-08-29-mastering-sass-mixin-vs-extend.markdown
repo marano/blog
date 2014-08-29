@@ -10,13 +10,13 @@ categories:
   - extend
 ---
 
-Essa é a primeira parte de uma série de posts sobre Sass e como tirar o máximo proveito dele. Vamos começar esta série buscando entender o que é e como utilizar Mixins e Extends, suas diferenças e as melhores situações para aplicar cada um.
+Essa é a primeira parte de uma série de posts sobre Sass e como tirar o máximo proveito dele. Vamos começar esta série buscando entender o que é e como utilizar [Mixins](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#mixins) e [Extends](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#extend), suas diferenças e as melhores situações para aplicar cada um.
 <!--more-->
 
 Sass é um pré-processador de CSS que possui diversas funções que ajudam a reutilizar seu código e a escrevê-lo de forma organizada, mas muitas pessoas não utilizam nem 10% de todos recursos disponíveis.
 
 ## Mixin
-Quando você utiliza Mixin, seu código é repetido toda vez que o mixin é chamado. É uma boa prática para quem quer utilizar parâmetros que mudam conforme suas chamadas, por exemplo:
+Quando você utiliza Mixins, seu código é repetido toda vez que o mixin é chamado. É uma boa prática para quem quer utilizar parâmetros que mudam conforme suas chamadas, por exemplo:
 
 {% highlight sass linenos %}
 @mixin container-style($value: 10px, $background: #fff) {
@@ -44,8 +44,8 @@ Veja como é o output deste código, depois de gerado:
 }
 {% endhighlight %}
 
-O código é gerado em função dos parâmetros que foram passados, então é válido que ele seja gerado para cada chamada.
-Podemos utilizar mixins sem parâmetros também, mas o código será repetido, exatamente como ele é, em todo local que ele for chamado. Veja:
+O código é gerado de acordo com os parâmetros que foram passados no Mixin, então, como os valores que vão ser gerados não são sempre os mesmos, a utilização de Mixin é recomendada.
+Podemos utilizar Mixins sem parâmetros também, mas o código será repetido, exatamente como ele é, em todo local que ele for chamado, sendo útil para evitar duplicação de código e repetições desnecessárias (DRY). Veja:
 
 {% highlight sass linenos %}
 @mixin container-style {
