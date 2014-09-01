@@ -15,7 +15,7 @@ Novo integrante na HE:labs, bem-vindo Matheus Costa!
 <!--more-->
 Matheus é sem limites, igual a zoeira. Vive buscando desafios e coisas de nivel hard.
 
-Focado em experiência do usuário, sempre se preocupou com o que próximo está interagindo. Afinal "um bom design passa a mesma mensagem pra cada um."  
+Focado em experiência do usuário, sempre se preocupou com a interação do próximo. Afinal "um bom design passa a mesma mensagem pra cada um."  
 
 Já cursou Engenharia, Sistemas de Informação, mas foi no Design que encontrou seu ponto forte: Criatividade.
 
