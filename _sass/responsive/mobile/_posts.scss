@@ -6,6 +6,9 @@
       width: 100%;
       text-align: center;
       margin-top: 10px;
+      .mauros-book{
+        display: none;
+      }
       .flex-box{
         text-align: left;
         width: 75%;
@@ -84,6 +87,3 @@
   }
 }
 
-#book-box{
-  background: none;
-}
