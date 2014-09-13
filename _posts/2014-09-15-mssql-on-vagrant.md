@@ -70,11 +70,11 @@ When it comes to using a Windows VM with Vagrant, we also want to enable
 [remote desktop connections](https://en.wikipedia.org/wiki/Remote_Desktop_Protocol)
 as it seems to be the [primary method for performing administrative tasks on Windows](https://www.vagrantup.com/blog/feature-preview-vagrant-1-6-windows.html#toc_2).
 
-I've automated all of that (apart from the :beers: of course :P) and the code can
-be found on [GitHub](https://github.com/fgrehm/vagrant-mssql-express) so you are
+I've automated all of that apart from the downloading the installer (and the :beers:
+of course :P) and the code can be found on [GitHub](https://github.com/fgrehm/vagrant-mssql-express) so you are
 almost a `git clone` and a `vagrant up` away from having a SQL Server instance at
 your disposal. What follows is some information on how I automated that process and
-instructions on connecting to the SQL Server from Rails apps.
+instructions on connecting to the SQL Server from Ruby apps.
 
 Please keep in mind that the process of creating the Vagrant VM from scratch after
 downloading the base box and setting things up will take a while (around 15 minutes
@@ -113,8 +113,8 @@ echo "Installing .NET Framework"
 add-windowsfeature as-net-framework
 {% endhighlight %}
 
-.NET is not really required to run the SQL Server, but it is needed to install
-the Management Studio so that you can manage the server instance.
+.NET is not really required to run the SQL Server, but it is needed for the
+Management Studio so that you can manage the server instance.
 
 ### Installing SQL Server and disabling the firewall
 
@@ -191,19 +191,6 @@ restart-service -f "SQL Server (SQLEXPRESS)"
 echo "DONE!"
 {% endhighlight %}
 
-### Enabling Remote Desktop connections
-
-Last but not least, we allow remote desktop connections with the following
-PowerShell script:
-
-{% highlight powershell linenos %}
-# http://stackoverflow.com/a/9949105
-$ErrorActionPreference = "Stop"
-
-# http://networkerslog.blogspot.com.br/2013/09/how-to-enable-remote-desktop-remotely.html
-set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
-{% endhighlight %}
-
 ### Configuring a VirtualBox private network
 
 That is handled by Vagrant itself and is a matter of adding the following line
@@ -220,34 +207,49 @@ end
 If the `192.168.50.4` ip collides with another machine on your network, you can
 change it to another IP on the [private adress space](http://en.wikipedia.org/wiki/Private_network#Private_IPv4_address_spaces).
 
+### Enabling Remote Desktop connections
+
+Last but not least, we allow remote desktop connections with the following
+PowerShell script:
+
+{% highlight powershell linenos %}
+# http://stackoverflow.com/a/9949105
+$ErrorActionPreference = "Stop"
+
+# http://networkerslog.blogspot.com.br/2013/09/how-to-enable-remote-desktop-remotely.html
+set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
+{% endhighlight %}
+
 ## Testing the SQL server installation
 
-If all went well you can `vagrant rdp`, log in using `vagrant` as the username and
-password and fire up the SQL Server Management Studio. From there you can create
-databases, tables and also connect to remote servers if you need.
+Given that you have the Remote Desktop client installed on your host (`apt-get install rdesktop`
+on Ubuntu) and that all went well with the Vagrant provisioning process, you can
+`vagrant rdp`, log in using `vagrant` as the username and password and fire up
+the SQL Server Management Studio. From there you can create databases, tables
+and even connect to remote servers if you need.
 
 ```
 GIF
 ```
 
-Connecting to the SQL Server from an Ubuntu / Mac OS machine requires us to install
-[freetds](). If you are on Ubuntu just `apt-get install XXX` and if you are on a Mac
-`brew install XXX`
+Connecting to the SQL Server from an Ubuntu / Mac OS host requires us to install
+[freetds](http://www.freetds.org/). If you are on Ubuntu just `apt-get install freetds-*`
+and if you are on a Mac `brew install freetds`
 
 On the GitHub project I created, you'll find a Sinatra app that you can use to test
-the connection with the SQL Server host:
+the connection with the SQL Server host.
 
 ```
 GIF
 ```
 
-Please note that the `rake db:create` task available for Rails apps will not work
-with MSSQL databases and you need to manually create that using a Remote Desktop
-connection and the SQL Server Management Studio.
+Please note that the ActiveRecord DB adapter can't handle the `rake db:create`
+task when using MSSQL databases, so you'll need to manually create that using
+a Remote Desktop connection and the SQL Server Management Studio.
 
 ## That's it!
 
-After spending so much time configuring Linux machines over the past few years
+After spending so much time configuring Linux machines over the past couple years
 it was a fun experience to learn some Windows "magic". I hope you enjoyed reading
 this post and that it can save you some time on the future in case you need to
-integrate with SQL Server on a Rails project like us :smiley:
+interact with SQL Server from a Linux / Mac machine like us :smiley:
