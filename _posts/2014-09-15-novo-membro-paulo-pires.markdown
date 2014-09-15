@@ -11,7 +11,7 @@ post_style: new-member
 
 Novo integrante na HE:labs, bem-vindo Paulo Pires!
 
-![Paulo Pires](/blog/images/posts/2014-09-12/paulo-pires.jpg)
+![Paulo Pires](/blog/images/posts/2014-09-15/paulo-pires.jpg)
 <!--more-->
 
 Oi, sou o Paulo Pires, programador, palestrante, apreciador da zuera e jogador de FIFA aposentado.
