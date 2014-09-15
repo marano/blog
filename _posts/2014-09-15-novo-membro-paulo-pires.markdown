@@ -14,10 +14,10 @@ Novo integrante na HE:labs, bem-vindo Paulo Pires!
 ![Paulo Pires](/blog/images/posts/2014-09-15/paulo-pires.jpg)
 <!--more-->
 
-Oi, sou o Paulo Pires, programador, palestrante, apreciador da zuera e jogador de FIFA aposentado.
+O Paulo Pires é programador, palestrante, apreciador da zuera e ex-jogador de PES profissional(sério!).
 
-Apaixonado por hardware, open source e escrever código, estou sempre envolvido com a comunidade de alguma forma.
+Apaixonado por hardware, open source e escrever código, está sempre envolvido com a comunidade de alguma forma.
 
-Hoje tenho foco em Node.js, Go e C++, mas também gosto muito de Ember.js e AngularJS.
+Hoje tem foco em Node.js, Go e C++, mas também gosta muito de Ember.js, AngularJS e todas essas coisas front-endianas.
 
-Não faço muito o tipo nerd. Gosto de sertanejo e contar histórias relativamente engraçadas.
+Não faz muito o tipo nerd e gosta demais de sertanejo e contar histórias relativamente engraçadas.
