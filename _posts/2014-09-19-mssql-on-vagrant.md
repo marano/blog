@@ -228,7 +228,7 @@ on Ubuntu) and that all went well with the Vagrant provisioning process, you can
 the SQL Server Management Studio. From there you can create databases, tables
 and even connect to remote servers if you need.
 
-![image](/blog/images/posts/2014-09-15/mssql.gif)
+![image](/blog/images/posts/2014-09-19/mssql.gif)
 
 Connecting to the SQL Server from an Ubuntu / Mac OS host requires us to install
 [freetds](http://www.freetds.org/). If you are on Ubuntu just `apt-get install freetds-*`
@@ -237,7 +237,7 @@ and if you are on a Mac `brew install freetds`
 On the GitHub project I created, you'll find a Sinatra app that you can use to test
 the connection with the SQL Server host.
 
-![image](/blog/images/posts/2014-09-15/sinatra.gif)
+![image](/blog/images/posts/2014-09-19/sinatra.gif)
 
 Please note that the ActiveRecord DB adapter can't handle the `rake db:create`
 task when using MSSQL databases, so you'll need to manually create that using
