@@ -137,7 +137,6 @@ Obs: if you don't have acess to this file, please, ask for the maintainers.
 ## Maintainers
 
 - [Bia](https://github.com/beatrizcp87)
-- [Fábio Rehm](https://github.com/fgrehm)
 
 ## Made with love by HE:labs
 
