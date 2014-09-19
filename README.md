@@ -138,6 +138,7 @@ Obs: if you don't have acess to this file, please, ask for the maintainers.
 
 - [Bia](https://github.com/beatrizcp87)
 - [Márcio Júnior](https://github.com/marcioj)
+- [Matheus Costa](https://github.com/matheusagcosta)
 
 ## Made with love by HE:labs
 
