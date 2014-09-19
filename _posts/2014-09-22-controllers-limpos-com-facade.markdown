@@ -9,10 +9,10 @@ categories:
 ---
 
 
-Já teve aquela sensação de que algo é tão comum que todos conhecem mas raramente é aplicado? Então, é sobre um desses casos que irei falar rapidamente.
+Já teve aquela sensação de que algo é tão comum que todos conhecem mas raramente é aplicado? Então, é sobre um desses casos que irei tratar rapidamente.
 
 <!--more-->
-Confesso que nunca fui um grande apreciador de usar facade antes, principalmente nos controllers. O proprio padrão de linguagem me deixava sempre confuso pela forma livre como é implementada e explicada. Em teoria, um facade é usado para criar uma interface simplificada para algum objeto ou funcionalidade.
+Confesso que nunca fui um grande apreciador de usar facade, principalmente nos controllers. O proprio padrão de linguagem me deixava sempre confuso pela forma livre como é implementada e explicada. Em teoria, um facade é usado para criar uma interface simplificada para algum objeto ou funcionalidade.
 
 Somente quando li sobre as 4 regras basicas do Sandy Metz, mais precisamente a quarta regra, vim a conhecer essa forma de escrever os controllers. 
 
@@ -61,17 +61,20 @@ class PlayerFacade
   end
 
   def guild_player
-    @player.guild.players
+    player.guild.players
   end
 
   def rank
-    Rank.for(@player)
+    Rank.for(player)
   end
 
   def related_player
-    return [] unless @player.tags.any?
-    Player.active.with_tag(@player.tags).limit(10)
+    return [] unless player.tags.any?
+    Player.active.with_tag(player.tags).limit(10)
   end
+
+  private
+  attr_reader :player
 end
 {% endhighlight %}
 
