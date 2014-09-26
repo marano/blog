@@ -4,7 +4,7 @@ title: "Controllers mais limpos com facade"
 author: Rafael Fiuza
 categories:
   - Rails
-  - Rubi
+  - Ruby
   - Padrões de linguagem
 ---
 
@@ -34,7 +34,7 @@ class PlayersController < ApplicationController
 end
 {% endhighlight %}
 
-Esse controller expõe 3 variaveis de instancia para a view e estamos instanciando 2 models diferentes. Dessa forma, na view, fariamos algo semelhante a:
+Esse controller expõe 4 variaveis de instância para a view e estamos instanciando 2 models diferentes. Dessa forma, na view, fariamos algo semelhante a:
 
 {% highlight html linenos %}
 <%= render 'rank', rank: @player_rank %>
@@ -44,9 +44,9 @@ Esse controller expõe 3 variaveis de instancia para a view e estamos instancian
 
 {% endhighlight %}
 
-Existem varias formas de escrever o controller acima deixando-o simples. Ouso dizer que a mais utilizada é a de extrair para metodos no proprio model. Prefiro o Facade quando os metodos são somente usados para representar dados na view, portanto extrair para o model seria desnecessário.
+Existem varias formas de escrever o controller acima deixando-o simples. Ouso dizer que a mais utilizada é a de extrair para metodos no proprio model. Prefiro o facade quando os metodos são somente usados para representar dados na view, portanto extrair para o model seria desnecessário.
 
-Com facade faríamos uma interface das funcionalidades que queremos representar no controller tornando possivel expormos apenas uma variavel para a view e tornando o teste dessas funcionalidades muito mais simples.
+Com facade faríamos uma interface das funcionalidades que queremos representar no controller tornando possível expormos apenas uma variavel para a view e tornando o teste dessas funcionalidades muito mais simples.
 
 {% highlight ruby linenos %}
 class PlayersController < ApplicationController
