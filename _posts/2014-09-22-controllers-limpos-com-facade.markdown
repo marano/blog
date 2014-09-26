@@ -51,11 +51,11 @@ Com facade faríamos uma interface das funcionalidades que queremos representar 
 {% highlight ruby linenos %}
 class PlayersController < ApplicationController
   def show
-    @player = PlayerFacade.new(params[:id])
+    @profile = ProfileFacade.new(params[:id])
   end
 end
 
-class PlayerFacade
+class ProfileFacade
   def initialize(id)
     @player = Player.find(id)
   end
@@ -81,9 +81,9 @@ end
 E na view
 
 {% highlight html linenos %}
-<%= render 'rank', rank: @player.rank %>
+<%= render 'rank', rank: @profile.rank %>
 <%= render 'player' %>
-<%= render 'guild_players', players: @player.guild_players %>
-<%= render 'related_players', players: @player.related_players %>
+<%= render 'guild_players', players: @profile.guild_players %>
+<%= render 'related_players', players: @profile.related_players %>
 
 {% endhighlight %}
