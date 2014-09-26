@@ -12,9 +12,9 @@ categories:
 Já teve aquela sensação de que algo é tão comum que todos conhecem mas raramente é aplicado? Então, é sobre um desses casos que irei tratar rapidamente.
 
 <!--more-->
-Confesso que nunca fui um grande apreciador de usar facade, principalmente nos controllers. O proprio padrão de linguagem me deixava sempre confuso pela forma livre como é implementada e explicada. Em teoria, um facade é usado para criar uma interface simplificada para algum objeto ou funcionalidade.
+Confesso que nunca fui um grande apreciador de usar facade no ruby, principalmente nos controllers. O proprio padrão de linguagem me deixava sempre confuso pela forma livre como é implementada e explicada. Em teoria, um facade é usado para criar uma interface simplificada para algum objeto ou funcionalidade.
 
-Somente quando li sobre as 4 regras basicas da [Sandy Metz](http://robots.thoughtbot.com/sandi-metz-rules-for-developers), mais precisamente a quarta regra, vim a conhecer essa forma de escrever os controllers. 
+Somente quando li sobre as 4 regras basicas da [Sandi Metz](http://robots.thoughtbot.com/sandi-metz-rules-for-developers), mais precisamente a quarta regra, vim a conhecer essa forma de escrever os controllers. 
 
 Veja um exemplo (que não deve ser seguido. É um mal exemplo):
 {% highlight ruby linenos %}
