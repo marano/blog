@@ -6,9 +6,13 @@ categories:
   - novo membro
   - pedro henrique
   - phinfonet
+
+post_style: new-member
 ---
 
 Novo integrante na HE:labs, bem-vindo Pedro Henrique!
+
+![Pedro Henrique](/blog/images/posts/2014-09-26/pedro-henrique.png)
 <!--more-->
 Pedro é apaixonado por desenvolvimento, hardware e música.
 
