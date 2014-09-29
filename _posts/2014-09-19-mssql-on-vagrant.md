@@ -2,6 +2,7 @@
 layout: post
 title: "Microsoft SQL Server on Vagrant"
 author: Fábio Rehm
+hide_author_link: true
 categories:
   - fabio rehm
   - english
