@@ -2,6 +2,7 @@
 layout: post
 title: "Measuring production code coverage with Coverband"
 author: Fábio Rehm
+hide_author_link: true
 categories:
   - fabio rehm
   - coverband

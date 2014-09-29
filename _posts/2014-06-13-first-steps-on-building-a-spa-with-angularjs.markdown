@@ -2,6 +2,7 @@
 layout: post
 title: "First steps on building a Single Page App with AngularJS"
 author: Fábio Rehm
+hide_author_link: true
 categories:
   - fabio rehm
   - javascript
