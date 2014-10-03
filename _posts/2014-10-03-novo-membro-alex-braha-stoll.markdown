@@ -9,7 +9,7 @@ categories:
 
 Novo integrante na HE:labs, bem-vindo Alex Stoll!
 
-![Alex Stoll](/blog/images/posts/2014-10-02/alex-braha-stoll.png)
+![Alex Stoll](/blog/images/posts/2014-10-03/alex-braha-stoll.png)
 <!--more-->
 
 O Alex Stoll é programador Web.
