@@ -12,7 +12,7 @@ post_style: new-member
 
 Novo integrante na HE:labs, bem-vindo Pedro Henrique!
 
-![Pedro Henrique](/blog/images/posts/2014-10-01/pedro-henrique.png)
+![Pedro Henrique](/blog/images/posts/2014-10-03/pedro-henrique.png)
 <!--more-->
 Pedro é apaixonado por desenvolvimento, hardware e música.
 
