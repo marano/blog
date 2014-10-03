@@ -59,7 +59,7 @@ $(function(){
     var firstPostOnFeatured = $("#static-image > .post:first-child");
     var width = $(window).width();
 
-    if(width >= 960) {
+    if(width >= 1025) {
       firstPostOnList.appendTo("#static-image");
     } else {
       firstPostOnFeatured.prependTo("#posts-list");
