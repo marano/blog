@@ -11,8 +11,9 @@
 
   #static-image {
     display: block;
+    min-height: 245px;
     padding: 20px 0;
-    width: 960px;
+    width: 915px;
 
     &:after {
       content: " ";
