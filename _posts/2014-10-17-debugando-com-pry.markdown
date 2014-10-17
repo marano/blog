@@ -22,14 +22,14 @@ que nos auxiliam bastante no desenvolvimento de uma aplicação, como syntax hig
 
 O primeiro passo, é instalarmos a gem [Pry](https://github.com/pry/pry):
 {% highlight bash linenos %}
-  $ gem install pry
+  $ gem install pry -v '0.10.1'
 {% endhighlight %}
 
 ou então adicionarmos ao nosso gemfile, e dar bundle install:
 
 {% highlight ruby linenos %}
   # Gemfile
-  gem 'pry'
+  gem 'pry', '0.10.1'
 {% endhighlight %}
 
 {% highlight bash linenos %}
