@@ -9,9 +9,7 @@ categories:
   - pry
 ---
 
-As vezes procuramos uma ferramenta pra auxiliar no debug de uma aplicação,
-que nem sempre é uma tarefa muito tranquila. Veja como Pry pode facilitar
-esse processo.
+As vezes procuramos uma ferramenta pra auxiliar no debug de uma aplicação, que nem sempre é uma tarefa muito tranquila. Veja como Pry pode facilitar esse processo.
 <!--more-->
 **O que é pry?**
 
@@ -38,16 +36,15 @@ ou então adicionarmos ao nosso gemfile, e dar bundle install:
 
 **Utilizando o pry**
 
-Podemos iniar o Pry de várias formas, dependendo da sua intenção com o mesmo:
+Podemos inciar o Pry de várias formas, dependendo da sua intenção com o mesmo:
 
-se quiser iniciar uma sessão interativa no lugar do irb, por exemplo, basta chamar o comando no terminal:
+Se quiser iniciar uma sessão interativa no lugar do irb, por exemplo, basta chamar o comando no terminal:
 
 {% highlight bash linenos %}
   $ pry
 {% endhighlight %}
 
-ou então fazendo debug de algum código, e para isso, basta adicionarmos um
-biding.pry na linha em que deseja fazer debug:
+Ou então fazendo debug de algum código, e para isso, basta adicionarmos um binding.pry na linha em que deseja fazer debug:
 
 {% highlight ruby linenos %}
   #hello_.rb
@@ -57,8 +54,7 @@ biding.pry na linha em que deseja fazer debug:
   end
  {% endhighlight %}
 
- a execução do método irá parar onde foi adicionado o binding.pry, e então chama o Pry,
- permitindo a utilização de todas as suas ferramentas.
+ A execução do método irá parar onde foi adicionado o binding.pry, e então chama o Pry, permitindo a utilização de todas as suas ferramentas.
 
  Se quiser conhecer mais sobre essa maravilhosa gem, basta dar uma olhada na [documentação](https://github.com/pry/pry/wiki)
 
