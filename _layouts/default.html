@@ -25,7 +25,14 @@
 
     {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
     <link rel="canonical" href="{{ canonical }}">
-    <link href="http://helabs.com.br/favicon.png" rel="icon">
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="http://helabs.com.br/images/icons/ios/he192px.png">    
+
+    <!-- iOS icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://helabs.com.br/images/icons/ios/he57px.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://helabs.com.br/images/icons/ios/he72px.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://helabs.com.br/images/icons/ios/he114px.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://helabs.com.br/images/icons/ios/he144px.png">
 
     <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]>
