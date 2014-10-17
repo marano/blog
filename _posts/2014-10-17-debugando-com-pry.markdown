@@ -10,18 +10,17 @@ categories:
 ---
 
 As vezes procuramos uma ferramenta pra auxiliar no debug de uma aplicação,
-que nem sempre é uma tarefa muito tranquila. Veja como pry pode facilitar
+que nem sempre é uma tarefa muito tranquila. Veja como Pry pode facilitar
 esse processo.
 <!--more-->
 **O que é pry?**
 
-Pry é uma alternativa para o irb, que traz consigo, uma série de recursos
-que nos auxiliam bastante no desenvolvimento de uma aplicação, como syntax
-highlighting, suporte a plugins e acesso a documentação da linguagem.
+Pry é um [REPL](http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) que serve como alternativa para o irb, que traz consigo, uma série de recursos
+que nos auxiliam bastante no desenvolvimento de uma aplicação, como syntax highlighting, suporte a plugins e acesso a documentação da linguagem.
 
 **Instalação**
 
-O primeiro passo, é instalarmos a gem [pry](https://github.com/pry/pry):
+O primeiro passo, é instalarmos a gem [Pry](https://github.com/pry/pry):
 {% highlight bash linenos %}
   $ gem install pry
 {% endhighlight %}
@@ -39,10 +38,9 @@ ou então adicionarmos ao nosso gemfile, e dar bundle install:
 
 **Utilizando o pry**
 
-Podemos iniar o pry de várias formas, dependendo da sua intenção com o mesmo:
+Podemos iniar o Pry de várias formas, dependendo da sua intenção com o mesmo:
 
-se quiser iniciar uma sessão interativa no lugar do irb, por exemplo, basta
-chamar o comando no terminal:
+se quiser iniciar uma sessão interativa no lugar do irb, por exemplo, basta chamar o comando no terminal:
 
 {% highlight bash linenos %}
   $ pry
@@ -59,7 +57,7 @@ biding.pry na linha em que deseja fazer debug:
   end
  {% endhighlight %}
 
- a execução do método irá parar onde foi adicionado o binding.pry, e então chama o pry,
+ a execução do método irá parar onde foi adicionado o binding.pry, e então chama o Pry,
  permitindo a utilização de todas as suas ferramentas.
 
  Se quiser conhecer mais sobre essa maravilhosa gem, basta dar uma olhada na [documentação](https://github.com/pry/pry/wiki)
