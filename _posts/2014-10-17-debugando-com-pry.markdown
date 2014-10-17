@@ -57,4 +57,10 @@ biding.pry na linha em que deseja fazer debug:
     binding.pry
     puts "Hello, #{user}"
   end
-{% endhighlight %}
+ {% endhighlight %}
+
+ a execução do método irá parar onde foi adicionado o binding.pry, e então chama o pry,
+ permitindo a utilização de todas as suas ferramentas.
+
+ Se quiser conhecer mais sobre essa maravilhosa gem, basta dar uma olhada na [documentação](https://github.com/pry/pry/wiki)
+
