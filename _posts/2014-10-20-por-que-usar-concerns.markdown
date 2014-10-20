@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Porque usar Concerns?
+title: Por que usar Concerns?
 author: Pedro Henrique
 categories:
   - Rails
