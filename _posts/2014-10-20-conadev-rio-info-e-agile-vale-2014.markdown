@@ -32,7 +32,7 @@ Em setembro aconteceu o [Rio Info](http://rioinfo.com.br/2014/), onde tive a opo
 
 Foi uma discussão bem legal em que abordamos como contratar gente boa, como manter este cara no time, motivar pessoas etc.
 
-![Mauro no Rio Info](/blog/images/posts/2014-10-10/mauro-rioinfo.jpg)
+![Mauro no Rio Info](/blog/images/posts/2014-10-20/mauro-rioinfo.jpg)
 
 ## Agile Vale
 
