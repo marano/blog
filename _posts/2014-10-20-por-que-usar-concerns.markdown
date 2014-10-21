@@ -20,19 +20,19 @@ Como podemos observar, os dois models possuem código repetido, e que por sua ve
 #app/models/post.rb
 class Post < ActiveRecord::Base
   def permalink
-    [title, id].join('-')
+    [self.title, id].join('-')
   end
 
   def seo_title
-    title unless seo_title
+    self.title
   end
 
   def seo_category
-    category unless seo_category
+    self.category
   end
 
   def seo_description
-    description unless seo_description
+    self.description
   end
 end
 {% endhighlight %}
@@ -41,19 +41,19 @@ end
 #app/models/event.rb
 class Event < ActiveRecord::Base
   def permalink
-    [title, id].join('-')
+    [self.title, id].join('-')
   end
 
   def seo_title
-    title unless seo_title
+    self.title
   end
 
   def seo_category
-    category unless seo_category
+    self.category
   end
 
   def seo_description
-    description unless seo_description
+    self.description
   end
 end
 {% endhighlight %}
@@ -70,19 +70,19 @@ module Seo
   extend ActiveSupport::Concern
 
   def permalink
-    [title, id].join('-')
+    [self.title, id].join('-')
   end
 
   def seo_title
-    title unless seo_title
+    self.title
   end
 
   def seo_category
-    category unless seo_category
+    self.category
   end
 
   def seo_description
-    description unless seo_description
+    self.description
   end
 end
 {% endhighlight %}
@@ -101,6 +101,6 @@ class Event < ActiveRecord::Base
 end
 {% endhighlight %}
 Dessa forma, deixamos nossos models bem mais limpos, pois compartilhamos as responsabilidades que são
-comuns entre eles.
+comuns entre eles. Se quiser dar uma olhada no source, encontra-se no meu github. [Exemplo Concerns](https://github.com/phinfonet/concernsexample)
 
 Se quiser saber um pouco mais sobre Concerns, recomendo dar uma lida na [documentação](http://api.rubyonrails.org/classes/ActiveSupport/Concern.html)
