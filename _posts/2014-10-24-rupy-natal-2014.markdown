@@ -19,9 +19,9 @@ O evento rolou nos dias 17 e 18 de outubro com muitas palestras legais sobre Rub
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/40442329" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
-Eduardo apresentou a palestra [Convenção na criação e deploy de aplicações Rails]()
+Eduardo apresentou a palestra [Convenção na criação e deploy de aplicações Rails](https://speakerdeck.com/eduardofiorezi/rupy-natal-convencao-na-criacao-e-no-deploy-de-aplicacoes-rails).
 
-TODO - Slides da palestra do Eduardo.
+<script async class="speakerdeck-embed" data-id="676c60c03dd60132f64c7a8c250e4271" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 Foi bem irado reencontrar pessoas como Akita, o Rafael Macedo e o Danilo Sato. E conhecer pessoalmente o Eduardo Lundgren e o [Brenno Costa](https://twitter.com/brennovich).
 
