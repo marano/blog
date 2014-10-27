@@ -1,5 +1,6 @@
 ---
 author: Thiago Belem
+hide_author_link: true
 layout: post
 title: Gerando dados "reais" com o Faker
 categories:
