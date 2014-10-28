@@ -35,9 +35,10 @@ task :fix_author_links do
   require 'open-uri'
   require 'json'
   require 'jekyll'
+	require 'i18n'
 
   team = JSON.parse(open('http://helabs.com.br/team.json').read)['team']
-  team_names = team.map { |member| member['full_name'] }
+  team_names = team.map { |member| I18n.transliterate(member['full_name'] }
 
   config = Jekyll.configuration({})
   site   = Jekyll::Site.new(config)
@@ -51,11 +52,11 @@ task :fix_author_links do
     # Skip posts for members that we already know that are no longer on the team
     next if post.data['hide_author_link']
 
-    unless team_names.include?(author)
+    unless team_names.include?(I18n.transliterate(author))
       print "Changing #{post.path} to hide the author link (#{author})... "
 
 			post_contents = File.read(post.path).force_encoding('utf-8')
-      post_contents.gsub!(/^(author: #{Regexp.escape author})$/, "\\1\nhide_author_link: true")
+      post_contents.gsub!(/^(author: #{author})$/, "\\1\nhide_author_link: true")
       open(post.path, 'w') do |file|
         file.print(post_contents)
       end
