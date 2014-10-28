@@ -54,7 +54,7 @@ task :fix_author_links do
     unless team_names.include?(author)
       print "Changing #{post.path} to hide the author link (#{author})... "
 
-      post_contents = File.read(post.path)
+			post_contents = File.read(post.path).force_encoding('utf-8')
       post_contents.gsub!(/^(author: #{Regexp.escape author})$/, "\\1\nhide_author_link: true")
       open(post.path, 'w') do |file|
         file.print(post_contents)
