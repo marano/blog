@@ -38,7 +38,7 @@ task :fix_author_links do
 	require 'i18n'
 
   team = JSON.parse(open('http://helabs.com.br/team.json').read)['team']
-  team_names = team.map { |member| I18n.transliterate(member['full_name'] }
+  team_names = team.map { |member| I18n.transliterate(member['full_name']) }
 
   config = Jekyll.configuration({})
   site   = Jekyll::Site.new(config)
