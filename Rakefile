@@ -35,7 +35,7 @@ task :fix_author_links do
   require 'open-uri'
   require 'json'
   require 'jekyll'
-	require 'i18n'
+  require 'i18n'
 
   team = JSON.parse(open('http://helabs.com.br/team.json').read)['team']
   team_names = team.map { |member| I18n.transliterate(member['full_name']) }
