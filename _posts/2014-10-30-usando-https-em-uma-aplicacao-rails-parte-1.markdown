@@ -82,14 +82,11 @@ no momento em que este artigo é escrito: Ruby 2.1.3 e Rails 4.1.6
 
 Nossa aplicação de demonstração será extremamente simples e terá os seguintes objetivos:
 
-* Demonstrar como fazer especificações RSpec de controlador que testem o uso do HTTP / HTTPS
+- Demonstrar como fazer especificações RSpec de controlador que testem o uso do HTTP / HTTPS
 em diferentes ações de um controlador
-
-* Demonstrar o redirecionamento de HTTP para HTTPS usando o force_ssl do próprio Rails
-
-* Desenvolver nosso próprio force_http, que fará o inverso do force_ssl (na parte 2 deste artigo)
-
-* Ser capaz de testar manualmente nossa aplicação, mesmo em ambiente de desenvolvimento (na parte 2 deste artigo)
+- Demonstrar o redirecionamento de HTTP para HTTPS usando o force_ssl do próprio Rails
+- Desenvolver nosso próprio force_http, que fará o inverso do force_ssl (na parte 2 deste artigo)
+- Ser capaz de testar manualmente nossa aplicação, mesmo em ambiente de desenvolvimento (na parte 2 deste artigo)
 
 ### Começando pelas especificações
 
