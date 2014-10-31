@@ -16,7 +16,7 @@ Esse é um assunto sério pois recebemos muitas ligações de pessoas comprometi
 <!--more-->
 Há uma delicada diferença entre validação da sua ideia e desenvolvimento do produto. Para quem está começando, essas coisas são quase imperceptíveis. Existem diversas táticas de [customer development](https://www.google.com.br/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=desenvolvimento+de+clientes), algumas delas irei trazer para você nesse artigo para que seu argumento e motivação para desenvolver conosco não seja apenas um “Preciso de algo pronto!” e sim algo muito mais sólido e consciente. Todos os exemplos também podem e devem ser feitos durante o desenvolvimento.
 
-##**Trate seus achismos com respeito**
+##**1. Trate seus achismos com respeito.**
 
 > _“A primeira premissa é que você não deve enganar a si mesmo e que você é a pessoa mais fácil de enganar.”_ <br />-**Richard P. Feynman, Vencedor do Prémio Nobel de 1965.**
 
