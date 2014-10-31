@@ -1,0 +1,32 @@
+---
+layout: post
+title: "RuPy Natal 2014"
+author: Mauro George
+categories:
+  - mauro george
+  - eduardo
+  - palestra
+  - rupy
+---
+
+Em outubro rolou a [RuPy](http://natal.rupy.com.br/) em Natal e a HE:labs estava lá.
+
+<!--more-->
+
+O evento rolou nos dias 17 e 18 de outubro com muitas palestras legais sobre Ruby, Python e JavaScript com diversos nomes da comunidade como [Fabio Akita](https://twitter.com/AkitaOnRails), [Danilo Sato](https://twitter.com/dtsato), [Eduardo Lundgren](https://twitter.com/eduardolundgren), [Davidson Fellipe](https://twitter.com/davidsonfellipe) entre muitos outros.
+
+[Eduardo](https://twitter.com/eduardofiorezi) e [eu](https://twitter.com/maurogeorge) tivemos a oportunidade de participar do evento. Eu tive a oportunidade de apresentar a palestra [RSpec Best Friends](http://pt.slideshare.net/maurogeorge/rspec-best-friends-reduzido) que foi criada baseada no meu livro [livro RSpec: Crie especificações executáveis em Ruby](http://www.casadocodigo.com.br/products/livro-rspec).
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/40442329" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+Eduardo apresentou a palestra [Convenção na criação e deploy de aplicações Rails](https://speakerdeck.com/eduardofiorezi/rupy-natal-convencao-na-criacao-e-no-deploy-de-aplicacoes-rails).
+
+<script async class="speakerdeck-embed" data-id="676c60c03dd60132f64c7a8c250e4271" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+Foi bem irado reencontrar pessoas como Akita, o Rafael Macedo e o Danilo Sato. E conhecer pessoalmente o Eduardo Lundgren e o [Brenno Costa](https://twitter.com/brennovich).
+
+Fica aí o convite para todos sempre participarem de eventos, seja como ouvinte, palestrante, organizador, o importante é estar em contato com a comunidade, ganhar conhecimento, conhecer pessoas e fazer amigos.
+
+Obrigado a todos, os participantes, palestrantes e organizadores, excelente trabalho de todos.
+
+E que venham os próximos!
