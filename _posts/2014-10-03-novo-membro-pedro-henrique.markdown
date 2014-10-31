@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Novo membro: Pedro Henrique'
-author: Pedro Henrique A. Cruz
+author: Pedro Henrique
 categories:
   - novo membro
   - pedro henrique

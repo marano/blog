@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Starting with graph databases using Neo4j and Rails"
-author: Tomás Müller
+author: Tomás Augusto Müller
 categories:
   - graph databases
   - neo4j
