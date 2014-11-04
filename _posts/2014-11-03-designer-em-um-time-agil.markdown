@@ -15,11 +15,11 @@ Há mais ou menos um ano atrás, eu estava tendo a minha primeira experiência c
 
 ##Metodologia Ágil & Iterações
 
-Alguns de vocês já devem conhecer como a metodologia ágil funciona. O desenvolvimento ágil é uma metodologia de desenvolvimento de software que visa minimizar os riscos de investimento. Funciona de maneira que você quebre o desenvolvimento em pequenas metas, validações que são desenvolvidas em períodos curtos. Aqui na He:labs esses períodos tem a duração de 4 dias úteis. 
+Alguns de vocês já devem conhecer como a metodologia ágil funciona. O desenvolvimento ágil é uma metodologia de desenvolvimento de software que visa minimizar os riscos de investimento. Funciona de maneira que você quebre o desenvolvimento em pequenas metas, validações que são desenvolvidas em períodos curtos. Aqui na HE:labs esses períodos tem a duração de 4 dias úteis. 
 
 A metodologia toma como partida a idéia de que o cliente aprende sobre as necessidades do seu negócio à medida que são feitas essas validações semanais, facilitando que ele direcione mais seguramente o desenvolvimento do seu software. Uma das razões pelo qual as pessoas tem optado pelo desenvolvimento ágil atualmente, é que a metodologia mais tradicional - conhecida como desenvolvimento em cascata - é tida como burocrática e lenta. 
 
-Os períodos curtos de desenvolvimento da metodologia ágil são chamados de ITERAÇÕES. Aqui na He:labs as iterações geralmente funcionam assim: 
+Os períodos curtos de desenvolvimento da metodologia ágil são chamados de ITERAÇÕES. Aqui na HE:labs as iterações geralmente funcionam assim: 
 
 **Dia 1**
 
