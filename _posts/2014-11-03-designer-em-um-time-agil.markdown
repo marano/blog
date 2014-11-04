@@ -8,7 +8,7 @@ categories:
   - Comunicação
 ---
 
-Como é começar em um time ágil, como funciona essa metodologia, quais as expectativas sobre o designer do time, quais são os principais erros de iniciante e como se antecipar a eles. 
+Como é começar em um time ágil, como funciona essa metodologia, quais as expectativas sobre o designer do time, quais são os principais erros de iniciante e como se antecipar a eles? 
 <!--more-->
 
 Há mais ou menos um ano atrás, eu estava tendo a minha primeira experiência com a metodologia ágil de desenvolver software. Ter que se adaptar à esse sistema foi também uma oportunidade para aprender sobre trabalho em equipe e desenvolvimento de produto. Enquanto eu revisava um material para falar sobre o assunto em uma palestra, achei que seria interessante compartilhar parte dele aqui. Vamos lá: 
@@ -43,7 +43,7 @@ Vou citar algumas expectativas que o time geralmente tem sobre o designer da equ
 É importante que você entenda que apesar de estar toda equipe trabalhando no produto, quem mais deve estar familiarizado com o conceito dele é você designer, porque é sua responsabilidade fazer com que os usuários entendam o produto com facilidade e tenham uma boa experiência através dele. Você tem o poder sobre isso uma vez que é você quem define a identidade visual do produto, a interface que é a experiência do usuário com o sistema. 
 
 **2. Estar em sintonia direta com o cliente.**
-O cliente sabe o que ele quer para o negócio dele mas isso não significa que ele também saiba organizar as próprioas idéias a converter isso em informação pra você com facilidade. Cada caso é um caso. E você precisa muito entender quais são as expectativas dele em relação ao produto. Então é esperado que você construa uma boa relação e comunicação com o idealizador desse produto, para que tenha êxito na hora de desenvolve-lo visualmente.
+O cliente sabe o que ele quer para o negócio dele mas isso não significa que ele também saiba organizar as próprias idéias a converter isso em informação pra você com facilidade. Cada caso é um caso. E você precisa muito entender quais são as expectativas dele em relação ao produto. Então é esperado que você construa uma boa relação e comunicação com o idealizador desse produto, para que tenha êxito na hora de desenvolve-lo visualmente.
 
 **3. Conhecer o contexto do produto.**
 É importante que você saiba onde está pisando. Então, como em qualquer área de design, você não pode desenvolver nada às cegas, sem conhecer o mercado, os usuários e as principais referências desse produto. Isso nem sempre vai estar à sua disposição e  "mastigadinho". Então outra expectativa sobre o designer do time - na verdade acho que em qualquer time onde exista um designer -  é que você faça o seu "dever de casa" e fique por dentro do contexto do produto antes de apresentar qualquer solução. Pois o seu cliente antes de tomar a decisão de investir nesse produto, pode ter certeza que ele pesquisou bem antes e conhece esse background. 
@@ -60,7 +60,7 @@ Os próximos capitulos serão:
 - Como iniciar no time.
 - Principais erros de iniciante.
 - Organizando o front-end para a metodologia àgil.
-- Trabalhando emcima dos feedbacks.
+- Trabalhando em cima dos feedbacks.
 - Conclusão.
 
 
