@@ -1,5 +1,6 @@
 ---
 author: Flavia Fortes
+hide_author_link: true
 layout: post
 title: "Você, realmente, sabe o que é uma startup? E MVP? Então vem comigo..."
 categories:

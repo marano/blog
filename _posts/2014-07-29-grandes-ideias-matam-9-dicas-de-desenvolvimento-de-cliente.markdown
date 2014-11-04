@@ -2,6 +2,7 @@
 layout: post
 title: "Está Começando? Grandes Ideias Matam. Siga Essas 9 Dicas."
 author: Guilherme Sa
+hide_author_link: true
 categories:
   - desenvolvimento de clientela
   - validação de ideia

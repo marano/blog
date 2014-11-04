@@ -2,6 +2,7 @@
 layout: post
 title: "Ruby Memoization - Part I"
 author: Flavia Fortes
+hide_author_link: true
 categories:
   - flavia fortes
   - ruby

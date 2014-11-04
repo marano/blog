@@ -2,6 +2,7 @@
 layout: post
 title: "Creating A/B experiments with Split"
 author: Thiago Belem
+hide_author_link: true
 categories:
   - split
   - a/b test

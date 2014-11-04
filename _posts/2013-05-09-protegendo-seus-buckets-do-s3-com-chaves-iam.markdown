@@ -1,5 +1,6 @@
 ---
 author: Thiago Belem
+hide_author_link: true
 layout: post
 title: "Protegendo seus buckets do S3 com chaves IAM"
 categories:

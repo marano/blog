@@ -1,5 +1,6 @@
 ---
 author: Thiago Belem
+hide_author_link: true
 layout: post
 title: "Gerenciando assets com o Bower"
 categories:
