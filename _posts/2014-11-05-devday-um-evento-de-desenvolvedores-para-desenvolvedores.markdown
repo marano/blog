@@ -21,7 +21,7 @@ No último sábado *[01/11/2014]*, fui em um evento sensacional em Minas Gerais 
 <br>
 ## E o que é o DevDay? ##
 
-O DevDay é uma conferência organizada pelo pessoal do [DevIsland](https://twitter.com/DevIsland) e que está em sua terceira edição. Sua primeira edição foi em 2012 e o evento sempre foi realizado em Belo Horizonte, Minas Gerais. E nesta edição não foi diferente, a diferença desta vez foi que o local de acontecimento escolhido, foi a [Universidade Federal de Minas Gerais](https://www.ufmg.br/), que nada mais é, que uma referência no que se diz respeito a cursos e pesquisas no cenário da tecnologia brasileira e isso proporcionou uma mistura bem legal de público e de conteúdos abordados.
+O DevDay é uma conferência organizada pelo pessoal do [DevIsland](https://twitter.com/DevIsland) e que está em sua quinta edição. O evento sempre foi realizado em Belo Horizonte, Minas Gerais. E nesta edição não foi diferente, a diferença desta vez foi que o local de acontecimento escolhido, foi a [Universidade Federal de Minas Gerais](https://www.ufmg.br/), que nada mais é, que uma referência no que se diz respeito a cursos e pesquisas no cenário da tecnologia brasileira e isso proporcionou uma mistura bem legal de público e de conteúdos abordados.
 
 <br>
 ## E antes de falar sobre essa edição, vou contar como cheguei a ir nela... ##
