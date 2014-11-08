@@ -45,7 +45,7 @@ alguma hierarquia de elementos mudar, já que dados podem estar sendo alterados 
 vao começar a quebrar. Tambem fica dificil identificar aonde começa e terminar o seu componente, e se ele depende de alguma
 outra coisa que pode estar fora dele.
 
-Outro problema é que `<div class="fancybox">` não expressa muito a nossa intenção pensando nas semanticas do html. Classes servem pra ser
+Outro problema é que `<div class="fancybox">` não expressa muito a nossa intenção pensando nas semanticas do html. Classes servem para se
 compartilhar estilos comuns pra vários elementos, e não determinar o que ele é.
 Já pensou se pra mostrar um video tivessemos que usar `<div class="video"></div>` ao invez de `<video></video>`. E numa app grande
 é fácil ter varios plugins usando seletores obscuros como `#alert`, `.grid` etc.
@@ -55,7 +55,8 @@ O legal é que isso já existe, e são os [webcomponents](http://webcomponents.o
 quer permite que você extenda o html e crie suas próprias tags/componentes, e importe nas suas páginas. O problema é que por ser algo novo
 só funciona nos browser mais modernos e eu normalmente opto por bibliotecas que tenham um suporte a browsers mais antigos, pra evitar maiores
 problemas. Pesquisando por alternativas encontrei o [react](http://facebook.github.io/react/) do facebook, que não utiliza as api's novas 
-do webcomponents, mas sim reimplementa o seu próprio dom (Virtual dom).
+do webcomponents, mas sim reimplementa o seu próprio dom (Virtual dom). Ou seja, ele não é uma abstração em cima dos webcomponents, mas sua 
+api/comportamento é muito parecida.
 
 As vantagens que vi no react foram:
 
@@ -64,3 +65,20 @@ As vantagens que vi no react foram:
 1. Pode ser usado em apenas uma parte da página ou até pra construir uma aplicação inteira
 1. Pre-renderização na parte do servidor, melhorando o carregamento inicial da página pelo navegador
 1. Bom suporte a [navegadores](http://facebook.github.io/react/docs/working-with-the-browser.html#browser-support-and-polyfills) não tão modernos como ie8
+1. É usado em produção por grandes sites como facebook, instagram e Khan Academy
+
+A maneira mais facil de adicionarmos o react numa aplicação rails, é usando a gem [react-rails](https://github.com/reactjs/react-rails)
+
+**Gemfile**
+{% highlight javascript linenos %}
+  gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
+{% endhighlight %}
+
+E depois usar `rails g react:install` pra gerar a estrutura de arquivos dele.
+
+Esse comando gera a seguinte estrutura:
+
+`app/assets/javascripts/components/` onde serão carregados os seus componentes
+`app/assets/javascripts/components.js` arquivo que carrega os componentes do diretório `components`
+
+Ele também altera o `application.js` pra incluir o `react.js` que é o framework, e o `react_ujs.js` que integra ele melhor com o rails
