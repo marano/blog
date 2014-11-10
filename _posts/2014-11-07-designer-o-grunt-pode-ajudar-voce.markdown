@@ -198,7 +198,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('filewatch', ['watch']);
 
-  grunt.registerTask('less-img', ['less','imagemin']);
+  grunt.registerTask('sass-img', ['sass','imagemin']);
 
 };
 {% endhighlight %}
