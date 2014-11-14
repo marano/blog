@@ -50,7 +50,7 @@ Existem diversas maneiras de se fazer as formas. Vou abordar os métodos mais si
 
 ### ■ Quadriláteros
 
-As formas mais básicas são os quadriláteros. Alguns nem exigem CSS3 pra reproduzi-los, como é o caso do quadrado, retângulo e trapézio. No paralelogramo eu usei o o seletor `transform: skew(20deg);` pra deixar no ângulo correto e no caso do losango, fiz com o pseudo elemento `:after`, mas poderia ter usado um simples `transform: rotate(45deg);` tambem.
+As formas mais básicas são os quadriláteros. Alguns nem exigem CSS3 pra reproduzi-los, como é o caso do quadrado, retângulo e trapézio. No paralelogramo eu usei o o seletor `transform: skew(20deg);` pra deixar no ângulo correto e no caso do losango  apenas rotacionei o quadrado com `transform: rotate(45deg);`.
 
 <p data-height="268" data-theme-id="9813" data-slug-hash="KBiAn" data-default-tab="result" data-user="matheusagcosta" class='codepen'>See the Pen <a href='http://codepen.io/matheusagcosta/pen/KBiAn/'>Quad Shapes</a> by Matheus Costa (<a href='http://codepen.io/matheusagcosta'>@matheusagcosta</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script><br>
