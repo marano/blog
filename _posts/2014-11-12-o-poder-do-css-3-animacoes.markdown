@@ -11,9 +11,12 @@ categories:
 
 Hora de dar vida as coisas.
 
+![Pac-Man](/blog/images/posts/2014-11-12/pac-man.gif)
+
 <!--more-->
 
 ## Fácil Como Tirar Doce de Criança ##
 
-No post anterior eu falei sobre as formas, de como elas vem sendo exploradas muito além de quadrados e retângulos e como é simples fazer isso com CSS. Agora vou partir pra parte que deixa a forma mais interessante: Animando-a.
+No post anterior eu falei sobre formas (Ou shapes), de como elas vem sendo exploradas muito além de quadrados e retângulos e como é simples fazer isso com CSS. Agora vou partir pra parte que deixa ela mais interessante: Animando-a.
+
 
