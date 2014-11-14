@@ -12,7 +12,7 @@ categories:
 
 Sem imagens, sem javascript, muito menos flash! E com poucas tags HTML.
 
-![PacMan](/blog/images/posts/2014-11-28/pac-man.png)
+![PacMan](/blog/images/posts/2014-11-14/pac-man.png)
 
 <!--more-->
 
