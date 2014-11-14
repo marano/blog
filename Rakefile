@@ -79,17 +79,14 @@ def team_names
 end
 
 def author_name
-
-  team_names.each_with_index do |author, i|
+  authors = team_names.sort
+  authors.each_with_index do |author, i|
     puts "#{i} - #{author}"
   end
 
   STDOUT.puts "Author name. Choose a number from 0 to #{ team_names.size - 1 }: (Required)"
   input = STDIN.gets.strip
   
-  if team_names[input.to_i]
-    return team_names[input.to_i]
-  else
-    author_name
-  end
+  return authors[input.to_i] if authors[input.to_i]
+  author_name
 end
