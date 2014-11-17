@@ -43,8 +43,7 @@ end
 
 Perceba que não existe `require 'app/models/bank_billet'` em canto nenhum e ele simplesmente acha o BankBillet.
 Graças a flexibilidade da linguagem ruby é possível fazer essa mágica, e no rails o módulo responsável por isso é o [ActiveSupport::Dependencies](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/dependencies.rb)
-Ele tem um propriedade chamada `autoload_paths` com um array de diretórios onde essa mágica deve ser aplicada. Já que não é interessante aplicar
-isso em todos os diretórios já que esse lookup dinamico causa um certo overhead.
+Como não é interessante aplicar isso em todos os diretórios pois esse lookup dinamico causa um certo overhead, existe um propriedade chamada autoload_paths com um array de diretórios onde essa mágica deve ser aplicada.
 Você pode verificar quais diretórios estão sendo carregados automaticamente inspecionando `ActiveSupport::Dependencies.autoload_paths` no seu rails console:
 
 
