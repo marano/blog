@@ -152,6 +152,10 @@
   clear: both;
   width: 100%;
   margin-bottom: 30px;
+  
+  li {
+    margin-left: 0;
+  }
 
   iframe, #___plusone_0, .fb-like {
     float: left !important;
