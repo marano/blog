@@ -11,6 +11,8 @@ Novo integrante na HE:labs, bem-vinda Maya Manson!
 
 <!--more-->
 
+![PacMan](/blog/images/posts/2014-11-18/maya.jpg)
+
 Maya já nasceu artista. Se formou em teatro, e experimentou muitas possibilidades dessa forma de arte, mas viu que ia ser dureza viver de sua arte. E foi aí, meio que como um "plano B" que a tecnologia entrou em sua vida, mas não sem antes empreender e se tornar empresária do ramo da gastronomia. Não teve jeito, venceu a máquina. 
 
 Depois de se desfazer dos negócios neste segmento, através de alguns amigos, conheceu o maravilhoso mundo do design. Não rolou. Impossível pra uma criatura impaciente escrever códigos. Restou escrever o que dava alma aos códigos: o conteúdo! 
