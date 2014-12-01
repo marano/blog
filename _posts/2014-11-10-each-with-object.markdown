@@ -22,7 +22,7 @@ collection.each do |item|
   array << item
 end
 
-array array
+array
 {% endhighlight %}
 
 Podemos refatorar isso para:
