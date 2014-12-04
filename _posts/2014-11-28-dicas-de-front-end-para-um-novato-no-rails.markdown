@@ -30,6 +30,78 @@ Para gerarmos um HTML como o exibido acima, no slim fazemos assim:
 
 Para maiores informações sobre o slim de uma olhada em sua [documentação](http://rdoc.info/gems/slim/frames).
 
+## SASS
+
+O SASS é um pré-processador de CSS bastante poderoso e já vem nas aplicações Rails mais novas. Ele extende o CSS no entanto não muda a sua sintaxe apenas adicionando novos poderes. Acredito que não terá dificuldades aqui. Vamos a um exemplo em que definimos uma fonte e uma cor em uma variavel e um pouco de aninhmanento de seletores.
+
+{% highlight sass linenos %}
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    font: 14px $font-stack;
+    color: $primary-color;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+{% endhighlight %}
+
+Este código SASS é compilado para o seguinte código CSS, em que os aninhmamentos foram traduzidos para ser entendido pelo CSS e as variáveis expandidas para exibir o seu valor.
+
+{% highlight css linenos %}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font: 14px Helvetica, sans-serif;
+  color: #333;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+{% endhighlight %}
+
+Para mais informação sobre o SASS visiste a sua [documentação](http://sass-lang.com/guide) e descubra mais coisas legais como partials, mixins, extend/inheritance entre outras coisas.
+Sobre organização do código SASS de uma olhada no post [Rails front-end com Bourbon e sua familia](http://helabs.com.br/blog/2014/06/27/rails-front-end-com-bourbon-e-sua-familia/).
+
+### De onde tá vindo este CSS?
+
+É uma boa prática definirmos nossos CSS em diversos arquivos `.scss` para uma melhor organização, mas sobre isto no [post](http://helabs.com.br/blog/2014/06/27/rails-front-end-com-bourbon-e-sua-familia/). No entanto ao entrar em um projeto novo utilizamos o nosso browser para inspecionar um elemento e lá vemos que o código exibido é o CSS e não o SASS. Como saber onde foi definido os estilos do meu `#flash_notice`?
+
+Simplesmente abra o arquivo css no seu navegador, e busque pelo elemento que quer ver os estilos definidos.
+
+{% highlight css linenos %}
+/* line 14, /project/app/assets/stylesheets/base/extends/_flashes.scss */
+#flash_alert, #flash_error, #flash_notice, #flash_success, .error,
+.info,
+.success {
+  font-weight: bold;
+  padding: 0.75em;
+}
+{% endhighlight %}
+
+Perceba que é exibido um comentário dizendo em qual arquivo foi definido tal estilo no SCSS, agora já sabe onde ir para alterar os estilos do `#flash_notice`.
+
+Não se preocupe que em produção o Rails é experto o suficiente para remover os comentários e minificar o seu código CSS.
+
 ## Geração de links
 
 Agora que está acostumado com o slim, talvez você queira criar um link para a sua aplicação com algo como:
