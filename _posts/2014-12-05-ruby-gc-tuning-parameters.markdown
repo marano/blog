@@ -136,22 +136,29 @@ Roll up your sleeves. Below the explanation behind each GC tuning variable avail
 Again: all listed environment variables above are for Ruby 2.1. Ruby 2.2 will probably have an impact on these settings.
 Tune them only if you really know what you are doing.
 
-## Profiling your app
+## Profiling
 
-TODO write about gems available for doing this.
+> “One thing I have learned in a long life: that all our science, measured against reality, is primitive and childlike -- and yet it is the most precious thing we have.”
+― Albert Einstein
 
-TODO write about NewRelic.
+Think about. This Einstein's quote fits perfectly here.
 
-TODO write about Librato.
+So, in order to accomplish this hard work, you have to have great tools in your hands. Below I'm sharing my list. Using different thing? Please don't hesitate and send your comment at the end of this post.
 
-TODO write about Skylight.
+- Ruby `GC::stat` - Return a hash with interesting information about the garbage collector.
+- Ruby `ObjectSpace` - The ObjectSpace module contains a number of routines that interact with the garbage collection
+facility and allow you to traverse all living objects with an iterator. The objspace library extends the ObjectSpace module
+and adds several methods to get internal statistic information about object/memory management.
+- [NewRelic](http://newrelic.com) - The Ruby VMs tab under monitoring menu give a good set of graphics about the situation
+of memory and garbage collection.
+- [Librato](https://www.librato.com/)
+- [Skylight](https://www.skylight.io/)
+- [Heroku App Dashboard Metrics tab](https://devcenter.heroku.com/articles/metrics)
+- [gc_tracer](https://github.com/ko1/gc_tracer)
+- [memory_profiler](https://github.com/SamSaffron/memory_profiler)
 
-TODO write about metrics tab on the new Heroku dashboard.
-
-TODO https://github.com/ko1/gc_tracer
-
-TODO https://github.com/SamSaffron/memory_profiler
-
+Also, the [What I Learned About Hunting Memory Leaks in Ruby 2.1](http://blog.skylight.io/hunting-for-leaks-in-ruby/) blog post from Peter W.
+describes an approach to collect and analyse heap dumps from your running application. Heap dumps are the devil's house. Precious raw data lives there.
 
 ## Bonus: making your Unicorn fly high
 
@@ -175,6 +182,7 @@ TODO write about remembering there are defaults for almost everything, including
 - [K.Sasada: Memory Management Tuning in Ruby](http://www.atdot.net/~ko1/activities/2014_rubyconf_ph_pub.pdf)
 - [K.Sasada: Toward more efficient Ruby 2.1](http://www.atdot.net/~ko1/activities/Euruko2013-ko1.pdf)
 - [Peter J. Jones, Effective Ruby](http://www.effectiveruby.com/)
+- [Peter Wagenet, What I Learned About Hunting Memory Leaks in Ruby 2.1](http://blog.skylight.io/hunting-for-leaks-in-ruby/)
 - [ruby/v2_1_5/gc.c](https://github.com/ruby/ruby/blob/v2_1_5/gc.c#L5702)
 - [Sam Saffron, Ruby 2.1 Garbage Collection: ready for production](http://samsaffron.com/archive/2014/04/08/ruby-2-1-garbage-collection-ready-for-production)
 - Sam Saffron, Why Ruby 2.1 excites me? [slides](https://speakerdeck.com/samsaffron/why-ruby-2-dot-1-excites-me), [video](http://vimeo.com/89491942)
