@@ -86,15 +86,21 @@ Roll up your sleeves. Below the explanation behind each GC tuning variable avail
 
 1. **RUBY_GC_HEAP_INIT_SLOTS**
 
-    TODO: describe.
+    Initial allocation slots. Increasing this value from its default can reduce GC activity during application boot.
+
+    Default value: 10000
 
 2. **RUBY_GC_HEAP_FREE_SLOTS**
 
-    TODO: describe.
+    Prepare at least this amount of slots after GC. Allocate slots if there are not enough slots, allocating additional pages to the heap if the number of free slots drops below this value.
+
+    Default value: 4096
 
 3. **RUBY_GC_HEAP_GROWTH_FACTOR** (new from 2.1)
 
-    TODO: describe.
+    Allocate slots by this factor: `(next slots number) = (current slots number) * (this factor)`
+
+    Default value: 1.8
 
 4. **RUBY_GC_HEAP_GROWTH_MAX_SLOTS** (new from 2.1)
 
@@ -143,7 +149,7 @@ Tune them only if you really know what you are doing.
 
 Think about. This Einstein's quote fits perfectly here.
 
-So, in order to accomplish this hard work, you have to have great tools in your hands. Below I'm sharing my list. Using different thing? Please don't hesitate and send your comment at the end of this post.
+So, in order to accomplish this hard work surround yourself with great tools. I'm sharing my list below. Using different thing? Please don't hesitate and send your comment at the end of this post.
 
 - Ruby `GC::stat` - Return a hash with interesting information about the garbage collector.
 - Ruby `ObjectSpace` - The ObjectSpace module contains a number of routines that interact with the garbage collection
