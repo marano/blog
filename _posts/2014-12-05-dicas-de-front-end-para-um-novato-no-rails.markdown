@@ -102,6 +102,51 @@ Perceba que é exibido um comentário dizendo em qual arquivo foi definido tal e
 
 Não se preocupe que em produção o Rails é experto o suficiente para remover os comentários e minificar o seu código CSS.
 
+## CSS e JavaScript de terceiros
+
+É comum em nossas aplicações termos que incluir bibliotecas de terceiros seja de CSS ou JavaScript. Já temos o jQuery por padrão no rails. Vamos então adicionar o [normalize](http://necolas.github.io/normalize.css/).
+
+Como dica sempre que queremos incluir uma biblioteca de terceiro é uma boa procurarmos se não existe uma gem para isto. Então podemos buscar por "[normalize rails](https://www.google.com.br/search?hl=pt&q=gem%20normalize#hl=pt&q=normalize+rails)" no Google ou direto no [Ruby Toolbox](https://www.ruby-toolbox.com/search?utf8=%E2%9C%93&q=normalize).
+
+Não se esqueça de dar uma analisada na gem, como qual a versão da biblioteca que você quer inserir ele da suporte, quando foi o último commit e o que mais achar relevante.
+
+Para instalar leia o README da gem que está usando, mas normalmente será:
+
+1. inserir a gem no `Gemfile`
+1. instalar a gem com `$ bundle`
+1. importar o CSS ou JavaScript nos arquivos de assets.
+
+Temos diversas gems da comunidade com bibliotecas famosas como [Twitter bootstrap](https://github.com/seyhunak/twitter-bootstrap-rails), [Foundation](https://github.com/zurb/foundation-rails), [jQuery UI](https://github.com/joliss/jquery-ui-rails) entre outras.
+
+### Não existe a gem da biblioteca X
+
+Para quando não temos um gem que empacota uma biblioteca CSS ou JavaScript podemos inseri-lá diretamente no nosso projeto. Para isto, adicionamos nossos arquivos de terceiro em `vendor/assets/javascripts/` os JavaScripts de terceiros e `vendor/assets/stylesheets/` os CSS de terceiros.
+
+E importarmos eles normalmente em nosso `application.js`
+
+{% highlight javascript linenos %}
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//= require jquery.zoom
+//= require_tree .
+{% endhighlight %}
+
+E no caso de CSS importamos normalmente no `application.css.scss`
+
+{% highlight scss linenos %}
+@import 'normalize';
+@import 'bourbon';
+@import 'base/base';
+@import 'neat';
+@import 'refills/*';
+@import 'layouts/*';
+{% endhighlight %}
+
+Não se preocupe em baixar os arquivos minificados, pode baixar a versão sem minificar que quando o Rails enviar para produção tudo será minificado normalmente.
+
+Mais sobre o tema na [documentação](http://guides.rubyonrails.org/asset_pipeline.html#asset-organization).
+
 ## Geração de links
 
 Agora que está acostumado com o slim, talvez você queira criar um link para a sua aplicação com algo como:
