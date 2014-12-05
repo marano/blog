@@ -4,11 +4,8 @@ require 'i18n'
 
 desc "Creates a new post"
 task :new_post, :title do |t, args|
-  puts "You didn't provide the title. So it will be created with the title 'new_post'" unless args.title
-
-  args.with_defaults(:title => 'new-post')
-  title = args.title
-
+  
+  title = post_title(args)
   author = author_name
 
   STDOUT.puts "Tags: (Optional. Separate with commas)"
@@ -89,4 +86,11 @@ def author_name
   
   return authors[input.to_i] if authors[input.to_i]
   author_name
+end
+
+def post_title(args)
+  return args.title if args.title
+  puts "You didn't provide the title. You can do it now or just press ENTER to created with the title 'new_post'"
+  post_title = STDIN.gets.strip
+  post_title.empty? ? 'new-post' : post_title
 end
