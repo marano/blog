@@ -17,6 +17,10 @@ Hora de dar vida as coisas.
 
 ## Fácil Como Tirar Doce de Criança ##
 
-No post anterior eu falei sobre formas (Ou shapes), de como elas vem sendo exploradas muito além de quadrados e retângulos e como é simples fazer isso com CSS. Agora vou partir pra parte que deixa ela mais interessante: Animando-a.
+No post anterior eu falei sobre formas (Ou shapes), de como elas vem sendo exploradas muito além de quadrados e retângulos e como é simples fazer isso com CSS. Agora vou partir pra parte que deixa ela mais interessante: Fazer elas se movimentarem.
 
+É muito simples fazer uma animação com css, você basicamente precisa de 3 coisas:
 
+- Setar os parametros
+- Nomear a animação
+- Chamar a animação nomeada na <tag> que deseja
