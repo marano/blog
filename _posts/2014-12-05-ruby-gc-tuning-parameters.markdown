@@ -93,15 +93,28 @@ When Ruby 2.2 goes out we can expect another major update in the garbage collect
 
 ## GC Tuning Parameters
 
-TODO write about Ruby heap organization
-Before we continue...
+Before we continue let's see some key points about the Ruby heap:
 
-Each one of these GC tuning parameters have a default value, meaning that if you don't set this variable on your
-application environment, the default value will take place.
+- The heap is the memory managed by Ruby and which we have access.
+- The heap is divided into pages and slots.
+- Each heap **page** holds 408 slots (`GC::INTERNAL_CONSTANTS[:HEAP_OBJ_LIMIT]`).
+- Internally, a [Ruby object is represented as a struct called RVALUE](https://github.com/ruby/ruby/blob/v2_1_5/gc.c#L330).
+- Each heap **slot** has the size of one RVALUE, which is 40 bytes (`GC::INTERNAL_CONSTANTS[:RVALUE_SIZE]`). So, sufficient size to hold one Ruby object.
+- The size of each heap **page** is around 16kb (`408 * 40 = 16320 bytes`).
 
-So, if your app is suffering with memory outage after upgrading to Ruby 2.1, I strongly recommend that you start here. There is
-a lot of other things that you can do (and probably will have to), mostly of them related to your application server. Later in this
-post I'll give a bonus topic for those who are using Unicorn as application server.
+Ok, now we have the minimum amount of information to understand the existent GC tuning environment variables.
+
+Following the idea of each application should be treated as a unique case, there are defaults set on Ruby VM that you have to
+know and likely want to adjust them according to the app weight, pondering with the computing resources at your disposal.
+
+Just to be clear, each one of these GC tuning parameters have a default value, meaning that if you don't set this variable
+on your application environment, the default value will take place.
+
+So, if your app starts running out of memory after upgrading to Ruby 2.1, this is a good place to start.
+
+In the case of a Rails application there is a lot of other things that you can do (and probably will have to), mostly of
+them related to the application server. Later in this post I'll give a bonus topic for those who are using Unicorn as
+application server.
 
 Roll up your sleeves. Below the explanation behind each GC tuning variable available today.
 
