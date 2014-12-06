@@ -165,7 +165,11 @@ Roll up your sleeves. Below the explanation behind each GC tuning variable avail
 
 7. **RUBY_GC_MALLOC_LIMIT_MAX** (new from 2.1)
 
-    TODO: describe.
+    Sets the maximum value for `GC.stat[:malloc_limit]` from going too high (`malloc_limit` changes dynamically by the growth factor below, tuning number 8).
+
+    To remove this upper limit set the value 0.
+
+    Default value: 33554432 (32MB)
 
 8. **RUBY_GC_MALLOC_LIMIT_GROWTH_FACTOR** (new from 2.1)
 
