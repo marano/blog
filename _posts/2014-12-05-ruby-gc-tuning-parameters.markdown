@@ -145,7 +145,14 @@ Roll up your sleeves. Below the explanation behind each GC tuning variable avail
 
 5. **RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR** (new from 2.1.1)
 
-    TODO: describe.
+    Factor to control major GC timing, given by: `control threshold = this factor * number of old objects from the last major GC`.
+
+    The `control threshold` is compared with the current number of old objects. If the `control threshold` is exceeded
+    by the number of old objects since the last major marking phase, another major GC will be forced.
+
+    Special note: if you want to disable generational garbage collection, you can specify 0.9 (any number lesser than 1.0).
+
+    Default value: 2.0 (meaning that old objects have to double to trigger another major GC)
 
 6. **RUBY_GC_MALLOC_LIMIT**
 
