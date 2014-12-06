@@ -156,7 +156,12 @@ Roll up your sleeves. Below the explanation behind each GC tuning variable avail
 
 6. **RUBY_GC_MALLOC_LIMIT**
 
-    TODO: describe.
+    Internally the VM keeps track of `malloc_increase`, which is the number of bytes that have been allocated but not yet
+    freed. This is effectively the memory growth of the process.
+
+    This parameter hold the minimum value for `GC.stat[:malloc_limit]`. If `malloc_increase` exceeds the `malloc_limit` a minor GC is triggered.
+
+    Default value: 16777216 (16MB)
 
 7. **RUBY_GC_MALLOC_LIMIT_MAX** (new from 2.1)
 
