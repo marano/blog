@@ -34,17 +34,15 @@ bullet or one answer for all. [Just profile, experiment, analyse and repeat](htt
 ## Ruby GC recap
 
 "Everything in Ruby is an object" - You probably already heard this statement. So, a running Ruby program is made up of
-objects. Thousands of them. Thanks to the **G**arbage **C**ollector we don't have to manage memory allocation manually.
+objects. Thousands of them. Thanks to the **G**arbage **C**ollector you don't have to manage memory allocation manually.
 
 Each major release of Ruby has included improvements to the garbage collector, most of them about speed. This because for
-the GC to do its work it needs to pause the program execution while it's running.
+the GC to do its work it needs to pause the program execution while it is running.
 
-Since the birth of Ruby it's garbage collector is based on Mark & Sweep algorithm, which is made up of two phases (Effective Ruby, 2014):
+Since the birth of Ruby its garbage collector is based on Mark & Sweep algorithm, which is made up of two phases (Effective Ruby, 2014):
 
-1. Traverse the object graph. Objects that are still reachable from your code are considered alive and subsequently **marked**.
+1. Traverse the object graph (the Ruby heap). Objects that are still reachable from your code are considered alive and subsequently **marked**.
 2. Next, any objects that were not marked in the first phase are considered garbage and *swept* away, releasing memory back to Ruby and possibly to the operating system.
-
-This is a high level and simple view of the Mark & Sweep process.
 
 Now, can you imagine how expensive is to traverse the object graph of a running program with thousands and thousands of
 objects? That's why the team behind this complex piece of software engineering concentrates so much efforts seeking
@@ -65,18 +63,41 @@ Here's the history of CRuby's GC evolution (Incremental GC for Ruby interpreter,
 According with K.Sasada work, we can expect another major update on Ruby 2.2 GC which among other things, will introduce
 incremental GC algorithm into major GC to reduce long pause time (RincGC: Restricted Incremental GC algorithms).
 
+## Generational GC
+
+The garbage collector in Ruby 2.1 introduced the Generational GC, using Mark & Sweep algorithm to maintain the Ruby heap
+classifying objects in two categories (generations).
+
+This technique treats new objects differently than older ones. A new (young) object is one that has just been created by your program.
+An old object (also referenced as *mature* object) is one that will continue to be used by your program.
+
+The reason behind this categorization is based on the weak generational hypothesis, which means: "most objects die young".
+In other words, new objects will probably die young. Having this "life expectancy" differences between new and old objects,
+different GC algorithms and strategies can be applied for each *generation*.
+
+Enter the *minor* and *major* GC runs:
+
+- Minor GC: should be faster than major GC, run often, traversing only the young objects.
+- Major GC: traverses the whole object graph, including the old generation.
+
+To classify an object as young or old the GC does the following:
+
+1. On a minor GC, when it marks an object in the mark phase, it promote the object to the old generation (remember: when an object is marked, means that the object will survive the current GC run).
+2. Sweep away unmarked objects.
+3. During the next minor GC, the entire old generation section will be ignored by the GC, traversing only the young generation.
+
+Above is just the basics for you to understand the GC tuning parameters topic below. The entire garbage collection process implemented in Ruby 2.1 (RGenGC) is much
+more complex in order to solve all existent problems. For a detailed view of how it works take a look on this post references.
+
+When Ruby 2.2 goes out we can expect another major update in the garbage collector, where it will probably introduce a three-generation GC.
+
 ## GC Tuning Parameters
 
-Remember: Ruby is not just Rails. You can think [Rails as something that potentiates the usage of the WEB as a delivery mechanism](http://www.confreaks.com/videos/759-rubymidwest2011-keynote-architecture-the-lost-years). Rails is optimized for programmer happiness just as Ruby. And the history ends here.
+TODO write about Ruby heap organization
+Before we continue...
 
-What I'm trying to say is: the Ruby VM is not totally optimized out-of-the-box for every kind of Rails application running on any environment.
-One is not built exclusively for the other.
-
-Ruby internals evolved. Rails evolved too. There are defaults set on Ruby VM that you have to know and likely want to adjust them according to your app weight,
-pondering with the computing resources at your disposal.
-
-Just to be clear, each one of these GC tuning parameters have a default value, meaning that if you don't set this variable
-on your application environment, the default value will take place.
+Each one of these GC tuning parameters have a default value, meaning that if you don't set this variable on your
+application environment, the default value will take place.
 
 So, if your app is suffering with memory outage after upgrading to Ruby 2.1, I strongly recommend that you start here. There is
 a lot of other things that you can do (and probably will have to), mostly of them related to your application server. Later in this
@@ -86,25 +107,28 @@ Roll up your sleeves. Below the explanation behind each GC tuning variable avail
 
 1. **RUBY_GC_HEAP_INIT_SLOTS**
 
-    Initial allocation slots. Increasing this value from its default can reduce GC activity during application boot.
+    Initial number of slots allocated on Ruby's heap. Increasing this value from its default can reduce GC activity during application boot.
 
     Default value: 10000
 
 2. **RUBY_GC_HEAP_FREE_SLOTS**
 
-    Prepare at least this amount of slots after GC. Allocate slots if there are not enough slots, allocating additional pages to the heap if the number of free slots drops below this value.
+    After a GC execution, the minimum number of free slots that should be available.
 
     Default value: 4096
 
 3. **RUBY_GC_HEAP_GROWTH_FACTOR** (new from 2.1)
 
-    Allocate slots by this factor: `(next slots number) = (current slots number) * (this factor)`
+    When the heap needs to be expanded, allocate slots by this factor: `(next slots number) = (current slots number) * (this factor)`
 
     Default value: 1.8
 
 4. **RUBY_GC_HEAP_GROWTH_MAX_SLOTS** (new from 2.1)
 
-    TODO: describe.
+    Set the maximum number of slots that Ruby is allowed to add to the heap at once. When disabled, Ruby uses the heap
+    growth factor to determine by how much to grow the heap.
+
+    Default value: 0 (meaning that this limit is disabled)
 
 5. **RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR** (new from 2.1.1)
 
@@ -187,6 +211,7 @@ TODO write about remembering there are defaults for almost everything, including
 - [K.Sasada: Speedup Ruby Interpreter](http://www.atdot.net/~ko1/activities/2014_deccanrubyconf_pub.pdf)
 - [K.Sasada: Memory Management Tuning in Ruby](http://www.atdot.net/~ko1/activities/2014_rubyconf_ph_pub.pdf)
 - [K.Sasada: Toward more efficient Ruby 2.1](http://www.atdot.net/~ko1/activities/Euruko2013-ko1.pdf)
+- [Pat Shaughnessy, Ruby Under a Microscope: Learning Ruby Internals Through Experiment](http://patshaughnessy.net/ruby-under-a-microscope)
 - [Peter J. Jones, Effective Ruby](http://www.effectiveruby.com/)
 - [Peter Wagenet, What I Learned About Hunting Memory Leaks in Ruby 2.1](http://blog.skylight.io/hunting-for-leaks-in-ruby/)
 - [ruby/v2_1_5/gc.c](https://github.com/ruby/ruby/blob/v2_1_5/gc.c#L5702)
