@@ -173,7 +173,10 @@ Roll up your sleeves. Below the explanation behind each GC tuning variable avail
 
 8. **RUBY_GC_MALLOC_LIMIT_GROWTH_FACTOR** (new from 2.1)
 
-    TODO: describe.
+    The growth factor that controls the `GC.stat[:malloc_limit]` value grows over time. Given by:
+    `new malloc_limit = current malloc_limit * this factor`.
+
+    Default value: 1.4
 
 9. **RUBY_GC_OLDMALLOC_LIMIT** (new from 2.1)
 
