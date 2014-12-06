@@ -205,7 +205,8 @@ Tune them only if you really know what you are doing.
 
 Think about. This Einstein's quote fits perfectly here.
 
-So, in order to accomplish this hard work surround yourself with great tools. I'm sharing my list below. Using different thing? Please don't hesitate and send your comment at the end of this post.
+In order to accomplish this hard work surround yourself with great tools. I'm sharing my list below. Using different thing?
+Please don't hesitate and send your comment at the end of this post.
 
 - Ruby `GC::stat` - Return a hash with interesting information about the garbage collector.
 - Ruby `ObjectSpace` - The ObjectSpace module contains a number of routines that interact with the garbage collection
