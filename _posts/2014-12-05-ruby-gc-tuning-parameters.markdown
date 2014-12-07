@@ -180,7 +180,11 @@ Roll up your sleeves. Below the explanation behind each GC tuning variable avail
 
 9. **RUBY_GC_OLDMALLOC_LIMIT** (new from 2.1)
 
-    TODO: describe.
+    The old generation memory growth is tracked separately by the VM in `oldmalloc_increase`.
+
+    This parameter hold the minimum value for `GC.stat[:oldmalloc_limit]`. If `oldmalloc_increase` exceeds the `oldmalloc_limit` a major GC is triggered.
+
+    Default value: 16777216 (16MB)
 
 10. **RUBY_GC_OLDMALLOC_LIMIT_MAX** (new from 2.1)
 
