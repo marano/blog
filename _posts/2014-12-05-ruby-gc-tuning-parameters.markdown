@@ -188,11 +188,16 @@ Roll up your sleeves. Below the explanation behind each GC tuning variable avail
 
 10. **RUBY_GC_OLDMALLOC_LIMIT_MAX** (new from 2.1)
 
-    TODO: describe.
+    Sets the maximum value for `GC.stat[:oldmalloc_limit]` from going to high (`oldmalloc_limit` changes dynamically by the growth factor below, tuning number 11).
+
+    Default value: 134217728 (128MB)
 
 11. **RUBY_GC_OLDMALLOC_LIMIT_GROWTH_FACTOR** (new from 2.1)
 
-    TODO: describe.
+    The growth factor that controls the `GC.stat[:oldmalloc_limit]` value grows over time. Given by:
+    `new oldmalloc_limit = current oldmalloc_limit * this factor`.
+
+    Default value: 1.2
 
 **Obsolete:**
 
