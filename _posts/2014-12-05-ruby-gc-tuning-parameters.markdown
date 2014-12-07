@@ -214,7 +214,7 @@ Tune them only if you really know what you are doing.
 
 Think about. This Einstein's quote fits perfectly here.
 
-In order to accomplish this hard work surround yourself with great tools. I'm sharing my list below. Using different thing?
+In order to accomplish this hard work surround yourself with great tools. I'm sharing my list below. Using a different thing?
 Please don't hesitate and send your comment at the end of this post.
 
 - Ruby `GC::stat` - Return a hash with interesting information about the garbage collector.
@@ -234,7 +234,29 @@ describes an approach to collect and analyse heap dumps from your running applic
 
 ## Bonus: making your Unicorn fly high
 
-TODO write about how to use https://github.com/tmm1/gctools with Unicorn
+There's a technique called Out-of-band GC (OOBGC) created to optimize the GC process for web applications. The main idea
+is run the GC in-between requests rather than during requests. This technique was first introduced by [Unicorn](http://unicorn.bogomips.org/Unicorn/OobGC.html).
+
+Traditionally the OOBGC implementations force a GC run every **N requests**. This works well, however it does not observes if
+the GC actually is needed.
+
+[Aman Gupta](https://github.com/tmm1) created a more intelligent OOBGC implementation built on new API's and events
+offered in Ruby 2.1 and its RGenGC implementation, allowing the VM to make the best decision about when a garbage
+collection is required.
+
+The installation is pretty straightforward:
+
+1. Add the [gctools](https://github.com/tmm1/gctools) gem to your Gemfile and bundle install it.
+2. Edit the `config.ru` file adding the lines 3 and 4:
+
+{% highlight ruby linenos %}
+# (...)
+
+require 'gctools/oobgc'
+use(GC::OOB::UnicornMiddleware)
+
+run Rails.application
+{% endhighlight %}
 
 ## Conclusion
 
@@ -249,6 +271,7 @@ TODO write about remembering there are defaults for almost everything, including
 - [Aman Gupta, Ruby 2.1: RGenGC](http://tmm1.net/ruby21-rgengc/)
 - [Aman Gupta, Ruby 2.1: Out-of-Band GC](http://tmm1.net/ruby21-oobgc/)
 - [Bug #9607 Change the full GC timing](https://bugs.ruby-lang.org/issues/9607)
+- [Feature #8339 Introducing Generational Garbage Collection for CRuby/MRI](https://bugs.ruby-lang.org/issues/8339)
 - [K.Sasada: Incremental GC for Ruby interpreter](http://www.atdot.net/~ko1/activities/2014_rubyconf_pub.pdf)
 - [K.Sasada: Speedup Ruby Interpreter](http://www.atdot.net/~ko1/activities/2014_deccanrubyconf_pub.pdf)
 - [K.Sasada: Memory Management Tuning in Ruby](http://www.atdot.net/~ko1/activities/2014_rubyconf_ph_pub.pdf)
