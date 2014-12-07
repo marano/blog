@@ -260,11 +260,18 @@ run Rails.application
 
 ## Conclusion
 
-Identify the bottleneck of your application, set up some profiling tools to analise the resource consumption and tune them.
+Here we scratched the surface of the most important part of Ruby internals - the Garbage Collection. This invention first
+appeared [around 1959](http://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29), since then continue to be
+heavily researched, evolving over time through the development of complex algorithms and techniques.
 
-TODO write about how important is knowing the environment resources available where your app is running.
+We also saw how the existent GC tuning environment variables can impact on your application performance, but more important
+than blindly try random values on these parameters is to know your application and the environment where it is running.
 
-TODO write about remembering there are defaults for almost everything, including the GC Tuning Parameters. So, you **must** know your resources and adjust accordingly to your app weight.
+That said, in this context you can't manage what you don't measure and monitor. That's why you have to configure a good
+set of profiling tools, monitor the memory growth of your application processes, discover the pain points of your
+application, fix what can be fixed, and repeat.
+
+I hope this rundown can be useful for you. Suggestions? Corrections? Send them using the comments below.
 
 ## References
 
