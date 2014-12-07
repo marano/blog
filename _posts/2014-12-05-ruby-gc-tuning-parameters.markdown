@@ -89,7 +89,7 @@ To classify an object as young or old the GC does the following:
 Above is just the basics for you to understand the GC tuning parameters topic below. The entire garbage collection process implemented in Ruby 2.1 (RGenGC) is much
 more complex in order to solve all existent problems. For a detailed view of how it works take a look on this post references.
 
-When Ruby 2.2 goes out we can expect another major update in the garbage collector, where it will probably introduce a three-generation GC.
+When Ruby 2.2 goes out we can expect another major update into the garbage collector, where it will probably introduce a three-generation GC.
 
 ## GC Tuning Parameters
 
@@ -148,7 +148,7 @@ Roll up your sleeves. Below the explanation behind each GC tuning variable avail
     Factor to control major GC timing, given by: `control threshold = this factor * number of old objects from the last major GC`.
 
     The `control threshold` is compared with the current number of old objects. If the `control threshold` is exceeded
-    by the number of old objects since the last major marking phase, another major GC will be forced.
+    by the number of old objects since the last major marking phase, another major GC will happen.
 
     Special note: if you want to disable generational garbage collection, you can specify 0.9 (any number lesser than 1.0).
 
