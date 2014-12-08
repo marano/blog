@@ -11,7 +11,7 @@ categories:
 
 Hora de dar vida as coisas.
 
-![Pac-Man](/blog/images/posts/2014-12-15/pac-man.gif)
+![Pac-Man](/blog/images/posts/2014-12-08/pac-man.gif)
 
 <!--more-->
 
