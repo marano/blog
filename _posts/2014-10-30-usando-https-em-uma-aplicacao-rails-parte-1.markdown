@@ -110,7 +110,7 @@ RSpec.describe DemoHttpsController do
         get :insecure_area
       end
 
-      it { expect(response).to have_http_status('301') }
+      it { expect(response).to have_http_status(301) }
     end
   end
 
@@ -118,7 +118,7 @@ RSpec.describe DemoHttpsController do
     context 'with HTTP' do
       before { get :secure_area }
 
-      it { expect(response).to have_http_status('301') }
+      it { expect(response).to have_http_status(301) }
     end
 
     context 'with HTTPS' do
