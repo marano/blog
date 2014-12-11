@@ -359,7 +359,7 @@ Caso o seu navegador mostre um alerta de segurança quando você tentar acessar
 [https://dev.demo-https-rails/secure_area](https://dev.demo-https-rails/secure_area),
 basta confirmar que deseja realmente acessar a página e continuar.
 
-![Alerta de certificado digital não confiável no Google Chrome](/blog/images/posts/2014-11-14/demo-certificate-not-trusted.png)
+![Alerta de certificado digital não confiável no Google Chrome](/blog/images/posts/2014-12-11/demo-certificate-not-trusted.png)
 
 _No Google Chrome, basta clicar em "Show advanced" e depois em "Proceed to dev.demo-https-rails (unsafe)"._
 
@@ -369,7 +369,7 @@ de seu navegador predileto para observar as respostas às requisições HTTP / H
 e os redirecionamentos acontecendo quando tentamos acessar uma das áreas com o protocolo
 inadequado.
 
-![Página da área segura da aplicação](/blog/images/posts/2014-11-14/demo-secure-area.png)
+![Página da área segura da aplicação](/blog/images/posts/2014-12-11/demo-secure-area.png)
 
 _Interface da área segura. Disponível no repositório GitHub deste demo._
 
