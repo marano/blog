@@ -37,9 +37,9 @@ If everything goes OK, you can now run the project!
 
 ## Creating your post
 
-1. This create a file and the branch for your post using the rake task below.
+1. This create a file and the branch for your post using the rake task below. You will be prompted to provide the post title, the author and tags (optional).
 
-        $ rake 'new_post["Title of the post"]'
+        $ rake new_post
 
 1. Write your post and **make sure the author link on the post points to your profile on HE:labs website**.
 1. Commit your changes.
