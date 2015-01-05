@@ -11,5 +11,8 @@ categories:
 ---
 
 Um efeito muda tudo.
+
+![Pac-Man](/blog/images/posts/2015-01-21/ghost.gif)
+
 <!--more-->
 Write full content here
