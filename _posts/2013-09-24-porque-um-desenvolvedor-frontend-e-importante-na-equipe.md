@@ -1,5 +1,6 @@
 ---
 author: Thiago Gonzalez
+hide_author_link: true
 layout: post
 title: "Por que um desenvolvedor front-end é importante na equipe?"
 categories:

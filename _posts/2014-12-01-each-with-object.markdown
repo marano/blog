@@ -2,6 +2,7 @@
 layout: post
 title: "Quick Tip: Usando #each_with_object"
 author: Matheus Bras
+hide_author_link: true
 categories:
   - ruby
   - rails

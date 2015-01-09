@@ -1,5 +1,6 @@
 ---
 author: Matheus Bras
+hide_author_link: true
 layout: post
 title: "Manipulando imagens on-the-fly pela URL"
 categories:

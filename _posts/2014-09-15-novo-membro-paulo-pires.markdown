@@ -2,6 +2,7 @@
 layout: post
 title: "Novo membro: Paulo Pires"
 author: Paulo Pires
+hide_author_link: true
 categories:
   - novo membro
   - paulopires

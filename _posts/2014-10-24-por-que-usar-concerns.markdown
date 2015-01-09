@@ -2,6 +2,7 @@
 layout: post
 title: Por que usar Concerns?
 author: Pedro Henrique
+hide_author_link: true
 categories:
   - Rails
   - Concerns

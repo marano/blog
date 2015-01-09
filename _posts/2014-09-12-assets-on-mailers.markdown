@@ -2,6 +2,7 @@
 layout: post
 title: Assets on Mailers
 author: Matheus Bras
+hide_author_link: true
 categories:
   - actionmailer
   - asset_pipeline

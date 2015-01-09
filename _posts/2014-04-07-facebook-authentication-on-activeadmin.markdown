@@ -4,6 +4,7 @@ title: "Facebook authentication on ActiveAdmin"
 date: 2014-04-07 10:00
 categories:
 author: Matheus Bras
+hide_author_link: true
 post_styles: hints
 ---
 

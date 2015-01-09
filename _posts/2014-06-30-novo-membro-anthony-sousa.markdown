@@ -2,6 +2,7 @@
 layout: post
 title: "Novo membro: Anthony Sousa"
 author: Anthony Sousa
+hide_author_link: true
 categories:
   - Novo membro
   - Anthony Sousa

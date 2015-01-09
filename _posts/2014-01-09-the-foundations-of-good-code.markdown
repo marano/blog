@@ -1,5 +1,6 @@
 ---
 author: Israel Ribeiro
+hide_author_link: true
 layout: post
 title: "The foundations of good code"
 categories:

@@ -2,6 +2,7 @@
 layout: post
 title: 'Novo membro: Pedro Henrique'
 author: Pedro Henrique
+hide_author_link: true
 categories:
   - novo membro
   - pedro henrique

@@ -1,5 +1,6 @@
 ---
 author: Matheus Bras
+hide_author_link: true
 layout: post
 title: "Use Background Jobs e não deixe o usuário esperando"
 categories:

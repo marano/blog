@@ -2,6 +2,7 @@
 layout: post
 title: "Mastering Sass - Mixin vs Extend"
 author: Thiago Gonzalez
+hide_author_link: true
 categories:
   - sass
   - css

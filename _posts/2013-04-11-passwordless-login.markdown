@@ -1,5 +1,6 @@
 ---
 author: Matheus Bras
+hide_author_link: true
 layout: post
 title: "Passwordless Login"
 categories:

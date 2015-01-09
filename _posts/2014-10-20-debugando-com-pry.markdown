@@ -2,6 +2,7 @@
 layout: post
 title: "Debugando com pry"
 author: Pedro Henrique
+hide_author_link: true
 categories:
   - ruby
   - rails

@@ -1,5 +1,6 @@
 ---
 author: Thiago Gonzalez
+hide_author_link: true
 layout: post
 title: "Doing vertical align on elements like a boss"
 categories:
