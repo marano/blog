@@ -71,7 +71,7 @@ Assim tanto você quanto o próximo que pegar no código vai entender e sentir-s
 
 Existe essa diferença entre projetar algo que será impresso e algo que será interpretado em um navegador. O material impresso é impresso e pronto. O design de um site ou aplicação pode e deve ser melhorado continuamente, em forma de código. Ele não tem validade.
 
-Friso a importância de soar para manter a qualidade do código em dia para que assim novas funcionalidades possam ser implementadas por pessoas diferentes posteriormente, sem maiores complicações.
+Friso a importância de suar para manter a qualidade do código em dia para que assim novas funcionalidades possam ser implementadas por pessoas diferentes posteriormente, sem maiores complicações.
 
 
 ## Links
