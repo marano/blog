@@ -67,7 +67,7 @@ No fim não é o layout que vai ser o produto final. Perca mais tempo no código
 
 Não estou tirando a importância de criar layouts/mockups. A criação e a implementação são igualmente importantes. O que estou tentando dizer é para deixar refinamentos muito específicos para serem executados diretos no código e quando o fizer, faça-o de forma crítica, escrevendo um código elegante e funcional.
 
-Assim tanto você quanto o próximo que pegar no código vai entender e sentir-se vontade em trabalhar com ele. Consequentemente a qualidade do design visual final estará sempre com a qualidade esperada.
+Assim tanto você quanto o próximo que pegar no código vai entender e sentir-se a vontade para trabalhar com ele. Consequentemente a qualidade do design visual final estará sempre com a qualidade esperada.
 
 Existe essa diferença entre projetar algo que será impresso e algo que será interpretado em um navegador. O material impresso é impresso e pronto. O design de um site ou aplicação pode e deve ser melhorado continuamente, em forma de código. Ele não tem validade.
 
