@@ -22,7 +22,7 @@ Vamos começar por pontos muito básicos. Acho justo a gente dar uma olhada prim
 ## Best-pratices
 
 
-- Usamos a sintaxe do SASS (ver sobre SASS nos próximos ítens)
+- Usamos a sintaxe do SCSS (ver sobre SASS nos próximos ítens)
 - Seguimos a organização de propriedades do guia [Plataformatech](http://guidelines.plataformatec.com.br/css.html)
 - Definimos as cores por hexa-decimal (e não rbg/rgba)
 - Evitamos usar mais de 3 níveis de identação. 
