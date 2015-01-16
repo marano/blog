@@ -2,7 +2,7 @@
 author: Mikael Carrara
 layout: post
 title: "Poesia como código front-end"
-date: 2015-01-09 15:00
+date: 2015-01-16 15:09
 comments: true
 categories:
   - design
