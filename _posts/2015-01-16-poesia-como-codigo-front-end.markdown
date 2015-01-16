@@ -14,7 +14,7 @@ categories:
 
 ---
 
-A primeira vez que entrei no site [wordpress.org](http://wordpress.org) estava escrito no footer **"Code is poetry"**. Fiquei pensando sobre isso, sobre tratar o código como se fosse uma poesia. Nunca mais esqueci essa frase, ela ainda faz parte do footer do site da wordpress.org e é minha sitação favorita por espelhar diretamente minha filosofia de trabalho.
+A primeira vez que entrei no site [wordpress.org](http://wordpress.org) estava escrito no footer **"Code is poetry"**. Fiquei pensando sobre isso, sobre tratar o código como se fosse uma poesia. Nunca mais esqueci essa frase, ela ainda faz parte do footer do site da wordpress.org e é minha citação favorita por espelhar diretamente minha filosofia de trabalho.
 
 <!--more-->
 
