@@ -76,5 +76,5 @@ Friso a importância de suar para manter a qualidade do código em dia para que 
 
 ## Links
 
-- [Linkedin](br.linkedin.com/in/mikaelcarrara/)
+- [Linkedin](http://br.linkedin.com/in/mikaelcarrara/)
 - [Portfólio no Dribbble](http://dribbble.com/mikaelcarrara)
