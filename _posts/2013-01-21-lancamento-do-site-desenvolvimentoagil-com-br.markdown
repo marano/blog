@@ -1,5 +1,6 @@
 ---
 author: Vinicius Teles
+hide_author_link: true
 layout: post
 title: "Lançamento do site DesenvolvimentoAgil.com.br"
 categories:

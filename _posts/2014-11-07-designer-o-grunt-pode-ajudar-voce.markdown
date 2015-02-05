@@ -2,6 +2,7 @@
 layout: post
 title: "Designer, o grunt pode ajudar você!"
 author: Márcio Costa
+hide_author_link: true
 categories:
   - grunt.js
   - automatização

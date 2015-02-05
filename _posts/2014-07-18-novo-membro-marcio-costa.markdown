@@ -2,6 +2,7 @@
 layout: post
 title: "Novo membro: Márcio Costa"
 author: Márcio Costa
+hide_author_link: true
 categories:
   - novo membro
   - marcio costa
