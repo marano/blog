@@ -20,11 +20,10 @@ Mudando com classe.
 
 No geral, transitions são usadas para alterar o estilo de um elemento gradativamente, ou seja, mudar a aparência de uma maneira mais suave do que o normal. Geralmente aplica-se em botões, links, menus e ultimamente vem sido implementados em radios e checkboxes tambem, trazendo uma experiência de uso mais agradável.
 
-A grande diferença do transition para animation, é que a transition precisa de um 'gatilho' para funcionar. Seja ele um `hover`, `focus` ou mesmo uma chamada via javascript.
+A grande diferença da transition pra animation, é que a transition precisa de um 'gatilho' para funcionar. Seja ele um `:hover`, `:focus` ou mesmo uma chamada via javascript.
 
 # Propriedades
 <br>
-
 - transition-delay
 
 pode ser tempo em segundos, `initial` ou `inherit`
