@@ -22,27 +22,27 @@ No geral, transitions são usadas para alterar o estilo de um elemento gradativa
 
 A grande diferença da transition pra animation, é que a transition precisa de um 'gatilho' para funcionar. Seja ele um `:hover`, `:focus` ou mesmo uma chamada via javascript.
 
-# Propriedades
-<br>
-- transition-delay
+# Propriedades <br><br>
 
-pode ser tempo em segundos, `initial` ou `inherit`
+- ** transition-delay**
 
-- transition-duration
+*pode ser tempo em segundos, `initial` ou `inherit`*
 
-mesmos valores válidos para o delay.
+- ** transition-duration**
 
-- transition-property
+*mesmos valores válidos para o delay.*
 
-`none`, `all`, `initial`, `inherit` ou uma propriedade como `width` por exemplo.
+- ** transition-property**
 
-- transition-timing-function
+*`none`, `all`, `initial`, `inherit` ou uma propriedade como `width` por exemplo.*
 
-aceita `ease`, `linear`, `ease-in`, `ease-out`, `ease-in-out`, `cubic-bezier()`, `initial`, ou `inherit`
+- ** transition-timing-function**
+
+*aceita `ease`, `linear`, `ease-in`, `ease-out`, `ease-in-out`, `cubic-bezier()`, `initial`, ou `inherit`*
 
 ## Exemplo 1 - Hover
 
-Mais simples e mais utilizado, é o transition no `:hover`. Eu vou mudar o estado do Blinky de normal para quando ele fica vulnerável, ou em outras palavras, quando o Pac-man come as pastilhas maiores e fica de cara feia.
+Mais simples e mais utilizado, é a transition no `:hover`. Eu vou mudar o estado do Blinky de normal para quando ele fica vulnerável, ou em outras palavras, quando o Pac-man come as pastilhas maiores e fica de cara feia.
 
 Como o fantasma tem vários outros elementos que vão ser alterados, eu logo defini que a transição vai acontecer em todas as `<div>` dentro da `.field` (que é a classe que mantém tudo alinhado).
 
@@ -62,7 +62,7 @@ Como o fantasma tem vários outros elementos que vão ser alterados, eu logo def
 
 {% endhighlight %}
 
-Então assim que o mouse estiver em cima da `.field`, os olhos ficarão vermelhos e a cabeça e as pernas vão mudar pra brancas.
+Então assim que o mouse estiver em cima da `.field`, os olhos ficarão vermelhos e a cabeça e as pernas vão ficar brancas.
 
 {% highlight sass linenos %}
 
@@ -123,7 +123,7 @@ O resultado e o código completo estão no frame abaixo.
 <br><br>
 ## Exemplo 2 - Javascript 
 
-Quando combinados com Javascript, podemos criar interações mais complexas. E para isso o transition é recomendado, pois o animation possui as `@keyframes` com as especificações corretas para a animação, isso não deixa muito intutivo para ser alterado via JS.
+Quando combinados com Javascript, podemos criar interações mais complexas. E para isso a transition é recomendado, pois o animation possui as `@keyframes` com as especificações corretas para a animação, isso não deixa muito intutivo para ser alterado via JS.
 
 No caso, vamos criar movimentos com cliques. Conforme o usuário clica em algum canto da tela, o fantasma faz o percurso. Para que esse movimento seja suave, vamos adicionar a transition.
 
@@ -174,7 +174,7 @@ function getPosition(element) {
 
 {% endhighlight %}
 
-Com isso temos o seguinte:
+Com isso temos o seguinte resultado (Clique na area preta):
 
 <p data-height="350" data-theme-id="9813" data-slug-hash="LEOyRW" data-default-tab="result" data-user="matheusagcosta" class='codepen'>See the Pen <a href='http://codepen.io/matheusagcosta/pen/LEOyRW/'>Blinky Moving</a> by Matheus Costa (<a href='http://codepen.io/matheusagcosta'>@matheusagcosta</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
