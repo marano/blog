@@ -23,7 +23,7 @@ Vamos começar por pontos muito básicos. Acho justo a gente dar uma olhada prim
 
 
 - Usamos a sintaxe do SCSS (ver sobre SASS nos próximos ítens)
-- Seguimos a organização de propriedades do guia [Plataformatech](http://guidelines.plataformatec.com.br/css.html)
+- Seguimos a organização de propriedades do guia [Plataformatec](http://guidelines.plataformatec.com.br/css.html)
 - Definimos as cores por hexa-decimal (e não rbg/rgba)
 - Evitamos usar mais de 3 níveis de identação. 
 - Organizamos os atributos em ordem alfabética (Fn+F5 no sublime já faz isso pra você)

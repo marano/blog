@@ -34,7 +34,7 @@ Fique atentos a vagas também, já vi vagas de empresas que colocam algo como "S
 
 É muito mais valioso uma equipe entrosada, motivada, atenciosa e em um ritmo sustentável, do que aquela equipe que "dá um gás" pelo projeto no entanto acaba produzindo várias coisas sem qualidade. O que vai gerar insatisfação no cliente, que virá reclamar com o time sobre o ocorrido. Ou seja o time saiu perdendo pois trabalhou de mais e não alcançou o objetivo, e o cliente saiu insatisfeito, assim perdemos dos 2 lados.
 
-## Responsábilidade
+## Responsabilidade
 
 Claro que para alcançarmos um desenvolvimento sustentável dependemos de que o time seja responsável, não apenas em cumprir o seu horário, mas de realmente trabalhar as horas que se comprometeu. Já estive em time com um cara que tinham problemas de cumprir um horário e de trabalhar em um horário fixo, no entanto este cara sempre foi responsável em entregar as tarefas que se comprometeu durante uma iteração. A ideia é trabalharmos com um ritmo sustentável sem perder qualidade, não simplesmente cumprir horário na empresa.
 
