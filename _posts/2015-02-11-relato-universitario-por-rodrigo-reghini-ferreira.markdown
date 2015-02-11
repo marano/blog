@@ -7,7 +7,7 @@ categories:
   - agile
 ---
 
-- Professor, o que é Scrum ? XP é mesmo extremme ?? Tem como desenvolver meu software mais rápido ? Eles bebem cerveja mesmo na sexta-feira ?
+- Professor, o que é Scrum ? XP é mesmo extreme ?? Tem como desenvolver meu software mais rápido ? Eles bebem cerveja mesmo na sexta-feira ?
 
 <!--more-->
 
