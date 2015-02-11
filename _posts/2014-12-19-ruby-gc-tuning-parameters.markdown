@@ -228,6 +228,9 @@ of memory and garbage collection.
 - [Heroku App Dashboard Metrics tab](https://devcenter.heroku.com/articles/metrics)
 - [gc_tracer](https://github.com/ko1/gc_tracer)
 - [memory_profiler](https://github.com/SamSaffron/memory_profiler)
+- [Rbkit - A Ruby Profiler](http://rbkit.codemancers.com/)
+- [Derailed Benchmarks](https://github.com/schneems/derailed_benchmarks)
+
 
 Also, the [What I Learned About Hunting Memory Leaks in Ruby 2.1](http://blog.skylight.io/hunting-for-leaks-in-ruby/) blog post from Peter W.
 describes an approach to collect and analyse heap dumps from your running application. Heap dumps are the devil's house. Precious raw data lives there.
@@ -279,10 +282,11 @@ I hope this rundown can be useful for you. Suggestions? Corrections? Send them u
 - [Aman Gupta, Ruby 2.1: Out-of-Band GC](http://tmm1.net/ruby21-oobgc/)
 - [Bug #9607 Change the full GC timing](https://bugs.ruby-lang.org/issues/9607)
 - [Feature #8339 Introducing Generational Garbage Collection for CRuby/MRI](https://bugs.ruby-lang.org/issues/8339)
-- [K.Sasada: Incremental GC for Ruby interpreter](http://www.atdot.net/~ko1/activities/2014_rubyconf_pub.pdf)
-- [K.Sasada: Speedup Ruby Interpreter](http://www.atdot.net/~ko1/activities/2014_deccanrubyconf_pub.pdf)
-- [K.Sasada: Memory Management Tuning in Ruby](http://www.atdot.net/~ko1/activities/2014_rubyconf_ph_pub.pdf)
-- [K.Sasada: Toward more efficient Ruby 2.1](http://www.atdot.net/~ko1/activities/Euruko2013-ko1.pdf)
+- [Koichi Sasada: Incremental GC for Ruby interpreter](http://www.atdot.net/~ko1/activities/2014_rubyconf_pub.pdf)
+- [Koichi Sasada: Speedup Ruby Interpreter](http://www.atdot.net/~ko1/activities/2014_deccanrubyconf_pub.pdf)
+- [Koichi Sasada: Memory Management Tuning in Ruby](http://www.atdot.net/~ko1/activities/2014_rubyconf_ph_pub.pdf)
+- [Koichi Sasada: Toward more efficient Ruby 2.1](http://www.atdot.net/~ko1/activities/Euruko2013-ko1.pdf)
+- [Koichi Sasada: Incremental Garbage Collection in Ruby 2.2](http://engineering.heroku.com/blogs/2015-02-04-incremental-gc)
 - [Pat Shaughnessy, Ruby Under a Microscope: Learning Ruby Internals Through Experiment](http://patshaughnessy.net/ruby-under-a-microscope)
 - [Peter J. Jones, Effective Ruby](http://www.effectiveruby.com/)
 - [Peter Wagenet, What I Learned About Hunting Memory Leaks in Ruby 2.1](http://blog.skylight.io/hunting-for-leaks-in-ruby/)
