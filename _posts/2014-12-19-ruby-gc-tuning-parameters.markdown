@@ -261,6 +261,10 @@ use(GC::OOB::UnicornMiddleware)
 run Rails.application
 {% endhighlight %}
 
+**Note for Ruby 2.2:**
+
+If you are using Ruby 2.2 you don't need OOBGC, since it includes the RIncGC (Incremental GC) and [will not pause the world for a long time](https://github.com/tmm1/gctools/issues/11).
+
 ## Conclusion
 
 Here we scratched the surface of the most important part of Ruby internals - the Garbage Collection. This invention first
