@@ -2,6 +2,7 @@
 layout: post
 title: Simplificando o HTTP 2.0
 author: Beto Muniz
+hide_author_link: true
 categories:
   - beto muniz
   - protocolos

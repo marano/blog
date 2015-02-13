@@ -2,6 +2,7 @@
 layout: post
 title: "Service Workers: Be Offline"
 author: Beto Muniz
+hide_author_link: true
 categories:
   - service workers
   - javascript

@@ -2,6 +2,7 @@
 layout: post
 title: "Novo membro: Beto Muniz"
 author: Beto Muniz
+hide_author_link: true
 categories:
   - novo membro
   - beto muniz

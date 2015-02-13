@@ -2,6 +2,7 @@
 layout: post
 title: "DevDay - Um evento de desenvolvedores para desenvolvedores"
 author: Beto Muniz
+hide_author_link: true
 categories:
   - beto muniz
   - devday
