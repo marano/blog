@@ -151,7 +151,7 @@ returned when the route we have just implemented is accessed.
 
 If you are using UptimeRobot, a monitor to do this will look similar to the screenshot below:
 
-![UptimeRobot Keyword Monitor](/blog/images/posts/2015-02-13/uptime-robot-keyword-monitor.png)
+![UptimeRobot Keyword Monitor](/blog/images/posts/2015-02-19/uptime-robot-keyword-monitor.png)
 
 ### Additional resources
 
