@@ -12,7 +12,7 @@ So you think you code fast... We'll see it.
 
 <!--more-->
 
-![Sublime Text FTW](/blog/images/posts/2015-03-09/sublime-text-protips.jpg)
+![Sublime Text Protips](/blog/images/posts/2015-03-09/sublime-text-protips.jpg)
 
 ## First of all
 
@@ -40,7 +40,7 @@ The default sidebar actions of ST are kinda poor. You can't even move a file to 
 
 Emmet is a toolkit to improve HTML & CSS. In other words you can do almost anything in a half of time (and lines).
 
-![emmet](/blog/images/posts/2015-03-09/emmet.gif)
+![Emmet](/blog/images/posts/2015-03-09/emmet.gif)
 
 To create this default HTML5 strucutre I just type `!` and hit tab. These itens inside the body I did `h3+ul.menu>li*5>a` which gave us a headline, an unordered list named menu with 5 list items and a link in each one.
 
@@ -48,7 +48,7 @@ To create this default HTML5 strucutre I just type `!` and hit tab. These itens 
 
 This plugin is to boost up the previous one. A bunch of abbreviations that Emmet is missing you can find here (like pseudo properties for example).
 
-![emmet Css Snippets](/blog/images/posts/2015-03-09/emmet-css-sinppets.gif)
+![Emmet Css Snippets](/blog/images/posts/2015-03-09/emmet-css-sinppets.gif)
 
 ## ● Syntax Support
 
