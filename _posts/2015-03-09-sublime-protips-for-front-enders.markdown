@@ -16,7 +16,7 @@ So you think you code fast... We'll see it.
 
 ## First of all
 
-To start with this post, make sure you have Package Control installed and if you haven't don't worry, it's pretty easy to install, just follow this [link](https://packagecontrol.io/installation).
+Before you start, make sure you have Package Control installed and if you haven't don't worry, it's pretty easy to install, just follow this [link](https://packagecontrol.io/installation).
 
 After installed you need to be familiarized with this command: `CMD` (or `CTRL` in case you are a Windows user) + `Shift` + `P`. With this you`ll be able to search and install all packages that I'll show here.
 
