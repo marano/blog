@@ -10,6 +10,11 @@ categories:
   - stylus
 ---
 
-Write your excerpt here
+Get the most of preprocessors
 <!--more-->
-Write full content here
+
+![Mixin Libraries FTW](/blog/images/posts/2015-03-16/mixin-libraries.png)
+
+##Less, Stylus or Sass
+
+Everybody knows it doesn't matter to much the kind of preprocessor you're using, in the end all of then do the same.
