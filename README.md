@@ -12,7 +12,7 @@ To run this project you need to have:
 
 ## Setup the project
 
-1. Install the depedencies above
+1. Install the dependencies above
 2. Clone the project
 
         $ git clone git@github.com:Helabs/blog.git
@@ -77,7 +77,7 @@ Save your images in `/images/posts/YYYY-MM-DD/`. Your image URL will look like t
 
 #### Create a list
 
-For create a list on your post, always use hifen (the "-"), like this:
+For create a list on your post, always use hyphen (the "-"), like this:
 
 ```
 - item1
@@ -126,7 +126,7 @@ Then double check if the posts were changed correctly, `git commit` and `git pus
 1) Open this file: 
 https://docs.google.com/a/helabs.com.br/document/d/1HTS0j_E18AUsLxeBx2zKQ6aUwZY4Lw_JTdnpvRG3zDA/edit#
 
-Obs: if you don't have acess to this file, please, ask for the maintainers. 
+Obs: if you don't have access to this file, please, ask for the maintainers.
 
 2) Read the tutorial file and let the maintainers know if there is some doubt about it.
 
