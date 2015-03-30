@@ -34,8 +34,9 @@ So let's take a look in some of then.
 
 ##Nib
 
-[Nib](http://tj.github.io/nib/) is the best (and only) mixin library for Stylus. it has some awesome features and is pretty easy to use.<br>
-One amazing mixin of this library is the __Reset__. Putting this simple line:
+[Nib](http://tj.github.io/nib/) is the best (and only) mixin library for Stylus at the moment. It has some awesome features and is pretty easy to use.<br>
+One amazing mixin of this library is the __Reset__.
+<br>Putting this simple line:
 
 {% highlight sass linenos %}
 global-reset()
@@ -84,8 +85,8 @@ Awesome huh?
 ##Compass
 
 [Compass](http://compass-style.org/) is one option for Sass. It's very robust and perfect to work with sprites and images.
-In other hand, is very heavy compared to the others.
-<br>Speaking on Sprites, that's the exactly mixin we gonna see here. To start with it, let's create a folder called *social* with 5 icons 32px square each.
+In other hand, is too heavy compared to the others.
+<br>Speaking about **Sprites**, that's the exactly mixin we gonna see here. To start with it, let's create a folder called *social* with 5 icons 32px square each.
 
 * images/social/facebook.png
 * images/social/twitter.png
@@ -129,7 +130,7 @@ Badass! Right?!
 @include font-face("museo", "museo/museo", $asset-pipeline: true);
 {% endhighlight %}
 
-This magic line do all the work and if you are using rails, the `$asset-pipeline` put the place right in the fonts path for you.
+This magic line do all the work and if you are using rails, the `$asset-pipeline` set the fonts path as default.
 
 {% highlight sass linenos %}
 @font-face {
@@ -145,7 +146,7 @@ This magic line do all the work and if you are using rails, the `$asset-pipeline
 
 ##Less Hat
 
-[Less Hat](http://lesshat.madebysource.com/) is perfect for less. Seriously. Less has a lot of frameworks and libraries, but Less Hat can do more. You can find out more on the website.
+[Less Hat](http://lesshat.madebysource.com/) is perfect for Less. (since it has a lot of frameworks and libraries) but Less Hat can do much more. You can find out the full comparison on the website.
 <br>My favorite mixin in this library is **size**.
 
 {% highlight sass linenos %}
@@ -154,7 +155,7 @@ div {
 }
 {% endhighlight %}
 
-I know, it's to simple. But that's cool! Less is more.
+It just set a width and height in a simple line.
 
 {% highlight sass linenos %}
 div {
@@ -162,6 +163,8 @@ div {
  height: 100px;
 }
 {% endhighlight %}
+
+I know, it's to simple. But that's cool! Less is more.
 
 ##Try it
 
