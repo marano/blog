@@ -35,7 +35,13 @@ So let's take a look in some of then.
 ##Nib
 
 [Nib](http://tj.github.io/nib/) is the best (and only) mixin library for Stylus. it has some awesome features and is pretty easy to use.<br>
-One amazing mixin of this library is the __Reset__. Putting this `global-reset()` in your code the output will be like:
+One amazing mixin of this library is the __Reset__. Putting this simple line:
+
+{% highlight sass linenos %}
+global-reset()
+{% endhighlight %}
+
+the output will be like:
 
 {% highlight sass linenos %}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
@@ -78,24 +84,89 @@ Awesome huh?
 ##Compass
 
 [Compass](http://compass-style.org/) is one option for Sass. It's very robust and perfect to work with sprites and images.
+In other hand, is very heavy compared to the others.
+<br>Speaking on Sprites, that's the exactly mixin we gonna see here. To start with it, let's create a folder called *social* with 5 icons 32px square each.
 
-In other hand, is very heavy compared to the next one below.
+* images/social/facebook.png
+* images/social/twitter.png
+* images/social/instagram.png
+* images/social/linkedin.png
+* images/social/pinterest.png
+
+Now just add this on the code:
+
+{% highlight sass linenos %}
+@import "compass/utilities/sprites";
+@import "social/*.png";
+@include all-social-sprites;
+{% endhighlight %}
+
+And the output is something like:
+
+{% highlight sass linenos %}
+.social-sprite,
+.social-facebook,
+.social-instagram,
+.social-linkedin,
+.social-pinterest,
+.social-twitter { background: url('/images/social-s34fe0604ab.png') no-repeat; }
+
+.social-facebook   { background-position: 0 0; }
+.social-instagram  { background-position: 0 -32px; }
+.social-linkedin   { background-position: 0 -64px; }
+.social-pinterest  { background-position: 0 -96px; }
+.social-twitter    { background-position: 0 -128px; }
+{% endhighlight %}
+
+Badass! Right?!
 
 ##Bourbon
 
-[Bourbon](http://bourbon.io/) is another option for Sass and it's also our choice for the projects in the company.
+[Bourbon](http://bourbon.io/) is another option for Sass and it's also our choice for the projects in the company. It's simpler and lighter than Compass, but it gets better when combined with [Neat](http://neat.bourbon.io/), [Bitters](http://bitters.bourbon.io/) and [Reffils](http://refills.bourbon.io/).
+<br>A mixin that I use in every project is the **font-face**.
 
-Bourbon is much more simple and light compared to Compass, but it gets better when combined with [Neat](http://neat.bourbon.io/), [Bitters](http://bitters.bourbon.io/) and [Reffils](http://refills.bourbon.io/).
+{% highlight sass linenos %}
+@include font-face("museo", "museo/museo", $asset-pipeline: true);
+{% endhighlight %}
+
+This magic line do all the work and if you are using rails, the `$asset-pipeline` put the place right in the fonts path for you.
+
+{% highlight sass linenos %}
+@font-face {
+  font-family: "museo";
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/museo/museo.eot?#iefix") format("embedded-opentype"),
+       url("assets/museo/museo.woff") format("woff"),
+       url("assets/museo/museo.ttf") format("truetype"),
+       url("assets/museo/museo.svg#typicons") format("svg");
+}
+{% endhighlight %}
 
 ##Less Hat
 
-[Less Hat](http://lesshat.madebysource.com/)
+[Less Hat](http://lesshat.madebysource.com/) is perfect for less. Seriously. Less has a lot of frameworks and libraries, but Less Hat can do more. You can find out more on the website.
+<br>My favorite mixin in this library is **size**.
+
+{% highlight sass linenos %}
+div {
+  .size(50, 100);
+}
+{% endhighlight %}
+
+I know, it's to simple. But that's cool! Less is more.
+
+{% highlight sass linenos %}
+div {
+ width: 50px;
+ height: 100px;
+}
+{% endhighlight %}
 
 ##Try it
 
 If you haven't work with none of this libraries before you can test for free on [Codepen](http://codepen.io).
-
-You just need to create a pen and click on the gear besides CSS to choose one of then. (See screenshot below).
+<br>You just need to create a pen and click on the gear besides CSS to choose one of then. (See screenshot below).
 
 ![Codepen](/blog/images/posts/2015-03-16/codepen.png)
 
